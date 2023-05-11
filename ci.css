@@ -1,6 +1,3 @@
-h1 {
-  color: red;
-}
 .ci {
   display: inline-block;
   background-repeat: no-repeat;
@@ -9,9 +6,12 @@ h1 {
 }
 
 .ci-google {
-  background-image: url("./google.svg");
+  background-image: url("./svg/google.svg");
 }
 
+.ci-spotify {
+  background-image: url("./svg/spotify.svg");
+}
 .ci-xs {
   width: 1rem;
   height: 1rem;
