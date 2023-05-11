@@ -1,0 +1,50 @@
+.ci {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ci-google {
+  background-image: url("./google.svg");
+}
+
+.ci-xs {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ci-sm {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.ci-base {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ci-md {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.ci-lg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.ci-xl {
+  width: 3rem;
+  height: 3rem;
+}
+
+.ci-2xl {
+  width: 4rem;
+  height: 4rem;
+}
+
+.ci-3xl {
+  width: 6rem;
+  height: 6rem;
+}
