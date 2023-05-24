@@ -12,6 +12,11 @@
 .ci-spotify {
   background-image: url("./svg/spotify.svg");
 }
+
+.ci-apple{
+  background-image: url("./svg/apple.svg");
+}
+
 .ci-xs {
   width: 1rem;
   height: 1rem;
