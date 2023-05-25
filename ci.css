@@ -22,8 +22,8 @@
   font-family: "Karla", sans-serif;
 }
 .ci {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   object-fit: contain;
 }
 
@@ -36,8 +36,8 @@
 .ci-ciphense {
   content: url("./svg/ciphense.svg");
 }
-.ci-vuejs{
-  content:url("./svg/vuejs.svg")
+.ci-vuejs {
+  content: url("./svg/vuejs.svg");
 }
 .ci-ringcentral {
   content: url("./svg/ringcentral.svg");
@@ -45,11 +45,11 @@
 .ci-google {
   content: url("./images/google.png");
 }
-.ci-highonswift{
-  content:url("./images/highonswift.png")
+.ci-highonswift {
+  content: url("./images/highonswift.png");
 }
-.ci-nearveg{
-  content:url("./images/nearveg.jpg")
+.ci-nearveg {
+  content: url("./images/nearveg.jpg");
 }
 .ci-firebase {
   content: url("images/firebase.png");
@@ -378,72 +378,76 @@
 .ci-kubernetes-vertical {
   content: url("svg/kubernetes-vertical.svg");
 }
+
+.ci-2xs {
+  width: 0.625rem;
+  height: 0.625rem;
+}
 .ci-xs {
-  width: 1rem;
-  height: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .ci-sm {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.ci-md {
+  width: 1rem;
+  height: 1rem;
+}
+.ci-lg {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.ci-base {
+.ci-xl {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.ci-md {
-  width: 1.75rem;
-  height: 1.75rem;
+.ci-2xl {
+  width: 2rem;
+  height: 2rem;
 }
 
-.ci-lg {
-  width: 2.25rem;
-  height: 2.25rem;
+.ci-1x {
+  width: 1rem;
+  height: 1rem;
 }
-
-.ci-xl {
+.ci-2x {
+  width: 2rem;
+  height: 2rem;
+}
+.ci-3x {
   width: 3rem;
   height: 3rem;
 }
-
-.ci-2xl {
+.ci-4x {
   width: 4rem;
   height: 4rem;
 }
-
-.ci-3xl {
+.ci-5x {
+  width: 5rem;
+  height: 5rem;
+}
+.ci-6x {
   width: 6rem;
   height: 6rem;
 }
-
-.ci-4xl {
+.ci-7x {
+  width: 7rem;
+  height: 7rem;
+}
+.ci-8x {
   width: 8rem;
   height: 8rem;
 }
-
-.ci-5xl {
+.ci-9x {
+  width: 9rem;
+  height: 9rem;
+}
+.ci-10x {
   width: 10rem;
   height: 10rem;
-}
-
-.ci-6xl {
-  width: 12rem;
-  height: 12rem;
-}
-
-.ci-7xl {
-  width: 14rem;
-  height: 14rem;
-}
-
-.ci-8xl {
-  width: 16rem;
-  height: 16rem;
-}
-
-.ci-9xl {
-  width: 20rem;
-  height: 20rem;
 }
