@@ -4,8 +4,17 @@
   object-fit: contain;
 }
 
+.ci-invert{
+  filter: invert(1);
+}
 .ci-telegram {
   content: url("./svg/telegram.svg");
+}
+.ci-ciphense{
+  content: url("./svg/ciphense.svg");
+}
+.ci-ringcentral{
+  content: url("./svg/ringcentral.svg");
 }
 .ci-google {
   content: url("./images/google.png");
@@ -253,7 +262,6 @@
 .ci-nodejs-horizontal-black {
   content: url("./svg/nodejs-horizontal-black.svg");
 }
-
 .ci-nodejs-vertical {
   content: url("./svg/nodejs-vertical-black.svg");
 }
@@ -262,6 +270,16 @@
 }
 .ci-nodejs-vertical-black {
   content: url("./svg/nodejs-vertical-black.svg");
+}
+
+.ci-graphql {
+  content: url("./svg/graphql.svg");
+}
+.ci-graphql-horizontal {
+  content: url("./svg/graphql-horizontal.svg");
+}
+.ci-graphql-vertical {
+  content: url("./svg/graphql-vertical.svg");
 }
 .ci-infura {
   content: url("./svg/infura.svg");
