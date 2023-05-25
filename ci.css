@@ -267,10 +267,10 @@
   content: url("./svg/css.svg");
 }
 .ci-sass {
-  content: url("./svg/sass.svg");
+  content: url("./images/sass.png");
 }
 .ci-sass-wordmark {
-  content: url("./svg/sass-wordmark.svg");
+  content: url("./images/sass-wordmark.png");
 }
 .ci-github-black {
   content: url("./svg/github.svg");
