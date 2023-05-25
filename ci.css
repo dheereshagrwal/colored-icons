@@ -10,17 +10,68 @@
 .ci-google {
   content: url("./images/google.png");
 }
-.ci-google-full {
-  content: url("./images/google-full.png");
+.ci-firebase {
+  content: url("images/firebase.png");
+}
+.ci-docker {
+  content: url("images/docker.webp");
+}
+.ci-docker-horizontal {
+  content: url("images/docker-horizontal.webp");
+}
+.ci-docker-vertical {
+  content: url("images/docker-vertical.webp");
+}
+.ci-google-wordmark {
+  content: url("./images/google-wordmark.png");
 }
 .ci-flutter {
   content: url("./images/flutter.png");
 }
+.ci-mysql {
+  content: url("./images/mysql.png");
+}
 .ci-twitter {
   content: url("./svg/twitter.svg");
 }
+.ci-aws{
+  content: url("./svg/aws.svg");
+}
+.ci-git{
+  content: url("./svg/git.svg");
+}
+.ci-pytorch{
+  content: url("./svg/pytorch.svg");
+}
+.ci-pytorch-horizontal{
+  content: url("./svg/pytorch-horizontal.svg");
+}
+.ci-git-horizontal{
+  content: url("./svg/git-horizontal.svg");
+}
+.ci-mongodb{
+  content: url("./svg/mongodb.svg");
+}
+.ci-mongodb-horizontal{
+  content: url("./svg/mongodb-horizontal.svg");
+}
+.ci-mongodb-2{
+  content: url("./svg/mongodb-2.svg");
+}
+.ci-mongodb-horizontal-2{
+  content: url("./svg/mongodb-horizontal-2.svg");
+}
+.ci-cashfree{
+  content: url("./svg/cashfree.svg");
+}
 .ci-twitter-circle {
   content: url("./svg/twitter-circle.svg");
+}
+.ci-java{
+  content: url("./svg/java.svg");
+}
+.ci-java-vertical{
+  content: url("./svg/java-vertical.svg");
 }
 .ci-twitter-rounded-square {
   content: url("./svg/twitter-rounded-square.svg");
@@ -32,14 +83,22 @@
   content: url("./svg/tailwind.svg");
 }
 
-.ci-tailwind-full {
-  content: url("./svg/tailwind-full.svg");
+.ci-tailwind-horizontal {
+  content: url("./svg/tailwind-horizontal.svg");
 }
 .ci-django {
   content: url("./svg/django.svg");
 }
-.ci-django-full {
-  content: url("./svg/django-full.svg");
+.ci-django-wordmark {
+  content: url("./svg/django-wordmark.svg");
+}
+
+.ci-figma {
+  content: url("./svg/figma.svg");
+}
+
+.ci-postgresql {
+  content: url("./images/postgresql.png");
 }
 
 .ci-vercel {
@@ -51,14 +110,14 @@
 .ci-vercel-black {
   content: url("./svg/vercel-black.svg");
 }
-.ci-vercel-full {
-  content: url("./svg/vercel-full-black.svg");
+.ci-vercel-horizontal {
+  content: url("./svg/vercel-horizontal-black.svg");
 }
-.ci-vercel-full-white {
-  content: url("./svg/vercel-full-white.svg");
+.ci-vercel-horizontal-white {
+  content: url("./svg/vercel-horizontal-white.svg");
 }
-.ci-vercel-full-black {
-  content: url("./svg/vercel-full-black.svg");
+.ci-vercel-horizontal-black {
+  content: url("./svg/vercel-horizontal-black.svg");
 }
 
 .ci-nextjs {
@@ -70,22 +129,22 @@
 .ci-nextjs-black {
   content: url("./svg/nextjs-black.svg");
 }
-.ci-nextjs-full {
-  content: url("./svg/nextjs-full-black.svg");
+.ci-nextjs-horizontal {
+  content: url("./svg/nextjs-horizontal-black.svg");
 }
-.ci-nextjs-full-white {
-  content: url("./svg/nextjs-full-white.svg");
+.ci-nextjs-horizontal-white {
+  content: url("./svg/nextjs-horizontal-white.svg");
 }
-.ci-nextjs-full-black {
-  content: url("./svg/nextjs-full-black.svg");
+.ci-nextjs-horizontal-black {
+  content: url("./svg/nextjs-horizontal-black.svg");
 }
 
 .ci-python {
   content: url("./svg/python.svg");
 }
 
-.ci-python-full {
-  content: url("./svg/python-full.svg");
+.ci-python-horizontal {
+  content: url("./svg/python-horizontal.svg");
 }
 
 .ci-python-powered {
@@ -122,14 +181,14 @@
   content: url("./svg/github-black.svg");
 }
 
-.ci-github-word {
-  content: url("/images/github-word-black.png");
+.ci-github-wordmark {
+  content: url("/images/github-wordmark-black.png");
 }
-.ci-github-word-white {
-  content: url("/images/github-word-white.png");
+.ci-github-wordmark-white {
+  content: url("/images/github-wordmark-white.png");
 }
-.ci-github-word-black {
-  content: url("/images/github-word-black.png");
+.ci-github-wordmark-black {
+  content: url("/images/github-wordmark-black.png");
 }
 
 .ci-css {
@@ -148,33 +207,33 @@
 .ci-nodejs {
   content: url("./svg/nodejs.svg");
 }
-.ci-nodejs-full {
-  content: url("./svg/nodejs-full-black.svg");
+.ci-nodejs-horizontal {
+  content: url("./svg/nodejs-horizontal-black.svg");
 }
-.ci-nodejs-full-white {
-  content: url("./svg/nodejs-full-white.svg");
+.ci-nodejs-horizontal-white {
+  content: url("./svg/nodejs-horizontal-white.svg");
 }
-.ci-nodejs-full-black {
-  content: url("./svg/nodejs-full-black.svg");
+.ci-nodejs-horizontal-black {
+  content: url("./svg/nodejs-horizontal-black.svg");
 }
 
-.ci-nodejs-stacked {
-  content: url("./svg/nodejs-stacked-black.svg");
+.ci-nodejs-vertical {
+  content: url("./svg/nodejs-vertical-black.svg");
 }
-.ci-nodejs-stacked-white {
-  content: url("./svg/nodejs-stacked-white.svg");
+.ci-nodejs-vertical-white {
+  content: url("./svg/nodejs-vertical-white.svg");
 }
-.ci-nodejs-stacked-black {
-  content: url("./svg/nodejs-stacked-black.svg");
+.ci-nodejs-vertical-black {
+  content: url("./svg/nodejs-vertical-black.svg");
 }
 .ci-infura {
   content: url("./svg/infura.svg");
 }
-.ci-infura-full {
-  content: url("./svg/infura-full.svg");
+.ci-infura-vertical {
+  content: url("./svg/infura-vertical.svg");
 }
-.ci-infura-word {
-  content: url("./svg/infura-word.svg");
+.ci-infura-wordmark {
+  content: url("./svg/infura-wordmark.svg");
 }
 .ci-eth {
   content: url("./images/eth.png");
@@ -182,11 +241,11 @@
 .ci-metamask {
   content: url("./svg/metamask.svg");
 }
-.ci-metamask-full {
-  content: url("./svg/metamask-full.svg");
+.ci-metamask-horizontal {
+  content: url("./svg/metamask-horizontal.svg");
 }
-.ci-metamask-stacked {
-  content: url("./svg/metamask-stacked.svg");
+.ci-metamask-vertical {
+  content: url("./svg/metamask-vertical.svg");
 }
 .ci-solidity {
   content: url("./svg/solidity.svg");
@@ -195,8 +254,8 @@
 .ci-npm {
   content: url("./svg/npm.svg");
 }
-.ci-npm-full {
-  content: url("./svg/npm-full.svg");
+.ci-npm-horizontal {
+  content: url("./svg/npm-horizontal.svg");
 }
 /* social */
 .ci-leetcode {
@@ -211,8 +270,8 @@
 .ci-linkedin {
   content: url("images/linkedin.png");
 }
-.ci-linkedin-full {
-  content: url("images/linkedin-full.png");
+.ci-linkedin-horizontal {
+  content: url("images/linkedin-horizontal.png");
 }
 .ci-instagram {
   content: url("svg/instagram.svg");
@@ -220,8 +279,8 @@
 .ci-discord {
   content: url("svg/discord.svg");
 }
-.ci-discord-full {
-  content: url("svg/discord-full.svg");
+.ci-discord-horizontal {
+  content: url("svg/discord-horizontal.svg");
 }
 .ci-xs {
   width: 1rem;
