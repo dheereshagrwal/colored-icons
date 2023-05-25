@@ -36,6 +36,9 @@
 .ci-ciphense {
   content: url("./svg/ciphense.svg");
 }
+.ci-vuejs{
+  content:url("./svg/vuejs.svg")
+}
 .ci-ringcentral {
   content: url("./svg/ringcentral.svg");
 }
