@@ -369,6 +369,15 @@
 .ci-discord-horizontal {
   content: url("svg/discord-horizontal.svg");
 }
+.ci-kubernetes {
+  content: url("svg/kubernetes.svg");
+}
+.ci-kubernetes-horizontal {
+  content: url("svg/kubernetes-horizontal.svg");
+}
+.ci-kubernetes-vertical {
+  content: url("svg/kubernetes-vertical.svg");
+}
 .ci-xs {
   width: 1rem;
   height: 1rem;
