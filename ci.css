@@ -1,22 +1,228 @@
 .ci {
-  display: inline-block;
-  background-repeat: no-repeat;
   width: 1.5rem;
   height: 1.5rem;
+  object-fit: contain;
 }
 
+.ci-telegram {
+  content: url("./svg/telegram.svg");
+}
 .ci-google {
-  background-image: url("./svg/google.svg");
+  content: url("./images/google.png");
+}
+.ci-google-full {
+  content: url("./images/google-full.png");
+}
+.ci-flutter {
+  content: url("./images/flutter.png");
+}
+.ci-twitter {
+  content: url("./svg/twitter.svg");
+}
+.ci-twitter-circle {
+  content: url("./svg/twitter-circle.svg");
+}
+.ci-twitter-rounded-square {
+  content: url("./svg/twitter-rounded-square.svg");
+}
+.ci-twitter-square {
+  content: url("./svg/twitter-square.svg");
+}
+.ci-tailwind {
+  content: url("./svg/tailwind.svg");
 }
 
-.ci-spotify {
-  background-image: url("./svg/spotify.svg");
+.ci-tailwind-full {
+  content: url("./svg/tailwind-full.svg");
+}
+.ci-django {
+  content: url("./svg/django.svg");
+}
+.ci-django-full {
+  content: url("./svg/django-full.svg");
 }
 
-.ci-apple {
-  background-image: url("./svg/apple.svg");
+.ci-vercel {
+  content: url("./svg/vercel-black.svg");
+}
+.ci-vercel-white {
+  content: url("./svg/vercel-white.svg");
+}
+.ci-vercel-black {
+  content: url("./svg/vercel-black.svg");
+}
+.ci-vercel-full {
+  content: url("./svg/vercel-full-black.svg");
+}
+.ci-vercel-full-white {
+  content: url("./svg/vercel-full-white.svg");
+}
+.ci-vercel-full-black {
+  content: url("./svg/vercel-full-black.svg");
 }
 
+.ci-nextjs {
+  content: url("./svg/nextjs-black.svg");
+}
+.ci-nextjs-white {
+  content: url("./svg/nextjs-white.svg");
+}
+.ci-nextjs-black {
+  content: url("./svg/nextjs-black.svg");
+}
+.ci-nextjs-full {
+  content: url("./svg/nextjs-full-black.svg");
+}
+.ci-nextjs-full-white {
+  content: url("./svg/nextjs-full-white.svg");
+}
+.ci-nextjs-full-black {
+  content: url("./svg/nextjs-full-black.svg");
+}
+
+.ci-python {
+  content: url("./svg/python.svg");
+}
+
+.ci-python-full {
+  content: url("./svg/python-full.svg");
+}
+
+.ci-python-powered {
+  content: url("./svg/python-powered.svg");
+}
+.ci-python-powered-2 {
+  content: url("./svg/python-powered-2.svg");
+}
+
+.ci-bootstrap {
+  content: url("./svg/bootstrap.svg");
+}
+
+.ci-mui {
+  content: url("./svg/mui.svg");
+}
+
+.ci-tmdb {
+  content: url("./svg/tmdb.svg");
+}
+
+.ci-react {
+  content: url("./images/react.png");
+}
+.ci-github {
+  content: url("./svg/github-black.svg");
+}
+
+.ci-github-white {
+  content: url("./svg/github-white.svg");
+}
+
+.ci-github-black {
+  content: url("./svg/github-black.svg");
+}
+
+.ci-github-word {
+  content: url("/images/github-word-black.png");
+}
+.ci-github-word-white {
+  content: url("/images/github-word-white.png");
+}
+.ci-github-word-black {
+  content: url("/images/github-word-black.png");
+}
+
+.ci-css {
+  content: url("./svg/css.svg");
+}
+.ci-sass {
+  content: url("./svg/sass.svg");
+}
+.ci-github-black {
+  content: url("./svg/github.svg");
+}
+.ci-web3js {
+  content: url("./images/web3js.png");
+}
+
+.ci-nodejs {
+  content: url("./svg/nodejs.svg");
+}
+.ci-nodejs-full {
+  content: url("./svg/nodejs-full-black.svg");
+}
+.ci-nodejs-full-white {
+  content: url("./svg/nodejs-full-white.svg");
+}
+.ci-nodejs-full-black {
+  content: url("./svg/nodejs-full-black.svg");
+}
+
+.ci-nodejs-stacked {
+  content: url("./svg/nodejs-stacked-black.svg");
+}
+.ci-nodejs-stacked-white {
+  content: url("./svg/nodejs-stacked-white.svg");
+}
+.ci-nodejs-stacked-black {
+  content: url("./svg/nodejs-stacked-black.svg");
+}
+.ci-infura {
+  content: url("./svg/infura.svg");
+}
+.ci-infura-full {
+  content: url("./svg/infura-full.svg");
+}
+.ci-infura-word {
+  content: url("./svg/infura-word.svg");
+}
+.ci-eth {
+  content: url("./images/eth.png");
+}
+.ci-metamask {
+  content: url("./svg/metamask.svg");
+}
+.ci-metamask-full {
+  content: url("./svg/metamask-full.svg");
+}
+.ci-metamask-stacked {
+  content: url("./svg/metamask-stacked.svg");
+}
+.ci-solidity {
+  content: url("./svg/solidity.svg");
+}
+
+.ci-npm {
+  content: url("./svg/npm.svg");
+}
+.ci-npm-full {
+  content: url("./svg/npm-full.svg");
+}
+/* social */
+.ci-leetcode {
+  content: url("./images/leetcode-white.png");
+}
+.ci-leetcode-black {
+  content: url("./images/leetcode-black.png");
+}
+.ci-leetcode-white {
+  content: url("./images/leetcode-white.png");
+}
+.ci-linkedin {
+  content: url("images/linkedin.png");
+}
+.ci-linkedin-full {
+  content: url("images/linkedin-full.png");
+}
+.ci-instagram {
+  content: url("svg/instagram.svg");
+}
+.ci-discord {
+  content: url("svg/discord.svg");
+}
+.ci-discord-full {
+  content: url("svg/discord-full.svg");
+}
 .ci-xs {
   width: 1rem;
   height: 1rem;
@@ -55,4 +261,34 @@
 .ci-3xl {
   width: 6rem;
   height: 6rem;
+}
+
+.ci-4xl {
+  width: 8rem;
+  height: 8rem;
+}
+
+.ci-5xl {
+  width: 10rem;
+  height: 10rem;
+}
+
+.ci-6xl {
+  width: 12rem;
+  height: 12rem;
+}
+
+.ci-7xl {
+  width: 14rem;
+  height: 14rem;
+}
+
+.ci-8xl {
+  width: 16rem;
+  height: 16rem;
+}
+
+.ci-9xl {
+  width: 20rem;
+  height: 20rem;
 }
