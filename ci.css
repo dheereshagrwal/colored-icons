@@ -34,43 +34,43 @@
 .ci-twitter {
   content: url("./svg/twitter.svg");
 }
-.ci-aws{
+.ci-aws {
   content: url("./svg/aws.svg");
 }
-.ci-git{
+.ci-git {
   content: url("./svg/git.svg");
 }
-.ci-pytorch{
+.ci-pytorch {
   content: url("./svg/pytorch.svg");
 }
-.ci-pytorch-horizontal{
+.ci-pytorch-horizontal {
   content: url("./svg/pytorch-horizontal.svg");
 }
-.ci-git-horizontal{
+.ci-git-horizontal {
   content: url("./svg/git-horizontal.svg");
 }
-.ci-mongodb{
+.ci-mongodb {
   content: url("./svg/mongodb.svg");
 }
-.ci-mongodb-horizontal{
+.ci-mongodb-horizontal {
   content: url("./svg/mongodb-horizontal.svg");
 }
-.ci-mongodb-2{
+.ci-mongodb-2 {
   content: url("./svg/mongodb-2.svg");
 }
-.ci-mongodb-horizontal-2{
+.ci-mongodb-horizontal-2 {
   content: url("./svg/mongodb-horizontal-2.svg");
 }
-.ci-cashfree{
+.ci-cashfree {
   content: url("./svg/cashfree.svg");
 }
 .ci-twitter-circle {
   content: url("./svg/twitter-circle.svg");
 }
-.ci-java{
+.ci-java {
   content: url("./svg/java.svg");
 }
-.ci-java-vertical{
+.ci-java-vertical {
   content: url("./svg/java-vertical.svg");
 }
 .ci-twitter-rounded-square {
@@ -82,9 +82,38 @@
 .ci-tailwind {
   content: url("./svg/tailwind.svg");
 }
-
-.ci-tailwind-horizontal {
-  content: url("./svg/tailwind-horizontal.svg");
+.ci-js {
+  content: url("./svg/js.svg");
+}
+.ci-ts {
+  content: url("./svg/ts.svg");
+}
+.ci-ts-circle {
+  content: url("./svg/ts-circle.svg");
+}
+.ci-ts-wordmark {
+  content: url("./svg/ts-wordmark.svg");
+}
+.ci-do {
+  content: url("./svg/do.svg");
+}
+.ci-html{
+  content: url("./svg/html.svg");
+}
+.ci-do-horizontal {
+  content: url("./svg/do-horizontal.svg");
+}
+.ci-do-vertical {
+  content: url("./svg/do-vertical.svg");
+}
+.ci-react-native {
+  content: url("./svg/react-native.svg");
+}
+.ci-sanity {
+  content: url("./images/sanity.webp");
+}
+.ci-sanity-wordmark {
+  content: url("./svg/sanity.svg");
 }
 .ci-django {
   content: url("./svg/django.svg");
@@ -92,7 +121,9 @@
 .ci-django-wordmark {
   content: url("./svg/django-wordmark.svg");
 }
-
+.ci-framer-motion {
+  content: url("./svg/framer-motion.svg");
+}
 .ci-figma {
   content: url("./svg/figma.svg");
 }
@@ -157,6 +188,9 @@
 .ci-bootstrap {
   content: url("./svg/bootstrap.svg");
 }
+.ci-redux {
+  content: url("./svg/redux.svg");
+}
 
 .ci-mui {
   content: url("./svg/mui.svg");
@@ -196,6 +230,9 @@
 }
 .ci-sass {
   content: url("./svg/sass.svg");
+}
+.ci-sass-wordmark {
+  content: url("./svg/sass-wordmark.svg");
 }
 .ci-github-black {
   content: url("./svg/github.svg");
@@ -254,8 +291,8 @@
 .ci-npm {
   content: url("./svg/npm.svg");
 }
-.ci-npm-horizontal {
-  content: url("./svg/npm-horizontal.svg");
+.ci-npm-wordmark {
+  content: url("./svg/npm-wordmark.svg");
 }
 /* social */
 .ci-leetcode {
