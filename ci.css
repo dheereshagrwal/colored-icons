@@ -272,6 +272,23 @@
   content: url("/images/github-wordmark-black.png");
 }
 
+.ci-spotify-horizontal {
+  content: url("./images/spotify-horizontal.png");
+}
+
+.ci-spotify{
+  content: url("./svg/spotify.svg");
+}
+.ci-youtube{
+  content: url("./images/youtube.png");
+}
+.ci-youtube-horizontal{
+  content: url("./images/youtube-horizontal.png");
+}
+.ci-gmail{
+  content: url("./images/gmail.png");
+}
+
 .ci-css {
   content: url("./svg/css.svg");
 }
