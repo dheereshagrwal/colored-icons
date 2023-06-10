@@ -276,16 +276,50 @@
   content: url("./images/spotify-horizontal.png");
 }
 
-.ci-spotify{
+.ci-spotify {
   content: url("./svg/spotify.svg");
 }
-.ci-youtube{
+.ci-redis {
+  content: url("./svg/redis.svg");
+}
+.ci-redis-horizontal {
+  content: url("./svg/redis-horizontal-black.svg");
+}
+.ci-redis-horizontal-white {
+  content: url("./svg/redis-horizontal-white.svg");
+}
+.ci-redis-horizontal-black {
+  content: url("./svg/redis-horizontal-black.svg");
+}
+.ci-redis-enterprise {
+  content: url("./svg/redis-enterprise.svg");
+}
+
+.ci-railway {
+  content: url("./svg/railway-black.svg");
+}
+.ci-railway-white {
+  content: url("./svg/railway-white.svg");
+}
+.ci-railway-black {
+  content: url("./svg/railway-black.svg");
+}
+.ci-railway-horizontal {
+  content: url("./svg/railway-horizontal-black.svg");
+}
+.ci-railway-horizontal-white {
+  content: url("./svg/railway-horizontal-white.svg");
+}
+.ci-railway-horizontal-black {
+  content: url("./svg/railway-horizontal-black.svg");
+}
+.ci-youtube {
   content: url("./images/youtube.png");
 }
-.ci-youtube-horizontal{
+.ci-youtube-horizontal {
   content: url("./images/youtube-horizontal.png");
 }
-.ci-gmail{
+.ci-gmail {
   content: url("./images/gmail.png");
 }
 
