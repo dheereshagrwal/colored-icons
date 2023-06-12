@@ -40,7 +40,7 @@ the tag `1.5.6` refers to the release version, I will be update the readme as so
 ```
 ```
 <i class="ci ci-redis ci-3x"></i>
-a```
+```
 
 ## Inverting the color
 If the light logo isn't provided by the brand but you'd like to use it anyway, just add ci-invert.
