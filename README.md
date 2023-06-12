@@ -47,8 +47,8 @@ I used the same sizing style used by fontawesome:
 For more details about the sizing, you can refer to this [Font Awesome Icon Size Documentation](https://fontawesome.com/docs/web/style/size)
 
 ## Dark and Light icons
-By default, the `ci-nextjs` will refer to the dark version of the logo which means that you have to use on light background.
-You can also write `ci-nextjs-dark` it means that dark version of the icon, don't do `ci-nextjs ci-dark`, dark is not some class that can be applied on colored icons.
+By default, the `ci-nextjs` will refer to the dark version of the logo which means that you have to use it on a light background, you can also write ci-nextjs-dark for the same.
+Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied on colored icons.
 Similarly, `ci-nextjs-light` refers to the light version of the icon which means that you have to use it on a dark background.
 
 ## Contribution
