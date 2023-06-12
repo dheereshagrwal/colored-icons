@@ -288,7 +288,8 @@
   content: url("./svg/tmdb.svg");
 }
 
-.ci-reactjs .ci-react {
+.ci-reactjs,
+.ci-react {
   content: url("./images/reactjs.png");
 }
 .ci-github {
