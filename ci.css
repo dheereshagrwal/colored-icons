@@ -192,7 +192,8 @@
   content: url("./svg/figma.svg");
 }
 
-.ci-postgresql {
+.ci-postgresql,
+.ci-postgres {
   content: url("./images/postgresql.png");
 }
 
