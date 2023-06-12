@@ -29,19 +29,25 @@ the tag `1.5.6` refers to the release version, I will be update the readme as so
 ```
 <i class="ci ci-spotify ci-2x"></i>
 ```
-
-```<i class="ci ci-git ci-md"></i>```
-
-```<i class="ci ci-leetcode ci-5x"></i>```
-
-```<i class="ci ci-discord ci-sm"></i>```
-
-```<i class="ci ci-redis ci-3x"></i>```
+```
+<i class="ci ci-git ci-md"></i>
+```
+```
+<i class="ci ci-leetcode ci-5x"></i>
+```
+```
+<i class="ci ci-discord ci-sm"></i>
+```
+```
+<i class="ci ci-redis ci-3x"></i>
+a```
 
 ## Inverting the color
 If the light logo isn't provided by the brand but you'd like to use it anyway, just add ci-invert.
 
-```<i class="ci ci-highonswift ci-2x ci-invert"></i>```
+```
+<i class="ci ci-highonswift ci-2x ci-invert"></i>
+```
 
 ## Sizing
 I used the same sizing style used by fontawesome:
