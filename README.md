@@ -26,7 +26,9 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 ```
 the tag `1.5.6` refers to the release version, I will be update the readme as soon as I add a few more icons, so you can just always copy it.
 ## Usage
-```<i class="ci ci-spotify ci-2x"></i>```
+```
+<i class="ci ci-spotify ci-2x"></i>
+```
 
 ```<i class="ci ci-git ci-md"></i>```
 
