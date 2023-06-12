@@ -35,8 +35,24 @@
 .ci-invert {
   filter: invert(1);
 }
+
 .ci-telegram {
   content: url("./svg/telegram.svg");
+}
+.ci-linkedin {
+  content: url("images/linkedin.png");
+}
+.ci-linkedin-horizontal {
+  content: url("images/linkedin-horizontal.png");
+}
+.ci-instagram {
+  content: url("svg/instagram.svg");
+}
+.ci-discord {
+  content: url("svg/discord.svg");
+}
+.ci-discord-horizontal {
+  content: url("svg/discord-horizontal.svg");
 }
 .ci-ciphense {
   content: url("./svg/ciphense.svg");
@@ -457,21 +473,7 @@
 .ci-leetcode-light {
   content: url("./images/leetcode-light.png");
 }
-.ci-linkedin {
-  content: url("images/linkedin.png");
-}
-.ci-linkedin-horizontal {
-  content: url("images/linkedin-horizontal.png");
-}
-.ci-instagram {
-  content: url("svg/instagram.svg");
-}
-.ci-discord {
-  content: url("svg/discord.svg");
-}
-.ci-discord-horizontal {
-  content: url("svg/discord-horizontal.svg");
-}
+
 .ci-kubernetes {
   content: url("svg/kubernetes.svg");
 }
