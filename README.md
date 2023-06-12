@@ -5,7 +5,7 @@ The Colored Icons Library is a collection of brand logos and tech stack logos. I
 
 ## Demo
 
-To see all the icons available at the moment, just visit the github pages 
+To see all the icons available at the moment, just visit [Colored Icons Library Demo](https://dheereshagrwal.github.io/colored-icons/)
 
 ## Features
 - Super easy integration into your web projects using the `<i>` tag
@@ -70,5 +70,4 @@ If you want me to add an icon that is missing or have some suggestions, just rai
 
 ## License
 The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
-
 
