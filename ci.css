@@ -143,7 +143,8 @@
 .ci-twitter-square {
   content: url("./svg/twitter-square.svg");
 }
-.ci-tailwind {
+.ci-tailwind,
+.ci-tailwindcss {
   content: url("./svg/tailwind.svg");
 }
 .ci-js {
