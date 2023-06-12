@@ -81,7 +81,8 @@
 .ci-docker-horizontal {
   content: url("images/docker-horizontal.webp");
 }
-.ci-docker-vertical {
+.ci-docker-vertical,
+.ci-docker-stacked {
   content: url("images/docker-vertical.webp");
 }
 .ci-google-wordmark {
@@ -132,7 +133,8 @@
 .ci-java {
   content: url("./svg/java.svg");
 }
-.ci-java-vertical {
+.ci-java-vertical,
+.ci-java-stacked {
   content: url("./svg/java-vertical.svg");
 }
 .ci-twitter-rounded-square {
@@ -166,7 +168,8 @@
 .ci-do-horizontal {
   content: url("./svg/do-horizontal.svg");
 }
-.ci-do-vertical {
+.ci-do-vertical,
+.ci-do-stacked {
   content: url("./svg/do-vertical.svg");
 }
 .ci-react-native {
@@ -287,7 +290,11 @@
 .ci-alan-vertical,
 .ci-alan-vertical-dark,
 .ci-alan-ai-vertical,
-.ci-alan-ai-vertical-dark {
+.ci-alan-ai-vertical-dark,
+.ci-alan-stacked,
+.ci-alan-stacked-dark,
+.ci-alan-ai-stacked,
+.ci-alan-ai-stacked-dark {
   content: url("./svg/alan-vertical.svg");
 }
 
@@ -389,7 +396,11 @@
 .ci-nodejs-vertical,
 .ci-node-vertical,
 .ci-nodejs-vertical-dark,
-.ci-node-vertical-dark {
+.ci-node-vertical-dark,
+.ci-nodejs-stacked,
+.ci-node-stacked,
+.ci-nodejs-stacked-dark,
+.ci-node-stacked-dark {
   content: url("./svg/nodejs-vertical-dark.svg");
 }
 .ci-nodejs-vertical-light,
