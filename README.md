@@ -60,6 +60,10 @@ Similarly, `ci-nextjs-light` refers to the light version of the icon which means
 `ci-alan-horizontal` refers to the horizontal icon with logo on the left and wordmark on the right.
 Similarly, `ci-alan-vertical` or `ci-alan-stacked` refers to the vertical icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
 
+
+## Google fonts
+I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` to your existing class and the text will be changed. Enjoy!
+
 ## Contribution
 Code is very lightweight and dead simple; it has obviously nothing fancy going on.
 If you want me to add an icon that is missing or have some suggestions, just raise an issue
@@ -67,6 +71,4 @@ If you want me to add an icon that is missing or have some suggestions, just rai
 ## License
 The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
 
-## Google fonts
-I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` to your existing class and the text will be changed. Enjoy!
 
