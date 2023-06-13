@@ -105,6 +105,30 @@
   content: url("svg/discord-horizontal.svg");
 }
 
+.ci-angular,
+.ci-angular-dark,
+.ci-angular-light {
+  content: url("svg/angular.svg");
+}
+
+.ci-gcd,
+.ci-gcd-dark,
+.ci-gcd-light {
+  content: url("images/gcd.png");
+}
+
+.ci-azure,
+.ci-azure-dark,
+.ci-azure-light {
+  content: url("svg/azure.svg");
+}
+
+.ci-azure2,
+.ci-azure2-dark,
+.ci-azure2-light {
+  content: url("svg/azure2.svg");
+}
+
 .ci-ciphense,
 .ci-ciphense-dark {
   content: url("./svg/ciphense.svg");
