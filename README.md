@@ -62,12 +62,13 @@ For more details about the sizing, you can refer to this [Font Awesome Icon Size
 By default, the `ci-nextjs` will refer to the dark version of the logo which means that you have to use it on a light background, you can also write ci-nextjs-dark for the same.
 Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied on colored icons.
 Similarly, `ci-nextjs-light` refers to the light version of the icon which means that you have to use it on a dark background.
+Note that not every brand has dark and/or light icons
 
-## Horizontal, Vertical (Stacked), and Wordmark icons
+## Horizontal (Inline), Vertical (Stacked), and Wordmark icons
 `ci-infura-wordmark` refers to the wordmark icon of the brand. If you don't understand what it means, you can refer to this [Infura Press Kit](https://www.infura.io/presskit)
-`ci-alan-horizontal` refers to the horizontal icon with logo on the left and wordmark on the right.
-Similarly, `ci-alan-vertical` or `ci-alan-stacked` refers to the vertical icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
-
+`ci-alan-horizontal` or `ci-alan-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
+Similarly, `ci-alan-vertical` or `ci-alan-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
+Note that not every brand has horizontal and/or vertical icons.
 
 ## Google fonts
 I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` to your existing class and the text will be changed. Enjoy!
