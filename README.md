@@ -1,7 +1,7 @@
 
 # Colored Icons
 
-<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50"> <img src="./svg/reactjs.svg" alt="React Icon" width="50" height="50">
+<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50"> <img src="./images/react.png" alt="React Icon" width="50" height="50">
 <img src="./svg/vuejs.svg" alt="Vue.js Icon" width="50" height="50"> <img src="./svg/redis.svg" alt="Redis Icon" width="50" height="50">
 
 
