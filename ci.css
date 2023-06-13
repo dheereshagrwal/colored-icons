@@ -42,7 +42,12 @@
 .ci-linkedin {
   content: url("images/linkedin.png");
 }
-.ci-linkedin-horizontal {
+.ci-facebook,
+.ci-fb {
+  content: url("images/facebook.png");
+}
+.ci-linkedin-horizontal,
+.ci-linkedin-inline {
   content: url("images/linkedin-horizontal.png");
 }
 .ci-instagram {
@@ -51,7 +56,8 @@
 .ci-discord {
   content: url("svg/discord.svg");
 }
-.ci-discord-horizontal {
+.ci-discord-horizontal,
+.ci-discord-inline {
   content: url("svg/discord-horizontal.svg");
 }
 .ci-ciphense {
@@ -68,7 +74,11 @@
 .ci-nuxtjs-horizontal,
 .ci-nuxt-horizontal,
 .ci-nuxtjs-horizontal-dark,
-.ci-nuxt-horizontal-dark {
+.ci-nuxt-horizontal-dark,
+.ci-nuxtjs-inline,
+.ci-nuxt-inline,
+.ci-nuxtjs-inline-dark,
+.ci-nuxt-inline-dark {
   content: url("./svg/nuxtjs-horizontal-dark.svg");
 }
 
@@ -220,7 +230,9 @@
 }
 
 .ci-supabase-horizontal,
-.ci-supabase-horizontal-dark {
+.ci-supabase-horizontal-dark,
+.ci-supabase-inline,
+.ci-supabase-inline-dark {
   content: url("./svg/supabase-horizontal-dark.svg");
 }
 
@@ -236,11 +248,22 @@
   content: url("./svg/vercel-light.svg");
 }
 .ci-vercel-horizontal,
-.ci-vercel-horizontal-dark {
+.ci-vercel-horizontal-dark,
+.ci-vercel-inline,
+.ci-vercel-inline-dark {
   content: url("./svg/vercel-horizontal-dark.svg");
 }
 .ci-vercel-horizontal-light {
   content: url("./svg/vercel-horizontal-light.svg");
+}
+
+.ci-amazon {
+  content: url("./images/amazon.png");
+}
+
+.ci-facebook,
+.ci-fb {
+  content: url("./images/facebook.png");
 }
 
 .ci-nextjs,
@@ -256,7 +279,11 @@
 .ci-nextjs-horizontal,
 .ci-next-horizontal,
 .ci-nextjs-horizontal-dark,
-.ci-next-horizontal-dark {
+.ci-next-horizontal-dark,
+.ci-nextjs-inline,
+.ci-next-inline,
+.ci-nextjs-inline-dark,
+.ci-next-inline-dark {
   content: url("./svg/nextjs-horizontal-dark.svg");
 }
 .ci-nextjs-horizontal-light,
@@ -300,7 +327,11 @@
 .ci-alan-horizontal,
 .ci-alan-horizontal-dark,
 .ci-alan-ai-horizontal,
-.ci-alan-ai-horizontal-dark {
+.ci-alan-ai-horizontal-dark,
+.ci-alan-inline,
+.ci-alan-inline-dark,
+.ci-alan-ai-inline,
+.ci-alan-ai-inline-dark {
   content: url("./svg/alan-horizontal.svg");
 }
 .ci-alan-vertical,
@@ -346,7 +377,9 @@
   content: url("./svg/redis.svg");
 }
 .ci-redis-horizontal,
-.ci-redis-horizontal-dark {
+.ci-redis-horizontal-dark,
+.ci-redis-inline,
+.ci-redis-inline-dark {
   content: url("./svg/redis-horizontal-dark.svg");
 }
 .ci-redis-horizontal-light {
@@ -364,7 +397,9 @@
   content: url("./svg/railway-light.svg");
 }
 .ci-railway-horizontal,
-.ci-railway-horizontal-dark {
+.ci-railway-horizontal-dark,
+.ci-railway-inline,
+.ci-railway-inline-dark {
   content: url("./svg/railway-horizontal-dark.svg");
 }
 .ci-railway-horizontal-light {
@@ -401,7 +436,11 @@
 .ci-nodejs-horizontal,
 .ci-node-horizontal,
 .ci-nodejs-horizontal-dark,
-.ci-node-horizontal-dark {
+.ci-node-horizontal-dark,
+.ci-nodejs-inline,
+.ci-node-inline,
+.ci-nodejs-inline-dark,
+.ci-node-inline-dark {
   content: url("./svg/nodejs-horizontal-dark.svg");
 }
 .ci-nodejs-horizontal-light,

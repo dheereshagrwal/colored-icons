@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Icon Test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="ci.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Document</title>
   </head>
-  <body class="p-4">
-    <h3 class="font-inter flex gap-4 items-center">
-      <span>Telegram logo</span>
-      <code class="bg-gray-200 px-3 rounded-lg shadow">
-        &lt;i class="ci ci-telegram"&gt;&lt;/i&gt;
-      </code>
-    </h3>
-    <br />
-    <div>
-      <i class="ci ci-telegram ci-2xs"></i>
-      <i class="ci ci-telegram ci-xs"></i>
-      <i class="ci ci-telegram ci-sm"></i>
-      <i class="ci ci-telegram ci-md"></i>
-      <i class="ci ci-telegram ci-lg"></i>
-      <i class="ci ci-telegram ci-xl"></i>
-      <i class="ci ci-telegram ci-2xl"></i>
-    </div>
-    <br />
-    <div>
-      <i class="ci ci-telegram ci-1x"></i>
-      <i class="ci ci-telegram ci-2x"></i>
-      <i class="ci ci-telegram ci-3x"></i>
-      <i class="ci ci-telegram ci-4x"></i>
-      <i class="ci ci-telegram ci-5x"></i>
-      <i class="ci ci-telegram ci-6x"></i>
-      <i class="ci ci-telegram ci-7x"></i>
-      <i class="ci ci-telegram ci-8x"></i>
-      <i class="ci ci-telegram ci-9x"></i>
-      <i class="ci ci-telegram ci-10x"></i>
-    </div>
+  <body class="m-10 flex gap-8 lg:gap-28 flex-wrap justify-center">
+    <script>
+      // Define an array of logos with their names and classes
+      const logos = [
+        { name: "Telegram", class: "ci ci-telegram" },
+        { name: "Twitter", class: "ci ci-twitter" },
+        { name: "Discord", class: "ci ci-discord" },
+        { name: "Instagram", class: "ci ci-instagram" },
+        { name: "Facebook", class: "ci ci-facebook" },
+        { name: "Discord Horizontal", class: "ci ci-discord-horizontal" },
+      ];
+
+      // Function to generate the HTML for a logo section
+      function generateSection(logo) {
+        const iconSizes = logo.class.includes("-horizontal")
+          ? ["3x", "6x", "9x"]
+          : ["2xs", "xs", "sm", "md", "lg", "xl", "2xl", "3x", "4x"];
+        const iconElements = iconSizes
+          .map((size) => `<i class="${logo.class} ci-${size}"></i>`)
+          .join("");
+
+        return `
+        <section class="flex flex-col gap-4">
+          <div class="font-inter flex gap-4 items-center flex-wrap">
+            <p>${logo.name}</p>
+            <code class="bg-gray-200 px-3 rounded-lg shadow">
+              &lt;i class="${logo.class}"&gt;&lt;/i&gt;
+            </code>
+          </div>
+          <div class="flex gap-1 items-center">${iconElements}</div>
+        </section>
+      `;
+      }
+
+      // Generate the sections for each logo
+      const sectionsHtml = logos.map(generateSection).join("");
+      document.write(sectionsHtml);
+    </script>
   </body>
 </html>
