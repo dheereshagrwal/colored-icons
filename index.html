@@ -19,12 +19,18 @@
         { name: "Discord Horizontal", class: "ci ci-discord-horizontal" },
         { name: "Netflix", class: "ci ci-netflix" },
         { name: "Netflix wordmark", class: "ci ci-netflix-wordmark" },
+        { name: "Whatsapp", class: "ci ci-whatsapp" },
+        { name: "Whatsapp 2", class: "ci ci-whatsapp2" },
+        { name: "Whatsapp horizontal", class: "ci ci-whatsapp-horizontal" },
+        { name: "Whatsapp vertical", class: "ci ci-whatsapp-vertical" },
       ];
 
       // Function to generate the HTML for a logo section
       function generateSection(logo) {
         const iconSizes =
-          logo.class.includes("-horizontal") || logo.class.includes("-wordmark")
+          logo.class.includes("-horizontal") ||
+          logo.class.includes("-wordmark") ||
+          logo.class.includes("vertical")
             ? ["3x", "6x", "9x"]
             : ["2xs", "xs", "sm", "md", "lg", "xl", "2xl", "3x", "4x"];
         const iconElements = iconSizes
