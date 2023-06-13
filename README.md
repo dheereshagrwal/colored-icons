@@ -67,7 +67,9 @@ Note that not every brand has dark and/or light icons
 
 ## Horizontal (Inline), Vertical (Stacked), and Wordmark icons
 `ci-infura-wordmark` refers to the wordmark icon of the brand. If you don't understand what it means, you can refer to this [Infura Press Kit](https://www.infura.io/presskit)
+
 `ci-alan-horizontal` or `ci-alan-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
+
 Similarly, `ci-alan-vertical` or `ci-alan-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
 Note that not every brand has horizontal and/or vertical icons.
 
