@@ -1,7 +1,7 @@
 
 # Colored Icons
 
-![AWS Icon](https://raw.githubusercontent.com/dheereshagrwal/colored-icons/master/svg/aws.svg)
+<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50">
 
 Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's just a bunch of logos from different brands and tech stacks. You can just slap those awesome icons onto your projects without dealing with all that boring attribution.
 
