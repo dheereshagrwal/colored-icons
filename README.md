@@ -1,8 +1,10 @@
 
 # Colored Icons
 
-<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50"> <img src="./images/react.png" alt="React Icon" width="50" height="50">
-<img src="./svg/vuejs.svg" alt="Vue.js Icon" width="50" height="50"> <img src="./svg/redis.svg" alt="Redis Icon" width="50" height="50">
+Few icons
+
+<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50"> <img src="./images/reactjs.png" alt="React Icon" width="50" height="50">
+<img src="./svg/vuejs.svg" alt="Vue.js Icon" width="50" height="50"> <img src="./svg/redis.svg" alt="Redis Icon" width="50" height="50"> <img src="./images/firebase.png" alt="Firebase Icon" width="50" height="50"> <img src="./svg/instagram.svg" alt="Instagram Icon" width="50" height="50">
 
 
 Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's just a bunch of logos from different brands and tech stacks. You can just slap those awesome icons onto your projects without dealing with all that boring attribution.
