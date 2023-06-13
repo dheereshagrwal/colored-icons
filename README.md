@@ -21,10 +21,10 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.5.6/ci.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.5.8/ci.css"
 />
 ```
-the tag `1.5.6` refers to the release version, I will be update the readme as soon as I add a few more icons, so you can just always copy it.
+the tag `1.5.8` refers to the release version, I will be update the readme as soon as I add a few more icons, so you can just always copy it.
 ## Usage
 ```
 <i class="ci ci-spotify ci-2x"></i>
