@@ -17,13 +17,16 @@
         { name: "Instagram", class: "ci ci-instagram" },
         { name: "Facebook", class: "ci ci-facebook" },
         { name: "Discord Horizontal", class: "ci ci-discord-horizontal" },
+        { name: "Netflix", class: "ci ci-netflix" },
+        { name: "Netflix wordmark", class: "ci ci-netflix-wordmark" },
       ];
 
       // Function to generate the HTML for a logo section
       function generateSection(logo) {
-        const iconSizes = logo.class.includes("-horizontal")
-          ? ["3x", "6x", "9x"]
-          : ["2xs", "xs", "sm", "md", "lg", "xl", "2xl", "3x", "4x"];
+        const iconSizes =
+          logo.class.includes("-horizontal") || logo.class.includes("-wordmark")
+            ? ["3x", "6x", "9x"]
+            : ["2xs", "xs", "sm", "md", "lg", "xl", "2xl", "3x", "4x"];
         const iconElements = iconSizes
           .map((size) => `<i class="${logo.class} ci-${size}"></i>`)
           .join("");
