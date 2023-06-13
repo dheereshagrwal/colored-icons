@@ -1,7 +1,7 @@
 
 # Colored Icons Library
 
-Add a cdn and see the magic. No `npm` bullshit, just use the simple `<i>` tag. It is a collection of brand logos and tech stack logos. It's super useful for slapping those awesome icons onto your projects without having to deal with all that boring attribution stuff.
+Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's just a bunch of logos from different brands and tech stacks. You can just slap those awesome icons onto your projects without dealing with all that boring attribution.
 
 ## Demo
 
