@@ -43,7 +43,7 @@ the tag `1.5.6` refers to the release version, I will be update the readme as so
 ```
 
 ## Inverting the color
-If the light logo isn't provided by the brand but you'd like to use it anyway, just add ci-invert.
+If you want to invert the color for some reason, just add `ci-invert`.
 
 ```
 <i class="ci ci-highonswift ci-2x ci-invert"></i>
