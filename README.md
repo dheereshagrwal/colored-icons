@@ -1,7 +1,7 @@
 
 # Colored Icons Library
 
-The Colored Icons Library is a collection of brand logos and tech stack logos. It's a handy resource to easily add brand icons to your projects without the hassle of manual attribution.
+Add a cdn and see the magic. No `npm` bullshit, just use the simple `<i>` tag. It is a collection of brand logos and tech stack logos. It's super useful for slapping those awesome icons onto your projects without having to deal with all that boring attribution stuff.
 
 ## Demo
 
