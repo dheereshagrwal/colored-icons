@@ -1,7 +1,9 @@
 
 # Colored Icons
 
-<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50">
+<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50"> <img src="./svg/react.svg" alt="React Icon" width="50" height="50">
+<img src="./svg/vuejs.svg" alt="Vue.js Icon" width="50" height="50"> <img src="./svg/redis.svg" alt="Redis Icon" width="50" height="50">
+
 
 Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's just a bunch of logos from different brands and tech stacks. You can just slap those awesome icons onto your projects without dealing with all that boring attribution.
 
@@ -88,3 +90,5 @@ If you want me to add an icon that is missing or have some suggestions, just rai
 ## License
 The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
 
+## Contact
+[Visit my personal website](https://dheereshagrwal.vercel.app)
