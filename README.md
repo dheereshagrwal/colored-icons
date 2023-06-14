@@ -39,22 +39,28 @@ the tag `1.5.8` refers to the release version, I will be update the readme as so
 ```
 <i class="ci ci-spotify ci-2x"></i>
 ```
+<img src="./svg/spotify.svg" width="32px">
 
 ```
 <i class="ci ci-git ci-md"></i>
 ```
+<img src="./svg/git.svg" width="16px">
 
 ```
-<i class="ci ci-leetcode ci-5x"></i>
+<i class="ci ci-nuxtjs ci-5x"></i>
 ```
+<img src="./svg/nuxtjs.svg" width="80px">
 
 ```
-<i class="ci ci-discord ci-sm"></i>
+<i class="ci ci-azure ci-sm"></i>
 ```
+<img src="./svg/azure.svg" width="14px">
 
 ```
 <i class="ci ci-redis ci-3x"></i>
 ```
+<img src="./svg/redis.svg" width="48px">
+
 
 ## Inverting the color
 
