@@ -108,9 +108,10 @@ Some icons have second version of them provided which are a darker shade of the 
 `ci ci-mongodb`
 
 <img src="./svg/mongodb.svg" alt="MongoDB Icon" width="50" height="50">
+
 ## Google fonts
 
-I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` to your existing class and the text will be changed. Enjoy!
+I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` `font-epilogue` `font-sora` `font-montserrat` to your existing class and the text will be changed. Enjoy!
 
 ## Contribution
 
