@@ -69,6 +69,7 @@ If you want to invert the color for some reason, just add `ci-invert`.
 I used the same sizing style used by fontawesome:
 
 `ci-2xs` `ci-xs` `ci-sm` `ci-md` `ci-lg` `ci-xl` `ci-2xl`
+
 <img src='./svg/discord.svg' width="10px">
 <img src='./svg/discord.svg' width="12px">
 <img src='./svg/discord.svg' width="14px">
@@ -80,16 +81,7 @@ I used the same sizing style used by fontawesome:
 
 `ci-1x` `ci-2x` `ci-3x` `ci-4x` `ci-5x` `ci-6x` `ci-7x` `ci-8x` `ci-9x` `ci-10x`
 
-<img src="./svg/discord.svg" width="16px">
-<img src="./svg/discord.svg" width="32px">
-<img src="./svg/discord.svg" width="48px">
-<img src="./svg/discord.svg" width="64px">
-<img src="./svg/discord.svg" width="80px">
-<img src="./svg/discord.svg" width="96px">
-<img src="./svg/discord.svg" width="112px">
-<img src="./svg/discord.svg" width="128px">
-<img src="./svg/discord.svg" width="144px">
-<img src="./svg/discord.svg" width="160px">
+<img src="./svg/discord.svg" width="16px"><img src="./svg/discord.svg" width="32px"><img src="./svg/discord.svg" width="48px"><img src="./svg/discord.svg" width="64px"><img src="./svg/discord.svg" width="80px"><img src="./svg/discord.svg" width="96px"><img src="./svg/discord.svg" width="112px"><img src="./svg/discord.svg" width="128px"><img src="./svg/discord.svg" width="144px"><img src="./svg/discord.svg" width="160px">
 
 
 For more details about the sizing, you can refer to this [Font Awesome Icon Size Documentation](https://fontawesome.com/docs/web/style/size)
