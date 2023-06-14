@@ -70,18 +70,12 @@ I used the same sizing style used by fontawesome:
 
 `ci-2xs` `ci-xs` `ci-sm` `ci-md` `ci-lg` `ci-xl` `ci-2xl`
 
-<img src='./svg/discord.svg' width="10px">
-<img src='./svg/discord.svg' width="12px">
-<img src='./svg/discord.svg' width="14px">
-<img src='./svg/discord.svg' width="16px">
-<img src='./svg/discord.svg' width="20px">
-<img src='./svg/discord.svg' width="24px">
-<img src='./svg/discord.svg' width="32px">
+<img src='./svg/discord.svg' width="10px"> <img src='./svg/discord.svg' width="12px"> <img src='./svg/discord.svg' width="14px"> <img src='./svg/discord.svg' width="16px"> <img src='./svg/discord.svg' width="20px"> <img src='./svg/discord.svg' width="24px"> <img src='./svg/discord.svg' width="32px">
 
 
 `ci-1x` `ci-2x` `ci-3x` `ci-4x` `ci-5x` `ci-6x` `ci-7x` `ci-8x` `ci-9x` `ci-10x`
 
-<img src="./svg/discord.svg" width="16px"><img src="./svg/discord.svg" width="32px"><img src="./svg/discord.svg" width="48px"><img src="./svg/discord.svg" width="64px"><img src="./svg/discord.svg" width="80px"><img src="./svg/discord.svg" width="96px"><img src="./svg/discord.svg" width="112px"><img src="./svg/discord.svg" width="128px"><img src="./svg/discord.svg" width="144px"><img src="./svg/discord.svg" width="160px">
+<img src="./svg/discord.svg" width="16px"> <img src="./svg/discord.svg" width="32px"> <img src="./svg/discord.svg" width="48px"> <img src="./svg/discord.svg" width="64px"> <img src="./svg/discord.svg" width="80px"> <img src="./svg/discord.svg" width="96px"> <img src="./svg/discord.svg" width="112px"> <img src="./svg/discord.svg" width="128px"> <img src="./svg/discord.svg" width="144px"> <img src="./svg/discord.svg" width="160px">
 
 
 For more details about the sizing, you can refer to this [Font Awesome Icon Size Documentation](https://fontawesome.com/docs/web/style/size)
@@ -91,8 +85,14 @@ For more details about the sizing, you can refer to this [Font Awesome Icon Size
 By default, the `ci-nextjs` will refer to the dark version of the logo which means that you have to use it on a light background, you can also write `ci-nextjs-dark` for the same.
 Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied on colored icons.
 
+`ci-nextjs`
+
+<img src="./svg/nextjs.svg" width="48px">
+
 Similarly, `ci-nextjs-light` refers to the light version of the icon which means that you have to use it on a dark background.
 Note that not every brand has dark and/or light icons
+
+<img src="./svg/nextjs-light.svg" width="48px">
 
 ## Horizontal (Inline), Vertical (Stacked), and Wordmark icons
 
