@@ -87,7 +87,7 @@ Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied
 
 `ci-nextjs`
 
-<img src="./svg/nextjs.svg" width="48px">
+<img src="./svg/nextjs-dark.svg" width="48px">
 
 Similarly, `ci-nextjs-light` refers to the light version of the icon which means that you have to use it on a dark background.
 Note that not every brand has dark and/or light icons
