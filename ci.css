@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Dancing+Script:wght@400;500;600;700&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Dancing+Script:wght@400;500;600;700&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 
 .font-montserrat {
   font-family: "Montserrat", sans-serif;
@@ -58,33 +58,6 @@
   content: url("images/linkedin.png");
 }
 
-.ci-facebook,
-.ci-fb,
-.ci-facebook-dark,
-.ci-fb-dark,
-.ci-facebook-light,
-.ci-fb-light {
-  content: url("images/facebook.png");
-}
-
-.ci-meta,
-.ci-meta-dark,
-.ci-meta-light {
-  content: url("svg/meta.svg");
-}
-
-.ci-meta-horizontal,
-.ci-meta-inline,
-.ci-meta-horizontal-dark,
-.ci-meta-inline-dark {
-  content: url("svg/meta-horizontal-dark.svg");
-}
-
-.ci-meta-horizontal-light,
-.ci-meta-inline-light {
-  content: url("svg/meta-horizontal-light.svg");
-}
-
 .ci-linkedin-horizontal,
 .ci-linkedin-inline,
 .ci-linkedin-horizontal-dark,
@@ -92,6 +65,15 @@
 .ci-linkedin-inline-dark,
 .ci-linkedin-inline-light {
   content: url("images/linkedin-horizontal.png");
+}
+
+.ci-facebook,
+.ci-fb,
+.ci-facebook-dark,
+.ci-fb-dark,
+.ci-facebook-light,
+.ci-fb-light {
+  content: url("images/facebook.png");
 }
 
 .ci-instagram,
@@ -115,38 +97,128 @@
   content: url("svg/discord-horizontal.svg");
 }
 
-.ci-angular,
-.ci-angular-dark,
-.ci-angular-light {
-  content: url("svg/angular.svg");
+.ci-twitter,
+.ci-twitter-dark,
+.ci-twitter-light {
+  content: url("./svg/twitter.svg");
 }
 
-.ci-gcd,
-.ci-gcd-dark,
-.ci-gcd-light {
-  content: url("images/gcd.png");
+.ci-twitter-circle,
+.ci-twitter-circle-dark,
+.ci-twitter-circle-light {
+  content: url("./svg/twitter-circle.svg");
+}
+.ci-twitter-rounded-square,
+.ci-twitter-rounded-square-dark,
+.ci-twitter-rounded-square-light {
+  content: url("./svg/twitter-rounded-square.svg");
+}
+.ci-twitter-square,
+.ci-twitter-square-dark,
+.ci-twitter-square-light {
+  content: url("./svg/twitter-square.svg");
 }
 
-.ci-azure,
-.ci-azure-dark,
-.ci-azure-light {
-  content: url("svg/azure.svg");
+.ci-whatsapp,
+.ci-whatsapp-dark,
+.ci-whatsapp-light {
+  content: url("./svg/whatsapp.svg");
 }
 
-.ci-azure2,
-.ci-azure2-dark,
-.ci-azure2-light {
-  content: url("svg/azure2.svg");
+.ci-whatsapp2,
+.ci-whatsapp2-dark,
+.ci-whatsapp2-light {
+  content: url("./svg/whatsapp2.svg");
 }
 
-.ci-ciphense,
-.ci-ciphense-dark {
-  content: url("./svg/ciphense.svg");
+.ci-whatsapp-horizontal,
+.ci-whatsapp-inline,
+.ci-whatsapp-inline-dark,
+.ci-whatsapp-inline-light,
+.ci-whatsapp-horizontal-dark,
+.ci-whatsapp-horizontal-light {
+  content: url("./svg/whatsapp-horizontal.svg");
 }
 
-.ci-ciphense-light {
-  content: url("./svg/ciphense.svg");
-  filter: invert(1);
+.ci-whatsapp2-horizontal,
+.ci-whatsapp2-inline,
+.ci-whatsapp2-inline-dark,
+.ci-whatsapp2-inline-light,
+.ci-whatsapp2-horizontal-dark,
+.ci-whatsapp2-horizontal-light {
+  content: url("./svg/whatsapp2-horizontal.svg");
+}
+
+.ci-whatsapp-vertical,
+.ci-whatsapp-vertical-dark,
+.ci-whatsapp-vertical-light,
+.ci-whatsapp-stacked,
+.ci-whatsapp-stacked-dark,
+.ci-whatsapp-stacked-light {
+  content: url("./svg/whatsapp-vertical.svg");
+}
+
+.ci-whatsapp2-vertical,
+.ci-whatsapp2-vertical-dark,
+.ci-whatsapp2-vertical-light,
+.ci-whatsapp2-stacked,
+.ci-whatsapp2-stacked-dark,
+.ci-whatsapp2-stacked-light {
+  content: url("./svg/whatsapp2-vertical.svg");
+}
+
+.ci-meta,
+.ci-meta-dark,
+.ci-meta-light {
+  content: url("svg/meta.svg");
+}
+
+.ci-meta-horizontal,
+.ci-meta-inline,
+.ci-meta-horizontal-dark,
+.ci-meta-inline-dark {
+  content: url("svg/meta-horizontal-dark.svg");
+}
+
+.ci-meta-horizontal-light,
+.ci-meta-inline-light {
+  content: url("svg/meta-horizontal-light.svg");
+}
+
+.ci-amazon,
+.ci-amazon-dark,
+.ci-amazon-light {
+  content: url("./images/amazon.png");
+}
+
+.ci-apple,
+.ci-apple-dark,
+.ci-apple-light {
+  content: url("./svg/apple.svg");
+}
+
+.ci-netflix,
+.ci-netflix-dark,
+.ci-netflix-light {
+  content: url("images/netflix.png");
+}
+
+.ci-netflix-wordmark,
+.ci-netflix-wordmark-dark,
+.ci-netflix-wordmark-light {
+  content: url("images/netflix-wordmark.png");
+}
+
+.ci-google,
+.ci-google-dark,
+.ci-google-light {
+  content: url("./images/google.png");
+}
+
+.ci-google-wordmark,
+.ci-google-wordmark-dark,
+.ci-google-wordmark-light {
+  content: url("./images/google-wordmark.png");
 }
 
 .ci-microsoft,
@@ -173,7 +245,7 @@
 .ci-microsoft-inline-dark,
 .ci-msft-inline-dark,
 .ci-ms-inline-dark {
-  content: url("./svg/microsoft-horizontal-dark.svg");
+  content: url("images/microsoft-horizontal-dark.png");
 }
 
 .ci-microsoft-horizontal-light,
@@ -182,7 +254,135 @@
 .ci-microsoft-inline-light,
 .ci-msft-inline-light,
 .ci-ms-inline-light {
-  content: url("./svg/microsoft-horizontal-light.svg");
+  content: url("images/microsoft-horizontal-dark.png");
+}
+
+.ci-aws,
+.ci-aws-dark,
+.ci-aws-light {
+  content: url("./svg/aws.svg");
+}
+
+.ci-gcd,
+.ci-gcd-dark,
+.ci-gcd-light {
+  content: url("images/gcd.png");
+}
+
+.ci-azure,
+.ci-azure-dark,
+.ci-azure-light {
+  content: url("svg/azure.svg");
+}
+
+.ci-azure2,
+.ci-azure2-dark,
+.ci-azure2-light {
+  content: url("svg/azure2.svg");
+}
+
+.ci-do,
+.ci-do-dark,
+.ci-do-light,
+.ci-digitalocean,
+.ci-digitalocean-dark,
+.ci-digitalocean-light {
+  content: url("./svg/do.svg");
+}
+
+.ci-do-horizontal,
+.ci-do-inline,
+.ci-digitalocean-horizontal,
+.ci-digitalocean-inline,
+.ci-do-horizontal-dark,
+.ci-do-inline-dark,
+.ci-digitalocean-horizontal-dark,
+.ci-digitalocean-inline-dark,
+.ci-do-horizontal-light,
+.ci-do-inline-light,
+.ci-digitalocean-horizontal-light,
+.ci-digitalocean-inline-light {
+  content: url("./svg/do-horizontal.svg");
+}
+
+.ci-do-vertical,
+.ci-do-vertical-dark,
+.ci-do-vertical-light,
+.ci-do-stacked,
+.ci-do-stacked-dark,
+.ci-do-stacked-light,
+.ci-digitalocean-vertical,
+.ci-digitalocean-vertical-dark,
+.ci-digitalocean-vertical-light,
+.ci-digitalocean-stacked,
+.ci-digitalocean-stacked-dark,
+.ci-digitalocean-stacked-light {
+  content: url("./svg/do-vertical.svg");
+}
+
+.ci-railway,
+.ci-railway-dark {
+  content: url("./svg/railway-dark.svg");
+}
+
+.ci-railway-light {
+  content: url("./svg/railway-light.svg");
+}
+
+.ci-railway-horizontal,
+.ci-railway-horizontal-dark,
+.ci-railway-inline,
+.ci-railway-inline-dark {
+  content: url("./svg/railway-horizontal-dark.svg");
+}
+
+.ci-railway-horizontal-light,
+.ci-railway-inline-light {
+  content: url("./svg/railway-horizontal-light.svg");
+}
+
+.ci-vercel,
+.ci-vercel-dark {
+  content: url("./svg/vercel-dark.svg");
+}
+
+.ci-vercel-light {
+  content: url("./svg/vercel-light.svg");
+}
+
+.ci-vercel-horizontal,
+.ci-vercel-horizontal-dark,
+.ci-vercel-inline,
+.ci-vercel-inline-dark {
+  content: url("./svg/vercel-horizontal-dark.svg");
+}
+
+.ci-vercel-horizontal-light,
+.ci-vercel-inline-light {
+  content: url("./svg/vercel-horizontal-light.svg");
+}
+
+.ci-netlify,
+.ci-netlify-dark {
+  content: url("./svg/netlify-dark.svg");
+}
+.ci-netlify-light {
+  content: url("./svg/netlify-light.svg");
+}
+
+.ci-netlify-wordmark,
+.ci-netlify-wordmark-dark {
+  content: url("./svg/netlify-wordmark-dark.svg");
+}
+
+.ci-netlify-wordmark-light {
+  content: url("./svg/netlify-wordmark-light.svg");
+}
+
+.ci-angular,
+.ci-angular-dark,
+.ci-angular-light {
+  content: url("svg/angular.svg");
 }
 
 .ci-vuejs,
@@ -220,17 +420,79 @@
 .ci-nuxt-inline-light {
   content: url("./svg/nuxtjs-horizontal-light.svg");
 }
+.ci-nextjs,
+.ci-next,
+.ci-nextjs-dark,
+.ci-next-dark {
+  content: url("./svg/nextjs-dark.svg");
+}
+
+.ci-nextjs-light,
+.ci-next-light {
+  content: url("./svg/nextjs-light.svg");
+}
+
+.ci-nextjs-horizontal,
+.ci-next-horizontal,
+.ci-nextjs-horizontal-dark,
+.ci-next-horizontal-dark,
+.ci-nextjs-inline,
+.ci-next-inline,
+.ci-nextjs-inline-dark,
+.ci-next-inline-dark {
+  content: url("./svg/nextjs-horizontal-dark.svg");
+}
+
+.ci-nextjs-horizontal-light,
+.ci-next-horizontal-light,
+.ci-nextjs-inline-light,
+.ci-next-inline-light {
+  content: url("./svg/nextjs-horizontal-light.svg");
+}
+.ci-reactjs,
+.ci-react,
+.ci-reactjs-dark,
+.ci-react-dark,
+.ci-reactjs-light,
+.ci-react-light {
+  content: url("./images/reactjs.png");
+}
+
+.ci-redux,
+.ci-redux-dark,
+.ci-redux-light {
+  content: url("./svg/redux.svg");
+}
+
+.ci-svelte,
+.ci-svelte-dark,
+.ci-svelte-light {
+  content: url("./svg/svelte.svg");
+}
+
+.ci-svelte-horizontal,
+.ci-svelte-horizontal-dark,
+.ci-svelte-inline,
+.ci-svelte-inline-dark,
+.ci-svelte-horizontal-light,
+.ci-svelte-inline-light {
+  content: url("./svg/svelte-horizontal.svg");
+}
+
+.ci-ciphense,
+.ci-ciphense-dark {
+  content: url("./svg/ciphense.svg");
+}
+
+.ci-ciphense-light {
+  content: url("./svg/ciphense.svg");
+  filter: invert(1);
+}
 
 .ci-ringcentral,
 .ci-ringcentral-dark,
 .ci-ringcentral-light {
   content: url("./svg/ringcentral.svg");
-}
-
-.ci-google,
-.ci-google-dark,
-.ci-google-light {
-  content: url("./images/google.png");
 }
 
 .ci-highonswift,
@@ -279,12 +541,6 @@
   content: url("images/docker-vertical.webp");
 }
 
-.ci-google-wordmark,
-.ci-google-wordmark-dark,
-.ci-google-wordmark-light {
-  content: url("./images/google-wordmark.png");
-}
-
 .ci-flutter,
 .ci-flutter-dark,
 .ci-flutter-light {
@@ -295,18 +551,6 @@
 .ci-mysql-dark,
 .ci-mysql-light {
   content: url("./images/mysql.png");
-}
-
-.ci-twitter,
-.ci-twitter-dark,
-.ci-twitter-light {
-  content: url("./svg/twitter.svg");
-}
-
-.ci-aws,
-.ci-aws-dark,
-.ci-aws-light {
-  content: url("./svg/aws.svg");
 }
 
 .ci-git,
@@ -378,22 +622,6 @@
   content: url("./svg/cashfree.svg");
 }
 
-.ci-twitter-circle,
-.ci-twitter-circle-dark,
-.ci-twitter-circle-light {
-  content: url("./svg/twitter-circle.svg");
-}
-.ci-twitter-rounded-square,
-.ci-twitter-rounded-square-dark,
-.ci-twitter-rounded-square-light {
-  content: url("./svg/twitter-rounded-square.svg");
-}
-.ci-twitter-square,
-.ci-twitter-square-dark,
-.ci-twitter-square-light {
-  content: url("./svg/twitter-square.svg");
-}
-
 .ci-java,
 .ci-java-dark,
 .ci-java-light {
@@ -440,45 +668,6 @@
 .ci-ts-wordmark-dark,
 .ci-ts-wordmark-light {
   content: url("./svg/ts-wordmark.svg");
-}
-
-.ci-do,
-.ci-do-dark,
-.ci-do-light,
-.ci-digitalocean,
-.ci-digitalocean-dark,
-.ci-digitalocean-light {
-  content: url("./svg/do.svg");
-}
-
-.ci-do-horizontal,
-.ci-do-inline,
-.ci-digitalocean-horizontal,
-.ci-digitalocean-inline,
-.ci-do-horizontal-dark,
-.ci-do-inline-dark,
-.ci-digitalocean-horizontal-dark,
-.ci-digitalocean-inline-dark,
-.ci-do-horizontal-light,
-.ci-do-inline-light,
-.ci-digitalocean-horizontal-light,
-.ci-digitalocean-inline-light {
-  content: url("./svg/do-horizontal.svg");
-}
-
-.ci-do-vertical,
-.ci-do-vertical-dark,
-.ci-do-vertical-light,
-.ci-do-stacked,
-.ci-do-stacked-dark,
-.ci-do-stacked-light,
-.ci-digitalocean-vertical,
-.ci-digitalocean-vertical-dark,
-.ci-digitalocean-vertical-light,
-.ci-digitalocean-stacked,
-.ci-digitalocean-stacked-dark,
-.ci-digitalocean-stacked-light {
-  content: url("./svg/do-vertical.svg");
 }
 
 .ci-html,
@@ -559,63 +748,6 @@
   content: url("./svg/supabase-horizontal-light.svg");
 }
 
-.ci-vercel,
-.ci-vercel-dark {
-  content: url("./svg/vercel-dark.svg");
-}
-
-.ci-vercel-light {
-  content: url("./svg/vercel-light.svg");
-}
-
-.ci-vercel-horizontal,
-.ci-vercel-horizontal-dark,
-.ci-vercel-inline,
-.ci-vercel-inline-dark {
-  content: url("./svg/vercel-horizontal-dark.svg");
-}
-
-.ci-vercel-horizontal-light,
-.ci-vercel-inline-light {
-  content: url("./svg/vercel-horizontal-light.svg");
-}
-
-.ci-amazon,
-.ci-amazon-dark,
-.ci-amazon-light {
-  content: url("./images/amazon.png");
-}
-
-.ci-nextjs,
-.ci-next,
-.ci-nextjs-dark,
-.ci-next-dark {
-  content: url("./svg/nextjs-dark.svg");
-}
-
-.ci-nextjs-light,
-.ci-next-light {
-  content: url("./svg/nextjs-light.svg");
-}
-
-.ci-nextjs-horizontal,
-.ci-next-horizontal,
-.ci-nextjs-horizontal-dark,
-.ci-next-horizontal-dark,
-.ci-nextjs-inline,
-.ci-next-inline,
-.ci-nextjs-inline-dark,
-.ci-next-inline-dark {
-  content: url("./svg/nextjs-horizontal-dark.svg");
-}
-
-.ci-nextjs-horizontal-light,
-.ci-next-horizontal-light,
-.ci-nextjs-inline-light,
-.ci-next-inline-light {
-  content: url("./svg/nextjs-horizontal-light.svg");
-}
-
 .ci-python,
 .ci-python-dark,
 .ci-python-light {
@@ -643,64 +775,10 @@
   content: url("./svg/python2-powered.svg");
 }
 
-.ci-whatsapp,
-.ci-whatsapp-dark,
-.ci-whatsapp-light {
-  content: url("./svg/whatsapp.svg");
-}
-
-.ci-whatsapp2,
-.ci-whatsapp2-dark,
-.ci-whatsapp2-light {
-  content: url("./svg/whatsapp2.svg");
-}
-
-.ci-whatsapp-horizontal,
-.ci-whatsapp-inline,
-.ci-whatsapp-inline-dark,
-.ci-whatsapp-inline-light,
-.ci-whatsapp-horizontal-dark,
-.ci-whatsapp-horizontal-light {
-  content: url("./svg/whatsapp-horizontal.svg");
-}
-
-.ci-whatsapp2-horizontal,
-.ci-whatsapp2-inline,
-.ci-whatsapp2-inline-dark,
-.ci-whatsapp2-inline-light,
-.ci-whatsapp2-horizontal-dark,
-.ci-whatsapp2-horizontal-light {
-  content: url("./svg/whatsapp2-horizontal.svg");
-}
-
-.ci-whatsapp-vertical,
-.ci-whatsapp-vertical-dark,
-.ci-whatsapp-vertical-light,
-.ci-whatsapp-stacked,
-.ci-whatsapp-stacked-dark,
-.ci-whatsapp-stacked-light {
-  content: url("./svg/whatsapp-vertical.svg");
-}
-
-.ci-whatsapp2-vertical,
-.ci-whatsapp2-vertical-dark,
-.ci-whatsapp2-vertical-light,
-.ci-whatsapp2-stacked,
-.ci-whatsapp2-stacked-dark,
-.ci-whatsapp2-stacked-light {
-  content: url("./svg/whatsapp2-vertical.svg");
-}
-
 .ci-bootstrap,
 .ci-bootstrap-dark,
 .ci-bootstrap-light {
   content: url("./svg/bootstrap.svg");
-}
-
-.ci-redux,
-.ci-redux-dark,
-.ci-redux-light {
-  content: url("./svg/redux.svg");
 }
 
 .ci-mui,
@@ -746,15 +824,6 @@
   content: url("./svg/alan-vertical.svg");
 }
 
-.ci-reactjs,
-.ci-react,
-.ci-reactjs-dark,
-.ci-react-dark,
-.ci-reactjs-light,
-.ci-react-light {
-  content: url("./images/reactjs.png");
-}
-
 .ci-github,
 .ci-github-dark {
   content: url("./svg/github-dark.svg");
@@ -791,7 +860,6 @@
   content: url("./images/spotify2-horizontal.png");
 }
 
-
 .ci-spotify,
 .ci-spotify-dark,
 .ci-spotify-light {
@@ -820,27 +888,6 @@
 .ci-redis-enterprise-dark,
 .ci-redis-enterprise-light {
   content: url("./svg/redis-enterprise.svg");
-}
-
-.ci-railway,
-.ci-railway-dark {
-  content: url("./svg/railway-dark.svg");
-}
-
-.ci-railway-light {
-  content: url("./svg/railway-light.svg");
-}
-
-.ci-railway-horizontal,
-.ci-railway-horizontal-dark,
-.ci-railway-inline,
-.ci-railway-inline-dark {
-  content: url("./svg/railway-horizontal-dark.svg");
-}
-
-.ci-railway-horizontal-light,
-.ci-railway-inline-light {
-  content: url("./svg/railway-horizontal-light.svg");
 }
 
 .ci-youtube,
@@ -1060,18 +1107,6 @@
 .ci-kubernetes-stacked-dark,
 .ci-kubernetes-stacked-light {
   content: url("svg/kubernetes-vertical.svg");
-}
-
-.ci-netflix,
-.ci-netflix-dark,
-.ci-netflix-light {
-  content: url("images/netflix.png");
-}
-
-.ci-netflix-wordmark,
-.ci-netflix-wordmark-dark,
-.ci-netflix-wordmark-light {
-  content: url("images/netflix-wordmark.png");
 }
 
 .ci-2xs {
