@@ -1,4 +1,3 @@
-
 # Colored Icons
 
 Sample icons
@@ -13,41 +12,52 @@ Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuf
 To see the demo of some of the icons, just visit [Colored Icons Library Demo](https://dheereshagrwal.github.io/colored-icons/). If you wish to see all the icons available yourself, you can open `svg` and `images` folder.
 
 ## Features
+
 - Super easy integration into your web projects using the `<i>` tag
 - Change the size of icons, just like Font Awesome icons
 - Flip the colors of icons using the `ci-invert` class
 
 ## Why I Made This Library
+
 After becoming frustrated with Flaticon's constant demand for credit, I decided to create this collection. To do this, I went to the respective company websites and saved the logo files. There is no longer any need to provide credit or download unnecessary logos in order to use these icons.
 
 ## Installation
 
 To use the Colored Icons Library, simply add the following CDN link to your HTML file:
+
 ```
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.5.8/ci.css"
 />
 ```
+
 the tag `1.5.8` refers to the release version, I will be update the readme as soon as I add a few more icons, so you can just always copy it.
+
 ## Usage
+
 ```
 <i class="ci ci-spotify ci-2x"></i>
 ```
+
 ```
 <i class="ci ci-git ci-md"></i>
 ```
+
 ```
 <i class="ci ci-leetcode ci-5x"></i>
 ```
+
 ```
 <i class="ci ci-discord ci-sm"></i>
 ```
+
 ```
 <i class="ci ci-redis ci-3x"></i>
 ```
 
 ## Inverting the color
+
 If you want to invert the color for some reason, just add `ci-invert`.
 
 ```
@@ -55,15 +65,24 @@ If you want to invert the color for some reason, just add `ci-invert`.
 ```
 
 ## Sizing
+
 I used the same sizing style used by fontawesome:
 
-`ci-2xs` `ci-xs` `ci-sm` `ci-lg` `ci-xl` `ci-2xl`
+`ci-2xs` `ci-xs` `ci-sm` `ci-md` `ci-lg` `ci-xl` `ci-2xl`
+<img src="./svg/discord.svg" style="width:0.625rem;height:0.625rem">
+<img src="./svg/discord.svg" style="width:0.75rem;height:0.75rem">
+<img src="./svg/discord.svg" style="width:0.875rem;height:0.875rem">
+<img src="./svg/discord.svg" style="width:1rem;height:1rem">
+<img src="./svg/discord.svg" style="width:1.25rem;height:1.25rem">
+<img src="./svg/discord.svg" style="width:1.5rem;height:1.5rem">
+<img src="./svg/discord.svg" style="width:2rem;height:2rem">
 
 `ci-1x` `ci-2x` `ci-3x` `ci-4x` `ci-5x` `ci-6x` `ci-7x` `ci-8x` `ci-9x` `ci-10x`
 
 For more details about the sizing, you can refer to this [Font Awesome Icon Size Documentation](https://fontawesome.com/docs/web/style/size)
 
 ## Dark and Light icons
+
 By default, the `ci-nextjs` will refer to the dark version of the logo which means that you have to use it on a light background, you can also write `ci-nextjs-dark` for the same.
 Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied on colored icons.
 
@@ -71,6 +90,7 @@ Similarly, `ci-nextjs-light` refers to the light version of the icon which means
 Note that not every brand has dark and/or light icons
 
 ## Horizontal (Inline), Vertical (Stacked), and Wordmark icons
+
 `ci-infura-wordmark` refers to the wordmark icon of the brand. If you don't understand what it means, you can refer to this [Infura Press Kit](https://www.infura.io/presskit)
 
 `ci-alan-horizontal` or `ci-alan-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
@@ -81,15 +101,20 @@ Note that not every brand has horizontal and/or vertical icons.
 ## Second version
 
 Some icons have second version of them provided which are a darker shade of the original such as `ci ci-mongodb2`
+
 ## Google fonts
+
 I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` to your existing class and the text will be changed. Enjoy!
 
 ## Contribution
-Code is very lightweight and dead simple; it has obviously nothing fancy going on.
+
+Code is very lightweight and dead simple; there is nothing fancy going on.
 If you want me to add an icon that is missing or have some suggestions, just raise an issue
 
 ## License
+
 The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
 
 ## Contact
+
 [Visit my personal website](https://dheereshagrwal.vercel.app)
