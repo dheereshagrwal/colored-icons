@@ -99,14 +99,15 @@ Note that not every brand has horizontal and/or vertical icons.
 
 ## Second version
 
-Some icons have second version of them provided which are a darker shade of the original such as `ci ci-mongodb2`
-`ci ci-mongodb`
-
-<img src="./svg/mongodb.svg" alt="MongoDB Icon" width="50" height="50">
+Some icons have second version of them provided which are a darker shade of the original such as
 
 `ci ci-mongodb2`
 
 <img src="./svg/mongodb2.svg" alt="MongoDB2 Icon" width="50" height="50">
+
+`ci ci-mongodb`
+
+<img src="./svg/mongodb.svg" alt="MongoDB Icon" width="50" height="50">
 ## Google fonts
 
 I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` to your existing class and the text will be changed. Enjoy!
