@@ -69,13 +69,6 @@ If you want to invert the color for some reason, just add `ci-invert`.
 I used the same sizing style used by fontawesome:
 
 `ci-2xs` `ci-xs` `ci-sm` `ci-md` `ci-lg` `ci-xl` `ci-2xl`
-<img src="./svg/discord.svg" style="width:0.625rem;height:0.625rem">
-<img src="./svg/discord.svg" style="width:0.75rem;height:0.75rem">
-<img src="./svg/discord.svg" style="width:0.875rem;height:0.875rem">
-<img src="./svg/discord.svg" style="width:1rem;height:1rem">
-<img src="./svg/discord.svg" style="width:1.25rem;height:1.25rem">
-<img src="./svg/discord.svg" style="width:1.5rem;height:1.5rem">
-<img src="./svg/discord.svg" style="width:2rem;height:2rem">
 
 `ci-1x` `ci-2x` `ci-3x` `ci-4x` `ci-5x` `ci-6x` `ci-7x` `ci-8x` `ci-9x` `ci-10x`
 
@@ -93,15 +86,28 @@ Note that not every brand has dark and/or light icons
 
 `ci-infura-wordmark` refers to the wordmark icon of the brand. If you don't understand what it means, you can refer to this [Infura Press Kit](https://www.infura.io/presskit)
 
-`ci-alan-horizontal` or `ci-alan-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
+<img src="./svg/infura-wordmark.svg" alt="Infura Wordmark" width="100">
 
-Similarly, `ci-alan-vertical` or `ci-alan-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
+`ci-whatsapp-horizontal` or `ci-whatsapp-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
+
+<img src='./svg/whatsapp-horizontal.svg' alt="Whatsapp Horizontal" width="100">
+
+Similarly, `ci-whatsapp-vertical` or `ci-whatsapp-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
 Note that not every brand has horizontal and/or vertical icons.
+
+<img src='./svg/whatsapp-vertical.svg' alt="Whatsapp Vertical" width="100">
 
 ## Second version
 
-Some icons have second version of them provided which are a darker shade of the original such as `ci ci-mongodb2`
+Some icons have second version of them provided which are a darker shade of the original such as
 
+`ci ci-mongodb2`
+
+<img src="./svg/mongodb2.svg" alt="MongoDB2 Icon" width="50" height="50">
+
+`ci ci-mongodb`
+
+<img src="./svg/mongodb.svg" alt="MongoDB Icon" width="50" height="50">
 ## Google fonts
 
 I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` to your existing class and the text will be changed. Enjoy!
