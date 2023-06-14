@@ -782,6 +782,16 @@
   content: url("./images/spotify-horizontal.png");
 }
 
+.ci-spotify2-horizontal,
+.ci-spotify2-horizontal-dark,
+.ci-spotify2-inline,
+.ci-spotify2-inline-dark,
+.ci-spotify2-horizontal-light,
+.ci-spotify2-inline-light {
+  content: url("./images/spotify2-horizontal.png");
+}
+
+
 .ci-spotify,
 .ci-spotify-dark,
 .ci-spotify-light {
