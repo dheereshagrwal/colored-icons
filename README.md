@@ -2,8 +2,8 @@
 
 Sample icons
 
-<img src="./svg/spotify.svg" alt="Spotify Icon" width="50" height="50"> <img src="./images/reactjs.png" alt="React Icon" width="50" height="50">
-<img src="./svg/vuejs.svg" alt="Vue.js Icon" width="50" height="50"> <img src="./svg/redis.svg" alt="Redis Icon" width="50" height="50"> <img src="./images/firebase.png" alt="Firebase Icon" width="50" height="50"> <img src="./svg/instagram.svg" alt="Instagram Icon" width="50" height="50"> <img src="./svg/python.svg" alt="Python Icon" width="50" height="50"> <img src="./svg/js.svg" alt="JavaScript Icon" width="50" height="50"> <img src="./svg/html.svg" alt="HTML5 Icon" width="50" height="50"> <img src="./svg/css.svg" alt="CSS3 Icon" width="50" height="50"> <img src="./svg/nodejs.svg" alt="Node.js Icon" width="50" height="50"> <img src="./svg/mongodb.svg" alt="MongoDB Icon" width="50" height="50"> <img src="./images/postgresql.png" alt="PostgreSQL Icon" width="50" height="50"> <img src="./svg/java.svg" alt="Java Icon" width="50" height="50"> <img src="./svg/angular.svg" alt="Angular Icon" width="50" height="50"> <img src="./svg/nuxtjs.svg" alt="Nuxtjs Icon" width="50" height="50"> <img src="./svg/github-light.svg" alt="GitHub Icon" width="50" height="50"> <img src="./images/docker.webp" alt="Docker Icon" width="50"> <img src="./svg/kubernetes.svg" alt="Kubernetes Icon" width="50" height="50">
+<img src="./svg/spotify.svg" alt="Spotify Icon" width="48" height="48"> <img src="./images/reactjs.png" alt="React Icon" width="48" height="48">
+<img src="./svg/vuejs.svg" alt="Vue.js Icon" width="48" height="48"> <img src="./svg/redis.svg" alt="Redis Icon" width="48" height="48"> <img src="./images/firebase.png" alt="Firebase Icon" width="48" height="48"> <img src="./svg/instagram.svg" alt="Instagram Icon" width="48" height="48"> <img src="./svg/python.svg" alt="Python Icon" width="48" height="48"> <img src="./svg/js.svg" alt="JavaScript Icon" width="48" height="48"> <img src="./svg/html.svg" alt="HTML5 Icon" width="48" height="48"> <img src="./svg/css.svg" alt="CSS3 Icon" width="48" height="48"> <img src="./svg/nodejs.svg" alt="Node.js Icon" width="48" height="48"> <img src="./svg/mongodb.svg" alt="MongoDB Icon" width="48" height="48"> <img src="./images/postgresql.png" alt="PostgreSQL Icon" width="48" height="48"> <img src="./svg/java.svg" alt="Java Icon" width="48" height="48"> <img src="./svg/angular.svg" alt="Angular Icon" width="48" height="48"> <img src="./svg/nuxtjs.svg" alt="Nuxtjs Icon" width="48" height="48"> <img src="./svg/github-light.svg" alt="GitHub Icon" width="48" height="48"> <img src="./images/docker.webp" alt="Docker Icon" width="48"> <img src="./svg/kubernetes.svg" alt="Kubernetes Icon" width="48" height="48">
 
 Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's a bunch of logos from different brands and tech stacks. You can just slap those awesome icons onto your projects without ever dealing with all that boring attribution.
 
@@ -98,16 +98,16 @@ Note that not every brand has dark and/or light icons
 
 `ci-infura-wordmark` refers to the wordmark icon of the brand. If you don't understand what it means, you can refer to this [Infura Press Kit](https://www.infura.io/presskit)
 
-<img src="./svg/infura-wordmark.svg" alt="Infura Wordmark" width="100">
+<img src="./svg/infura-wordmark.svg" alt="Infura Wordmark" width="96">
 
 `ci-whatsapp-horizontal` or `ci-whatsapp-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
 
-<img src='./svg/whatsapp-horizontal.svg' alt="Whatsapp Horizontal" width="100">
+<img src='./svg/whatsapp-horizontal.svg' alt="Whatsapp Horizontal" width="96">
 
 Similarly, `ci-whatsapp-vertical` or `ci-whatsapp-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
 Note that not every brand has horizontal and/or vertical icons.
 
-<img src='./svg/whatsapp-vertical.svg' alt="Whatsapp Vertical" width="100">
+<img src='./svg/whatsapp-vertical.svg' alt="Whatsapp Vertical" width="96">
 
 ## Second version
 
@@ -115,11 +115,11 @@ Some icons have second version of them provided which are a darker shade of the 
 
 `ci ci-mongodb2`
 
-<img src="./svg/mongodb2.svg" alt="MongoDB2 Icon" width="50" height="50">
+<img src="./svg/mongodb2.svg" alt="MongoDB2 Icon" width="48" height="48">
 
 `ci ci-mongodb`
 
-<img src="./svg/mongodb.svg" alt="MongoDB Icon" width="50" height="50">
+<img src="./svg/mongodb.svg" alt="MongoDB Icon" width="48" height="48">
 
 ## Google fonts
 
