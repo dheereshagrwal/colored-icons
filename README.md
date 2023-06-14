@@ -85,14 +85,14 @@ Note that not every brand has dark and/or light icons
 ## Horizontal (Inline), Vertical (Stacked), and Wordmark icons
 
 `ci-infura-wordmark` refers to the wordmark icon of the brand. If you don't understand what it means, you can refer to this [Infura Press Kit](https://www.infura.io/presskit)
-<img src="./svg/infura-wordmark.svg" alt="Infura Wordmark" width="50" height="50">
+<img src="./svg/infura-wordmark.svg" alt="Infura Wordmark" width="100">
 
-`ci-alan-horizontal` or `ci-alan-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
-<img src='./svg/alan-horizontal.svg' alt="Alan Horizontal" width="50" height="50">
+`ci-whatsapp-horizontal` or `ci-whatsapp-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
+<img src='./svg/alan-whatsapp.svg' alt="Whatsapp Horizontal" width="100">
 
-Similarly, `ci-alan-vertical` or `ci-alan-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
+Similarly, `ci-whatsapp-vertical` or `ci-whatsapp-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
 Note that not every brand has horizontal and/or vertical icons.
-<img src='./svg/alan-vertical.svg' alt="Alan Horizontal" width="50" height="50">
+<img src='./svg/whatsapp-vertical.svg' alt="Whatsapp Vertical" width="100">
 
 ## Second version
 
