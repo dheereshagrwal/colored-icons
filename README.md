@@ -69,13 +69,7 @@ If you want to invert the color for some reason, just add `ci-invert`.
 I used the same sizing style used by fontawesome:
 
 `ci-2xs` `ci-xs` `ci-sm` `ci-md` `ci-lg` `ci-xl` `ci-2xl`
-<img src="./svg/discord.svg" style="width:0.625rem;height:0.625rem">
-<img src="./svg/discord.svg" style="width:0.75rem;height:0.75rem">
-<img src="./svg/discord.svg" style="width:0.875rem;height:0.875rem">
-<img src="./svg/discord.svg" style="width:1rem;height:1rem">
-<img src="./svg/discord.svg" style="width:1.25rem;height:1.25rem">
-<img src="./svg/discord.svg" style="width:1.5rem;height:1.5rem">
-<img src="./svg/discord.svg" style="width:2rem;height:2rem">
+<img src="./svg/discord.svg" style="width:0.625rem;height:0.625rem"> <img src="./svg/discord.svg" style="width:0.75rem;height:0.75rem"> <img src="./svg/discord.svg" style="width:0.875rem;height:0.875rem"> <img src="./svg/discord.svg" style="width:1rem;height:1rem"> <img src="./svg/discord.svg" style="width:1.25rem;height:1.25rem"> <img src="./svg/discord.svg" style="width:1.5rem;height:1.5rem"> <img src="./svg/discord.svg" style="width:2rem;height:2rem">
 
 `ci-1x` `ci-2x` `ci-3x` `ci-4x` `ci-5x` `ci-6x` `ci-7x` `ci-8x` `ci-9x` `ci-10x`
 
