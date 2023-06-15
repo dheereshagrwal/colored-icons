@@ -482,11 +482,11 @@
 .ci-ciphense,
 .ci-ciphense-dark {
   content: url("./svg/ciphense.svg");
+  filter: invert(1);
 }
 
 .ci-ciphense-light {
   content: url("./svg/ciphense.svg");
-  filter: invert(1);
 }
 
 .ci-ringcentral,
@@ -498,11 +498,11 @@
 .ci-highonswift,
 .ci-highonswift-dark {
   content: url("./images/highonswift.png");
+  filter: invert(1);
 }
 
 .ci-highonswift-light {
   content: url("./images/highonswift.png");
-  filter: invert(1);
 }
 
 .ci-nearveg,
