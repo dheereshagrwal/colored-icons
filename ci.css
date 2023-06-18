@@ -46,6 +46,33 @@
   filter: invert(1);
 }
 
+.ci-pinia,
+.ci-pinia-dark,
+.ci-pinia-light {
+  content: url("./svg/pinia.svg");
+}
+
+.ci-polygon-io,
+.ci-polygon-io-dark,
+.ci-polygon-io-light {
+  content: url("./svg/polygon-io.svg");
+}
+
+.ci-polygon-io-wordmark,
+.ci-polygon-io-wordmark-dark,
+.ci-polygon-io-wordmark-light {
+  content: url("./svg/polygon-io-wordmark.svg");
+}
+
+.ci-polygon-io-vertical,
+.ci-polygon-io-vertical-dark,
+.ci-polygon-io-vertical-light,
+.ci-polygon-io-stacked,
+.ci-polygon-io-stacked-dark,
+.ci-polygon-io-stacked-light {
+  content: url("./svg/polygon-io-vertical.svg");
+}
+
 .ci-telegram,
 .ci-telegram-dark,
 .ci-telegram-light {
