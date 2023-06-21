@@ -28,11 +28,11 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.6.0/ci.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.6.1/ci.min.css"
 />
 ```
 
-the tag `1.5.8` refers to the release version, I will be update the readme as soon as I add a few more icons, so you can just always copy it.
+the tag `1.6.1` refers to the release version, I will update the readme as soon as I add a few more icons, so you can just always copy it.
 
 ## Usage
 
@@ -72,7 +72,7 @@ If you want to invert the color for some reason, just add `ci-invert`.
 
 ## Sizing
 
-I used the same sizing style used by fontawesome:
+I used the same sizing style used by font awesome:
 
 `ci-2xs` `ci-xs` `ci-sm` `ci-md` `ci-lg` `ci-xl` `ci-2xl`
 
@@ -89,7 +89,7 @@ For more details about the sizing, you can refer to this [Font Awesome Icon Size
 ## Dark and Light icons
 
 By default, the `ci-nextjs` will refer to the dark version of the logo which means that you have to use it on a light background, you can also write `ci-nextjs-dark` for the same.
-Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied on colored icons.
+Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied to colored icons.
 
 `ci-nextjs`
 
@@ -106,18 +106,18 @@ Note that not every brand has dark and/or light icons
 
 <img src="./svg/infura-wordmark.svg" alt="Infura Wordmark" width="96">
 
-`ci-whatsapp-horizontal` or `ci-whatsapp-inline` refers to the horizontal/inline icon with logo on the left and wordmark on the right.
+`ci-whatsapp-horizontal` or `ci-whatsapp-inline` refers to the horizontal/inline icon with the logo on the left and wordmark on the right.
 
 <img src='./svg/whatsapp-horizontal.svg' alt="Whatsapp Horizontal" width="96">
 
-Similarly, `ci-whatsapp-vertical` or `ci-whatsapp-stacked` refers to the vertical/stacked icon with logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
+Similarly, `ci-whatsapp-vertical` or `ci-whatsapp-stacked` refers to the vertical/stacked icon with the logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
 Note that not every brand has horizontal and/or vertical icons.
 
 <img src='./svg/whatsapp-vertical.svg' alt="Whatsapp Vertical" width="96">
 
 ## Second version
 
-Some icons have second version of them provided which are a darker shade of the original such as
+Some icons have a second version of them provided which is a darker shade of the original such as
 
 `ci ci-mongodb2`
 
@@ -129,11 +129,11 @@ Some icons have second version of them provided which are a darker shade of the 
 
 ## Google fonts
 
-I also added some google fonts in the css file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` `font-epilogue` `font-sora` `font-montserrat` to your existing class and the text will be changed. Enjoy!
+I also added some Google fonts in the CSS file. You can just add a class `font-inter` `font-poppins` `font-karla` `font-dm-sans` `font-lato` `font-dancing-script` `font-pacifico` `font-nunito` `font-rubik` `font-epilogue` `font-sora` `font-montserrat` to your existing class and the text will be changed. Enjoy!
 
 ## Contribution
 
-Code is very lightweight and dead simple; there is nothing fancy going on.
+The code is very lightweight and dead simple; there is nothing fancy going on.
 If you want me to add an icon that is missing or have some suggestions, just raise an issue
 
 ## License
