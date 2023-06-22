@@ -110,7 +110,8 @@ Note that not every brand has dark and/or light icons
 
 <img src='./svg/whatsapp-horizontal.svg' alt="Whatsapp Horizontal" width="96">
 
-Similarly, `ci-whatsapp-vertical` or `ci-whatsapp-stacked` refers to the vertical/stacked icon with the logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/)
+Similarly, `ci-whatsapp-vertical` or `ci-whatsapp-stacked` refers to the vertical/stacked icon with the logo on top and wordmark on the bottom. If you wish to know more about the naming convention, refer to this [Alan Brand Assets](https://alan.app/brand-assets/).
+
 Note that not every brand has horizontal and/or vertical icons.
 
 <img src='./svg/whatsapp-vertical.svg' alt="Whatsapp Vertical" width="96">
