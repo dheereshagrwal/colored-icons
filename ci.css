@@ -46,6 +46,10 @@
   filter: invert(1);
 }
 
+.ci-transparent {
+  content: url("./images/transparent.png");
+}
+
 .ci-pinia,
 .ci-pinia-dark,
 .ci-pinia-light {
