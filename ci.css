@@ -86,7 +86,7 @@
 .ci-linkedin,
 .ci-telegram-dark,
 .ci-telegram-light {
-  content: url("images/linkedin.png");
+  content: url("svg/linkedin.svg");
 }
 
 .ci-linkedin-horizontal,
@@ -95,7 +95,7 @@
 .ci-linkedin-horizontal-light,
 .ci-linkedin-inline-dark,
 .ci-linkedin-inline-light {
-  content: url("images/linkedin-horizontal.png");
+  content: url("svg/linkedin-horizontal.svg");
 }
 
 .ci-facebook,
@@ -246,7 +246,7 @@
 .ci-netflix-wordmark,
 .ci-netflix-wordmark-dark,
 .ci-netflix-wordmark-light {
-  content: url("images/netflix-wordmark.png");
+  content: url("svg/netflix-wordmark.svg");
 }
 
 .ci-google,
