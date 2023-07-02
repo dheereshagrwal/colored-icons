@@ -219,7 +219,7 @@
 .ci-amazon,
 .ci-amazon-dark,
 .ci-amazon-light {
-  content: url("./images/amazon.png");
+  content: url("./svg/amazon.svg");
 }
 
 .ci-apple,
@@ -575,7 +575,7 @@
 .ci-flutter,
 .ci-flutter-dark,
 .ci-flutter-light {
-  content: url("./images/flutter.png");
+  content: url("./svg/flutter.svg");
 }
 
 .ci-mysql,
