@@ -489,6 +489,12 @@
 .ci-next-inline-light {
   content: url("./svg/nextjs-horizontal-light.svg");
 }
+
+.ci-spring,
+.ci-spring-dark,
+.ci-spring-light {
+  content: url("./svg/spring.svg");
+}
 .ci-reactjs,
 .ci-react,
 .ci-reactjs-dark,
