@@ -86,7 +86,7 @@
 .ci-linkedin,
 .ci-telegram-dark,
 .ci-telegram-light {
-  content: url("images/linkedin.png");
+  content: url("svg/linkedin.svg");
 }
 
 .ci-linkedin-horizontal,
@@ -95,7 +95,7 @@
 .ci-linkedin-horizontal-light,
 .ci-linkedin-inline-dark,
 .ci-linkedin-inline-light {
-  content: url("images/linkedin-horizontal.png");
+  content: url("svg/linkedin-horizontal.svg");
 }
 
 .ci-facebook,
@@ -104,7 +104,16 @@
 .ci-fb-dark,
 .ci-facebook-light,
 .ci-fb-light {
-  content: url("images/facebook.png");
+  content: url("svg/facebook.svg");
+}
+
+.ci-facebook-wordmark,
+.ci-fb-wordmark,
+.ci-facebook-wordmark-dark,
+.ci-fb-wordmark-dark,
+.ci-facebook-wordmark-light,
+.ci-fb-wordmark-light {
+  content: url("svg/facebook-wordmark.svg");
 }
 
 .ci-instagram,
@@ -219,7 +228,7 @@
 .ci-amazon,
 .ci-amazon-dark,
 .ci-amazon-light {
-  content: url("./images/amazon.png");
+  content: url("./svg/amazon.svg");
 }
 
 .ci-apple,
@@ -237,7 +246,7 @@
 .ci-netflix-wordmark,
 .ci-netflix-wordmark-dark,
 .ci-netflix-wordmark-light {
-  content: url("images/netflix-wordmark.png");
+  content: url("svg/netflix-wordmark.svg");
 }
 
 .ci-google,
@@ -297,7 +306,7 @@
 .ci-gcd,
 .ci-gcd-dark,
 .ci-gcd-light {
-  content: url("images/gcd.png");
+  content: url("svg/gcd.svg");
 }
 
 .ci-azure,
@@ -480,13 +489,19 @@
 .ci-next-inline-light {
   content: url("./svg/nextjs-horizontal-light.svg");
 }
+
+.ci-spring,
+.ci-spring-dark,
+.ci-spring-light {
+  content: url("./svg/spring.svg");
+}
 .ci-reactjs,
 .ci-react,
 .ci-reactjs-dark,
 .ci-react-dark,
 .ci-reactjs-light,
 .ci-react-light {
-  content: url("./images/reactjs.png");
+  content: url("svg/reactjs.svg");
 }
 
 .ci-redux,
@@ -545,7 +560,7 @@
 .ci-firebase,
 .ci-firebase-dark,
 .ci-firebase-light {
-  content: url("images/firebase.png");
+  content: url("svg/firebase.svg");
 }
 
 .ci-docker,
@@ -560,7 +575,7 @@
 .ci-docker-inline-dark,
 .ci-docker-horizontal-light,
 .ci-docker-inline-light {
-  content: url("images/docker-horizontal.webp");
+  content: url("svg/docker-horizontal.svg");
 }
 
 .ci-docker-vertical,
@@ -575,7 +590,7 @@
 .ci-flutter,
 .ci-flutter-dark,
 .ci-flutter-light {
-  content: url("./images/flutter.png");
+  content: url("./svg/flutter.svg");
 }
 
 .ci-mysql,
@@ -758,7 +773,7 @@
 .ci-postgres-dark,
 .ci-postgresql-light,
 .ci-postgres-light {
-  content: url("./images/postgresql.png");
+  content: url("svg/postgresql.svg");
 }
 
 .ci-supabase,
@@ -959,7 +974,7 @@
 .ci-sass-wordmark,
 .ci-sass-wordmark-dark,
 .ci-sass-wordmark-light {
-  content: url("./images/sass-wordmark.png");
+  content: url("svg/sass-wordmark.svg");
 }
 
 .ci-web3js,
@@ -1016,6 +1031,12 @@
   content: url("./svg/nodejs-vertical-light.svg");
 }
 
+.ci-laravel,
+.ci-laravel-dark,
+.ci-laravel-light {
+  content: url("./svg/laravel.svg");
+}
+
 .ci-graphql,
 .ci-graphql-dark,
 .ci-graphql-light {
@@ -1065,7 +1086,7 @@
 .ci-ethereum-dark,
 .ci-eth-light,
 .ci-ethereum-light {
-  content: url("./images/eth.png");
+  content: url("svg/eth.svg");
 }
 
 .ci-metamask,
@@ -1094,7 +1115,7 @@
 .ci-solidity,
 .ci-solidity-dark,
 .ci-solidity-light {
-  content: url("./images/solidity.png");
+  content: url("svg/solidity.svg");
 }
 
 .ci-npm,
