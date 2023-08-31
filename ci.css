@@ -298,9 +298,12 @@
 }
 
 .ci-aws,
-.ci-aws-dark,
-.ci-aws-light {
+.ci-aws-dark {
   content: url("./svg/aws.svg");
+}
+
+.ci-aws-light {
+  content: url("./svg/aws-light.svg");
 }
 
 .ci-gcd,
