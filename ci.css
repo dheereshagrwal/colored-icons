@@ -909,6 +909,42 @@
   content: url("svg/mysql-vertical.svg");
 }
 
+.ci-opensea,
+.ci-opensea-dark,
+.ci-opensea-light {
+  content: url("./svg/opensea.svg");
+}
+
+.ci-opensea2,
+.ci-opensea2-dark,
+.ci-opensea2-light {
+  content: url("./svg/opensea2.svg");
+}
+
+.ci-opensea3,
+.ci-opensea3-dark,
+.ci-opensea3-light {
+  content: url("./svg/opensea3.svg");
+}
+
+.ci-opensea-horizontal,
+.ci-opensea-inline,
+.ci-opensea-horizontal-dark,
+.ci-opensea-inline-dark,
+.ci-opensea-horizontal-light,
+.ci-opensea-inline-light {
+  content: url("./svg/opensea-horizontal.svg");
+}
+
+.ci-opensea2-horizontal,
+.ci-opensea2-inline,
+.ci-opensea2-horizontal-dark,
+.ci-opensea2-inline-dark,
+.ci-opensea2-horizontal-light,
+.ci-opensea2-inline-light {
+  content: url("./svg/opensea2-horizontal.svg");
+}
+
 .ci-git,
 .ci-git-dark,
 .ci-git-light {
