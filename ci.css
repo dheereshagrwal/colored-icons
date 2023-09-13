@@ -46,18 +46,274 @@
   filter: invert(1);
 }
 
+.ci-reddit,
+.ci-reddit-dark,
+.ci-reddit-light {
+  content: url("./svg/reddit.svg");
+}
+
+.ci-reddit-horizontal,
+.ci-reddit-inline,
+.ci-reddit-horizontal-dark,
+.ci-reddit-inline-dark {
+  content: url("./svg/reddit-horizontal.svg");
+}
+
+.ci-reddit-horizontal-light,
+.ci-reddit-inline-light {
+  content: url("./svg/reddit-horizontal-light.svg");
+}
+
+.ci-reddit2-horizontal-light {
+  content: url("./svg/reddit2-horizontal-light.svg");
+}
+
+.ci-tiktok,
+.ci-tiktok-dark {
+  content: url("./svg/tiktok.svg");
+}
+
+.ci-tiktok-light {
+  content: url("./svg/tiktok-light.svg");
+}
+
+.ci-tiktok-horizontal,
+.ci-tiktok-inline,
+.ci-tiktok-horizontal-dark,
+.ci-tiktok-inline-dark {
+  content: url("./svg/tiktok-horizontal.svg");
+}
+
+.ci-tiktok-horizontal-light,
+.ci-tiktok-inline-light {
+  content: url("./svg/tiktok-horizontal-light.svg");
+}
+
+.ci-tiktok-vertical,
+.ci-tiktok-stacked,
+.ci-tiktok-vertical-dark,
+.ci-tiktok-stacked-dark {
+  content: url("./svg/tiktok-vertical.svg");
+}
+
+.ci-tiktok-vertical-light,
+.ci-tiktok-stacked-light {
+  content: url("./svg/tiktok-vertical-light.svg");
+}
+
+.ci-tiktok-circle,
+.ci-tiktok-rounded,
+.ci-tiktok-circle-dark,
+.ci-tiktok-rounded-dark {
+  content: url("./svg/tiktok-circle.svg");
+}
+
+.ci-tiktok-circle-light,
+.ci-tiktok-rounded-light {
+  content: url("./svg/tiktok-circle-light.svg");
+}
+
+.ci-tiktok-rounded-square,
+.ci-tiktok-rounded-square-dark {
+  content: url("./svg/tiktok-rounded-square.svg");
+}
+
+.ci-tiktok-rounded-square-light {
+  content: url("./svg/tiktok-rounded-square-light.svg");
+}
+
+.ci-tiktok-square,
+.ci-tiktok-square-dark {
+  content: url("./svg/tiktok-square.svg");
+}
+
+.ci-tiktok-square-light {
+  content: url("./svg/tiktok-square-light.svg");
+}
+
+.ci-snapchat,
+.ci-snapchat-dark,
+.ci-snapchat-light {
+  content: url("./svg/snapchat.svg");
+}
+
+.ci-pinterest,
+.ci-pinterest-dark,
+.ci-pinterest-light {
+  content: url("./svg/pinterest.svg");
+}
+
+.ci-pinterest-horizontal,
+.ci-pinterest-inline,
+.ci-pinterest-horizontal-dark,
+.ci-pinterest-inline-dark,
+.ci-pinterest-horizontal-light,
+.ci-pinterest-inline-light {
+  content: url("./svg/pinterest-horizontal.svg");
+}
+
+.ci-mixcloud,
+.ci-mixcloud-dark {
+  content: url("images/mixcloud.png");
+}
+
+.ci-mixcloud2,
+.ci-mixcloud2-dark {
+  content: url("images/mixcloud2.png");
+}
+
+.ci-mixcloud3,
+.ci-mixcloud3-dark {
+  content: url("images/mixcloud3.png");
+}
+
+.ci-mixcloud-light {
+  content: url("images/mixcloud-light.png");
+}
+
+.ci-mixcloud-wordmark,
+.ci-mixcloud-wordmark-dark {
+  content: url("images/mixcloud-wordmark.png");
+}
+
+.ci-mixcloud2-wordmark,
+.ci-mixcloud2-wordmark-dark {
+  content: url("images/mixcloud2-wordmark.png");
+}
+
+.ci-mixcloud3-wordmark,
+.ci-mixcloud3-wordmark-dark {
+  content: url("images/mixcloud3-wordmark.png");
+}
+
+.ci-mixcloud-wordmark-light {
+  content: url("images/mixcloud-wordmark-light.png");
+}
+
+.ci-bandcamp,
+.ci-bc,
+.ci-bandcamp-dark,
+.ci-bc-dark,
+.ci-bandcamp-light,
+.ci-bc-light {
+  content: url("images/bandcamp.png");
+}
+
+.ci-bandcamp-horizontal,
+.ci-bc-horizontal,
+.ci-bandcamp-inline,
+.ci-bc-inline,
+.ci-bandcamp-horizontal-dark,
+.ci-bc-horizontal-dark,
+.ci-bandcamp-inline-dark,
+.ci-bc-inline-dark {
+  content: url("svg/bandcamp-horizontal.svg");
+}
+
+.ci-bandcamp-horizontal-light,
+.ci-bc-horizontal-light,
+.ci-bandcamp-inline-light,
+.ci-bc-inline-light {
+  content: url("images/bandcamp-horizontal-light.png");
+}
+
+.ci-bandcamp2-horizontal,
+.ci-bc2-horizontal,
+.ci-bandcamp2-inline,
+.ci-bc2-inline,
+.ci-bandcamp2-horizontal-dark,
+.ci-bc2-horizontal-dark,
+.ci-bandcamp2-inline-dark,
+.ci-bc2-inline-dark {
+  content: url("images/bandcamp2-horizontal.png");
+}
+
+.ci-bandcamp2-horizontal-light,
+.ci-bc2-horizontal-light,
+.ci-bandcamp2-inline-light,
+.ci-bc2-inline-light {
+  content: url("images/bandcamp2-horizontal-light.png");
+}
+
+.ci-twitch,
+.ci-twitch-dark,
+.ci-twitch-light {
+  content: url("./svg/twitch.svg");
+}
+
+.ci-twitch-wordmark,
+.ci-twitch-wordmark-dark,
+.ci-twitch-wordmark-light {
+  content: url("./svg/twitch-wordmark.svg");
+}
+
+.ci-deviantart,
+.ci-deviantart-dark,
+.ci-deviantart-light {
+  content: url("./svg/deviantart.svg");
+}
+
+.ci-deviantart2,
+.ci-deviantart2-dark,
+.ci-deviantart2-light {
+  content: url("./svg/deviantart2.svg");
+}
+
+.ci-deviantart-horizontal,
+.ci-deviantart-inline,
+.ci-deviantart-horizontal-dark,
+.ci-deviantart-inline-dark {
+  content: url("./svg/deviantart-horizontal.svg");
+}
+
+.ci-artstation,
+.ci-artstation-dark,
+.ci-artstation-light {
+  content: url("./svg/artstation.svg");
+}
+
+.ci-artstation-horizontal,
+.ci-artstation-inline,
+.ci-artstation-horizontal-dark,
+.ci-artstation-inline-dark {
+  content: url("./svg/artstation-horizontal.svg");
+}
+
+.ci-artstation-horizontal-light,
+.ci-artstation-inline-light {
+  content: url("./svg/artstation-horizontal-light.svg");
+}
+
+.ci-artstation-vertical,
+.ci-artstation-stacked,
+.ci-artstation-vertical-dark,
+.ci-artstation-stacked-dark {
+  content: url("./svg/artstation-vertical.svg");
+}
+
+.ci-artstation-vertical-light,
+.ci-artstation-stacked-light {
+  content: url("./svg/artstation-vertical-light.svg");
+}
+
 .ci-dribbble,
+.ci-dribble,
 .ci-dribbble-dark,
-.ci-dribbble-light {
+.ci-dribble-dark,
+.ci-dribbble-light,
+.ci-dribble-light {
   content: url("./svg/dribbble.svg");
 }
 
 .ci-dribbble-wordmark,
-.ci-dribbble-wordmark-dark {
+.ci-dribbble-wordmark,
+.ci-dribbble-wordmark-dark,
+.ci-dribble-wordmark-dark {
   content: url("./svg/dribbble-wordmark.svg");
 }
 
-.ci-dribbble-wordmark-light {
+.ci-dribbble-wordmark-light,
+.ci-dribble-wordmark-light {
   content: url("./svg/dribbble-wordmark-light.svg");
 }
 
@@ -78,7 +334,6 @@
 .ci-behance-wordmark-light {
   content: url("./svg/behance-wordmark.svg");
 }
-
 
 .ci-pinia,
 .ci-pinia-dark,
@@ -179,8 +434,11 @@
 }
 
 .ci-twitter-circle,
+.ci-twitter-rounded,
 .ci-twitter-circle-dark,
-.ci-twitter-circle-light {
+.ci-twitter-rounded-dark,
+.ci-twitter-circle-light,
+.ci-twitter-rounded-light {
   content: url("./svg/twitter-circle.svg");
 }
 .ci-twitter-rounded-square,
@@ -729,14 +987,12 @@
   content: url("./svg/cashfree-horizontal.svg");
 }
 
-
 .ci-cashfree-horizontal-light,
 .ci-cashfree-inline-light,
 .ci-cf-horizontal-light,
 .ci-cf-inline-light {
   content: url("./svg/cashfree-horizontal-light.svg");
 }
-
 
 .ci-java,
 .ci-java-dark,
@@ -997,7 +1253,7 @@
 .ci-spotify-inline-dark,
 .ci-spotify-horizontal-light,
 .ci-spotify-inline-light {
-  content: url("./images/spotify-horizontal.png");
+  content: url("svg/spotify-horizontal.svg");
 }
 
 .ci-spotify2-horizontal,
@@ -1042,7 +1298,7 @@
 .ci-youtube,
 .ci-youtube-dark,
 .ci-youtube-light {
-  content: url("./images/youtube.png");
+  content: url("svg/youtube.svg");
 }
 
 .ci-youtube-horizontal,
@@ -1051,7 +1307,7 @@
 .ci-youtube-inline-dark,
 .ci-youtube-horizontal-light,
 .ci-youtube-inline-light {
-  content: url("./images/youtube-horizontal.png");
+  content: url("svg/youtube-horizontal.svg");
 }
 
 .ci-gmail,
@@ -1273,7 +1529,6 @@
   content: url("svg/kubernetes-vertical.svg");
 }
 
-
 .ci-vimeo,
 .ci-vimeo-dark,
 .ci-vimeo-light {
@@ -1291,7 +1546,6 @@
 .ci-vimeo-wordmark-light {
   content: url("./svg/vimeo-wordmark.svg");
 }
-
 
 .ci-2xs {
   width: 0.625rem;
