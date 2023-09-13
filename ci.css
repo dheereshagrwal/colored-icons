@@ -46,9 +46,39 @@
   filter: invert(1);
 }
 
-.ci-transparent {
-  content: url("./images/transparent.png");
+.ci-dribbble,
+.ci-dribbble-dark,
+.ci-dribbble-light {
+  content: url("./svg/dribbble.svg");
 }
+
+.ci-dribbble-wordmark,
+.ci-dribbble-wordmark-dark {
+  content: url("./svg/dribbble-wordmark.svg");
+}
+
+.ci-dribbble-wordmark-light {
+  content: url("./svg/dribbble-wordmark-light.svg");
+}
+
+.ci-behance,
+.ci-behance-dark,
+.ci-behance-light {
+  content: url("./svg/behance.svg");
+}
+
+.ci-behance2,
+.ci-behance2-dark,
+.ci-behance2-light {
+  content: url("./svg/behance2.svg");
+}
+
+.ci-behance-wordmark,
+.ci-behance-wordmark-dark,
+.ci-behance-wordmark-light {
+  content: url("./svg/behance-wordmark.svg");
+}
+
 
 .ci-pinia,
 .ci-pinia-dark,
@@ -82,10 +112,15 @@
 .ci-telegram-light {
   content: url("./svg/telegram.svg");
 }
+.ci-telegram2,
+.ci-telegram2-dark,
+.ci-telegram2-light {
+  content: url("./svg/telegram2.svg");
+}
 
 .ci-linkedin,
-.ci-telegram-dark,
-.ci-telegram-light {
+.ci-linkedin-dark,
+.ci-linkedin-light {
   content: url("svg/linkedin.svg");
 }
 
@@ -229,6 +264,18 @@
 .ci-amazon-dark,
 .ci-amazon-light {
   content: url("./svg/amazon.svg");
+}
+
+.ci-amazon-vertical,
+.ci-amazon-stacked,
+.ci-amazon-vertical-dark,
+.ci-amazon-stacked-dark {
+  content: url("./svg/amazon-vertical.svg");
+}
+
+.ci-amazon-vertical-light,
+.ci-amazon-stacked-light {
+  content: url("./svg/amazon-vertical-light.svg");
 }
 
 .ci-apple,
@@ -386,7 +433,7 @@
 
 .ci-vercel,
 .ci-vercel-dark {
-  content: url("./svg/vercel-dark.svg");
+  content: url("./svg/vercel.svg");
 }
 
 .ci-vercel-light {
@@ -397,7 +444,7 @@
 .ci-vercel-horizontal-dark,
 .ci-vercel-inline,
 .ci-vercel-inline-dark {
-  content: url("./svg/vercel-horizontal-dark.svg");
+  content: url("./svg/vercel-horizontal.svg");
 }
 
 .ci-vercel-horizontal-light,
@@ -670,6 +717,26 @@
 .ci-cf-light {
   content: url("./svg/cashfree.svg");
 }
+
+.ci-cashfree-horizontal,
+.ci-cashfree-inline,
+.ci-cashfree-horizontal-dark,
+.ci-cashfree-inline-dark,
+.ci-cf-horizontal,
+.ci-cf-inline,
+.ci-cf-horizontal-dark,
+.ci-cf-inline-dark {
+  content: url("./svg/cashfree-horizontal.svg");
+}
+
+
+.ci-cashfree-horizontal-light,
+.ci-cashfree-inline-light,
+.ci-cf-horizontal-light,
+.ci-cf-inline-light {
+  content: url("./svg/cashfree-horizontal-light.svg");
+}
+
 
 .ci-java,
 .ci-java-dark,
@@ -1163,6 +1230,26 @@
 .ci-kubernetes-stacked-light {
   content: url("svg/kubernetes-vertical.svg");
 }
+
+
+.ci-vimeo,
+.ci-vimeo-dark,
+.ci-vimeo-light {
+  content: url("./svg/vimeo.svg");
+}
+
+.ci-vimeo2,
+.ci-vimeo2-dark,
+.ci-vimeo2-light {
+  content: url("./svg/vimeo2.svg");
+}
+
+.ci-vimeo-wordmark,
+.ci-vimeo-wordmark-dark,
+.ci-vimeo-wordmark-light {
+  content: url("./svg/vimeo-wordmark.svg");
+}
+
 
 .ci-2xs {
   width: 0.625rem;
