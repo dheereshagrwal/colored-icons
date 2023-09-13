@@ -252,7 +252,7 @@
 .ci-meta-inline,
 .ci-meta-horizontal-dark,
 .ci-meta-inline-dark {
-  content: url("svg/meta-horizontal-dark.svg");
+  content: url("svg/meta-horizontal.svg");
 }
 
 .ci-meta-horizontal-light,
@@ -299,13 +299,13 @@
 .ci-google,
 .ci-google-dark,
 .ci-google-light {
-  content: url("./images/google.png");
+  content: url("svg/google.svg");
 }
 
 .ci-google-wordmark,
 .ci-google-wordmark-dark,
 .ci-google-wordmark-light {
-  content: url("./images/google-wordmark.png");
+  content: url("svg/google-wordmark.svg");
 }
 
 .ci-microsoft,
@@ -332,7 +332,7 @@
 .ci-microsoft-inline-dark,
 .ci-msft-inline-dark,
 .ci-ms-inline-dark {
-  content: url("images/microsoft-horizontal-dark.png");
+  content: url("svg/microsoft-horizontal.svg");
 }
 
 .ci-microsoft-horizontal-light,
@@ -341,7 +341,7 @@
 .ci-microsoft-inline-light,
 .ci-msft-inline-light,
 .ci-ms-inline-light {
-  content: url("images/microsoft-horizontal-dark.png");
+  content: url("images/microsoft-horizontal-light.png");
 }
 
 .ci-aws,
@@ -412,7 +412,7 @@
 
 .ci-railway,
 .ci-railway-dark {
-  content: url("./svg/railway-dark.svg");
+  content: url("./svg/railway.svg");
 }
 
 .ci-railway-light {
@@ -423,7 +423,7 @@
 .ci-railway-horizontal-dark,
 .ci-railway-inline,
 .ci-railway-inline-dark {
-  content: url("./svg/railway-horizontal-dark.svg");
+  content: url("./svg/railway-horizontal.svg");
 }
 
 .ci-railway-horizontal-light,
@@ -454,7 +454,7 @@
 
 .ci-netlify,
 .ci-netlify-dark {
-  content: url("./svg/netlify-dark.svg");
+  content: url("./svg/netlify.svg");
 }
 .ci-netlify-light {
   content: url("./svg/netlify-light.svg");
@@ -462,7 +462,7 @@
 
 .ci-netlify-wordmark,
 .ci-netlify-wordmark-dark {
-  content: url("./svg/netlify-wordmark-dark.svg");
+  content: url("./svg/netlify-wordmark.svg");
 }
 
 .ci-netlify-wordmark-light {
@@ -501,7 +501,7 @@
 .ci-nuxt-inline,
 .ci-nuxtjs-inline-dark,
 .ci-nuxt-inline-dark {
-  content: url("./svg/nuxtjs-horizontal-dark.svg");
+  content: url("./svg/nuxtjs-horizontal.svg");
 }
 
 .ci-nuxtjs-horizontal-light,
@@ -514,7 +514,7 @@
 .ci-next,
 .ci-nextjs-dark,
 .ci-next-dark {
-  content: url("./svg/nextjs-dark.svg");
+  content: url("./svg/nextjs.svg");
 }
 
 .ci-nextjs-light,
@@ -530,7 +530,7 @@
 .ci-next-inline,
 .ci-nextjs-inline-dark,
 .ci-next-inline-dark {
-  content: url("./svg/nextjs-horizontal-dark.svg");
+  content: url("./svg/nextjs-horizontal.svg");
 }
 
 .ci-nextjs-horizontal-light,
@@ -646,7 +646,7 @@
 .ci-mysql,
 .ci-mysql-dark,
 .ci-mysql-light {
-  content: url("./images/mysql.png");
+  content: url("svg/mysql.svg");
 }
 
 .ci-git,
@@ -762,6 +762,24 @@
   content: url("./svg/tailwind.svg");
 }
 
+.ci-tailwind-horizontal,
+.ci-tailwind-inline,
+.ci-tailwind-horizontal-dark,
+.ci-tailwind-inline-dark,
+.ci-tailwindcss-horizontal,
+.ci-tailwindcss-inline,
+.ci-tailwindcss-horizontal-dark,
+.ci-tailwindcss-inline-dark {
+  content: url("./svg/tailwind-horizontal.svg");
+}
+
+.ci-tailwind-horizontal-light,
+.ci-tailwind-inline-light,
+.ci-tailwindcss-horizontal-light,
+.ci-tailwindcss-inline-light {
+  content: url("./svg/tailwind-horizontal-light.svg");
+}
+
 .ci-js,
 .ci-js-dark,
 .ci-js-light {
@@ -856,12 +874,27 @@
 .ci-supabase-horizontal-dark,
 .ci-supabase-inline,
 .ci-supabase-inline-dark {
-  content: url("./svg/supabase-horizontal-dark.svg");
+  content: url("./svg/supabase-horizontal.svg");
 }
 
 .ci-supabase-horizontal-light,
 .ci-supabase-inline-light {
   content: url("./svg/supabase-horizontal-light.svg");
+}
+
+.ci-soundcloud,
+.ci-soundcloud-dark,
+.ci-soundcloud-light {
+  content: url("./svg/soundcloud.svg");
+}
+
+.ci-soundcloud-horizontal,
+.ci-soundcloud-inline,
+.ci-soundcloud-horizontal-dark,
+.ci-soundcloud-inline-dark,
+.ci-soundcloud-horizontal-light,
+.ci-soundcloud-inline-light {
+  content: url("./svg/soundcloud-horizontal.svg");
 }
 
 .ci-python,
@@ -942,7 +975,7 @@
 
 .ci-github,
 .ci-github-dark {
-  content: url("./svg/github-dark.svg");
+  content: url("./svg/github.svg");
 }
 
 .ci-github-light {
@@ -951,7 +984,7 @@
 
 .ci-github-wordmark,
 .ci-github-wordmark-dark {
-  content: url("/images/github-wordmark-dark.png");
+  content: url("svg/github-wordmark.svg");
 }
 
 .ci-github-wordmark-light {
@@ -992,7 +1025,7 @@
 .ci-redis-horizontal-dark,
 .ci-redis-inline,
 .ci-redis-inline-dark {
-  content: url("./svg/redis-horizontal-dark.svg");
+  content: url("./svg/redis-horizontal.svg");
 }
 
 .ci-redis-horizontal-light,
@@ -1024,7 +1057,16 @@
 .ci-gmail,
 .ci-gmail-dark,
 .ci-gmail-light {
-  content: url("./images/gmail.png");
+  content: url("svg/gmail.svg");
+}
+
+.ci-gmail-horizontal,
+.ci-gmail-horizontal-dark,
+.ci-gmail-inline,
+.ci-gmail-inline-dark,
+.ci-gmail-horizontal-light,
+.ci-gmail-inline-light {
+  content: url("svg/gmail-horizontal.svg");
 }
 
 .ci-css,
@@ -1073,7 +1115,7 @@
 .ci-node-inline,
 .ci-nodejs-inline-dark,
 .ci-node-inline-dark {
-  content: url("./svg/nodejs-horizontal-dark.svg");
+  content: url("./svg/nodejs-horizontal.svg");
 }
 
 .ci-nodejs-horizontal-light,
@@ -1091,7 +1133,7 @@
 .ci-node-stacked,
 .ci-nodejs-stacked-dark,
 .ci-node-stacked-dark {
-  content: url("./svg/nodejs-vertical-dark.svg");
+  content: url("./svg/nodejs-vertical.svg");
 }
 
 .ci-nodejs-vertical-light,
@@ -1201,7 +1243,7 @@
 
 .ci-leetcode,
 .ci-leetcode-dark {
-  content: url("./images/leetcode-dark.png");
+  content: url("./images/leetcode.png");
 }
 
 .ci-leetcode-light {
