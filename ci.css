@@ -459,8 +459,7 @@
 }
 
 .ci-whatsapp2,
-.ci-whatsapp2-dark,
-.ci-whatsapp2-light {
+.ci-whatsapp2-dark {
   content: url("./svg/whatsapp2.svg");
 }
 
@@ -476,9 +475,7 @@
 .ci-whatsapp2-horizontal,
 .ci-whatsapp2-inline,
 .ci-whatsapp2-inline-dark,
-.ci-whatsapp2-inline-light,
-.ci-whatsapp2-horizontal-dark,
-.ci-whatsapp2-horizontal-light {
+.ci-whatsapp2-horizontal-dark {
   content: url("./svg/whatsapp2-horizontal.svg");
 }
 
@@ -493,10 +490,8 @@
 
 .ci-whatsapp2-vertical,
 .ci-whatsapp2-vertical-dark,
-.ci-whatsapp2-vertical-light,
 .ci-whatsapp2-stacked,
-.ci-whatsapp2-stacked-dark,
-.ci-whatsapp2-stacked-light {
+.ci-whatsapp2-stacked-dark {
   content: url("./svg/whatsapp2-vertical.svg");
 }
 
@@ -827,9 +822,7 @@
 .ci-svelte-horizontal,
 .ci-svelte-horizontal-dark,
 .ci-svelte-inline,
-.ci-svelte-inline-dark,
-.ci-svelte-horizontal-light,
-.ci-svelte-inline-light {
+.ci-svelte-inline-dark {
   content: url("./svg/svelte-horizontal.svg");
 }
 
@@ -905,6 +898,15 @@
 .ci-mysql-dark,
 .ci-mysql-light {
   content: url("svg/mysql.svg");
+}
+
+.ci-mysql-vertical,
+.ci-mysql-stacked,
+.ci-mysql-vertical-dark,
+.ci-mysql-stacked-dark,
+.ci-mysql-vertical-light,
+.ci-mysql-stacked-light {
+  content: url("svg/mysql-vertical.svg");
 }
 
 .ci-git,
@@ -1296,17 +1298,22 @@
 }
 
 .ci-youtube,
+.ci-yt,
 .ci-youtube-dark,
-.ci-youtube-light {
+.ci-yt-dark,
+.ci-youtube-light,
+.ci-yt-light {
   content: url("svg/youtube.svg");
 }
 
 .ci-youtube-horizontal,
+.ci-yt-horizontal,
 .ci-youtube-horizontal-dark,
+.ci-yt-horizontal-dark,
 .ci-youtube-inline,
+.ci-yt-inline,
 .ci-youtube-inline-dark,
-.ci-youtube-horizontal-light,
-.ci-youtube-inline-light {
+.ci-yt-inline-dark {
   content: url("svg/youtube-horizontal.svg");
 }
 
@@ -1481,8 +1488,7 @@
 }
 
 .ci-solidity,
-.ci-solidity-dark,
-.ci-solidity-light {
+.ci-solidity-dark {
   content: url("svg/solidity.svg");
 }
 
