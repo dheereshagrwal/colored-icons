@@ -28,11 +28,11 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.6.6/ci.min.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.6.7/ci.min.css"
 />
 ```
 
-the tag `1.6.6` refers to the release version, I will update the readme as soon as I add a few more icons, so you can just always copy it.
+the tag `1.6.7` refers to the release version, I will update the readme as soon as I add a few more icons, so you can just always copy it.
 
 ## Usage
 
