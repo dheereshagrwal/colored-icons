@@ -305,6 +305,15 @@
   content: url("./svg/dribbble.svg");
 }
 
+.ci-dribbble2,
+.ci-dribble2,
+.ci-dribbble2-dark,
+.ci-dribble2-dark,
+.ci-dribbble2-light,
+.ci-dribble2-light {
+  content: url("./svg/dribbble2.svg");
+}
+
 .ci-dribbble-wordmark,
 .ci-dribbble-wordmark,
 .ci-dribbble-wordmark-dark,
