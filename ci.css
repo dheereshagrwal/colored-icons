@@ -46,6 +46,54 @@
   filter: invert(1);
 }
 
+.ci-chinese-food,
+.ci-chinese-food-dark,
+.ci-chinese-food-light {
+  content: url("images/chinese-food.png");
+}
+
+.ci-chinese-food2,
+.ci-chinese-food2-dark,
+.ci-chinese-food2-light {
+  content: url("images/chinese-food2.png");
+}
+
+.ci-chinese-food3,
+.ci-chinese-food3-dark,
+.ci-chinese-food3-light {
+  content: url("images/chinese-food3.png");
+}
+
+.ci-chinese-food4,
+.ci-chinese-food4-dark,
+.ci-chinese-food4-light {
+  content: url("images/chinese-food4.png");
+}
+
+.ci-mexican-food,
+.ci-mexican-food-dark,
+.ci-mexican-food-light {
+  content: url("images/mexican-food.png");
+}
+
+.ci-mexican-food2,
+.ci-mexican-food2-dark,
+.ci-mexican-food2-light {
+  content: url("images/mexican-food2.png");
+}
+
+.ci-mexican-food3,
+.ci-mexican-food3-dark,
+.ci-mexican-food3-light {
+  content: url("images/mexican-food3.png");
+}
+
+.ci-pluto,
+.ci-pluto-dark,
+.ci-pluto-light {
+  content: url("images/pluto.png");
+}
+
 .ci-reddit,
 .ci-reddit-dark,
 .ci-reddit-light {
