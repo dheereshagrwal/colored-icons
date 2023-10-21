@@ -1125,7 +1125,7 @@
 .ci-react-native,
 .ci-react-native-dark,
 .ci-react-native-light {
-  content: url("icons/react/react-native.svg");
+  content: url("icons/react-native/react-native.svg");
 }
 
 .ci-sanity,
