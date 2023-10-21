@@ -1,119 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Colored Icons Library: A collection of vibrant and diverse icons from various brands and tech stacks. Easily integrate these icons into your web projects using the <i> tag. No need for complex setup or attribution. Check out the demo and explore the wide range of icons available."
-    />
-    <meta
-      name="keywords"
-      content="Colored Icons Library, Brand Icons, Tech Stack Icons, Icon Integration, Web Development Icons, Easy Icon Integration, Vibrant Icons, Diverse Icons, Icon Collection, Icon Library, SVG Icons, Icon Demo, Icon Showcase, Icon Repository, Icon CDN"
-    />
-    <meta
-      name="author"
-      content="Colored Icons Library"
-      href="github.com/dheereshagrwal"
-    />
+<head>
+    <!-- ... your other meta tags ... -->
     <link rel="stylesheet" href="ci.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <title>Document</title>
-  </head>
-  <body class="m-10 flex gap-8 lg:gap-28 flex-wrap justify-center">
-    <script>
-      // Define an array of logos with their names and classes
-      const logos = [
-        { name: "Dribbble", class: "ci ci-dribbble" },
-        { name: "Alan", class: "ci ci-alan" },
-        { name: "Spotify Horizontal", class: "ci ci-spotify-horizontal" },
-        { name: "Telegram", class: "ci ci-telegram" },
-        { name: "Linkedin", class: "ci ci-linkedin" },
-        { name: "Linkedin Horizontal", class: "ci ci-linkedin-horizontal" },
-        { name: "Facebook", class: "ci ci-facebook" },
-        { name: "Instagram", class: "ci ci-instagram" },
-        { name: "Discord", class: "ci ci-discord" },
-        { name: "Discord Horizontal", class: "ci ci-discord-horizontal" },
-        { name: "Twitter", class: "ci ci-twitter" },
-        { name: "Twitter Circle", class: "ci ci-twitter-circle" },
-        { name: "Twitter Square", class: "ci ci-twitter-square" },
-        {
-          name: "Twitter Rounded Square",
-          class: "ci ci-twitter-rounded-square",
-        },
-        { name: "Whatsapp", class: "ci ci-whatsapp" },
-        { name: "Whatsapp 2", class: "ci ci-whatsapp2" },
-        { name: "Whatsapp horizontal", class: "ci ci-whatsapp-horizontal" },
-        { name: "Whatsapp2 horizontal", class: "ci ci-whatsapp2-horizontal" },
-        { name: "Whatsapp vertical", class: "ci ci-whatsapp-vertical" },
-        { name: "Whatsapp2 vertical", class: "ci ci-whatsapp2-vertical" },
-
-        { name: "Meta", class: "ci ci-meta" },
-        { name: "Meta Horizontal", class: "ci ci-meta-horizontal" },
-        { name: "Amazon", class: "ci ci-amazon" },
-        { name: "Apple", class: "ci ci-apple" },
-        { name: "Netflix", class: "ci ci-netflix" },
-        { name: "Netflix Wordmark", class: "ci ci-netflix-wordmark" },
-        { name: "Google", class: "ci ci-google" },
-        { name: "Google Wordmark", class: "ci ci-google-wordmark" },
-        { name: "Microsoft", class: "ci ci-microsoft" },
-        { name: "Microsoft Horizontal", class: "ci ci-microsoft-horizontal" },
-
-        { name: "aws", class: "ci ci-aws" },
-        { name: "gcd", class: "ci ci-gcd" },
-        { name: "azure", class: "ci ci-azure" },
-        { name: "azure2", class: "ci ci-azure2" },
-        { name: "do", class: "ci ci-do" },
-        { name: "do horizontal", class: "ci ci-do-horizontal" },
-        { name: "do vertical", class: "ci ci-do-vertical" },
-        { name: "railway", class: "ci ci-railway" },
-        { name: "Vercel", class: "ci ci-vercel" },
-        { name: "Vercel Horizontal", class: "ci ci-vercel-horizontal" },
-        { name: "netlify", class: "ci ci-netlify" },
-        { name: "netlify wordmark", class: "ci ci-netlify-wordmark" },
-
-        { name: "Svelte", class: "ci ci-svelte" },
-        { name: "Svelte Horizontal", class: "ci ci-svelte-horizontal" },
-        { name: "Next.js", class: "ci ci-nextjs" },
-        { name: "Next.js Horizontal", class: "ci ci-nextjs-horizontal" },
-        { name: "Nuxt.js", class: "ci ci-nuxtjs" },
-        { name: "React.js", class: "ci ci-reactjs" },
-
-        { name: "CIPHENSE", class: "ci ci-ciphense" },
-        { name: "Pinia", class: "ci ci-pinia" },
-        { name: "polygon.io", class: "ci ci-polygon-io" },
-        { name: "transparent", class: "ci ci-transparent" },
-      ];
-
-      // Function to generate the HTML for a logo section
-      function generateSection(logo) {
-        const iconSizes =
-          logo.class.includes("-horizontal") ||
-          logo.class.includes("-wordmark") ||
-          logo.class.includes("vertical")
-            ? ["3x", "6x", "9x"]
-            : ["2xs", "xs", "sm", "md", "lg", "xl", "2xl", "3x", "4x"];
-        const iconElements = iconSizes
-          .map((size) => `<i class="${logo.class} ci-${size}"></i>`)
-          .join("");
-
-        return `
-        <section class="flex flex-col gap-4">
-          <div class="font-inter flex gap-4 items-center flex-wrap">
-            <p>${logo.name}</p>
-            <code class="bg-gray-200 px-3 rounded-lg shadow">
-              &lt;i class="${logo.class}"&gt;&lt;/i&gt;
-            </code>
-          </div>
-          <br />
-          <div class="flex gap-1 items-center">${iconElements}</div>
-        </section>
-      `;
-      }
-
-      // Generate the sections for each logo
-      const sectionsHtml = logos.map(generateSection).join("");
-      document.write(sectionsHtml);
-    </script>
-  </body>
+</head>
+<body class="m-10 flex gap-8 lg:gap-28 flex-wrap justify-center bg-gray-500">
+    <!-- Import the scripts as modules -->
+    <script type="module" src="logos_export.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
 </html>
