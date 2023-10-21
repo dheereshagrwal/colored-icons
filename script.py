@@ -25,8 +25,8 @@ css_path = "./ci.css"
 with open(css_path, 'r') as file:
     content = file.read()
 
-    # Regular expression to match the CSS blocks you've described
-    pattern = re.compile(r'(\.ci-([a-zA-Z]+?)(?:\d*|-.*?),.*?{)\s*content: url\("(.*?)"\);', re.DOTALL)
+    # Adjusted regular expression to properly group variants like bandcamp2, bandcamp2-horizontal, bandcamp-horizontal
+    pattern = re.compile(r'(\.ci-([a-zA-Z]+)(?:\d*|-.*?)?,.*?{)\s*content: url\("(.*?)"\);', re.DOTALL)
 
     def replacement(match):
         identifier = match.group(2)
