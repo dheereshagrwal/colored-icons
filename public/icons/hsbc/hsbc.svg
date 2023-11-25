@@ -1,0 +1,26 @@
+<svg version="1.1" id="HSBC_MASTERBRAND_LOGO_WW_RGB" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170.1 85.1" style="enable-background:new 0 0 170.1 85.1;" xml:space="preserve">
+ <style type="text/css">
+  .st0{fill:#FFFFFF;}
+	.st1{fill:#DB0011;}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="85.1" width="170.1" x="-0.8" y="0.3">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g>
+  <rect x="42.4" y="0" class="st0" width="85.5" height="84.8">
+  </rect>
+  <polygon class="st1" points="170.1,42.6 127.6,0 127.6,85.1 	">
+  </polygon>
+  <polygon class="st1" points="85.1,42.6 127.6,0 42.6,0 	">
+  </polygon>
+  <polygon class="st1" points="0,42.6 42.6,85.1 42.6,0 	">
+  </polygon>
+  <polygon class="st1" points="85.1,42.6 42.6,85.1 127.6,85.1 	">
+  </polygon>
+ </g>
+</svg>

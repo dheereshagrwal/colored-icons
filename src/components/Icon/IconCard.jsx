@@ -1,0 +1,13 @@
+const IconCard = ({ icon }) => {
+  return (
+    <div className="rounded-lg border-2 hover:border-blue-500 hover:cursor-pointer flex px-4 gap-4 py-4 items-center w-full sm:w-48">
+      <i className={`${icon.classes[0]} ci-2x`}></i>
+      <span className="flex flex-col gap-1 text-xs">
+        <h4 className="text-gray-800 font-semibold">{icon.name}</h4>
+        <h4 className="text-gray-400">{icon.url}</h4>
+      </span>
+    </div>
+  );
+};
+
+export default IconCard;

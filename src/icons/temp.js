@@ -1,4 +1,4 @@
-export const logos = [
+const logos = [
   { name: "Alan Horizontal", class: "ci ci-alan-horizontal" },
   { name: "Alan Vertical", class: "ci ci-alan-vertical" },
   { name: "Alan", class: "ci ci-alan" },
@@ -254,3 +254,40 @@ export const logos = [
   { name: "Youtube Horizontal", class: "ci ci-youtube-horizontal" },
   { name: "Youtube", class: "ci ci-youtube" },
 ];
+
+const fs = require("fs");
+
+let newLogos = logos.reduce((acc, logo) => {
+  let name = logo.name.split(" ")[0]; // Get the first word of the name
+  name = name.replace(/\d+$/, ""); // Remove trailing numbers
+
+  if (!acc[name]) {
+    acc[name] = {
+      name: name,
+      category: "technology", // Add your own logic for category
+      classes: [],
+      url: name.toLowerCase() + ".com", // Add your own logic for url
+    };
+  }
+  acc[name].classes.push(logo.class);
+  return acc;
+}, {});
+
+// Sort the classes array for each logo
+for (let logo in newLogos) {
+  newLogos[logo].classes.sort();
+}
+
+newLogos = Object.values(newLogos); // Convert the object to an array
+
+let data =
+  "const icons = " +
+  JSON.stringify(newLogos, null, 2) +
+  "\nexport default icons;";
+
+fs.writeFile("newLogos.js", data, (err) => {
+  if (err) throw err;
+  console.log("Data written to file");
+});
+
+console.log("This is after the write call");
