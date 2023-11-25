@@ -131,6 +131,6 @@ If you want me to add an icon that is missing or have some suggestions, just rai
 
 The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
 
-## Contact
+## Contact 👋🏻
 
 [Visit my personal website](https://dheereshagrwal.vercel.app)
