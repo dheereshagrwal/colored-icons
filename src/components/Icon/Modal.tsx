@@ -1,5 +1,5 @@
 import { IconCode } from ".";
-import { Icon } from "@/interfaces/Icon";
+import { Icon } from "@/interfaces";
 
 
 interface ModalProps {

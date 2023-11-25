@@ -1,9 +1,5 @@
 import { IconCard } from ".";
-import { Icon } from "@/interfaces/Icon";
-
-interface Category {
-  name: string;
-}
+import { Icon, Category } from "@/interfaces";
 
 interface IconListProps {
   icons: Icon[];

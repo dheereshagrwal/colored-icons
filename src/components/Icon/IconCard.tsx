@@ -1,4 +1,4 @@
-import { Icon } from "@/interfaces/Icon";
+import { Icon } from "@/interfaces";
 
 
 interface IconCardProps {

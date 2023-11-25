@@ -1,5 +1,5 @@
 // interfaces/Icon.ts
-export interface Icon {
+export default interface Icon {
   name: string;
   category: string;
   classes: string[];

@@ -1,12 +1,25 @@
 import { Listbox, Transition } from "@headlessui/react";
 import { ListboxButton, Selected } from ".";
 import { Fragment } from "react";
+import {
+  Category
+} from "@/interfaces";
 
-function classNames(...classes) {
+function classNames(...classes: (string)[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Dropdown = ({ categories, selectedCategory, onChange }) => {
+interface DropdownProps {
+  categories: Category[];
+  selectedCategory: Category;
+  onChange: (value: Category) => void;
+}
+
+const Dropdown: React.FC<DropdownProps> = ({
+  categories,
+  selectedCategory,
+  onChange,
+}) => {
   return (
     <Listbox value={selectedCategory} onChange={onChange}>
       {({ open }) => (
@@ -21,7 +34,7 @@ const Dropdown = ({ categories, selectedCategory, onChange }) => {
               leaveTo="opacity-0"
             >
               <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 shadow-lg focus:outline-none">
-                {categories.map((category) => (
+                {categories.map((category: Category) => (
                   <Listbox.Option
                     key={category.name}
                     className={({ active }) =>

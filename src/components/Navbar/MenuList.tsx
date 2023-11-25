@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-const MenuList = ({ className }) => {
+interface MenuListProps {
+  className: string;
+}
+
+const MenuList: React.FC<MenuListProps> = ({ className }) => {
   return (
     <div className={className}>
       {links.map((link, index) =>
@@ -21,8 +25,8 @@ const MenuList = ({ className }) => {
   );
 };
 
-const links = ["About", "Docs", "Installation", "divider"];
-const url =
+const links: string[] = ["About", "Docs", "Installation", "divider"];
+const url: string =
   "https://github.com/dheereshagrwal/colored-icons/blob/master/README.md";
 
 export default MenuList;

@@ -1,8 +1,16 @@
 import { IoCheckmark } from "react-icons/io5";
-function classNames(...classes) {
+
+function classNames(...classes: (string)[]) {
   return classes.filter(Boolean).join(" ");
 }
-const Selected = ({ selected, active, category }) => {
+
+interface SelectedProps {
+  selected: boolean;
+  active: boolean;
+  category: { name: string };
+}
+
+const Selected: React.FC<SelectedProps> = ({ selected, active, category }) => {
   return (
     <>
       <span className={classNames(selected ? "font-semibold" : "font-normal")}>

@@ -1,8 +1,11 @@
-
 import { HiChevronUpDown } from "react-icons/hi2";
 import { Listbox } from "@headlessui/react";
 
-const ListboxButton = ({ selectedCategory }) => {
+interface ListboxButtonProps {
+  selectedCategory: { name: string };
+}
+
+const ListboxButton: React.FC<ListboxButtonProps> = ({ selectedCategory }) => {
   return (
     <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-3 pl-3 pr-10 text-left text-gray-900 shadow-sm focus:outline-none">
       <span>{selectedCategory.name}</span>
