@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="flex items-center justify-between">
-        <Link className="font-pacifico text-2xl" href="/">
+        <Link className="font-pacifico text-3xl" href="/">
           Colored Icons
         </Link>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className="md:hidden mt-8 h-screen bg-white">
-          <MenuList className="flex flex-col text-lg font-semibold text-gray-600" />
+          <MenuList className="flex flex-col text-lg font-semibold text-gray-600 divide-y divide-double" />
         </div>
       )}
     </nav>

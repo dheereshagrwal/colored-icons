@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MenuList = ({ className }) => {
   return (
-    <div className={className + " divide-y divide-double"}>
+    <div className={className}>
       {links.map((link, index) =>
         link !== "divider" ? (
           <Link

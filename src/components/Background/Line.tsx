@@ -1,4 +1,4 @@
-const Line = () => {
+const Line: React.FC = () => {
   return (
     <div className="flex h-1 justify-between">
       <div className="bg-blue-500 w-3/12"></div>
