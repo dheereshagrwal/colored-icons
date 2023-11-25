@@ -8,12 +8,7 @@ import Link from "next/link";
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const {
-    showSearch,
-    setShowSearch,
-    isCrossButtonClicked,
-    setIsCrossButtonClicked,
-  } = useContext(SearchContext);
+  const { setShowSearch } = useContext(SearchContext);
 
   // Function to toggle the mobile menu
   const toggleMenu = () => {
@@ -49,8 +44,8 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden mt-2 h-screen bg-white -mx-8">
-          <MenuList className="flex flex-col gap-4 text-lg font-semibold text-gray-500 mx-8" />
+        <div className="md:hidden mt-8 h-screen bg-white">
+          <MenuList className="flex flex-col text-lg font-semibold text-gray-600" />
         </div>
       )}
     </nav>
