@@ -1,10 +1,8 @@
 import { useState, useContext, useRef } from "react";
 import { Combobox } from "@headlessui/react";
-import { ComboBoxInput } from "./ComboBoxInput";
-import { ComboBoxButton } from "./ComboBoxButton";
-import { ComboBoxOption } from "./ComboBoxOption";
-import Modal from "../Icon/Modal";
-import icons from "../../constants/icons";
+import { ComboBoxInput, ComboBoxButton, ComboBoxOption } from ".";
+import { Modal } from "@/components/Icon";
+import { icons } from "@/constants";
 import { SearchContext } from "@/context/SearchContextProvider";
 import useOutsideClick from "@/hooks/useOutsideClick";
 

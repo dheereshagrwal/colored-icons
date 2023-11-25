@@ -2,7 +2,7 @@ import { Combobox } from "@headlessui/react";
 import { CiSearch, CiSquareRemove } from "react-icons/ci";
 import { useContext } from "react";
 import { SearchContext } from "@/context/SearchContextProvider";
-export function ComboBoxButton() {
+const ComboBoxButton = () => {
   const { setIsCrossButtonClicked } = useContext(SearchContext);
   return (
     <>
@@ -20,4 +20,6 @@ export function ComboBoxButton() {
       </Combobox.Button>
     </>
   );
-}
+};
+
+export default ComboBoxButton;

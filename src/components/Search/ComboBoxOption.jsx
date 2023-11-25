@@ -1,6 +1,6 @@
 import { Combobox } from "@headlessui/react";
 
-export function ComboBoxOption({ icon }) {
+const ComboBoxOption = ({ icon }) => {
   return (
     <Combobox.Option
       value={icon}
@@ -17,3 +17,5 @@ export function ComboBoxOption({ icon }) {
     </Combobox.Option>
   );
 }
+
+export default ComboBoxOption;
