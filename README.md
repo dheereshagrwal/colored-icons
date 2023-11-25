@@ -7,10 +7,6 @@ Sample icons
 
 Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's a bunch of logos from different brands and tech stacks. You can just slap those awesome icons onto your projects without ever dealing with all that boring attribution.
 
-## Demo
-
-To see the demo of some of the icons, just visit [Colored Icons Library Demo](https://dheereshagrwal.github.io/colored-public/icons/). If you wish to see all the icons available yourself, you can open `svg` and `images` folder.
-
 ## Features
 
 - Super easy integration into your web projects using the `<i>` tag
