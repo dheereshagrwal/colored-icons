@@ -1,4 +1,11 @@
-const IconCard = ({ icon }) => {
+import { Icon } from "@/interfaces/Icon";
+
+
+interface IconCardProps {
+  icon: Icon;
+}
+
+const IconCard: React.FC<IconCardProps> = ({ icon }) => {
   return (
     <div className="rounded-lg border-2 hover:border-blue-500 hover:cursor-pointer flex px-4 gap-4 py-4 items-center w-full sm:w-48">
       <i className={`${icon.classes[0]} ci-2x`}></i>

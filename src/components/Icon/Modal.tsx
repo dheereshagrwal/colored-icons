@@ -1,6 +1,13 @@
-import IconCode from "./IconCode";
+import { IconCode } from ".";
+import { Icon } from "@/interfaces/Icon";
 
-const Modal = ({ icon, onClose }) => {
+
+interface ModalProps {
+  icon: Icon;
+  onClose: () => void;
+}
+
+const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
   return (
     <div className="fixed inset-0 backdrop-blur-lg flex justify-center items-center z-20">
       <div className="drop-shadow w-full mx-4 px-2 py-10 rounded-lg shadow-lg relative max-w-xl bg-gray-200">

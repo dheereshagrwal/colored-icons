@@ -1,10 +1,8 @@
 "use client";
 import { useState } from "react";
 import Dropdown from "./Dropdown";
-import IconList from "../Icon/IconList";
-import Modal from "../Icon/Modal";
-import categories from "../../icons/categories";
-import icons from "@/icons/icons";
+import { IconList, Modal } from "@/components/Icon";
+import { icons, categories } from "@/constants";
 
 export default function Filter() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);

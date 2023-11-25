@@ -1,13 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, MutableRefObject } from "react";
 
-function useOutsideClick(ref, modalRef, handler) {
+function useOutsideClick(
+  ref: MutableRefObject<any>,
+  modalRef: MutableRefObject<any>,
+  handler: (event: MouseEvent | TouchEvent) => void
+) {
   useEffect(() => {
-    const listener = (event) => {
+    const listener = (event: MouseEvent | TouchEvent) => {
       // Do nothing if clicking ref's element or descendent elements or the modal's element or descendent elements
       if (
         !ref.current ||
-        ref.current.contains(event.target) ||
-        (modalRef?.current && modalRef?.current.contains(event.target))
+        ref.current.contains(event.target as Node) ||
+        (modalRef?.current && modalRef?.current.contains(event.target as Node))
       ) {
         return;
       }

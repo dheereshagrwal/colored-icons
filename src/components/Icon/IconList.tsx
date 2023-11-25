@@ -1,7 +1,21 @@
-// IconList.js
-import IconCard from "../Icon/IconCard";
+import { IconCard } from ".";
+import { Icon } from "@/interfaces/Icon";
 
-const IconList = ({ icons, selectedCategory, handleIconClick }) => {
+interface Category {
+  name: string;
+}
+
+interface IconListProps {
+  icons: Icon[];
+  selectedCategory: Category;
+  handleIconClick: (icon: Icon) => void;
+}
+
+const IconList: React.FC<IconListProps> = ({
+  icons,
+  selectedCategory,
+  handleIconClick,
+}) => {
   return (
     <ul className="gap-3 flex flex-col sm:flex-row sm:flex-wrap">
       {icons

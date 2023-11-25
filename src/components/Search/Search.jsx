@@ -4,7 +4,7 @@ import { ComboBoxInput } from "./ComboBoxInput";
 import { ComboBoxButton } from "./ComboBoxButton";
 import { ComboBoxOption } from "./ComboBoxOption";
 import Modal from "../Icon/Modal";
-import icons from "../../icons/icons";
+import icons from "../../constants/icons";
 import { SearchContext } from "@/context/SearchContextProvider";
 import useOutsideClick from "@/hooks/useOutsideClick";
 
