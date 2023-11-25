@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons/src/app/ci.css"
+          href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@master/src/app/ci.css"
         />
       </head>
       <body className="px-8 mx-auto font-inter">
