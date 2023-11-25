@@ -23,7 +23,7 @@ export default function Home() {
       </section>
       <section className="mt-20 text-center">
         <h1 className="font-bold text-5xl lg:text-7xl font-poppins">All Icons. <br />In one place</h1>
-        <h2 className="text-lg mt-6 text-gray-600 max-w-md mx-auto">Colored Icons is the home for the world's icons.
+        <h2 className="text-lg mt-6 text-gray-600 max-w-md mx-auto">Colored Icons is the home for the world&apos;s icons.
           Discover the latest logos, colors, fonts and more.</h2>
       </section>
       <section className="mt-10 max-w-md mx-auto" onClick={() => setShowSearch(true)}>
