@@ -2,9 +2,10 @@
 import { useState, useContext } from "react";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
-import MenuList from "./MenuList";
+import { MenuList } from ".";
 import { SearchContext } from "@/context/SearchContextProvider";
 import Link from "next/link";
+
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);

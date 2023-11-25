@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import Dropdown from "./Dropdown";
+import { Dropdown } from ".";
 import { IconList, Modal } from "@/components/Icon";
 import { icons, categories } from "@/constants";
 
-export default function Filter() {
+const Filter = () => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedIcon, setSelectedIcon] = useState({});
@@ -51,4 +51,6 @@ export default function Filter() {
       {isModalOpen && <Modal icon={selectedIcon} onClose={closeModal} />}
     </div>
   );
-}
+};
+
+export default Filter;

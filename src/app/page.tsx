@@ -1,10 +1,9 @@
 "use client";
 import { useContext } from "react";
-import Navbar from "../components/Navbar/Navbar";
+import { Navbar } from "@/components/Navbar";
 import { Search, FauxSearch } from "@/components/Search";
-import Filter from "../components/Filter/Filter";
-import Shapes from "../components/Background/Shapes";
-import Line from "../components/Background/Line";
+import { Filter } from "../components/Filter";
+import { Shapes, Line } from "@/components/Background";
 import { SearchContext } from "@/context/SearchContextProvider";
 import Link from "next/link";
 export default function Home() {

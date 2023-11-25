@@ -1,12 +1,12 @@
 import { Listbox, Transition } from "@headlessui/react";
-import ListboxButton from "./ListboxButton";
+import { ListboxButton, Selected } from ".";
 import { Fragment } from "react";
-import Selected from "./Selected";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Dropdown({ categories, selectedCategory, onChange }) {
+const Dropdown = ({ categories, selectedCategory, onChange }) => {
   return (
     <Listbox value={selectedCategory} onChange={onChange}>
       {({ open }) => (
@@ -48,4 +48,6 @@ export default function Dropdown({ categories, selectedCategory, onChange }) {
       )}
     </Listbox>
   );
-}
+};
+
+export default Dropdown;
