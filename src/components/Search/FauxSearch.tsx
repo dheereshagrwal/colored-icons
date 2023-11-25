@@ -1,5 +1,6 @@
 import { CiSearch } from "react-icons/ci";
-const FauxSearch = () => {
+
+const FauxSearch: React.FC = () => {
   return (
     <div className="w-full relative rounded-full shadow border-2 ring-1 ring-blue-500 border-blue-500">
       <input

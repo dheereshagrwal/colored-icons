@@ -5,32 +5,38 @@ import { Modal } from "@/components/Icon";
 import { icons } from "@/constants";
 import { SearchContext } from "@/context/SearchContextProvider";
 import useOutsideClick from "@/hooks/useOutsideClick";
+import { Icon } from "@/interfaces";
+
+const temp: Icon = {
+  name: "",
+  classes: ["ci", "ci-transparent"],
+  category: "technology",
+  url: ""
+};
 
 export default function Search() {
-  const [query, setQuery] = useState("");
-  const [selectedIcon, setSelectedIcon] = useState(temp);
-  const [isModalOpen, setIsModalOpen] = useState(false); // state to control the modal
+  const [query, setQuery] = useState<string>("");
+  const [selectedIcon, setSelectedIcon] = useState<Icon>(temp);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // State to control the modal
   const closeModal = () => setIsModalOpen(false);
   const { setShowSearch, isCrossButtonClicked, setIsCrossButtonClicked } =
     useContext(SearchContext);
-  const modalRef = useRef(); // Create a ref for the Modal
-  const comboboxRef = useRef();
+  const modalRef = useRef<HTMLDivElement>(null); // Create a ref for the Modal
+  const comboboxRef = useRef<HTMLDivElement>(null);
 
   useOutsideClick(comboboxRef, modalRef, () => setShowSearch(false)); // Pass modalRef as the second argument
 
-  const filteredIcons =
+  const filteredIcons: Icon[] =
     query === ""
       ? icons
-      : icons.filter((icon) => {
-          return icon.name.toLowerCase().includes(query.toLowerCase());
-        });
+      : icons.filter((icon: Icon) => icon.name.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <div className="fixed inset-0 backdrop-blur-lg flex justify-center items-center z-10 px-6">
       <Combobox
         as="div"
         value={selectedIcon}
-        onChange={(icon) => {
+        onChange={(icon: Icon) => {
           setSelectedIcon(icon);
           setIsModalOpen(true);
           setIsCrossButtonClicked(false);
@@ -40,14 +46,15 @@ export default function Search() {
       >
         <ComboBoxInput
           shouldFocus={true}
-          onChange={(event) => setQuery(event.target.value)}
-          displayValue={isCrossButtonClicked ? "" : (icon) => icon.name}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) => setQuery(event.target.value)}
+          displayValue={isCrossButtonClicked ? "" : selectedIcon.name}
         />
+
         <ComboBoxButton />
 
         {filteredIcons.length > 0 && (
           <Combobox.Options className="absolute mt-2 max-h-56 w-full bg-white rounded-xl text-sm drop-shadow-2xl overflow-auto z-10 shadow-2xl">
-            {filteredIcons.map((icon) => (
+            {filteredIcons.map((icon: Icon) => (
               <ComboBoxOption icon={icon} key={icon.classes[0]} />
             ))}
           </Combobox.Options>
@@ -62,5 +69,3 @@ export default function Search() {
     </div>
   );
 }
-
-const temp = { name: "", class: "ci ci-transparent", category: "technology" };

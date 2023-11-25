@@ -12,5 +12,4 @@ const ComboBoxInput = ({ onChange, displayValue, shouldFocus }) => {
   );
 };
 
-
 export default ComboBoxInput;

@@ -265,12 +265,6 @@ const icons = [
     url: "graphql.com",
   },
   {
-    name: "HighOnSwift",
-    category: "technology",
-    classes: ["ci ci-highonswift"],
-    url: "highonswift.com",
-  },
-  {
     name: "HTML5",
     category: "technology",
     classes: ["ci ci-html"],
@@ -757,6 +751,12 @@ const icons = [
     category: "technology",
     classes: ["ci ci-ciphense"],
     url: "ciphense.com",
+  },
+  {
+    name: "HighOnSwift",
+    category: "technology",
+    classes: ["ci ci-highonswift"],
+    url: "highonswift.com",
   },
 ];
 export default icons;

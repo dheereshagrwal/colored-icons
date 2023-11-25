@@ -2,7 +2,10 @@ import { Combobox } from "@headlessui/react";
 import { CiSearch, CiSquareRemove } from "react-icons/ci";
 import { useContext } from "react";
 import { SearchContext } from "@/context/SearchContextProvider";
-const ComboBoxButton = () => {
+
+interface ComboBoxButtonProps {}
+
+const ComboBoxButton: React.FC<ComboBoxButtonProps> = () => {
   const { setIsCrossButtonClicked } = useContext(SearchContext);
   return (
     <>
