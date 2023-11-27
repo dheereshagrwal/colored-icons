@@ -6,6 +6,11 @@ import { Filter } from "../components/Filter";
 import { Shapes, Line } from "@/components/Background";
 import { SearchContext } from "@/context/SearchContextProvider";
 import Link from "next/link";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({ subsets: ['latin'], weight: "700" });
+
+
 export default function Home() {
   const { showSearch, setShowSearch } = useContext(SearchContext);
   return (
@@ -20,7 +25,7 @@ export default function Home() {
         <Navbar />
       </section>
       <section className="mt-20 text-center">
-        <h1 className="font-bold text-5xl lg:text-7xl font-poppins">All Icons. <br />In one place</h1>
+        <h1 className={`text-5xl lg:text-7xl ${poppins.className}`}>All Icons. <br />In one place</h1>
         <h2 className="text-lg mt-6 text-gray-600 max-w-md mx-auto">Colored Icons is the home for the world&apos;s icons.
           Discover the latest logos, colors, fonts and more.</h2>
       </section>

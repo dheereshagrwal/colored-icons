@@ -2,6 +2,8 @@ import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useState } from "react";
+import { Rubik } from 'next/font/google'
+const rubik = Rubik({ subsets: ['latin'] })
 
 interface IconCodeProps {
   onClose: () => void;
@@ -21,7 +23,7 @@ const IconCode: React.FC<IconCodeProps> = ({ onClose, iconClass }) => {
       <div className="grid grid-cols-7 md:grid-cols-8 md:mx-6 mt-5 mx-2 place-items-center">
         <i className={`${iconClass} ${size(iconClass)} col-span-2`}></i>
         <code
-          className={`text-xs font-rubik col-span-4 md:col-span-5 p-1 ${copied
+          className={`text-xs ${rubik.className} col-span-4 md:col-span-5 p-1 ${copied
             ? "border border-gray-500 border-dashed"
             : "border border-transparent"
             }`}

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { SearchContextProvider } from '../context/SearchContextProvider'
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Colored Icons',
@@ -14,13 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@master/src/app/ci.css"
-        />
-      </head>
-      <body className="px-8 mx-auto font-inter">
+      <body className={`px-8 mx-auto ${inter.className}`}>
         <SearchContextProvider>
           {children}
         </SearchContextProvider>

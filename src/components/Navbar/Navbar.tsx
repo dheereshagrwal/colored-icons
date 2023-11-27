@@ -4,10 +4,14 @@ import { CiSearch } from "react-icons/ci";
 import { MenuList } from ".";
 import { SearchContext } from "@/context/SearchContextProvider";
 import Link from "next/link";
+import { Pacifico } from "next/font/google";
 
-interface NavbarProps { }
+const pacifico = Pacifico(
+  { subsets: ["latin"], weight: "400" },
+);
 
-const Navbar: React.FC<NavbarProps> = () => {
+
+const Navbar: React.FC = () => {
   // State to manage the visibility of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const { setShowSearch } = useContext(SearchContext);
@@ -20,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <nav>
       <div className="flex items-center justify-between">
-        <Link className="font-pacifico text-3xl" href="/">
+        <Link className={`${pacifico.className} text-3xl`} href="/">
           Colored Icons
         </Link>
 
