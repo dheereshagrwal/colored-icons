@@ -3,6 +3,7 @@ const icons = [
     name: "X",
     category: "technology",
     classes: ["ci ci-x", "ci ci-x-light"],
+    url: "x.com",
   },
   {
     name: "HSBC",
