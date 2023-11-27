@@ -1,5 +1,10 @@
 const icons = [
   {
+    name: "X",
+    category: "technology",
+    classes: ["ci ci-x", "ci ci-x-light"],
+  },
+  {
     name: "HSBC",
     category: "financial services",
     classes: [
