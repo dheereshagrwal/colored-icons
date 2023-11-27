@@ -6,5 +6,15 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      maxHeight: {
+        104: "26rem",
+        112: "28rem",
+        120: "30rem",
+        128: "32rem",
+      },
+    },
+  },
 };
 export default config;
