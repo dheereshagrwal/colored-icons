@@ -6,6 +6,68 @@ const icons = [
     url: "x.com",
   },
   {
+    name: "Spotify",
+    category: "art and music",
+    classes: [
+      "ci ci-spotify",
+      "ci ci-spotify-horizontal",
+      "ci ci-spotify2-horizontal",
+    ],
+    url: "spotify.com",
+  },
+  {
+    name: "Instagram",
+    category: "technology",
+    classes: ["ci ci-instagram"],
+    url: "instagram.com",
+  },
+  {
+    name: "Linkedin",
+    category: "technology",
+    classes: ["ci ci-linkedin", "ci ci-linkedin-horizontal"],
+    url: "linkedin.com",
+  },
+  {
+    name: "Gmail",
+    category: "technology",
+    classes: ["ci ci-gmail", "ci ci-gmail-horizontal"],
+    url: "gmail.com",
+  },
+  {
+    name: "Leetcode",
+    category: "technology",
+    classes: ["ci ci-leetcode", "ci ci-leetcode-light"],
+    url: "leetcode.com",
+  },
+  {
+    name: "Github",
+    category: "technology",
+    classes: [
+      "ci ci-github",
+      "ci ci-github-light",
+      "ci ci-github-wordmark",
+      "ci ci-github-wordmark-light",
+    ],
+    url: "github.com",
+  },
+  {
+    name: "Git",
+    category: "technology",
+    classes: ["ci ci-git", "ci ci-git-horizontal"],
+    url: "git.com",
+  },
+  {
+    name: "Dribbble",
+    category: "art and music",
+    classes: [
+      "ci ci-dribbble",
+      "ci ci-dribbble-wordmark",
+      "ci ci-dribbble-wordmark-light",
+      "ci ci-dribbble2",
+    ],
+    url: "dribbble.com",
+  },
+  {
     name: "HSBC",
     category: "financial services",
     classes: [
@@ -15,7 +77,15 @@ const icons = [
     ],
     url: "hsbc.com",
   },
-
+  {
+    name: "Barclays",
+    category: "financial services",
+    classes: [
+      "ci ci-barclays",
+      "ci ci-barclays-wordmark",
+    ],
+    url: "barclays.com",
+  },
   {
     name: "Adidas",
     category: "clothing and apparel",
@@ -179,17 +249,6 @@ const icons = [
     url: "docker.com",
   },
   {
-    name: "Dribbble",
-    category: "art and music",
-    classes: [
-      "ci ci-dribbble",
-      "ci ci-dribbble-wordmark",
-      "ci ci-dribbble-wordmark-light",
-      "ci ci-dribbble2",
-    ],
-    url: "dribbble.com",
-  },
-  {
     name: "Eth",
     category: "Financial Services",
     classes: ["ci ci-eth"],
@@ -232,29 +291,6 @@ const icons = [
     url: "gcd.com",
   },
   {
-    name: "Git",
-    category: "technology",
-    classes: ["ci ci-git", "ci ci-git-horizontal"],
-    url: "git.com",
-  },
-  {
-    name: "Github",
-    category: "technology",
-    classes: [
-      "ci ci-github",
-      "ci ci-github-light",
-      "ci ci-github-wordmark",
-      "ci ci-github-wordmark-light",
-    ],
-    url: "github.com",
-  },
-  {
-    name: "Gmail",
-    category: "technology",
-    classes: ["ci ci-gmail", "ci ci-gmail-horizontal"],
-    url: "gmail.com",
-  },
-  {
     name: "Google",
     category: "technology",
     classes: ["ci ci-google", "ci ci-google-wordmark"],
@@ -283,12 +319,6 @@ const icons = [
     url: "infura.com",
   },
   {
-    name: "Instagram",
-    category: "technology",
-    classes: ["ci ci-instagram"],
-    url: "instagram.com",
-  },
-  {
     name: "Java",
     category: "technology",
     classes: ["ci ci-java", "ci ci-java-vertical"],
@@ -315,18 +345,6 @@ const icons = [
     category: "technology",
     classes: ["ci ci-laravel"],
     url: "laravel.com",
-  },
-  {
-    name: "Leetcode",
-    category: "technology",
-    classes: ["ci ci-leetcode", "ci ci-leetcode-light"],
-    url: "leetcode.com",
-  },
-  {
-    name: "Linkedin",
-    category: "technology",
-    classes: ["ci ci-linkedin", "ci ci-linkedin-horizontal"],
-    url: "linkedin.com",
   },
   {
     name: "Meta",
@@ -607,16 +625,6 @@ const icons = [
     category: "art and music",
     classes: ["ci ci-soundcloud", "ci ci-soundcloud-horizontal"],
     url: "soundcloud.com",
-  },
-  {
-    name: "Spotify",
-    category: "art and music",
-    classes: [
-      "ci ci-spotify",
-      "ci ci-spotify-horizontal",
-      "ci ci-spotify2-horizontal",
-    ],
-    url: "spotify.com",
   },
   {
     name: "Spring",

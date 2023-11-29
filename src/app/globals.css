@@ -19,6 +19,18 @@
   filter: invert(1);
 }
 
+.ci-barclays,
+.ci-barclays-dark,
+.ci-barclays-light {
+  content: url("../../public/icons/barclays/barclays.svg");
+}
+
+.ci-barclays-wordmark,
+.ci-barclays-wordmark-light,
+.ci-barclays-wordmark-dark {
+  content: url("../../public/icons/barclays/barclays-wordmark.svg");
+}
+
 .ci-x {
   content: url("../../public/icons/x/x.svg");
 }
