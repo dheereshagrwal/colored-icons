@@ -19,7 +19,7 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.0/src/app/ci.min.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.1/src/app/ci.min.css"
 />
 ```
 
