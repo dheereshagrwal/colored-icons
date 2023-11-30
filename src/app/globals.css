@@ -19,6 +19,503 @@
   filter: invert(1);
 }
 
+.ci-phonepe,
+.ci-phonepe-dark,
+.ci-phonepe-light {
+  content: url("../../public/icons/phonepe/phonepe.svg");
+}
+
+.ci-phonepe-horizontal,
+.ci-phonepe-inline,
+.ci-phonepe-horizontal-dark,
+.ci-phonepe-inline-dark,
+.ci-phonepe-horizontal-light,
+.ci-phonepe-inline-light {
+  content: url("../../public/icons/phonepe/phonepe-horizontal.svg");
+}
+
+.ci-stripe,
+.ci-stripe-dark,
+.ci-stripe-light {
+  content: url("../../public/icons/stripe/stripe.jpeg");
+}
+.ci-stripe-wordmark,
+.ci-stripe-wordmark-dark,
+.ci-stripe-wordmark-light {
+  content: url("../../public/icons/stripe/stripe-wordmark.svg");
+}
+
+.ci-razorpay,
+.ci-razorpay-dark,
+.ci-razorpay-light {
+  content: url("../../public/icons/razorpay/razorpay.jpeg");
+}
+.ci-razorpay-horizontal,
+.ci-razorpay-inline,
+.ci-razorpay-horizontal-dark,
+.ci-razorpay-inline-dark,
+.ci-razorpay-horizontal-light,
+.ci-razorpay-inline-light {
+  content: url("../../public/icons/razorpay/razorpay-horizontal.svg");
+}
+
+.ci-paypal,
+.ci-paypal-dark,
+.ci-paypal-light {
+  content: url("../../public/icons/paypal/paypal.svg");
+}
+
+.ci-paypal-horizontal,
+.ci-paypal-inline,
+.ci-paypal-horizontal-dark,
+.ci-paypal-inline-dark,
+.ci-paypal-horizontal-light,
+.ci-paypal-inline-light {
+  content: url("../../public/icons/paypal/paypal-horizontal.svg");
+}
+
+.ci-paytm,
+.ci-paytm-dark,
+.ci-paytm-light {
+  content: url("../../public/icons/paytm/paytm.jpeg");
+}
+.ci-paytm-wordmark,
+.ci-paytm-wordmark-dark,
+.ci-paytm-wordmark-light {
+  content: url("../../public/icons/paytm/paytm-wordmark.svg");
+}
+
+.ci-payoneer,
+.ci-payoneer-dark,
+.ci-payoneer-light {
+  content: url("../../public/icons/payoneer/payoneer.jpeg");
+}
+
+.ci-payoneer-horizontal,
+.ci-payoneer-inline,
+.ci-payoneer-horizontal-dark,
+.ci-payoneer-inline-dark {
+  content: url("../../public/icons/payoneer/payoneer-horizontal.svg");
+}
+
+.ci-payoneer-horizontal-light,
+.ci-payoneer-inline-light {
+  content: url("../../public/icons/payoneer/payoneer-horizontal-light.svg");
+}
+
+.ci-payoneer-vertical,
+.ci-payoneer-stacked,
+.ci-payoneer-vertical-dark,
+.ci-payoneer-stacked-dark {
+  content: url("../../public/icons/payoneer/payoneer-vertical.svg");
+}
+
+.ci-payoneer-vertical-light,
+.ci-payoneer-stacked-light {
+  content: url("../../public/icons/payoneer/payoneer-vertical-light.svg");
+}
+
+.ci-buymeacoffee,
+.ci-buymeacoffee-dark,
+.ci-buymeacoffee-light {
+  content: url("../../public/icons/buymeacoffee/buymeacoffee.png");
+}
+
+.ci-mastercard,
+.ci-mastercard-dark,
+.ci-mastercard-light {
+  content: url("../../public/icons/mastercard/mastercard.svg");
+}
+
+.ci-dominos,
+.ci-dominos-dark,
+.ci-dominos-light {
+  content: url("../../public/icons/dominos/dominos.svg");
+}
+
+.ci-dominos-horizontal,
+.ci-dominos-inline,
+.ci-dominos-horizontal-dark,
+.ci-dominos-inline-dark,
+.ci-dominos-horizontal-light,
+.ci-dominos-inline-light {
+  content: url("../../public/icons/dominos/dominos-horizontal.svg");
+}
+
+.ci-wendys,
+.ci-wendys-dark,
+.ci-wendys-light {
+  content: url("../../public/icons/wendys/wendys.svg");
+}
+
+.ci-kfc,
+.ci-kfc-dark,
+.ci-kfc-light {
+  content: url("../../public/icons/kfc/kfc.svg");
+}
+
+.ci-kfc-wordmark,
+.ci-kfc-wordmark-dark,
+.ci-kfc-wordmark-light {
+  content: url("../../public/icons/kfc/kfc-wordmark.svg");
+}
+
+.ci-mcdonalds,
+.ci-mcdonalds-dark,
+.ci-mcdonalds-light {
+  content: url("../../public/icons/mcdonalds/mcdonalds.svg");
+}
+
+.ci-burgerking,
+.ci-burgerking-dark,
+.ci-burgerking-light {
+  content: url("../../public/icons/burgerking/burgerking.svg");
+}
+
+.ci-nestle,
+.ci-nestle-dark,
+.ci-nestle-light {
+  content: url("../../public/icons/nestle/nestle.svg");
+}
+
+.ci-nestle-vertical,
+.ci-nestle-stacked,
+.ci-nestle-vertical-dark,
+.ci-nestle-stacked-dark,
+.ci-nestle-vertical-light,
+.ci-nestle-stacked-light {
+  content: url("../../public/icons/nestle/nestle-vertical.svg");
+}
+
+.ci-booking,
+.ci-booking-dark,
+.ci-booking-light {
+  content: url("../../public/icons/booking/booking.jpeg");
+}
+
+.ci-booking-wordmark,
+.ci-booking-wordmark-dark,
+.ci-booking-wordmark-light {
+  content: url("../../public/icons/booking/booking-wordmark.svg");
+}
+
+.ci-ola,
+.ci-ola-dark,
+.ci-ola-light,
+.ci-ola-wordmark,
+.ci-ola-wordmark-dark,
+.ci-ola-wordmark-light,
+.ci-olacabs,
+.ci-olacabs-dark,
+.ci-olacabs-light,
+.ci-olacabs-wordmark,
+.ci-olacabs-wordmark-dark,
+.ci-olacabs-wordmark-light {
+  content: url("../../public/icons/ola/ola-wordmark.svg");
+}
+
+.ci-uber,
+.ci-uber-dark,
+.ci-uber-wordmark,
+.ci-uber-wordmark-dark {
+  content: url("../../public/icons/uber/uber-wordmark.svg");
+}
+
+.ci-uber-light,
+.ci-uber-wordmark-light {
+  content: url("../../public/icons/uber/uber-wordmark-light.svg");
+}
+
+.ci-virgin,
+.ci-virgin-dark,
+.ci-virgin-light {
+  content: url("../../public/icons/virgin/virgin.svg");
+}
+
+.ci-expedia,
+.ci-expedia-dark,
+.ci-expedia-light {
+  content: url("../../public/icons/expedia/expedia.svg");
+}
+
+.ci-expedia-horizontal,
+.ci-expedia-inline,
+.ci-expedia-horizontal-dark,
+.ci-expedia-inline-dark,
+.ci-expedia-horizontal-light,
+.ci-expedia-inline-light {
+  content: url("../../public/icons/expedia/expedia-horizontal.svg");
+}
+
+.ci-hotels,
+.ci-hotels-dark,
+.ci-hotels-light {
+  content: url("../../public/icons/hotels/hotels.svg");
+}
+
+.ci-hotels-horizontal,
+.ci-hotels-inline,
+.ci-hotels-horizontal-dark,
+.ci-hotels-inline-dark,
+.ci-hotels-horizontal-light,
+.ci-hotels-inline-light {
+  content: url("../../public/icons/hotels/hotels-horizontal.svg");
+}
+
+.ci-audi,
+.ci-audi-dark {
+  content: url("../../public/icons/audi/audi.svg");
+}
+
+.ci-audi-light {
+  content: url("../../public/icons/audi/audi-light.svg");
+}
+
+.ci-porsche,
+.ci-porsche-dark,
+.ci-porsche-light {
+  content: url("../../public/icons/porsche/porsche.svg");
+}
+
+.ci-porsche-vertical,
+.ci-porsche-stacked,
+.ci-porsche-vertical-dark,
+.ci-porsche-stacked-dark,
+.ci-porsche-vertical-light,
+.ci-porsche-stacked-light {
+  content: url("../../public/icons/porsche/porsche-vertical.svg");
+}
+
+.ci-bmw,
+.ci-bmw-dark,
+.ci-bmw-light {
+  content: url("../../public/icons/bmw/bmw.png");
+}
+
+.ci-landrover,
+.ci-landrover-dark,
+.ci-landrover-light {
+  content: url("../../public/icons/landrover/landrover.png");
+}
+
+.ci-practo,
+.ci-practo-dark,
+.ci-practo-light {
+  content: url("../../public/icons/practo/practo.png");
+}
+
+.ci-practo-wordmark,
+.ci-practo-wordmark-dark,
+.ci-practo-wordmark-light {
+  content: url("../../public/icons/practo/practo-wordmark.svg");
+}
+
+.ci-jnj,
+.ci-jnj-dark,
+.ci-jnj-light {
+  content: url("../../public/icons/jnj/jnj.png");
+}
+
+.ci-jnj-wordmark,
+.ci-jnj-wordmark-dark,
+.ci-jnj-wordmark-light {
+  content: url("../../public/icons/jnj/jnj-wordmark.svg");
+}
+
+.ci-novartis,
+.ci-novartis-dark,
+.ci-novartis-light {
+  content: url("../../public/icons/novartis/novartis.svg");
+}
+
+.ci-novartis-horizontal,
+.ci-novartis-inline,
+.ci-novartis-horizontal-dark,
+.ci-novartis-inline-dark,
+.ci-novartis-horizontal-light,
+.ci-novartis-inline-light {
+  content: url("../../public/icons/novartis/novartis-horizontal.svg");
+}
+
+.ci-roche,
+.ci-roche-dark,
+.ci-roche-light,
+.ci-roche-wordmark,
+.ci-roche-wordmark-dark,
+.ci-roche-wordmark-light {
+  content: url("../../public/icons/roche/roche-wordmark.svg");
+}
+
+.ci-sanofi,
+.ci-sanofi-dark,
+.ci-sanofi-light {
+  content: url("../../public/icons/sanofi/sanofi.svg");
+}
+
+.ci-sanofi-wordmark,
+.ci-sanofi-wordmark-dark,
+.ci-sanofi-wordmark-light {
+  content: url("../../public/icons/sanofi/sanofi-wordmark.svg");
+}
+
+.ci-merck,
+.ci-merck-dark,
+.ci-merck-light {
+  content: url("../../public/icons/merck/merck.svg");
+}
+
+.ci-merck-horizontal,
+.ci-merck-inline,
+.ci-merck-horizontal-dark,
+.ci-merck-inline-dark,
+.ci-merck-horizontal-light,
+.ci-merck-inline-light {
+  content: url("../../public/icons/merck/merck-horizontal.svg");
+}
+
+.ci-astrazeneca,
+.ci-astrazeneca-dark,
+.ci-astrazeneca-light {
+  content: url("../../public/icons/astrazeneca/astrazeneca.svg");
+}
+
+.ci-astrazeneca-horizontal,
+.ci-astrazeneca-inline,
+.ci-astrazeneca-horizontal-dark,
+.ci-astrazeneca-inline-dark,
+.ci-astrazeneca-horizontal-light,
+.ci-astrazeneca-inline-light {
+  content: url("../../public/icons/astrazeneca/astrazeneca-horizontal.svg");
+}
+
+.ci-lamborghini,
+.ci-lamborghini-dark,
+.ci-lamborghini-light {
+  content: url("../../public/icons/lamborghini/lamborghini.png");
+}
+
+.ci-mercedes,
+.ci-mercedes-dark,
+.ci-mercedes-light {
+  content: url("../../public/icons/mercedes/mercedes.svg");
+}
+
+.ci-mercedes-vertical,
+.ci-mercedes-stacked,
+.ci-mercedes-vertical-dark,
+.ci-mercedes-stacked-dark {
+  content: url("../../public/icons/mercedes/mercedes-vertical.svg");
+}
+
+.ci-mercedes-vertical-light,
+.ci-mercedes-stacked-light {
+  content: url("../../public/icons/mercedes/mercedes-vertical-light.svg");
+}
+
+.ci-nike,
+.ci-nike-dark {
+  content: url("../../public/icons/nike/nike.svg");
+}
+
+.ci-nike-light {
+  content: url("../../public/icons/nike/nike-light.svg");
+}
+
+.ci-zara,
+.ci-zara-dark,
+.ci-zara-wordmark,
+.ci-zara-wordmark-dark {
+  content: url("../../public/icons/zara/zara-wordmark.svg");
+}
+
+.ci-zara-light,
+.ci-zara-wordmark-light {
+  content: url("../../public/icons/zara/zara-wordmark-light.svg");
+}
+
+.ci-puma,
+.ci-puma-dark {
+  content: url("../../public/icons/puma/puma.svg");
+}
+
+.ci-puma-light {
+  content: url("../../public/icons/puma/puma-light.svg");
+}
+
+.ci-puma-horizontal,
+.ci-puma-inline,
+.ci-puma-horizontal-dark,
+.ci-puma-inline-dark {
+  content: url("../../public/icons/puma/puma-horizontal.svg");
+}
+
+.ci-puma-horizontal-light,
+.ci-puma-inline-light {
+  content: url("../../public/icons/puma/puma-horizontal-light.svg");
+}
+
+.ci-hm,
+.ci-hm-dark,
+.ci-hm-light {
+  content: url("../../public/icons/hm/hm.svg");
+}
+
+.ci-balenciaga,
+.ci-balenciaga-dark,
+.ci-balenciaga-light,
+.ci-balenciaga-wordmark,
+.ci-balenciaga-wordmark-dark,
+.ci-balenciaga-wordmark-light {
+  content: url("../../public/icons/balenciaga/balenciaga-wordmark.svg");
+}
+
+.ci-gucci,
+.ci-gucci-dark,
+.ci-gucci-wordmark,
+.ci-gucci-wordmark-dark {
+  content: url("../../public/icons/gucci/gucci-wordmark.svg");
+}
+
+.ci-gucci-light,
+.ci-gucci-wordmark-light {
+  content: url("../../public/icons/gucci/gucci-wordmark-light.svg");
+}
+
+
+.ci-prada,
+.ci-prada-dark,
+.ci-prada-wordmark,
+.ci-prada-wordmark-dark {
+  content: url("../../public/icons/prada/prada-wordmark.svg");
+}
+
+.ci-prada-light,
+.ci-prada-wordmark-light {
+  content: url("../../public/icons/prada/prada-wordmark-light.svg");
+}
+
+.ci-fendi,
+.ci-fendi-dark,
+.ci-fendi-wordmark,
+.ci-fendi-wordmark-dark {
+  content: url("../../public/icons/fendi/fendi-wordmark.svg");
+}
+
+.ci-fendi-light,
+.ci-fendi-wordmark-light {
+  content: url("../../public/icons/fendi/fendi-wordmark-light.svg");
+}
+
+
+.ci-visa,
+.ci-visa-dark,
+.ci-visa-light,
+.ci-visa-wordmark,
+.ci-visa-wordmark-dark,
+.ci-visa-wordmark-light {
+  content: url("../../public/icons/visa/visa-wordmark.svg");
+}
+
 .ci-barclays,
 .ci-barclays-dark,
 .ci-barclays-light {

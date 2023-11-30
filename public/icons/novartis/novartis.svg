@@ -1,0 +1,28 @@
+<svg version="1.1" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.8 48.4" style="enable-background:new 0 0 42.8 48.4;" xml:space="preserve">
+ <style type="text/css">
+  .st0{fill:url(#_Path__1_);}
+	.st1{fill:#0460A9;}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="48.4" width="42.8" x="-0.4" y="0">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g id="_Group_">
+  <linearGradient id="_Path__1_" gradientUnits="userSpaceOnUse" x1="56.72" y1="-14.925" x2="99.51" y2="-14.925" gradientTransform="matrix(1 0 0 -1 -56.72 11.64)">
+   <stop offset="0.3" style="stop-color:#E74A21">
+   </stop>
+   <stop offset="0.7" style="stop-color:#EC9A1E">
+   </stop>
+  </linearGradient>
+  <path id="_Path_" class="st0" d="M29.5,21.7L29.4,22c2,0.9,6.5,4.4,6.5,11.4c0,6.6-5.6,13.3-14.3,13.3c-10.9,0-14.7-6.4-14.7-12.2
+		c0-7.5,5.2-12.5,5.2-19.3c-0.1-5-3.6-9.3-8.4-10.3L3.5,5.1c1.7,1.7,2.7,4,2.7,6.4C6.2,18.9,0,24.1,0,32.6c0,7.8,5.5,15.8,21.3,15.8
+		c14.1,0,21.5-6.9,21.5-14.2C42.8,27.8,38.3,22.5,29.5,21.7z">
+  </path>
+  <path id="_Compound_Path_" class="st1" d="M21.5,37.8l4-37.8h-8.3l4,37.8H21.5z">
+  </path>
+ </g>
+</svg>
