@@ -214,6 +214,7 @@ const icons = [
       "ci ci-puma-horizontal",
       "ci ci-puma-horizontal-light",
     ],
+    url: "puma.com",
   },
 
   {
@@ -270,6 +271,7 @@ const icons = [
       "ci ci-lv-wordmark",
       "ci ci-lv-wordmark-light",
     ],
+    url: "louisvuitton.com",
   },
   {
     name: "Ray-Ban",
