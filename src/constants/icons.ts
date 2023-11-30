@@ -262,6 +262,22 @@ const icons = [
     url: "fendi.com",
   },
   {
+    name: "Louis Vuitton",
+    category: "clothing and apparel",
+    classes: [
+      "ci ci-lv",
+      "ci ci-lv-light",
+      "ci ci-lv-wordmark",
+      "ci ci-lv-wordmark-light",
+    ],
+  },
+  {
+    name: "Ray-Ban",
+    category: "clothing and apparel",
+    classes: ["ci ci-rayban", "ci ci-rayban-wordmark"],
+    url: "rayban.com",
+  },
+  {
     name: "practo",
     category: "pharmaceuticals",
     classes: ["ci ci-practo", "ci ci-practo-wordmark"],

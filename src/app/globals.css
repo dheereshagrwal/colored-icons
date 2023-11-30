@@ -481,7 +481,6 @@
   content: url("../../public/icons/gucci/gucci-wordmark-light.svg");
 }
 
-
 .ci-prada,
 .ci-prada-dark,
 .ci-prada-wordmark,
@@ -506,6 +505,32 @@
   content: url("../../public/icons/fendi/fendi-wordmark-light.svg");
 }
 
+.ci-lv,
+.ci-lv-dark {
+  content: url("../../public/icons/louisvuitton/lv.svg");
+}
+
+.ci-lv-light {
+  content: url("../../public/icons/louisvuitton/lv-light.svg");
+}
+
+.ci-lv-wordmark,
+.ci-lv-wordmark-dark {
+  content: url("../../public/icons/louisvuitton/lv-wordmark.svg");
+}
+
+.ci-lv-wordmark-light {
+  content: url("../../public/icons/louisvuitton/lv-wordmark-light.svg");
+}
+
+.ci-rayban,
+.ci-rayban-dark,
+.ci-rayban-light,
+.ci-rayban-wordmark,
+.ci-rayban-wordmark-dark,
+.ci-rayban-wordmark-light {
+  content: url("../../public/icons/rayban/rayban-wordmark.svg");
+}
 
 .ci-visa,
 .ci-visa-dark,
