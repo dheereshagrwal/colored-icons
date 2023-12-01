@@ -688,6 +688,24 @@ const icons = [
     url: "graphql.com",
   },
   {
+    name: "Swift",
+    category: "technology",
+    classes: ["ci ci-swift", "ci ci-swift-horizontal"],
+    url: "swift.org",
+  },
+  {
+    name: "Ruby",
+    category: "technology",
+    classes: ["ci ci-ruby"],
+    url: "ruby-lang.org",
+  },
+  {
+    name: "Scala",
+    category: "technology",
+    classes: ["ci ci-scala", "ci ci-scala-horizontal"],
+    url: "scala-lang.org",
+  },
+  {
     name: "HTML5",
     category: "technology",
     classes: ["ci ci-html"],
@@ -706,10 +724,70 @@ const icons = [
     url: "java.com",
   },
   {
-    name: "Js",
+    name: "C",
+    category: "technology",
+    classes: ["ci ci-c"],
+    url: "learn-c.org",
+  },
+  {
+    name: "C++",
+    category: "technology",
+    classes: ["ci ci-cpp"],
+    url: "isocpp.org",
+  },
+  {
+    name: "C#",
+    category: "technology",
+    classes: ["ci ci-csharp"],
+    url: "csharp.com",
+  },
+  {
+    name: "Julia",
+    category: "technology",
+    classes: ["ci ci-julia", "ci ci-julia-wordmark"],
+    url: "julialang.org",
+  },
+  {
+    name: "Go",
+    category: "technology",
+    classes: ["ci ci-go", "ci ci-go-wordmark"],
+    url: "golang.org",
+  },
+  {
+    name: "PHP",
+    category: "technology",
+    classes: ["ci ci-php", "ci ci-php-wordmark", "ci ci-php-wordmark-light"],
+    url: "php.net",
+  },
+  {
+    name: "Kotlin",
+    category: "technology",
+    classes: ["ci ci-kotlin", "ci ci-kotlin-wordmark"],
+    url: "kotlinlang.org",
+  },
+  {
+    name: "Rust",
+    category: "technology",
+    classes: ["ci ci-rust"],
+    url: "rust-lang.org",
+  },
+  {
+    name: "R",
+    category: "technology",
+    classes: ["ci ci-r"],
+    url: "r-project.org",
+  },
+  {
+    name: "Perl",
+    category: "technology",
+    classes: ["ci ci-perl"],
+    url: "perl.org",
+  },
+  {
+    name: "JavaScript",
     category: "technology",
     classes: ["ci ci-js"],
-    url: "js.com",
+    url: "javascript.com",
   },
   {
     name: "Kubernetes",
@@ -923,13 +1001,13 @@ const icons = [
     name: "React Native",
     category: "technology",
     classes: ["ci ci-react-native"],
-    url: "react.com",
+    url: "reactnative.dev",
   },
   {
     name: "Reactjs",
     category: "technology",
     classes: ["ci ci-reactjs"],
-    url: "reactjs.com",
+    url: "react.dev",
   },
 
   {
@@ -1024,10 +1102,10 @@ const icons = [
     url: "twitter.com",
   },
   {
-    name: "Ts",
+    name: "TypeScript",
     category: "technology",
     classes: ["ci ci-ts", "ci ci-ts-circle", "ci ci-ts-wordmark"],
-    url: "ts.com",
+    url: "typescriptlang.org",
   },
   {
     name: "Vercel",

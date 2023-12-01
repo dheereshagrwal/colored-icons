@@ -26,10 +26,33 @@ export default function Search() {
 
   useOutsideClick(comboboxRef, modalRef, () => setShowSearch(false)); // Pass modalRef as the second argument
 
-  const filteredIcons: Icon[] =
-    query === ""
-      ? icons
-      : icons.filter((icon: Icon) => icon.name.toLowerCase().includes(query.toLowerCase()));
+  const filteredIcons: Icon[] = icons.filter((icon: Icon) => {
+    if (query === "") {
+      return true;
+    }
+
+    const lowerCaseQuery = query.toLowerCase();
+
+    // Check in name
+    if (icon.name.toLowerCase().includes(lowerCaseQuery)) {
+      return true;
+    }
+
+    // Check in classes
+    for (let i = 0; i < icon.classes.length; i++) {
+      if (icon.classes[i].toLowerCase().includes(lowerCaseQuery)) {
+        return true;
+      }
+    }
+
+    // Check in url
+    if (icon.url.toLowerCase().includes(lowerCaseQuery)) {
+      return true;
+    }
+
+    return false;
+  });
+
 
   return (
     <div className="fixed inset-0 backdrop-blur-lg flex justify-center items-center z-10 px-6">

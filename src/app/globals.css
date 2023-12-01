@@ -19,6 +19,138 @@
   filter: invert(1);
 }
 
+.ci-c,
+.ci-c-dark,
+.ci-c-light {
+  content: url("../../public/icons/c/c.svg");
+}
+
+.ci-cpp,
+.ci-cplusplus,
+.ci-cpp-dark,
+.ci-cplusplus-dark,
+.ci-cpp-light,
+.ci-cplusplus-light {
+  content: url("../../public/icons/cpp/cpp.svg");
+}
+
+.ci-csharp,
+.ci-csharp-dark,
+.ci-csharp-light {
+  content: url("../../public/icons/csharp/csharp.svg");
+}
+
+.ci-julia,
+.ci-julia-dark,
+.ci-julia-light {
+  content: url("../../public/icons/julia/julia.svg");
+}
+
+.ci-julia-wordmark,
+.ci-julia-wordmark-dark,
+.ci-julia-wordmark-light {
+  content: url("../../public/icons/julia/julia-wordmark.svg");
+}
+
+.ci-go,
+.ci-go-dark,
+.ci-go-light,
+.ci-golang,
+.ci-golang-dark,
+.ci-golang-light {
+  content: url("../../public/icons/go/go.svg");
+}
+
+.ci-go-wordmark,
+.ci-go-wordmark-dark,
+.ci-go-wordmark-light,
+.ci-golang-wordmark,
+.ci-golang-wordmark-dark,
+.ci-golang-wordmark-light {
+  content: url("../../public/icons/go/go-wordmark.svg");
+}
+
+.ci-php,
+.ci-php-dark,
+.ci-php-light {
+  content: url("../../public/icons/php/php.svg");
+}
+
+.ci-php-wordmark,
+.ci-php-wordmark-dark {
+  content: url("../../public/icons/php/php-wordmark.svg");
+}
+
+.ci-php-wordmark-light {
+  content: url("../../public/icons/php/php-wordmark-light.svg");
+}
+
+.ci-kotlin,
+.ci-kotlin-dark,
+.ci-kotlin-light {
+  content: url("../../public/icons/kotlin/kotlin.svg");
+}
+
+.ci-kotlin-wordmark,
+.ci-kotlin-wordmark-dark,
+.ci-kotlin-wordmark-light {
+  content: url("../../public/icons/kotlin/kotlin-wordmark.svg");
+}
+
+.ci-rust,
+.ci-rust-dark,
+.ci-rust-light {
+  content: url("../../public/icons/rust/rust.svg");
+}
+
+.ci-perl,
+.ci-perl-dark,
+.ci-perl-light {
+  content: url("../../public/icons/perl/perl.svg");
+}
+
+.ci-r,
+.ci-r-dark,
+.ci-r-light {
+  content: url("../../public/icons/r/r.svg");
+}
+
+.ci-ruby,
+.ci-ruby-dark,
+.ci-ruby-light {
+  content: url("../../public/icons/ruby/ruby.svg");
+}
+
+.ci-swift,
+.ci-swift-dark,
+.ci-swift-light {
+  content: url("../../public/icons/swift/swift.svg");
+}
+
+.ci-swift-horizontal,
+.ci-swift-inline,
+.ci-swift-horizontal-dark,
+.ci-swift-inline-dark,
+.ci-swift-horizontal-light,
+.ci-swift-inline-light {
+  content: url("../../public/icons/swift/swift-horizontal.svg");
+}
+
+.ci-scala,
+.ci-scala-dark,
+.ci-scala-light {
+  content: url("../../public/icons/scala/scala.svg");
+}
+
+.ci-scala-horizontal,
+.ci-scala-inline,
+.ci-scala-horizontal-dark,
+.ci-scala-inline-dark,
+.ci-scala-horizontal-light,
+.ci-scala-inline-light {
+  content: url("../../public/icons/scala/scala-horizontal.svg");
+}
+
 .ci-phonepe,
 .ci-phonepe-dark,
 .ci-phonepe-light {
