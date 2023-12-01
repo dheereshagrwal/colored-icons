@@ -14,7 +14,7 @@ Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuf
 
 ## Installation
 
-To use the Colored Icons Library, simply add the following CDN link to your HTML file:
+To use the Colored Icons Library, simply add the following CDN link to your HTML file (Be careful with the release versions, they might include breaking changes): 
 
 ```
 <link
