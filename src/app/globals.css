@@ -24,6 +24,9 @@
 .ci-c-light {
   content: url("../../public/icons/c/c.svg");
 }
+.ci-vscode {
+  content: url("../../public/icons/vscode/vscode.svg");
+}
 
 .ci-cpp,
 .ci-cplusplus,

@@ -1,5 +1,11 @@
 const icons = [
   {
+    name: "VisualStudioCode",
+    catergory:"technology",
+    classes: ["ci ci-vscode"],
+    url: "code.visualstudio.com"
+  },
+  {
     name: "X",
     category: "technology",
     classes: ["ci ci-x", "ci ci-x-light"],
