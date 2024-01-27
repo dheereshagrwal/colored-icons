@@ -7,6 +7,7 @@ import { Shapes, Line } from "@/components/Background";
 import { SearchContext } from "@/context/SearchContextProvider";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
+import GithubButton from 'vue-github-button';
 
 const poppins = Poppins({ subsets: ['latin'], weight: "700" });
 
@@ -43,6 +44,11 @@ export default function Home() {
           &#8594;
         </span>
       </Link>
+      <div style={{position:"relative"}}>
+        <div style={{position:"absolute", float: "right", bottom:-200, right:0}}>
+          <github-button href="https://github.com/buttons/github-buttons" data-color-scheme="no-preference: light_high_contrast; light: light; dark: light_high_contrast;" data-size="large" data-show-count="true" aria-label="Star buttons/github-buttons on GitHub">Star</github-button>
+        </div>
+      </div> 
 
       <section className="mt-10">
         {showSearch && <Search />}
