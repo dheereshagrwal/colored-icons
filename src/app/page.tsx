@@ -25,7 +25,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto">
         <Navbar />
       </section>
-      <section className="mt-20 text-center">
+      <section className="mt-20 text-center max-w-7xl mx-auto">
         <h1 className={`text-5xl lg:text-7xl ${poppins.className}`}>All Icons. <br />In one place</h1>
         <h2 className="text-lg mt-6 text-gray-600 max-w-md mx-auto">Colored Icons is the home for the world&apos;s icons.
           Discover the latest logos, colors, fonts and more.</h2>
