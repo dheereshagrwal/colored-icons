@@ -6,6 +6,7 @@ import { Filter } from "../components/Filter";
 import { Shapes, Line } from "@/components/Background";
 import { SearchContext } from "@/context/SearchContextProvider";
 import Link from "next/link";
+import { FaStar } from "react-icons/fa6";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({ subsets: ['latin'], weight: "700" });
@@ -32,16 +33,11 @@ export default function Home() {
       <section className="mt-10 max-w-md mx-auto" onClick={() => setShowSearch(true)}>
         <FauxSearch />
       </section>
-      <Link href="https://github.com/dheereshagrwal/colored-icons" target="_blank" className="text-xs sm:text-sm mt-10 rounded-full gap-2 sm:gap-3 flex items-center h-10 justify-center w-64 sm:w-80 mx-auto border bg-gray-100 text-gray-700">
-        <span>
-          👋🏻
-        </span>
+      <Link href="https://github.com/dheereshagrwal/colored-icons" target="_blank" className="text-xs sm:text-sm mt-10 rounded-full gap-2.5 flex items-center h-10 justify-center w-48 mx-auto border bg-gray-100 text-gray-700">
+        <FaStar className="text-lg text-amber-500"/>
         <p className="font-semibold">
-          Add your icon on Colored Icons
+          Star us on Github
         </p>
-        <span>
-          &#8594;
-        </span>
       </Link>
 
       <section className="mt-10">
