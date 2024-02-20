@@ -120,7 +120,11 @@ Some icons have a second version of them provided which is a darker shade of the
 ## Contribution
 
 The code is very lightweight and dead simple; there is nothing fancy going on.
-If you want me to add an icon that is missing or have some suggestions, just raise an issue
+### Guidelines for naming
+logo -> {company}.svg
+wordmark (text) -> {company-wordmark}.svg
+logo + wordmark -> {company-horizontal}.svg
+If you want me to add an icon that is missing or have some suggestions, just raise an issue.
 
 ## License
 
