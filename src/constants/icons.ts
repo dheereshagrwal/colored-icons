@@ -1,9 +1,37 @@
 const icons = [
   {
+    name: "Gitlab",
+    category: "technology",
+    classes: [
+      "ci ci-gitlab",
+      "ci ci-gitlab-horizontal",
+      "ci ci-gitlab-horizontal-light",
+    ],
+    url: "gitlab.com",
+  },
+  {
+    name: "Postman",
+    category: "technology",
+    classes: ["ci ci-postman", "ci ci-postman-horizontal"],
+    url: "postman.com",
+  },
+  {
+    name:"expressjs",
+    category: "technology",
+    classes: ["ci ci-expressjs", "ci ci-expressjs-wordmark"],
+    url: "expressjs.com",
+  },
+  {
+    name: "jQuery",
+    category: "technology",
+    classes: ["ci ci-jquery", "ci ci-jquery-horizontal"],
+    url: "jquery.com",
+  },
+  {
     name: "VS Code",
-    category:"technology",
+    category: "technology",
     classes: ["ci ci-vscode"],
-    url: "code.visualstudio.com"
+    url: "code.visualstudio.com",
   },
   {
     name: "X",
@@ -1153,12 +1181,6 @@ const icons = [
     category: "technology",
     classes: ["ci ci-ringcentral"],
     url: "ringcentral.com",
-  },
-  {
-    name: "HighOnSwift",
-    category: "technology",
-    classes: ["ci ci-highonswift"],
-    url: "highonswift.com",
   },
 ];
 export default icons;

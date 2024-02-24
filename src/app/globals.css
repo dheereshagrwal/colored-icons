@@ -19,6 +19,63 @@
   filter: invert(1);
 }
 
+.ci-gitlab,
+.ci-gitlab-dark,
+.ci-gitlab-light {
+  content: url("../../public/icons/gitlab/gitlab.svg");
+}
+
+.ci-gitlab-horizontal,
+.ci-gitlab-inline,
+.ci-gitlab-horizontal-dark,
+.ci-gitlab-inline-dark {
+  content: url("../../public/icons/gitlab/gitlab-horizontal.svg");
+}
+
+.ci-gitlab-horizontal-light,
+.ci-gitlab-inline-light {
+  content: url("../../public/icons/gitlab/gitlab-horizontal-light.svg");
+}
+
+.ci-postman,
+.ci-postman-dark,
+.ci-postman-light {
+  content: url("../../public/icons/postman/postman.svg");
+}
+
+.ci-postman-horizontal,
+.ci-postman-inline,
+.ci-postman-horizontal-dark,
+.ci-postman-inline-dark,
+.ci-postman-horizontal-light,
+.ci-postman-inline-light {
+  content: url("../../public/icons/postman/postman-horizontal.svg");
+}
+
+.ci-expressjs,
+.ci-expressjs-dark,
+.ci-expressjs-light {
+  content: url("../../public/icons/expressjs/expressjs.svg");
+}
+
+.ci-expressjs-wordmark,
+.ci-expressjs-wordmark-dark {
+  content: url("../../public/icons/expressjs/expressjs-wordmark.svg");
+}
+
+.ci-jquery,
+.ci-jquery-dark,
+.ci-jquery-light {
+  content: url("../../public/icons/jquery/jquery.svg");
+}
+
+.ci-jquery-horizontal,
+.ci-jquery-inline,
+.ci-jquery-horizontal-dark,
+.ci-jquery-inline-dark {
+  content: url("../../public/icons/jquery/jquery-horizontal.svg");
+}
+
 .ci-c,
 .ci-c-dark,
 .ci-c-light {
@@ -1517,16 +1574,6 @@
 .ci-ringcentral-dark,
 .ci-ringcentral-light {
   content: url("../../public/icons/ringcentral/ringcentral.svg");
-}
-
-.ci-highonswift,
-.ci-highonswift-dark {
-  content: url("../../public/icons/highonswift/highonswift.png");
-  filter: invert(1);
-}
-
-.ci-highonswift-light {
-  content: url("../../public/icons/highonswift/highonswift.png");
 }
 
 .ci-firebase,

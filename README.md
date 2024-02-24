@@ -56,7 +56,7 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 If you want to invert the color for some reason, just add `ci-invert`.
 
 ```
-<i class="ci ci-highonswift ci-2x ci-invert"></i>
+<i class="ci ci-postman ci-2x ci-invert"></i>
 ```
 
 ## Sizing
