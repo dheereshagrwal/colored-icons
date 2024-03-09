@@ -23,17 +23,21 @@ const IconCode: React.FC<IconCodeProps> = ({ onClose, iconClass }) => {
       <div className="grid grid-cols-7 md:grid-cols-8 md:mx-6 mt-5 mx-2 place-items-center">
         <i className={`${iconClass} ${size(iconClass)} col-span-2`}></i>
         <code
-          className={`text-xs ${rubik.className} col-span-4 md:col-span-5 p-1 ${copied
-            ? "border border-gray-500 border-dashed"
-            : "border border-transparent"
-            }`}
+          className={`text-xs ${rubik.className} col-span-4 md:col-span-5 p-1 ${
+            copied
+              ? "border border-gray-500 border-dashed"
+              : "border border-transparent"
+          }`}
         >{`<i className="${iconClass} ${size(iconClass)}"></i>`}</code>
         <CopyToClipboard
           text={`<i className="${iconClass} ${size(iconClass)}"></i>`}
           onCopy={handleCopy}
         >
-          <span className={`col-span-1 text-gray-500 cursor-pointer hover:text-gray-800 ${copied ? "text-green-500" : ""
-            }`}>
+          <span
+            className={`col-span-1 cursor-pointer ${
+              copied ? "text-green-500 hover:text-green-500" : "text-gray-500 hover:text-gray-800"
+            }`}
+          >
             {copied ? <HiOutlineClipboardCheck /> : <HiOutlineClipboard />}
           </span>
         </CopyToClipboard>
