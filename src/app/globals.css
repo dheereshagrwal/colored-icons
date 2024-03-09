@@ -19,6 +19,24 @@
   filter: invert(1);
 }
 
+.ci-solana,
+.ci-solana-dark,
+.ci-solana-light {
+  content: url("../../public/icons/solana/solana.svg");
+}
+
+.ci-solana-horizontal,
+.ci-solana-inline,
+.ci-solana-horizontal-dark,
+.ci-solana-inline-dark {
+  content: url("../../public/icons/solana/solana-horizontal.svg");
+}
+
+.ci-solana-horizontal-light,
+.ci-solana-inline-light {
+  content: url("../../public/icons/solana/solana-horizontal-light.svg");
+}
+
 .ci-gitlab,
 .ci-gitlab-dark,
 .ci-gitlab-light {

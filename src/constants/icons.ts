@@ -1,5 +1,15 @@
 const icons = [
   {
+    name: "Solana",
+    category: "technology",
+    classes: [
+      "ci ci-solana",
+      "ci ci-solana-horizontal",
+      "ci ci-solana-horizontal-light",
+    ],
+    url: "solana.com",
+  },
+  {
     name: "Gitlab",
     category: "technology",
     classes: [
@@ -16,7 +26,7 @@ const icons = [
     url: "postman.com",
   },
   {
-    name:"expressjs",
+    name: "expressjs",
     category: "technology",
     classes: ["ci ci-expressjs", "ci ci-expressjs-wordmark"],
     url: "expressjs.com",
