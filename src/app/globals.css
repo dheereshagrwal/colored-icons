@@ -19,6 +19,12 @@
   filter: invert(1);
 }
 
+.ci-electronjs,
+.ci-electronjs-dark,
+.ci-electronjs-light {
+  content: url("../../public/icons/electronjs/electronjs.svg");
+}
+
 .ci-solana,
 .ci-solana-dark,
 .ci-solana-light {

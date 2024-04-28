@@ -1,5 +1,11 @@
 const icons = [
   {
+    name: "Electronjs",
+    category: "technology",
+    classes: ["ci ci-electronjs"],
+    url: "electronjs.org",
+  },
+  {
     name: "Solana",
     category: "technology",
     classes: [
