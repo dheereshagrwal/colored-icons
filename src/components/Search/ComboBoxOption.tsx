@@ -15,7 +15,7 @@ const ComboBoxOption: React.FC<ComboBoxOptionProps> = ({ icon }) => {
     >
       {({ active, selected }) => (
         <div className="flex items-center gap-2">
-          <i className={icon.classes[0]} />
+          <i className={`ci ci-${icon.classes[0]}`} />
           <span className={`${selected && "font-semibold"}`}>{icon.name}</span>
         </div>
       )}
