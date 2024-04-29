@@ -1,5 +1,15 @@
 const icons = [
   {
+    name: "Solana",
+    category: "technology",
+    classes: [
+      "ci ci-solana",
+      "ci ci-solana-horizontal",
+      "ci ci-solana-horizontal-light",
+    ],
+    url: "solana.com",
+  },
+  {
     name: "Gitlab",
     category: "technology",
     classes: ["gitlab", "gitlab-horizontal", "gitlab-horizontal-light"],
