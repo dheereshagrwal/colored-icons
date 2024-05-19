@@ -1,11 +1,9 @@
 import { Listbox, Transition } from "@headlessui/react";
 import { ListboxButton, Selected } from ".";
 import { Fragment } from "react";
-import {
-  Category
-} from "@/interfaces";
+import { Category } from "@/interfaces";
 
-function classNames(...classes: (string)[]) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 

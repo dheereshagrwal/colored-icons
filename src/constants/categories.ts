@@ -1,4 +1,6 @@
-const categories = [
+import { Category } from "@/interfaces";
+
+const categories: Category[] = [
   {
     name: "Technology",
   },

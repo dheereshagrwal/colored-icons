@@ -1,3 +1,10 @@
-// index.ts
-export type { default as Category } from "./Category";
-export type { default as Icon } from "./Icon";
+export interface Icon {
+  name: string;
+  category: string;
+  classes: string[];
+  url: string;
+}
+
+export interface Category {
+  name: string;
+}
