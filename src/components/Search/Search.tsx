@@ -68,7 +68,6 @@ export default function Search() {
         ref={comboboxRef}
       >
         <ComboBoxInput
-          shouldFocus={true}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => setQuery(event.target.value)}
           displayValue={isCrossButtonClicked ? "" : selectedIcon.name}
         />
