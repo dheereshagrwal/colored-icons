@@ -1,11 +1,9 @@
 import { Listbox, Transition } from "@headlessui/react";
 import { ListboxButton, Selected } from ".";
 import { Fragment } from "react";
-import {
-  Category
-} from "@/interfaces";
+import { Category } from "@/interfaces";
 
-function classNames(...classes: (string)[]) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -33,7 +31,7 @@ const Dropdown: React.FC<DropdownProps> = ({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 shadow-lg focus:outline-none">
+              <Listbox.Options className="absolute mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 shadow-lg focus:outline-none">
                 {categories.map((category: Category) => (
                   <Listbox.Option
                     key={category.name}
