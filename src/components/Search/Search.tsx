@@ -55,7 +55,7 @@ export default function Search() {
 
 
   return (
-    <div className="fixed inset-0 backdrop-blur-lg flex justify-center items-center z-10 px-6">
+    <div className="fixed inset-0 backdrop-blur-lg flex justify-center items-center px-6">
       <Combobox
         as="div"
         value={selectedIcon}
@@ -76,7 +76,7 @@ export default function Search() {
         <ComboBoxButton />
 
         {filteredIcons.length > 0 && (
-          <Combobox.Options className="absolute mt-2 max-h-56 w-full bg-white rounded-xl text-sm drop-shadow-2xl overflow-auto z-10 shadow-2xl">
+          <Combobox.Options className="absolute mt-2 max-h-56 w-full bg-white rounded-xl text-sm drop-shadow-2xl overflow-auto shadow-2xl">
             {filteredIcons.map((icon: Icon) => (
               <ComboBoxOption icon={icon} key={icon.classes[0]} />
             ))}
