@@ -2,10 +2,11 @@
 
 Sample icons
 
-<img src="public/icons/spotify/spotify.svg" alt="Spotify Icon" width="48" height="48"> <img src="public/icons/reactjs/reactjs.svg" alt="React Icon" width="48" height="48">
-<img src="public/icons/vuejs/vuejs.svg" alt="Vue.js Icon" width="48" height="48"> <img src="public/icons/redis/redis.svg" alt="Redis Icon" width="48" height="48"> <img src="public/icons/firebase/firebase.svg" alt="Firebase Icon" width="48" height="48"> <img src="public/icons/instagram/instagram.svg" alt="Instagram Icon" width="48" height="48"> <img src="public/icons/python/python.svg" alt="Python Icon" width="48" height="48"> <img src="public/icons/js/js.svg" alt="JavaScript Icon" width="48" height="48"> <img src="public/icons/html/html.svg" alt="HTML5 Icon" width="48" height="48"> <img src="public/icons/css/css.svg" alt="CSS3 Icon" width="48" height="48"> <img src="public/icons/nodejs/nodejs.svg" alt="Node.js Icon" width="48" height="48"> <img src="public/icons/mongodb/mongodb.svg" alt="MongoDB Icon" width="48" height="48"> <img src="public/icons/postgresql/postgresql.svg" alt="PostgreSQL Icon" width="48" height="48"> <img src="public/icons/java/java.svg" alt="Java Icon" width="48" height="48"> <img src="public/icons/angular/angular.svg" alt="Angular Icon" width="48" height="48"> <img src="public/icons/nuxtjs/nuxtjs.svg" alt="Nuxtjs Icon" width="48" height="48"> <img src="public/icons/solana/solana.svg" alt="Solana Icon" width="48" height="48"> <img src="public/icons/docker/docker.webp" alt="Docker Icon" width="48"> <img src="public/icons/kubernetes/kubernetes.svg" alt="Kubernetes Icon" width="48" height="48">
+<img src="public/icons/spotify/spotify.svg" alt="Spotify Icon"  height="48"> <img src="public/icons/reactjs/reactjs.svg" alt="React Icon"  height="48">
+<img src="public/icons/vuejs/vuejs.svg" alt="Vue.js Icon"  height="48"> <img src="public/icons/redis/redis.svg" alt="Redis Icon"  height="48"> <img src="public/icons/firebase/firebase.svg" alt="Firebase Icon"  height="48"> <img src="public/icons/instagram/instagram.svg" alt="Instagram Icon"  height="48"> <img src="public/icons/python/python.svg" alt="Python Icon"  height="48"> <img src="public/icons/js/js.svg" alt="JavaScript Icon"  height="48"> <img src="public/icons/html/html.svg" alt="HTML5 Icon"  height="48"> <img src="public/icons/css/css.svg" alt="CSS3 Icon"  height="48"> <img src="public/icons/nodejs/nodejs.svg" alt="Node.js Icon"  height="48"> <img src="public/icons/mongodb/mongodb.svg" alt="MongoDB Icon"  height="48"> <img src="public/icons/postgresql/postgresql.svg" alt="PostgreSQL Icon"  height="48"> <img src="public/icons/java/java.svg" alt="Java Icon"  height="48"> <img src="public/icons/angular/angular.svg" alt="Angular Icon"  height="48"> <img src="public/icons/nuxtjs/nuxtjs.svg" alt="Nuxtjs Icon"  height="48"> <img src="public/icons/solana/solana.svg" alt="Solana Icon"  height="48"> <img src="public/icons/docker/docker.webp" alt="Docker Icon" height="48"> <img src="public/icons/kubernetes/kubernetes.svg" alt="Kubernetes Icon"  height="48">
 
 Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's a bunch of logos from different brands and tech stacks. You can just use these awesome icons in your projects without ever dealing with any downloads
+
 ## Features
 
 - Super easy integration into your web projects using the `<i>` tag
@@ -14,7 +15,7 @@ Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuf
 
 ## Installation
 
-To use the Colored Icons Library, simply add the following CDN link to your HTML file (Be careful with the release versions, they might include breaking changes): 
+To use the Colored Icons Library, simply add the following CDN link to your HTML file (Be careful with the release versions, they might include breaking changes):
 
 ```
 <link
@@ -28,28 +29,32 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 ```
 <i class="ci ci-spotify ci-2x"></i>
 ```
+
 <img src="public/icons/spotify/spotify.svg" width="32px">
 
 ```
 <i class="ci ci-git ci-md"></i>
 ```
+
 <img src="public/icons/git/git.svg" width="16px">
 
 ```
 <i class="ci ci-nuxtjs ci-5x"></i>
 ```
+
 <img src="public/icons/nuxtjs/nuxtjs.svg" width="80px">
 
 ```
 <i class="ci ci-azure ci-sm"></i>
 ```
+
 <img src="public/icons/azure/azure.svg" width="14px">
 
 ```
 <i class="ci ci-redis ci-3x"></i>
 ```
-<img src="public/icons/redis/redis.svg" width="48px">
 
+<img src="public/icons/redis/redis.svg" width="48px">
 
 ## Inverting the color
 
@@ -67,11 +72,9 @@ I used the same sizing style used by font awesome:
 
 <img src='public/icons/discord/discord.svg' width="10px"> <img src='public/icons/discord/discord.svg' width="12px"> <img src='public/icons/discord/discord.svg' width="14px"> <img src='public/icons/discord/discord.svg' width="16px"> <img src='public/icons/discord/discord.svg' width="20px"> <img src='public/icons/discord/discord.svg' width="24px"> <img src='public/icons/discord/discord.svg' width="32px">
 
-
 `ci-1x` `ci-2x` `ci-3x` `ci-4x` `ci-5x` `ci-6x` `ci-7x` `ci-8x` `ci-9x` `ci-10x`
 
 <img src="public/icons/discord/discord.svg" width="16px"> <img src="public/icons/discord/discord.svg" width="32px"> <img src="public/icons/discord/discord.svg" width="48px"> <img src="public/icons/discord/discord.svg" width="64px"> <img src="public/icons/discord/discord.svg" width="80px"> <img src="public/icons/discord/discord.svg" width="96px"> <img src="public/icons/discord/discord.svg" width="112px"> <img src="public/icons/discord/discord.svg" width="128px"> <img src="public/icons/discord/discord.svg" width="144px"> <img src="public/icons/discord/discord.svg" width="160px">
-
 
 For more details about the sizing, you can refer to this [Font Awesome Icon Size Documentation](https://fontawesome.com/docs/web/style/size)
 
@@ -111,17 +114,18 @@ Some icons have a second version of them provided which is a darker shade of the
 
 `ci ci-mongodb2`
 
-<img src="public/icons/mongodb/mongodb2.svg" alt="MongoDB2 Icon" width="48" height="48">
+<img src="public/icons/mongodb/mongodb2.svg" alt="MongoDB2 Icon"  height="48">
 
 `ci ci-mongodb`
 
-<img src="public/icons/mongodb/mongodb.svg" alt="MongoDB Icon" width="48" height="48">
+<img src="public/icons/mongodb/mongodb.svg" alt="MongoDB Icon"  height="48">
 
 ## Contribution
 
 The code is very lightweight and dead simple; there is nothing fancy going on.
 
 ### Guidelines for naming
+
 `logo -> {company}.svg`
 
 `wordmark (text) -> {company-wordmark}.svg`
