@@ -99,6 +99,7 @@
 .ci-c-light {
   content: url("../../public/icons/c/c.svg");
 }
+
 .ci-vscode {
   content: url("../../public/icons/vscode/vscode.svg");
 }
@@ -249,6 +250,7 @@
 .ci-stripe-light {
   content: url("../../public/icons/stripe/stripe.jpeg");
 }
+
 .ci-stripe-wordmark,
 .ci-stripe-wordmark-dark,
 .ci-stripe-wordmark-light {
@@ -260,6 +262,7 @@
 .ci-razorpay-light {
   content: url("../../public/icons/razorpay/razorpay.jpeg");
 }
+
 .ci-razorpay-horizontal,
 .ci-razorpay-inline,
 .ci-razorpay-horizontal-dark,
@@ -289,6 +292,7 @@
 .ci-paytm-light {
   content: url("../../public/icons/paytm/paytm.jpeg");
 }
+
 .ci-paytm-wordmark,
 .ci-paytm-wordmark-dark,
 .ci-paytm-wordmark-light {
@@ -1119,6 +1123,7 @@
 .ci-telegram-light {
   content: url("../../public/icons/telegram/telegram.svg");
 }
+
 .ci-telegram2,
 .ci-telegram2-dark,
 .ci-telegram2-light {
@@ -1193,11 +1198,13 @@
 .ci-twitter-rounded-light {
   content: url("../../public/icons/twitter/twitter-circle.svg");
 }
+
 .ci-twitter-rounded-square,
 .ci-twitter-rounded-square-dark,
 .ci-twitter-rounded-square-light {
   content: url("../../public/icons/twitter/twitter-rounded-square.svg");
 }
+
 .ci-twitter-square,
 .ci-twitter-square-dark,
 .ci-twitter-square-light {
@@ -1349,6 +1356,96 @@
   content: url("../../public/icons/microsoft/microsoft-horizontal-light.png");
 }
 
+.ci-365,
+.ci-365-dark,
+.ci-365-light {
+  content: url("../../public/icons/365/365.svg");
+}
+
+.ci-access,
+.ci-access-dark,
+.ci-access-light {
+  content: url("../../public/icons/365/access.svg");
+}
+
+.ci-delve,
+.ci-delve-dark,
+.ci-delve-light {
+  content: url("../../public/icons/365/delve.svg");
+}
+
+.ci-excel,
+.ci-excel-dark,
+.ci-excel-light {
+  content: url("../../public/icons/365/excel.svg");
+}
+
+.ci-forms,
+.ci-forms-dark,
+.ci-forms-light {
+  content: url("../../public/icons/365/forms.svg");
+}
+
+.ci-onedrive,
+.ci-onedrive-dark,
+.ci-onedrive-light {
+  content: url("../../public/icons/365/onedrive.svg");
+}
+
+.ci-onenote,
+.ci-onenote-dark,
+.ci-onenote-light {
+  content: url("../../public/icons/365/onenote.svg");
+}
+
+.ci-outlook,
+.ci-outlook-dark,
+.ci-outlook-light {
+  content: url("../../public/icons/365/outlook.svg");
+}
+
+.ci-powerpoint,
+.ci-powerpoint-dark,
+.ci-powerpoint-light {
+  content: url("../../public/icons/365/powerpoint.svg");
+}
+
+.ci-project,
+.ci-project-dark,
+.ci-project-light {
+  content: url("../../public/icons/365/project.svg");
+}
+
+.ci-sharepoint,
+.ci-sharepoint-dark,
+.ci-sharepoint-light {
+  content: url("../../public/icons/365/sharepoint.svg");
+}
+
+.ci-sway,
+.ci-sway-dark,
+.ci-sway-light {
+  content: url("../../public/icons/365/sway.svg");
+}
+
+.ci-teams,
+.ci-teams-dark,
+.ci-teams-light {
+  content: url("../../public/icons/365/teams.svg");
+}
+
+.ci-visio,
+.ci-visio-dark,
+.ci-visio-light {
+  content: url("../../public/icons/365/visio.svg");
+}
+
+.ci-word,
+.ci-word-dark,
+.ci-word-light {
+  content: url("../../public/icons/365/word.svg");
+}
+
 .ci-aws,
 .ci-aws-dark {
   content: url("../../public/icons/aws/aws.svg");
@@ -1461,6 +1558,7 @@
 .ci-netlify-dark {
   content: url("../../public/icons/netlify/netlify.svg");
 }
+
 .ci-netlify-light {
   content: url("../../public/icons/netlify/netlify-light.svg");
 }
@@ -1515,6 +1613,7 @@
 .ci-nuxt-inline-light {
   content: url("../../public/icons/nuxtjs/nuxtjs-horizontal-light.svg");
 }
+
 .ci-nextjs,
 .ci-next,
 .ci-nextjs-dark,
@@ -1550,6 +1649,7 @@
 .ci-spring-light {
   content: url("../../public/icons/spring/spring.svg");
 }
+
 .ci-reactjs,
 .ci-react,
 .ci-reactjs-dark,
@@ -2118,6 +2218,7 @@
 .ci-sass-light {
   content: url("../../public/icons/sass/sass.png");
 }
+
 .ci-sass-wordmark,
 .ci-sass-wordmark-dark,
 .ci-sass-wordmark-light {
@@ -2198,6 +2299,7 @@
 .ci-graphql-inline-light {
   content: url("../../public/icons/graphql/graphql-horizontal.svg");
 }
+
 .ci-graphql-vertical,
 .ci-graphql-vertical-dark,
 .ci-graphql-stacked,
@@ -2212,6 +2314,7 @@
 .ci-infura-light {
   content: url("../../public/icons/infura/infura.svg");
 }
+
 .ci-infura-vertical,
 .ci-infura-vertical-dark,
 .ci-infura-vertical-light,
@@ -2241,6 +2344,7 @@
 .ci-metamask-light {
   content: url("../../public/icons/metamask/metamask.svg");
 }
+
 .ci-metamask-horizontal,
 .ci-metamask-horizontal-dark,
 .ci-metamask-horizontal-light,
@@ -2269,6 +2373,7 @@
 .ci-npm-light {
   content: url("../../public/icons/npm/npm.svg");
 }
+
 .ci-npm-wordmark,
 .ci-npm-wordmark-dark,
 .ci-npm-wordmark-light {
@@ -2289,6 +2394,7 @@
 .ci-kubernetes-light {
   content: url("../../public/icons/kubernetes/kubernetes.svg");
 }
+
 .ci-kubernetes-horizontal,
 .ci-kubernetes-horizontal-dark,
 .ci-kubernetes-horizontal-light,
@@ -2424,6 +2530,7 @@
   width: 0.625rem;
   height: 0.625rem;
 }
+
 .ci-xs {
   width: 0.75rem;
   height: 0.75rem;
@@ -2433,10 +2540,12 @@
   width: 0.875rem;
   height: 0.875rem;
 }
+
 .ci-md {
   width: 1rem;
   height: 1rem;
 }
+
 .ci-lg {
   width: 1.25rem;
   height: 1.25rem;
@@ -2456,38 +2565,47 @@
   width: 1rem;
   height: 1rem;
 }
+
 .ci-2x {
   width: 2rem;
   height: 2rem;
 }
+
 .ci-3x {
   width: 3rem;
   height: 3rem;
 }
+
 .ci-4x {
   width: 4rem;
   height: 4rem;
 }
+
 .ci-5x {
   width: 5rem;
   height: 5rem;
 }
+
 .ci-6x {
   width: 6rem;
   height: 6rem;
 }
+
 .ci-7x {
   width: 7rem;
   height: 7rem;
 }
+
 .ci-8x {
   width: 8rem;
   height: 8rem;
 }
+
 .ci-9x {
   width: 9rem;
   height: 9rem;
 }
+
 .ci-10x {
   width: 10rem;
   height: 10rem;
