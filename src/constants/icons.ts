@@ -2,11 +2,7 @@ const icons = [
   {
     name: "Solana",
     category: "technology",
-    classes: [
-      "ci ci-solana",
-      "ci ci-solana-horizontal",
-      "ci ci-solana-horizontal-light",
-    ],
+    classes: ["solana", "solana-horizontal", "solana-horizontal-light"],
     url: "solana.com",
   },
   {
