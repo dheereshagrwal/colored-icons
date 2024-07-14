@@ -13,7 +13,7 @@ const IconList: React.FC<IconListProps> = ({
   handleIconClick,
 }) => {
   return (
-    <ul className="gap-3 flex flex-col sm:flex-row sm:flex-wrap">
+    <ul className="flex flex-col sm:flex-row sm:flex-wrap justify-between gap-3">
       {icons
         .filter(
           (icon) =>

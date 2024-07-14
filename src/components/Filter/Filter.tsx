@@ -20,7 +20,7 @@ const Filter = () => {
 
   return (
     <div className="flex flex-col sm:flex-row gap-10">
-      <div className="hidden sm:flex flex-col gap-3 text-sm w-48">
+      <div className="hidden sm:flex flex-col gap-3 text-sm w-52">
         {categories.map((category: Category) => (
           <button
             key={category.name}
