@@ -993,7 +993,7 @@ const icons = [
     name: "Pluto",
     category: "art and music",
     classes: ["pluto"],
-    url: "pluto.com",
+    url: "pluto.website",
   },
   {
     name: "Polygon",
