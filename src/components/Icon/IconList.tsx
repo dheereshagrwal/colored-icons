@@ -19,6 +19,7 @@ const IconList: React.FC<IconListProps> = ({
           (icon) =>
             icon.category.toLowerCase() === selectedCategory.name.toLowerCase()
         )
+        .sort((a, b) => a.name.localeCompare(b.name))
         .map((icon) => (
           <li key={icon.name} onClick={() => handleIconClick(icon)}>
             <IconCard icon={icon} />
