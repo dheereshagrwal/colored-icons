@@ -123,6 +123,7 @@ Some icons have a second version of them provided which is a darker shade of the
 ## Contribution
 
 The code is very lightweight and dead simple; there is nothing fancy going on.
+Please note that we use `pnpm` for faster builds.
 
 ### Guidelines for naming
 
