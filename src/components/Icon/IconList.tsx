@@ -21,8 +21,10 @@ const IconList: React.FC<IconListProps> = ({
   const searchFilteredIcons = useMemo(() => {
     if (!debouncedSearch) return icons;
     const debouncedSearchLowercase = debouncedSearch.toLowerCase();
-    return icons.filter((icon) =>
-      icon.name.toLowerCase().includes(debouncedSearchLowercase)
+    return icons.filter(
+      (icon) =>
+        icon.name.toLowerCase().includes(debouncedSearchLowercase) ||
+        icon.url.toLowerCase().includes(debouncedSearchLowercase)
     );
   }, [icons, debouncedSearch]);
 

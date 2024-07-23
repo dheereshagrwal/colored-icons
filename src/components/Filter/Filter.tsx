@@ -27,7 +27,7 @@ const Filter = () => {
         {categories.map((category: Category) => (
           <button
             key={category.name}
-            className={`inline-flex items-center px-4 py-2 font-medium rounded-md text-gray-900 hover:bg-gray-50 border-2 ring-1 w-48 ${
+            className={`inline-flex items-center px-4 py-2 font-medium rounded-md text-gray-900 hover:bg-gray-50 border-2 ring-1 w-52 ${
               selectedCategory.name === category.name
                 ? "border-blue-500 ring-blue-500"
                 : "border-transparent ring-transparent"

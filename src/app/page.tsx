@@ -34,7 +34,7 @@ export default function Home() {
       <Link
         href="https://github.com/dheereshagrwal/colored-icons"
         target="_blank"
-        className="text-xs sm:text-sm mt-10 rounded-full gap-2.5 flex items-center h-10 justify-center w-48 mx-auto border bg-gray-100 text-gray-700"
+        className="text-xs sm:text-sm mt-10 rounded-full gap-2.5 flex items-center h-10 justify-center w-48 mx-auto border bg-gray-100 text-gray-700 hover:bg-gray-200"
       >
         <FaStar className="text-lg text-amber-500" />
         <p className="font-semibold">Star us on Github</p>
