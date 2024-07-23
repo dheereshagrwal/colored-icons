@@ -1,93 +1,57 @@
-import { useState, useContext, useRef } from "react";
-import { Combobox } from "@headlessui/react";
-import { ComboBoxInput, ComboBoxButton, ComboBoxOption } from ".";
-import { Modal } from "@/components/Icon";
-import { icons } from "@/constants";
 import { SearchContext } from "@/context/SearchContextProvider";
-import useOutsideClick from "@/hooks/useOutsideClick";
-import { Icon } from "@/interfaces";
+import { useContext, useEffect, useRef } from "react";
+import { CiSearch } from "react-icons/ci";
 
-const temp: Icon = {
-  name: "",
-  classes: ["ci", "ci-transparent"],
-  category: "technology",
-  url: ""
-};
+function SearchBox() {
+  const ref = useRef<HTMLInputElement>(null);
 
-export default function Search() {
-  const [query, setQuery] = useState<string>("");
-  const [selectedIcon, setSelectedIcon] = useState<Icon>(temp);
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // State to control the modal
-  const closeModal = () => setIsModalOpen(false);
-  const { setShowSearch, isCrossButtonClicked, setIsCrossButtonClicked } =
+  const { search, setSearch, showSearch, focusTrigger } =
     useContext(SearchContext);
-  const modalRef = useRef<HTMLDivElement>(null); // Create a ref for the Modal
-  const comboboxRef = useRef<HTMLDivElement>(null);
 
-  useOutsideClick(comboboxRef, modalRef, () => setShowSearch(false)); // Pass modalRef as the second argument
-
-  const filteredIcons: Icon[] = icons.filter((icon: Icon) => {
-    if (query === "") {
-      return true;
+  useEffect(() => {
+    if (showSearch) {
+      ref.current?.focus();
     }
-
-    const lowerCaseQuery = query.toLowerCase();
-
-    // Check in name
-    if (icon.name.toLowerCase().includes(lowerCaseQuery)) {
-      return true;
-    }
-
-    // Check in classes
-    for (let i = 0; i < icon.classes.length; i++) {
-      if (icon.classes[i].toLowerCase().includes(lowerCaseQuery)) {
-        return true;
-      }
-    }
-
-    // Check in url
-    if (icon.url.toLowerCase().includes(lowerCaseQuery)) {
-      return true;
-    }
-
-    return false;
-  });
-
+  }, [showSearch, focusTrigger]);
 
   return (
-    <div className="fixed inset-0 backdrop-blur-lg flex justify-center items-center px-6">
-      <Combobox
-        as="div"
-        value={selectedIcon}
-        onChange={(icon: Icon) => {
-          setSelectedIcon(icon);
-          setIsModalOpen(true);
-          setIsCrossButtonClicked(false);
-        }}
-        className="w-full relative rounded-full shadow border-2 ring-1 ring-blue-500 border-blue-500 border-opacity-75 max-w-md"
-        ref={comboboxRef}
-      >
-        <ComboBoxInput
-          onChange={(event: React.ChangeEvent<HTMLInputElement>) => setQuery(event.target.value)}
-          displayValue={isCrossButtonClicked ? "" : selectedIcon.name}
-        />
+    // <div>
+    //   <input
+    //     ref={ref}
+    //     type="text"
+    //     name="search"
+    //     id="search"
+    //     className="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+    //     placeholder="Search icon name"
+    //     value={search}
+    //     onChange={(e) => setSearch(e.target.value)}
+    //   />
+    // </div>
 
-        <ComboBoxButton />
+    <div className="relative">
+      <label htmlFor="Search" className="sr-only">
+        {" "}
+        Search{" "}
+      </label>
 
-        {filteredIcons.length > 0 && (
-          <Combobox.Options className="absolute mt-2 max-h-56 w-full bg-white rounded-xl text-sm drop-shadow-2xl overflow-auto shadow-2xl">
-            {filteredIcons.map((icon: Icon) => (
-              <ComboBoxOption icon={icon} key={icon.classes[0]} />
-            ))}
-          </Combobox.Options>
-        )}
-      </Combobox>
-
-      {isModalOpen && (
-        <div ref={modalRef}>
-          <Modal icon={selectedIcon} onClose={closeModal} />
-        </div>
-      )}
+      <input
+        ref={ref}
+        type="text"
+        name="search"
+        id="Search"
+        className="w-full rounded-xl py-2.5 pe-10 shadow-sm sm:text-sm border-blue-500 ring-blue-500"
+        placeholder="Search icon name"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
+        <button type="button" className="text-gray-600 hover:text-gray-700">
+          <span className="sr-only">Search</span>
+          <CiSearch className="text-gray-800 text-xl" />
+        </button>
+      </span>
     </div>
   );
 }
+
+export default SearchBox;
