@@ -11,7 +11,7 @@ const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
 const Navbar: React.FC = () => {
   // State to manage the visibility of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const { setShowSearch, triggerFocus } = useContext(SearchContext);
+  const { triggerFocus } = useContext(SearchContext);
 
   // Function to toggle the mobile menu
   const toggleMenu = () => {
@@ -32,7 +32,6 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-end gap-6 lg:w-1/3">
           <button
             onClick={() => {
-              setShowSearch(true);
               triggerFocus();
             }}
           >

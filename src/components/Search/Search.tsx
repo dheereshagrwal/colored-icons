@@ -8,15 +8,14 @@ function SearchBox() {
   const {
     search,
     setSearch,
-    showSearch,
     focusTrigger,
   } = useContext(SearchContext);
 
   useEffect(() => {
-    if (showSearch || focusTrigger) {
+    if (focusTrigger) {
       ref.current?.focus();
     }
-  }, [showSearch, focusTrigger]);
+  }, [focusTrigger]);
   const handleClearSearch = () => {
     setSearch("");
     ref.current?.focus();

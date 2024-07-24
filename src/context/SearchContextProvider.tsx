@@ -4,8 +4,6 @@ import { createContext, useState, ReactNode } from "react";
 interface SearchContextType {
   search: string;
   setSearch: (search: string) => void;
-  showSearch: boolean;
-  setShowSearch: (show: boolean) => void;
   focusTrigger: number;
   triggerFocus: () => void;
 }
@@ -13,8 +11,6 @@ interface SearchContextType {
 const initialSearchContext: SearchContextType = {
   search: "",
   setSearch: () => {},
-  showSearch: false,
-  setShowSearch: () => {},
   focusTrigger: 0,
   triggerFocus: () => {},
 };
@@ -30,7 +26,6 @@ export const SearchContextProvider = ({
   children,
 }: SearchContextProviderProps) => {
   const [search, setSearch] = useState<string>("");
-  const [showSearch, setShowSearch] = useState<boolean>(false);
   const [focusTrigger, setFocusTrigger] = useState<number>(0);
 
   const triggerFocus = () => {
@@ -42,8 +37,6 @@ export const SearchContextProvider = ({
       value={{
         search,
         setSearch,
-        showSearch,
-        setShowSearch,
         focusTrigger,
         triggerFocus,
       }}
