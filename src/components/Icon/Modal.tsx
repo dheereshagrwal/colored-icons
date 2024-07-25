@@ -1,6 +1,7 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { IconCode } from ".";
 import { Icon } from "@/interfaces";
+import useOutsideClickToClose from "@/hooks/useOutsideClickToClose";
 
 interface ModalProps {
   icon: Icon;
@@ -10,18 +11,7 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-        onClose();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [onClose]);
+  useOutsideClickToClose(modalRef, onClose);
 
   return (
     <div className="fixed inset-0 backdrop-blur-lg flex justify-center items-center">
