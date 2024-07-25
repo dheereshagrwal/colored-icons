@@ -1,6 +1,7 @@
 import { Category } from "@/interfaces";
 
 const categories: Category[] = [
+  { name: "All" },
   {
     name: "Technology",
   },
