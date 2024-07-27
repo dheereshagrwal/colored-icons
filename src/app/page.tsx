@@ -40,11 +40,11 @@ export default function Home() {
         <p className="font-semibold">Star us on Github</p>
       </Link>
       <section className="mt-40 mb-20 mx-auto max-w-7xl">
-        <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-0 md:items-center mb-10">
+        <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-0 lg:items-center mb-10">
           <h1 className="font-bold text-4xl">
             Most Popular Colored Icons
           </h1>
-          <div className="w-full sm:w-auto">
+          <div className="lg:w-4/12">
             <Search />
           </div>
         </div>
