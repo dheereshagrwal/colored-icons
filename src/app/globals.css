@@ -19,6 +19,12 @@
   filter: invert(1);
 }
 
+.ci-gitea,
+.ci-gitea-dark,
+.ci-gitea-light {
+  content: url("../../public/logos/gitea/gitea.svg");
+}
+
 .ci-solana,
 .ci-solana-dark,
 .ci-solana-light {

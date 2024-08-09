@@ -1,5 +1,11 @@
 const icons = [
   {
+    name: "Gitea",
+    category: "technology",
+    classes: ["gitea"],
+    url: "gitea.com",
+  },
+  {
     name: "Solana",
     category: "technology",
     classes: ["solana", "solana-horizontal", "solana-horizontal-light"],
