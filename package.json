@@ -2,6 +2,7 @@
   "name": "ci-new",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,24 +10,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "next": "^14.2.3",
-    "react": "^18",
+    "@headlessui/react": "^1.7.19",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
     "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "^18",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.12.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.3",
     "@types/react-copy-to-clipboard": "^5.0.7",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
     "eslint-config-next": "14.0.3",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9",
+    "typescript": "^5.5.4"
   }
 }
