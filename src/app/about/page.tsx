@@ -174,28 +174,7 @@ export default function About() {
               Quick Start
             </h2>
             <div className="prose prose-gray max-w-full">
-              <p className="text-gray-600">
-                Getting started with Colored Icons is easy. Install via npm:
-              </p>
-              <div className="mt-4 relative">
-                <pre className="bg-gray-800/95 text-white p-4 rounded-lg overflow-x-auto">
-                  <code>npm install colored-icons</code>
-                </pre>
-                <button
-                  onClick={() => handleCopy("npm install colored-icons", "npm")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-white/10 transition-colors"
-                  title="Copy to clipboard"
-                >
-                  {copiedNpm ? (
-                    <HiOutlineClipboardCheck className="w-5 h-5 text-green-400" />
-                  ) : (
-                    <HiOutlineClipboard className="w-5 h-5 text-gray-400" />
-                  )}
-                </button>
-              </div>
-              <p className="text-gray-600 mt-4">
-                Or include directly in your HTML:
-              </p>
+              <p className="text-gray-600 mt-4">Include via CDN:</p>
               <div className="mt-4 relative">
                 <pre className="bg-gray-800/95 text-white p-4 pr-14 rounded-lg whitespace-pre-wrap word-break-all">
                   <code>{`<link 
