@@ -10,24 +10,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.19",
-    "next": "^14.2.5",
-    "react": "^18.3.1",
+    "@headlessui/react": "^2.2.0",
+    "next": "^15.1.4",
+    "react": "^19.0.0",
     "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "^18.3.1",
-    "react-icons": "^4.12.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.7",
-    "@types/node": "^20.14.15",
-    "@types/react": "^18.3.3",
+    "@tailwindcss/forms": "^0.5.10",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.3",
     "@types/react-copy-to-clipboard": "^5.0.7",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "^19.0.2",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "14.0.3",
-    "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.9",
-    "typescript": "^5.5.4"
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.4",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
   }
 }
