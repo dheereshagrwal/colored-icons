@@ -21,31 +21,41 @@ const Filter = () => {
 
   const closeModal = () => setIsModalOpen(false);
 
+  const handleCategoryChange = (category: Category) => {
+    setSelectedCategory(category);
+    requestAnimationFrame(() => {
+      document.documentElement.style.scrollBehavior = "auto";
+      window.scrollTo(0, 0);
+      window.scrollTo(0, 700);
+      document.documentElement.style.scrollBehavior = "smooth";
+    });
+  };
+
   return (
-    <div className="flex flex-col sm:flex-row gap-10">
-      <div className="hidden sm:flex flex-col gap-3 text-sm w-52">
+    <div className="flex flex-col lg:flex-row gap-6">
+      <div className="hidden sm:flex flex-row lg:flex-col gap-1.5 text-sm lg:w-64 flex-shrink-0 overflow-x-auto pb-2 lg:pb-0">
         {categories.map((category: Category) => (
           <button
             key={category.name}
-            className={`inline-flex items-center px-4 py-2 font-medium rounded-md text-gray-900 hover:bg-gray-50 border-2 ring-1 w-52 ${
+            className={`inline-flex items-center px-4 lg:px-5 py-2 font-medium rounded-lg whitespace-nowrap transition-all duration-200 ${
               selectedCategory.name === category.name
-                ? "border-blue-500 ring-blue-500"
-                : "border-transparent ring-transparent"
+                ? "bg-purple-600 text-white shadow-lg hover:bg-purple-700"
+                : "text-gray-600 hover:bg-purple-50 hover:text-purple-600"
             }`}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => handleCategoryChange(category)}
           >
             {category.name}
           </button>
         ))}
       </div>
-      <div className="sm:hidden">
+      <div className="sm:hidden w-full">
         <Dropdown
           categories={categories}
           selectedCategory={selectedCategory}
-          onChange={setSelectedCategory}
+          onChange={handleCategoryChange}
         />
       </div>
-      <div>
+      <div className="flex-1">
         <IconList
           icons={icons}
           selectedCategory={selectedCategory}

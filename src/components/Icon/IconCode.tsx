@@ -1,65 +1,50 @@
-import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useState } from "react";
-import { Rubik } from 'next/font/google'
-const rubik = Rubik({ subsets: ['latin'] })
+import { Icon } from "@/interfaces";
+import { Rubik } from "next/font/google";
+
+const rubik = Rubik({ subsets: ["latin"] });
 
 interface IconCodeProps {
-  onClose: () => void;
   iconClass: string;
 }
 
-const IconCode: React.FC<IconCodeProps> = ({ onClose, iconClass }) => {
+const IconCode: React.FC<IconCodeProps> = ({ iconClass }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
   };
 
   return (
-    <>
-      <div className="grid grid-cols-7 md:grid-cols-8 md:mx-6 mt-5 mx-2 place-items-center">
-        <i className={`ci ci-${iconClass} ${size(iconClass)} col-span-2`}></i>
-        <code
-          className={`text-xs ${rubik.className} col-span-4 md:col-span-5 p-1 ${
-            copied
-              ? "border border-gray-500 border-dashed"
-              : "border border-transparent"
-          }`}
-        >{`<i className="ci ci-${iconClass} ${size(iconClass)}"></i>`}</code>
-        <CopyToClipboard
-          text={`<i className="ci ci-${iconClass} ${size(iconClass)}"></i>`}
-          onCopy={handleCopy}
+    <div className="relative group rounded-lg">
+      <pre
+        className={`${rubik.className} text-sm overflow-x-auto text-gray-800 p-2 rounded-md`}
+      >
+        <code>{`<i class="ci ci-${iconClass}"></i>`}</code>
+      </pre>
+
+      <CopyToClipboard
+        text={`<i class="ci ci-${iconClass}"></i>`}
+        onCopy={handleCopy}
+      >
+        <button
+          className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-gray-300/50 transition-colors"
+          title="Copy to clipboard"
         >
-          <span
-            className={`col-span-1 cursor-pointer ${
-              copied ? "text-green-500 hover:text-green-500" : "text-gray-500 hover:text-gray-800"
-            }`}
-          >
-            {copied ? <HiOutlineClipboardCheck /> : <HiOutlineClipboard />}
-          </span>
-        </CopyToClipboard>
-      </div>
-      <IoCloseOutline
-        className="absolute top-3 right-3 text-xl cursor-pointer text-gray-600"
-        onClick={onClose}
-      />
-    </>
+          {copied ? (
+            <HiOutlineClipboardCheck className="w-5 h-5 text-green-600" />
+          ) : (
+            <HiOutlineClipboard className="w-5 h-5 text-gray-600 group-hover:text-gray-700" />
+          )}
+        </button>
+      </CopyToClipboard>
+    </div>
   );
 };
 
 export default IconCode;
-
-const size = (iconClass: string) => {
-  switch (true) {
-    case iconClass.includes("horizontal"):
-    case iconClass.includes("wordmark"):
-      return "ci-5x";
-    case iconClass.includes("vertical"):
-      return "ci-3x";
-    default:
-      return "ci-2x";
-  }
-};

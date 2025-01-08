@@ -2,14 +2,14 @@ import { SearchContext } from "@/context/SearchContextProvider";
 import { useContext, useEffect, useRef } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 
-function SearchBox() {
+interface SearchProps {
+  searchRef?: React.RefObject<HTMLDivElement>;
+}
+
+function SearchBox({ searchRef }: SearchProps) {
   const ref = useRef<HTMLInputElement>(null);
 
-  const {
-    search,
-    setSearch,
-    focusTrigger,
-  } = useContext(SearchContext);
+  const { search, setSearch, focusTrigger } = useContext(SearchContext);
 
   useEffect(() => {
     if (focusTrigger) {
@@ -21,7 +21,7 @@ function SearchBox() {
     ref.current?.focus();
   };
   return (
-    <div className="relative">
+    <div ref={searchRef} className="relative">
       <label htmlFor="Search" className="sr-only">
         {" "}
         Search{" "}
