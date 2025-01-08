@@ -37,19 +37,18 @@ const Dropdown: React.FC<DropdownProps> = ({
               {categories.map((category: Category) => (
                 <ListboxOption
                   key={category.name}
-                  className={({ active }) =>
+                  className={() =>
                     classNames(
-                      active ? "bg-gray-100" : "",
                       "relative cursor-default select-none py-3 pl-4 pr-9 transition-colors duration-200"
                     )
                   }
                   value={category}
                 >
-                  {({ selected, active }) => (
+                  {({ selected }) => (
                     <Selected
                       selected={selected}
-                      active={active}
                       category={category}
+                      active={selectedCategory.name.toLowerCase() === category.name.toLowerCase()}
                     />
                   )}
                 </ListboxOption>
