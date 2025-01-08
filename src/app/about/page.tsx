@@ -6,60 +6,47 @@ import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
 import { icons } from "@/constants";
 import { useState } from "react";
 
+// Updated showcase icons with both tech and social icons
+const showcaseIcons = {
+  tech: [
+    "react",
+    "nextjs",
+    "typescript",
+    "tailwind",
+    "javascript",
+    "python",
+    "nodejs",
+    "vscode",
+  ],
+  social: [
+    "github",
+    "linkedin",
+    "twitter",
+    "instagram",
+    "facebook",
+    "youtube",
+    "discord",
+    "twitch",
+  ],
+};
+
+const getIconsByType = (type: "tech" | "social") => {
+  return icons.filter((icon) =>
+    showcaseIcons[type].includes(icon.classes[0].toLowerCase())
+  );
+};
+
 export default function About() {
-  const [copiedNpm, setCopiedNpm] = useState(false);
   const [copiedCdn, setCopiedCdn] = useState(false);
 
-  // Updated showcase icons with both tech and social icons
-  const showcaseIcons = {
-    tech: [
-      "react",
-      "nextjs",
-      "typescript",
-      "tailwind",
-      "javascript",
-      "python",
-      "nodejs",
-      "vscode",
-    ],
-    social: [
-      "github",
-      "linkedin",
-      "twitter",
-      "instagram",
-      "facebook",
-      "youtube",
-      "discord",
-      "twitch",
-    ],
-  };
-
-  const getIconsByType = (type: "tech" | "social") => {
-    return icons.filter((icon) =>
-      showcaseIcons[type].includes(icon.classes[0].toLowerCase())
-    );
-  };
-
-  const handleCopy = (text: string, type: "npm" | "cdn") => {
+  const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text);
-    if (type === "npm") {
-      setCopiedNpm(true);
-      setTimeout(() => setCopiedNpm(false), 2000);
-    } else {
-      setCopiedCdn(true);
-      setTimeout(() => setCopiedCdn(false), 2000);
-    }
+    setCopiedCdn(true);
+    setTimeout(() => setCopiedCdn(false), 2000);
   };
 
   return (
-    <div className="relative isolate">
-      <div
-        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true"
-      >
-        <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-purple-500 to-blue-500 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" />
-      </div>
-
+    <div className="relative isolate scroll-smooth">
       <section className="max-w-7xl mx-auto px-6">
         <Navbar />
       </section>
@@ -185,8 +172,7 @@ export default function About() {
                 <button
                   onClick={() =>
                     handleCopy(
-                      '<link href="https://colored-icons.vercel.app/colored-icons.css" rel="stylesheet" />',
-                      "cdn"
+                      '<link href="https://colored-icons.vercel.app/colored-icons.css" rel="stylesheet" />'
                     )
                   }
                   className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-white/10 transition-colors"
@@ -225,14 +211,6 @@ export default function About() {
           </section>
         </div>
       </main>
-
-      {/* Bottom Gradient */}
-      <div
-        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true"
-      >
-        <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-purple-500 to-blue-500 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" />
-      </div>
     </div>
   );
 }

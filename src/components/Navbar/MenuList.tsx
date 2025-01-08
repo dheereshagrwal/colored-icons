@@ -26,7 +26,7 @@ const MenuList: React.FC<MenuListProps> = ({ className, onClick }) => {
       </li>
       <li>
         <a
-          href="https://github.com/dheereshagrwal/colored-icons"
+          href="https://github.com/dheereshagrwal/colored-icons/blob/master/README.md"
           target="_blank"
           className="text-gray-600 hover:text-gray-900 transition-colors"
         >

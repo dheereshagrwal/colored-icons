@@ -4,17 +4,16 @@ import { Search } from "@/components/Search";
 import { Filter } from "../components/Filter";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa6";
-import { Inter, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import { useRef } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
-const outfit = Outfit({ subsets: ["latin"], weight: ["600"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export default function Home() {
   const searchRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={`relative isolate ${inter.className}`}>
+    <div className={`relative isolate ${outfit.className}`}>
       {/* Gradient Background Elements */}
 
       <section className="max-w-7xl mx-auto px-6">

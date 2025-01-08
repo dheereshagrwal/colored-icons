@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="hidden lg:flex lg:gap-x-12">
-            <MenuList className="flex items-center gap-8 text-sm font-semibold text-gray-600" />
+            <MenuList className="flex items-center gap-8 font-semibold text-gray-600" />
           </div>
 
           <div className="flex flex-1 items-center justify-end gap-4">

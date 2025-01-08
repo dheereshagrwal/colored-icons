@@ -1,10 +1,6 @@
 import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useState } from "react";
-import { Icon } from "@/interfaces";
-import { Rubik } from "next/font/google";
-
-const rubik = Rubik({ subsets: ["latin"] });
 
 interface IconCodeProps {
   iconClass: string;
@@ -23,7 +19,7 @@ const IconCode: React.FC<IconCodeProps> = ({ iconClass }) => {
   return (
     <div className="relative group rounded-lg">
       <pre
-        className={`${rubik.className} text-sm overflow-x-auto text-gray-800 p-2 rounded-md`}
+        className={`text-sm overflow-x-auto text-gray-800 p-2 rounded-md`}
       >
         <code>{`<i class="ci ci-${iconClass}"></i>`}</code>
       </pre>
