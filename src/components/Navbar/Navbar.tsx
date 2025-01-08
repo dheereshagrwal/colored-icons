@@ -15,12 +15,21 @@ const Navbar: React.FC = () => {
   const searchRef = useRef<HTMLDivElement>(null);
 
   const handleSearchClick = () => {
-    requestAnimationFrame(() => {
-      document.documentElement.style.scrollBehavior = "auto";
-      window.scrollTo(0, 0);
-      window.scrollTo(0, 700);
-      document.documentElement.style.scrollBehavior = "smooth";
-    });
+    const searchSection = document.getElementById("search-section");
+    if (searchSection) {
+      const offset = 50;
+      const elementPosition = searchSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      setTimeout(() => {
+        triggerFocus();
+      }, 500);
+    }
   };
 
   return (

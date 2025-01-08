@@ -23,12 +23,6 @@ const Filter = () => {
 
   const handleCategoryChange = (category: Category) => {
     setSelectedCategory(category);
-    requestAnimationFrame(() => {
-      document.documentElement.style.scrollBehavior = "auto";
-      window.scrollTo(0, 0);
-      window.scrollTo(0, 700);
-      document.documentElement.style.scrollBehavior = "smooth";
-    });
   };
 
   return (

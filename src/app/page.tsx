@@ -21,19 +21,19 @@ export default function Home() {
         <Navbar />
       </section>
 
-      <section className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-28 text-center px-6">
+      <section className="mx-auto max-w-2xl py-8 sm:py-14 lg:py-20 text-center px-6">
         <h1
-          className={`mt-7 text-balance text-5xl sm:text-7xl ${outfit.className} tracking-tight text-gray-900 font-semibold`}
+          className={`mt-4 text-balance text-5xl sm:text-7xl ${outfit.className} tracking-tight text-gray-900 font-semibold`}
         >
           Beautiful Icons. <br />
           Endless Possibilities
         </h1>
-        <h2 className="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8 max-w-md mx-auto">
+        <h2 className="mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8 max-w-md mx-auto">
           Your one-stop destination for stunning colored icons. Find the perfect
           icon to bring your designs to life.
         </h2>
 
-        <div className="mt-8 sm:flex sm:justify-center">
+        <div className="mt-6 sm:flex sm:justify-center">
           <Link
             href="https://github.com/dheereshagrwal/colored-icons"
             target="_blank"
@@ -59,7 +59,7 @@ export default function Home() {
         />
       </div>
 
-      <section className="mt-20 mb-20 mx-auto max-w-7xl px-6">
+      <section className="mt-4 mb-[300px] mx-auto max-w-7xl px-6">
         <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-0 lg:items-center mb-10">
           <h1
             id="popular-icons"
@@ -67,7 +67,7 @@ export default function Home() {
           >
             Most Popular Colored Icons
           </h1>
-          <div id="search" className="lg:w-4/12">
+          <div id="search-section" className="lg:w-4/12">
             <Search />
           </div>
         </div>
