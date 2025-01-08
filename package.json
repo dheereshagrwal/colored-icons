@@ -13,7 +13,6 @@
     "@headlessui/react": "^2.2.0",
     "next": "^15.1.4",
     "react": "^19.0.0",
-    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0"
   },
@@ -21,7 +20,6 @@
     "@tailwindcss/forms": "^0.5.10",
     "@types/node": "^22.10.5",
     "@types/react": "^19.0.3",
-    "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-dom": "^19.0.2",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
