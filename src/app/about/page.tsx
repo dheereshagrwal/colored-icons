@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
 import { icons } from "@/constants";
-import { useState } from "react";
+import useCopy from '@/hooks/useCopy';
 
 // Updated showcase icons with both tech and social icons
 const showcaseIcons = {
@@ -37,13 +37,7 @@ const getIconsByType = (type: "tech" | "social") => {
 };
 
 export default function About() {
-  const [copiedCdn, setCopiedCdn] = useState(false);
-
-  const handleCopy = (text: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedCdn(true);
-    setTimeout(() => setCopiedCdn(false), 2000);
-  };
+  const { copied, handleCopy } = useCopy();
 
   return (
     <div className="relative isolate scroll-smooth">
@@ -178,7 +172,7 @@ export default function About() {
                   className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-white/10 transition-colors"
                   title="Copy to clipboard"
                 >
-                  {copiedCdn ? (
+                  {copied ? (
                     <HiOutlineClipboardCheck className="w-5 h-5 text-green-400" />
                   ) : (
                     <HiOutlineClipboard className="w-5 h-5 text-gray-400" />
