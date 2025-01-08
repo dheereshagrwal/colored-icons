@@ -1,6 +1,10 @@
-import { Listbox, Transition, ListboxOption, ListboxOptions } from "@headlessui/react";
+import {
+  Listbox,
+  Transition,
+  ListboxOption,
+  ListboxOptions,
+} from "@headlessui/react";
 import { ListBoxButton, Selected } from ".";
-import { Fragment } from "react";
 import { Category } from "@/interfaces";
 
 function classNames(...classes: string[]) {
@@ -21,41 +25,38 @@ const Dropdown: React.FC<DropdownProps> = ({
   return (
     <Listbox value={selectedCategory} onChange={onChange}>
       {({ open }) => (
-        <>
-          <div className="relative text-sm">
-            <ListBoxButton selectedCategory={selectedCategory} />
-            <Transition
-              show={open}
-              as={Fragment}
-              leave="transition ease-in duration-100"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <ListboxOptions className="absolute z-10 mt-2 max-h-60 w-full overflow-auto rounded-lg bg-white py-2 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none">
-                {categories.map((category: Category) => (
-                  <ListboxOption
-                    key={category.name}
-                    className={({ active }) =>
-                      classNames(
-                        active ? "bg-gray-100" : "",
-                        "relative cursor-default select-none py-3 pl-4 pr-9 transition-colors duration-200"
-                      )
-                    }
-                    value={category}
-                  >
-                    {({ selected, active }) => (
-                      <Selected
-                        selected={selected}
-                        active={active}
-                        category={category}
-                      />
-                    )}
-                  </ListboxOption>
-                ))}
-              </ListboxOptions>
-            </Transition>
-          </div>
-        </>
+        <div className="relative text-sm">
+          <ListBoxButton selectedCategory={selectedCategory} />
+          <Transition
+            show={open}
+            leave="transition ease-in duration-100"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <ListboxOptions className="absolute z-10 mt-2 max-h-60 w-full overflow-auto rounded-lg bg-white py-2 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+              {categories.map((category: Category) => (
+                <ListboxOption
+                  key={category.name}
+                  className={({ active }) =>
+                    classNames(
+                      active ? "bg-gray-100" : "",
+                      "relative cursor-default select-none py-3 pl-4 pr-9 transition-colors duration-200"
+                    )
+                  }
+                  value={category}
+                >
+                  {({ selected, active }) => (
+                    <Selected
+                      selected={selected}
+                      active={active}
+                      category={category}
+                    />
+                  )}
+                </ListboxOption>
+              ))}
+            </ListboxOptions>
+          </Transition>
+        </div>
       )}
     </Listbox>
   );
