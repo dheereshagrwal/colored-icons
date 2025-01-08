@@ -22,7 +22,7 @@ const Dropdown: React.FC<DropdownProps> = ({
     <Listbox value={selectedCategory} onChange={onChange}>
       {({ open }) => (
         <>
-          <div className="relative text-sm border rounded-md">
+          <div className="relative text-sm">
             <ListboxButton selectedCategory={selectedCategory} />
             <Transition
               show={open}
@@ -31,14 +31,14 @@ const Dropdown: React.FC<DropdownProps> = ({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 shadow-lg focus:outline-none">
+              <Listbox.Options className="absolute z-10 mt-2 max-h-60 w-full overflow-auto rounded-lg bg-white py-2 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                 {categories.map((category: Category) => (
                   <Listbox.Option
                     key={category.name}
                     className={({ active }) =>
                       classNames(
                         active ? "bg-gray-100" : "",
-                        "relative cursor-default select-none py-2 pl-3"
+                        "relative cursor-default select-none py-3 pl-4 pr-9 transition-colors duration-200"
                       )
                     }
                     value={category}

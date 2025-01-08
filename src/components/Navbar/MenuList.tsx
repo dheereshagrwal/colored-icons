@@ -1,32 +1,40 @@
 import Link from "next/link";
 
 interface MenuListProps {
-  className: string;
+  className?: string;
+  onClick?: () => void;
 }
 
-const MenuList: React.FC<MenuListProps> = ({ className }) => {
+const MenuList: React.FC<MenuListProps> = ({ className, onClick }) => {
   return (
-    <div className={className}>
-      {links.map((link, index) =>
-        link !== "divider" ? (
-          <Link
-            key={index}
-            className="transition hover:text-blue-500 py-3.5"
-            href={url}
-            target="_blank"
-          >
-            {link}
-          </Link>
-        ) : (
-          <div key={index} className="pt-3"></div>
-        )
-      )}
-    </div>
+    <ul className={className} onClick={onClick}>
+      <li>
+        <Link
+          href="/"
+          className="text-gray-600 hover:text-gray-900 transition-colors"
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/about"
+          className="text-gray-600 hover:text-gray-900 transition-colors"
+        >
+          About
+        </Link>
+      </li>
+      <li>
+        <a
+          href="https://github.com/dheereshagrwal/colored-icons"
+          target="_blank"
+          className="text-gray-600 hover:text-gray-900 transition-colors"
+        >
+          Docs
+        </a>
+      </li>
+    </ul>
   );
 };
-
-const links: string[] = ["About", "Docs", "Installation", "divider"];
-const url: string =
-  "https://github.com/dheereshagrwal/colored-icons/blob/master/README.md";
 
 export default MenuList;

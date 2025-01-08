@@ -24,7 +24,8 @@ const IconList: React.FC<IconListProps> = ({
     return icons.filter(
       (icon) =>
         icon.name.toLowerCase().includes(debouncedSearchLowercase) ||
-        icon.url.toLowerCase().includes(debouncedSearchLowercase)
+        icon.url.toLowerCase().includes(debouncedSearchLowercase) ||
+        icon.category.toLowerCase().includes(debouncedSearchLowercase)
     );
   }, [icons, debouncedSearch]);
 
@@ -54,7 +55,7 @@ const IconList: React.FC<IconListProps> = ({
   }, [handleIconClick, searchFilteredIcons, selectedCategory.name]);
 
   return (
-    <ul className="flex flex-col sm:flex-row sm:flex-wrap justify-between gap-3">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
       {filteredIcons}
     </ul>
   );
