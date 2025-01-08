@@ -1,5 +1,5 @@
-import { Listbox, Transition } from "@headlessui/react";
-import { ListboxButton, Selected } from ".";
+import { Listbox, Transition, ListboxOption, ListboxOptions } from "@headlessui/react";
+import { ListBoxButton, Selected } from ".";
 import { Fragment } from "react";
 import { Category } from "@/interfaces";
 
@@ -23,7 +23,7 @@ const Dropdown: React.FC<DropdownProps> = ({
       {({ open }) => (
         <>
           <div className="relative text-sm">
-            <ListboxButton selectedCategory={selectedCategory} />
+            <ListBoxButton selectedCategory={selectedCategory} />
             <Transition
               show={open}
               as={Fragment}
@@ -31,9 +31,9 @@ const Dropdown: React.FC<DropdownProps> = ({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 mt-2 max-h-60 w-full overflow-auto rounded-lg bg-white py-2 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <ListboxOptions className="absolute z-10 mt-2 max-h-60 w-full overflow-auto rounded-lg bg-white py-2 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                 {categories.map((category: Category) => (
-                  <Listbox.Option
+                  <ListboxOption
                     key={category.name}
                     className={({ active }) =>
                       classNames(
@@ -50,9 +50,9 @@ const Dropdown: React.FC<DropdownProps> = ({
                         category={category}
                       />
                     )}
-                  </Listbox.Option>
+                  </ListboxOption>
                 ))}
-              </Listbox.Options>
+              </ListboxOptions>
             </Transition>
           </div>
         </>

@@ -1,4 +1,4 @@
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { Icon } from "@/interfaces";
 import { IconCode } from ".";
 import { IoClose } from "react-icons/io5";
@@ -20,7 +20,7 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
       />
 
       <div className="fixed inset-0 flex items-center justify-center p-4">
-        <Dialog.Panel className="mx-auto max-w-2xl w-full rounded-2xl bg-white shadow-[0_0_50px_-12px] shadow-purple-500/10 border border-slate-200 max-h-[90vh] overflow-y-auto">
+        <DialogPanel className="mx-auto max-w-2xl w-full rounded-2xl bg-white shadow-[0_0_50px_-12px] shadow-purple-500/10 border border-slate-200 max-h-[90vh] overflow-y-auto">
           <div className="sticky top-0 right-0 z-10 bg-white/80 backdrop-blur-xl py-4 px-8">
             <button
               onClick={onClose}
@@ -39,9 +39,9 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
                 />
               </div>
               <div className="flex flex-col">
-                <Dialog.Title className="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                <DialogTitle className="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                   {icon.name}
-                </Dialog.Title>
+                </DialogTitle>
                 <p className="text-sm text-slate-500 mt-2">{icon.url}</p>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
               </div>
             </div>
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </div>
 
       {/* Zoomed icon overlay */}
