@@ -63,17 +63,11 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
                     key={iconClass}
                     className="bg-gray-200 py-5 px-1 rounded-xl flex items-center gap-4 shadow-sm"
                   >
-                    <div className="h-[40px] flex items-center">
-                      <div
-                        className="p-4 bg-gray-200 rounded-lg cursor-pointer transition-all duration-200"
-                        onMouseEnter={() => setZoomedIcon(iconClass)}
-                        onMouseLeave={() => setZoomedIcon(null)}
-                      >
-                        <i
-                          className={`ci ci-${iconClass} ci-2x text-gray-800`}
-                        />
-                      </div>
-                    </div>
+                    <i
+                      className={`ci ci-${iconClass} ci-2x mx-3 py-auto cursor-pointer transition-all duration-200`}
+                      onMouseEnter={() => setZoomedIcon(iconClass)}
+                      onMouseLeave={() => setZoomedIcon(null)}
+                    />
                     <div className="flex-1">
                       <IconCode iconClass={iconClass} />
                     </div>
