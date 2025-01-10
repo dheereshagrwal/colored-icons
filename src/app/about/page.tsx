@@ -158,15 +158,12 @@ export default function About() {
               <p className="text-gray-600 mt-4">Include via CDN:</p>
               <div className="mt-4 relative">
                 <pre className="bg-gray-800/95 text-white p-4 pr-14 rounded-lg whitespace-pre-wrap word-break-all">
-                  <code>{`<link 
-  href="https://colored-icons.vercel.app/colored-icons.css" 
-  rel="stylesheet"
-/>`}</code>
+                  <code>{`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.9/src/app/ci.min.css" />`}</code>
                 </pre>
                 <button
                   onClick={() =>
                     handleCopy(
-                      '<link href="https://colored-icons.vercel.app/colored-icons.css" rel="stylesheet" />'
+                      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.9/src/app/ci.min.css" />'
                     )
                   }
                   className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-white/10 transition-colors"
