@@ -9,6 +9,19 @@ interface ModalProps {
   onClose: () => void;
 }
 
+const size = (iconClass: string) => {
+  // returns iconSize
+  switch (true) {
+    case iconClass.includes("horizontal"):
+    case iconClass.includes("wordmark"):
+      return 5;
+    case iconClass.includes("vertical"):
+      return 4;
+    default:
+      return 2;
+  }
+};
+
 const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
   const [zoomedIcon, setZoomedIcon] = useState<string | null>(null);
 
@@ -61,10 +74,10 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
                 {icon.classes.map((iconClass) => (
                   <div
                     key={iconClass}
-                    className="bg-gray-200 py-5 px-1 rounded-xl flex items-center gap-4 shadow-sm"
+                    className={`bg-gray-200 px-2 rounded-xl flex items-center gap-4 shadow-sm h-20`}
                   >
                     <i
-                      className={`ci ci-${iconClass} ci-2x mx-3 py-auto cursor-pointer transition-all duration-200`}
+                      className={`ci ci-${iconClass} ci-${size(iconClass)}x mx-3 py-auto cursor-pointer transition-all duration-200`}
                       onMouseEnter={() => setZoomedIcon(iconClass)}
                       onMouseLeave={() => setZoomedIcon(null)}
                     />
