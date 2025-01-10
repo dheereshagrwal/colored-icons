@@ -6,6 +6,9 @@ const categories: Category[] = [
     name: "Technology",
   },
   {
+    name: "Social Media",
+  },
+  {
     name: "Financial Services",
   },
   {

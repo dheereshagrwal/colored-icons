@@ -43,7 +43,7 @@ const icons = [
   },
   {
     name: "X",
-    category: "technology",
+    category: "social media",
     classes: ["x", "x-light"],
     url: "x.com",
   },
@@ -291,13 +291,13 @@ const icons = [
   },
   {
     name: "Instagram",
-    category: "technology",
+    category: "social media",
     classes: ["instagram"],
     url: "instagram.com",
   },
   {
     name: "Linkedin",
-    category: "technology",
+    category: "social media",
     classes: ["linkedin", "linkedin-horizontal"],
     url: "linkedin.com",
   },
@@ -386,7 +386,7 @@ const icons = [
   },
   {
     name: "Whatsapp",
-    category: "technology",
+    category: "social media",
     classes: [
       "whatsapp",
       "whatsapp-horizontal",
@@ -399,25 +399,25 @@ const icons = [
   },
   {
     name: "Youtube",
-    category: "technology",
+    category: "social media",
     classes: ["youtube", "youtube-horizontal"],
     url: "youtube.com",
   },
   {
     name: "Discord",
-    category: "technology",
+    category: "social media",
     classes: ["discord", "discord-horizontal"],
     url: "discord.com",
   },
   {
     name: "Facebook",
-    category: "technology",
+    category: "social media",
     classes: ["facebook", "facebook-wordmark"],
     url: "facebook.com",
   },
   {
     name: "Reddit",
-    category: "technology",
+    category: "social media",
     classes: [
       "reddit",
       "reddit-horizontal",
@@ -428,13 +428,13 @@ const icons = [
   },
   {
     name: "Snapchat",
-    category: "technology",
+    category: "social media",
     classes: ["snapchat"],
     url: "snapchat.com",
   },
   {
     name: "Twitch",
-    category: "technology",
+    category: "social media",
     classes: ["twitch", "twitch-wordmark"],
     url: "twitch.com",
   },
@@ -446,13 +446,13 @@ const icons = [
   },
   {
     name: "Telegram",
-    category: "technology",
+    category: "social media",
     classes: ["telegram", "telegram2"],
     url: "telegram.com",
   },
   {
     name: "Tiktok",
-    category: "technology",
+    category: "social media",
     classes: [
       "tiktok",
       "tiktok-circle",
@@ -1128,7 +1128,7 @@ const icons = [
 
   {
     name: "Twitter",
-    category: "technology",
+    category: "social media",
     classes: [
       "twitter",
       "twitter-circle",
