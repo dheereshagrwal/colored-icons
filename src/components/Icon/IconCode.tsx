@@ -11,7 +11,7 @@ const IconCode: React.FC<IconCodeProps> = ({ iconClass }) => {
   return (
     <div className="relative group rounded-lg">
       <pre
-        className={`text-sm overflow-x-auto text-gray-800 p-2 rounded-md`}
+        className={`text-sm`}
       >
         <code>{`<i class="ci ci-${iconClass}"></i>`}</code>
       </pre>

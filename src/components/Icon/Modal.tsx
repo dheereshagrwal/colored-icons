@@ -74,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
                 {icon.classes.map((iconClass) => (
                   <div
                     key={iconClass}
-                    className={`bg-gray-200 px-2 rounded-xl flex items-center gap-4 shadow-sm h-20`}
+                    className={`bg-gray-300 px-2 rounded-xl flex items-center gap-4 shadow-sm h-20`}
                   >
                     <i
                       className={`ci ci-${iconClass} ci-${size(
@@ -96,7 +96,7 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
 
       {/* Zoomed icon overlay */}
       {zoomedIcon && (
-        <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-100 backdrop-saturate-0 transition-all">
+        <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-100 transition-all">
           <div className="p-8 bg-gray-300 rounded-xl shadow-xl sm:scale-[2] scale-125">
             <i className={`ci ci-${zoomedIcon} ci-4x text-gray-800`} />
           </div>
