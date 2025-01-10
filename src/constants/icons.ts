@@ -1173,12 +1173,6 @@ const icons = [
     url: "web3js.com",
   },
   {
-    name: "Ciphense",
-    category: "technology",
-    classes: ["ciphense"],
-    url: "ciphense.com",
-  },
-  {
     name: "Ringcentral",
     category: "technology",
     classes: ["ringcentral"],

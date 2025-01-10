@@ -1684,16 +1684,6 @@
   content: url("../../public/logos/svelte/svelte-horizontal.svg");
 }
 
-.ci-ciphense,
-.ci-ciphense-dark {
-  content: url("../../public/logos/ciphense/ciphense.svg");
-  filter: invert(1);
-}
-
-.ci-ciphense-light {
-  content: url("../../public/logos/ciphense/ciphense.svg");
-}
-
 .ci-ringcentral,
 .ci-ringcentral-dark,
 .ci-ringcentral-light {

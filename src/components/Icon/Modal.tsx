@@ -77,7 +77,9 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
                     className={`bg-gray-200 px-2 rounded-xl flex items-center gap-4 shadow-sm h-20`}
                   >
                     <i
-                      className={`ci ci-${iconClass} ci-${size(iconClass)}x mx-3 py-auto cursor-pointer transition-all duration-200`}
+                      className={`ci ci-${iconClass} ci-${size(
+                        iconClass
+                      )}x mx-3 py-auto cursor-pointer transition-all duration-200`}
                       onMouseEnter={() => setZoomedIcon(iconClass)}
                       onMouseLeave={() => setZoomedIcon(null)}
                     />
@@ -94,7 +96,7 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
 
       {/* Zoomed icon overlay */}
       {zoomedIcon && (
-        <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-[60]">
+        <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-[60] backdrop-brightness-90 transition-all">
           <div className="p-8 bg-gray-300 rounded-xl shadow-xl sm:scale-[2] scale-125">
             <i className={`ci ci-${zoomedIcon} ci-4x text-gray-800`} />
           </div>
