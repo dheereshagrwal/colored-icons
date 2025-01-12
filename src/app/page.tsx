@@ -13,7 +13,7 @@ export default function Home() {
   const searchRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={`relative isolate ${outfit.className}`}>
+    <div className={`relative isolate ${outfit.className} mb-10`}>
       <section className="max-w-7xl mx-auto">
         <Navbar />
       </section>
