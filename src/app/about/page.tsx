@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
 import { icons } from "@/constants";
-import useCopy from '@/hooks/useCopy';
+import useCopy from "@/hooks/useCopy";
 
 // Updated showcase icons with both tech and social icons
 const showcaseIcons = {
@@ -41,10 +41,9 @@ export default function About() {
 
   return (
     <div className="relative isolate scroll-smooth">
-      <section className="max-w-7xl mx-auto px-6">
+      <section className="max-w-7xl mx-auto">
         <Navbar />
       </section>
-
       <main className="mx-auto max-w-3xl px-6 py-12 sm:py-20 lg:py-28">
         <div className="text-center space-y-8">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">

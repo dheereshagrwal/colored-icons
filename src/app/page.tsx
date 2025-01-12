@@ -14,13 +14,11 @@ export default function Home() {
 
   return (
     <div className={`relative isolate ${outfit.className}`}>
-      {/* Gradient Background Elements */}
-
-      <section className="max-w-7xl mx-auto px-6">
+      <section className="max-w-7xl mx-auto">
         <Navbar />
       </section>
 
-      <section className="mx-auto max-w-2xl py-8 sm:py-14 lg:py-20 text-center px-6">
+      <section className="mx-auto max-w-2xl py-8 sm:py-14 lg:py-20 text-center">
         <h1
           className={`mt-4 text-balance text-5xl sm:text-7xl ${outfit.className} tracking-tight text-gray-900 font-semibold`}
         >
@@ -32,7 +30,7 @@ export default function Home() {
           icon to bring your designs to life.
         </h2>
 
-        <div className="mt-6 sm:flex sm:justify-center">
+        <div className="mt-6 flex justify-center">
           <Link
             href="https://github.com/dheereshagrwal/colored-icons"
             target="_blank"
@@ -44,7 +42,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-4 mb-[300px] mx-auto max-w-7xl px-6">
+      <section className="mt-4 mx-auto max-w-7xl">
         <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-0 lg:items-center mb-10">
           <h1
             id="popular-icons"
