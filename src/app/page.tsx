@@ -5,13 +5,10 @@ import { Filter } from "../components/Filter";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa6";
 import { Outfit } from "next/font/google";
-import { useRef } from "react";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export default function Home() {
-  const searchRef = useRef<HTMLDivElement>(null);
-
   return (
     <div className={`relative isolate ${outfit.className} mb-10`}>
       <section className="max-w-7xl mx-auto">
