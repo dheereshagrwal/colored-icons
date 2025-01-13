@@ -1178,5 +1178,17 @@ const icons = [
     classes: ["ringcentral"],
     url: "ringcentral.com",
   },
+  {
+    name: "Letterboxd",
+    category: "social-media",
+    classes: ["letterboxd-stacked-light", "letterboxd-horizontal-light", "letterboxd-horizontal-dark", "letterboxd-stacked-dark"],
+    url: "letterboxd.com"
+  },
+  {
+    name: "Codeforces",
+    category: "technology",
+    classes: ["codeforces"],
+    url: "codeforces.com"
+  }
 ];
 export default icons;

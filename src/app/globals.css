@@ -2546,6 +2546,29 @@
   content: url("../../public/logos/starbucks/starbucks-wordmark.svg");
 }
 
+
+.ci-letterboxd-stacked-light,
+.ci-letterboxd-light{
+  content: url("../../public/logos/letterboxd/ci-letterboxd-stacked-light.svg");
+}
+
+.ci-letterboxd-stacked-dark{
+  content: url("../../public/logos/letterboxd/ci-letterboxd-stacked-dark.svg");
+}
+
+.ci-letterboxd-horizontal-light,
+.ci-letterboxd-inline-light{
+  content: url("../../public/logos/letterboxd/ci-letterboxd-horizontal-light.svg");
+}
+
+.ci-letterboxd-horizontal-dark{
+  content: url("../../public/logos/letterboxd/ci-letterboxd-horizontal-dark.svg");
+}
+
+.ci-codeforces{
+  content: url("../../public/logos/codeforces/ci-codeforces.svg");
+}
+
 .ci-2xs {
   width: 0.625rem;
   height: 0.625rem;
