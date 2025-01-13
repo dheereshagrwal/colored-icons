@@ -43,7 +43,7 @@ const Modal: React.FC<ModalProps> = ({ icon, onClose }) => {
             </button>
           </div>
 
-          <div className="px-8 pb-8">
+          <div className="mx-6 sm:mx-8 mb-8">
             {/* Icon preview */}
             <div className="flex items-center gap-8 mb-10">
               <div className="p-8 bg-gradient-to-b from-slate-100 to-white rounded-2xl shadow-sm border border-slate-200">
