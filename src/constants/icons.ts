@@ -1039,7 +1039,7 @@ const icons = [
       "railway-horizontal-light",
       "railway-light",
     ],
-    url: "railway.com",
+    url: "railway.app",
   },
   {
     name: "React Native",
