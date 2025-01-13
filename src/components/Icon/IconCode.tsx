@@ -1,5 +1,10 @@
 import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
-import useCopy from '@/hooks/useCopy';
+import useCopy from "@/hooks/useCopy";
+import { Rubik } from "next/font/google";
+
+const rubik = Rubik({
+  subsets: ["latin"],
+});
 
 interface IconCodeProps {
   iconClass: string;
@@ -9,16 +14,14 @@ const IconCode: React.FC<IconCodeProps> = ({ iconClass }) => {
   const { copied, handleCopy } = useCopy();
 
   return (
-    <div className="relative group rounded-lg">
-      <pre
-        className={`text-sm`}
-      >
-        <code>{`<i class="ci ci-${iconClass}"></i>`}</code>
+    <div className="flex items-center group">
+      <pre className="flex-1 text-xs sm:text-sm whitespace-pre-wrap">
+        <code className={rubik.className}>{`<i class="ci ci-${iconClass}"></i>`}</code>
       </pre>
 
       <button
         onClick={() => handleCopy(`<i class="ci ci-${iconClass}"></i>`)}
-        className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-gray-300/50 transition-colors"
+        className="m-2 hover:bg-gray-300/50 transition-all"
         title="Copy to clipboard"
       >
         {copied ? (
