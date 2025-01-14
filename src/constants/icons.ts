@@ -1197,5 +1197,11 @@ const icons = [
     classes: ["codeforces"],
     url: "codeforces.com",
   },
+  {
+    name: "Dropbox",
+    category: "technology",
+    classes: ["dropbox", "dropbox-horizontal", "dropbox-horizontal-light"],
+    url: "dropbox.com",
+  },
 ];
 export default icons;
