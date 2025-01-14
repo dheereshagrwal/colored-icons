@@ -16,6 +16,26 @@ function SearchBox({ searchRef }: SearchProps) {
       ref.current?.focus();
     }
   }, [focusTrigger]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+      if (
+        (isMac && event.metaKey && event.key === 'f') ||
+        (!isMac && event.ctrlKey && event.key === 'f')
+      ) {
+        event.preventDefault();
+        ref.current?.focus();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  });
+
   const handleClearSearch = () => {
     setSearch("");
     ref.current?.focus();
