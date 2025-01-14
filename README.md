@@ -24,6 +24,13 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 />
 ```
 
+Use the below one for latest
+```
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons/src/app/ci.min.css"
+/>
+```
 ## Usage
 
 ```

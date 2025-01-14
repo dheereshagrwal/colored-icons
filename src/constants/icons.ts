@@ -1181,14 +1181,21 @@ const icons = [
   {
     name: "Letterboxd",
     category: "social-media",
-    classes: ["letterboxd-stacked-light", "letterboxd-horizontal-light", "letterboxd-horizontal-dark", "letterboxd-stacked-dark"],
-    url: "letterboxd.com"
+    classes: [
+      "letterboxd",
+      "letterboxd-light",
+      "letterboxd-horizontal",
+      "letterboxd-vertical",
+      "letterboxd-vertical-light",
+      "letterboxd-horizontal-light",
+    ],
+    url: "letterboxd.com",
   },
   {
     name: "Codeforces",
     category: "technology",
     classes: ["codeforces"],
-    url: "codeforces.com"
-  }
+    url: "codeforces.com",
+  },
 ];
 export default icons;
