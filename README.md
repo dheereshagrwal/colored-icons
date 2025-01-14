@@ -5,12 +5,12 @@ Sample icons
 <img src="public/logos/spotify/spotify.svg" alt="Spotify Icon"  height="48"> <img src="public/logos/reactjs/reactjs.svg" alt="React Icon"  height="48">
 <img src="public/logos/vuejs/vuejs.svg" alt="Vue.js Icon"  height="48"> <img src="public/logos/redis/redis.svg" alt="Redis Icon"  height="48"> <img src="public/logos/firebase/firebase.svg" alt="Firebase Icon"  height="48"> <img src="public/logos/instagram/instagram.svg" alt="Instagram Icon"  height="48"> <img src="public/logos/python/python.svg" alt="Python Icon"  height="48"> <img src="public/logos/js/js.svg" alt="JavaScript Icon"  height="48"> <img src="public/logos/html/html.svg" alt="HTML5 Icon"  height="48"> <img src="public/logos/css/css.svg" alt="CSS3 Icon"  height="48"> <img src="public/logos/nodejs/nodejs.svg" alt="Node.js Icon"  height="48"> <img src="public/logos/mongodb/mongodb.svg" alt="MongoDB Icon"  height="48"> <img src="public/logos/postgresql/postgresql.svg" alt="PostgreSQL Icon"  height="48"> <img src="public/logos/java/java.svg" alt="Java Icon"  height="48"> <img src="public/logos/angular/angular.svg" alt="Angular Icon"  height="48"> <img src="public/logos/nuxtjs/nuxtjs.svg" alt="Nuxtjs Icon"  height="48"> <img src="public/logos/solana/solana.svg" alt="Solana Icon"  height="48"> <img src="public/logos/docker/docker.webp" alt="Docker Icon" height="48"> <img src="public/logos/kubernetes/kubernetes.svg" alt="Kubernetes Icon"  height="48">
 
-Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff, just use the easy `<i>` tag. It's a bunch of logos from different brands and tech stacks. You can just use these awesome icons in your projects without ever dealing with any downloads
+Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuff; just use the easy `<i>` tag. It's a bunch of logos from different brands and tech stacks. You can use these awesome icons in your projects without ever dealing with any downloads
 
 ## Features
 
 - Super easy integration into your web projects using the `<i>` tag
-- Change the size of icons, just like Font Awesome icons
+- Change the size of icons just like Font Awesome icons
 - Flip the colors of icons using the `ci-invert` class
 
 ## Installation
@@ -73,7 +73,7 @@ If you want to invert the color for some reason, just add `ci-invert`.
 
 ## Sizing
 
-I used the same sizing style used by font awesome:
+I used the same sizing style used by Font Awesome:
 
 `ci-2xs` `ci-xs` `ci-sm` `ci-md` `ci-lg` `ci-xl` `ci-2xl`
 
@@ -140,7 +140,15 @@ Please note that we use `pnpm` for faster builds.
 
 `logo + wordmark -> {company-horizontal}.svg`
 
+`logo + vertical logo -> {company-vertical}.svg`
+
 If you want me to add an icon that is missing or have some suggestions, just raise an issue.
+
+## Scripts before deployment
+
+Please run
+`pnpm run minify:watch`
+during the development to ensure any changes that are made to ci.css are immediately reflected in ci.min.css
 
 ## License
 
