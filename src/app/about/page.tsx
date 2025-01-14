@@ -2,9 +2,14 @@
 import { Navbar } from "@/components/Navbar";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
-import { HiOutlineClipboard, HiOutlineClipboardCheck } from "react-icons/hi";
 import { icons } from "@/constants";
 import useCopy from "@/hooks/useCopy";
+import CdnInclude from "../../components/About/CdnInclude";
+
+const CI_CSS_URL_VERSION =
+  "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.8.0/src/app/ci.min.css";
+const CI_CSS_URL_LATEST =
+  "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons/src/app/ci.min.css";
 
 // Updated showcase icons with both tech and social icons
 const showcaseIcons = {
@@ -153,29 +158,15 @@ export default function About() {
             <h2 className="text-2xl font-semibold text-gray-900">
               Quick Start
             </h2>
-            <div className="prose prose-gray max-w-full">
-              <p className="text-gray-600 mt-4">Include via CDN:</p>
-              <div className="mt-4 relative">
-                <pre className="bg-gray-800/95 text-white p-4 pr-14 rounded-lg whitespace-pre-wrap word-break-all">
-                  <code>{`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.9/src/app/ci.min.css" />`}</code>
-                </pre>
-                <button
-                  onClick={() =>
-                    handleCopy(
-                      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.9/src/app/ci.min.css" />'
-                    )
-                  }
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-white/10 transition-colors"
-                  title="Copy to clipboard"
-                >
-                  {copied ? (
-                    <HiOutlineClipboardCheck className="w-5 h-5 text-green-400" />
-                  ) : (
-                    <HiOutlineClipboard className="w-5 h-5 text-gray-400" />
-                  )}
-                </button>
-              </div>
-            </div>
+         
+            <CdnInclude
+              text="Include via CDN (another version):"
+              url={CI_CSS_URL_VERSION}
+            />
+            <CdnInclude
+              text="Include via CDN (latest):"
+              url={CI_CSS_URL_LATEST}
+            />
           </section>
 
           {/* Community */}

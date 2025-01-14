@@ -2520,7 +2520,7 @@
 .ci-letterboxd-vertical,
 .ci-letterboxd-stacked-dark,
 .ci-letterboxd-vertical-dark {
-  content: url("../../public/logos/letterboxd/letterboxd-vertical-dark.svg");
+  content: url("../../public/logos/letterboxd/letterboxd-vertical.svg");
 }
 
 .ci-letterboxd-horizontal-light,
@@ -2532,12 +2532,30 @@
 .ci-letterboxd-horizontal-dark,
 .ci-letterboxd-inline,
 .ci-letterboxd-inline-dark {
-  content: url("../../public/logos/letterboxd/letterboxd-horizontal-dark.svg");
+  content: url("../../public/logos/letterboxd/letterboxd-horizontal.svg");
 }
 
 .ci-codeforces,
 .ci-cf {
   content: url("../../public/logos/codeforces/codeforces.svg");
+}
+
+.ci-dropbox,
+.ci-dropbox-dark,
+.ci-dropbox-light {
+  content: url("../../public/logos/dropbox/dropbox.svg");
+}
+
+.ci-dropbox-horizontal,
+.ci-dropbox-inline,
+.ci-dropbox-horizontal-dark,
+.ci-dropbox-inline-dark {
+  content: url("../../public/logos/dropbox/dropbox-horizontal.svg");
+}
+
+.ci-dropbox-horizontal-light,
+.ci-dropbox-inline-light {
+  content: url("../../public/logos/dropbox/dropbox-horizontal-light.svg");
 }
 
 .ci-2xs {
