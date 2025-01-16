@@ -2,43 +2,20 @@
 import { Navbar } from "@/components/Navbar";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
-import { icons } from "@/constants";
 import CdnInclude from "../../components/About/CdnInclude";
+import IconSection from '../../components/About/IconSection';
 
 const CI_CSS_URL_VERSION =
   "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.8.0/src/app/ci.min.css";
 const CI_CSS_URL_LATEST =
   "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons/src/app/ci.min.css";
 
-// Updated showcase icons with both tech and social icons
-const showcaseIcons = {
-  tech: [
-    "react",
-    "nextjs",
-    "typescript",
-    "tailwind",
-    "javascript",
-    "python",
-    "nodejs",
-    "vscode",
-  ],
-  social: [
-    "github",
-    "linkedin",
-    "twitter",
-    "instagram",
-    "facebook",
-    "youtube",
-    "discord",
-    "twitch",
-  ],
-};
-
-const getIconsByType = (type: "tech" | "social") => {
-  return icons.filter((icon) =>
-    showcaseIcons[type].includes(icon.classes[0].toLowerCase())
-  );
-};
+const features = [
+  "Over 100+ professionally designed icons",
+  "Multiple variations for popular brands and logos",
+  "Easy implementation with simple HTML/CSS classes",
+  "Regular updates and new icon additions",
+];
 
 export default function About() {
   return (
@@ -77,53 +54,8 @@ export default function About() {
               Explore Our Icon Collection
             </h2>
             <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-medium text-gray-800 mb-4">
-                  Development & Technology Icons
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                  {getIconsByType("tech").map((icon) => (
-                    <div
-                      key={icon.name}
-                      className="flex flex-col items-center gap-3 p-6 rounded-xl bg-white shadow-sm border border-gray-200 hover:border-purple-200 hover:shadow-md transition-all"
-                    >
-                      <i
-                        className={`ci ci-${icon.classes[0]} ci-3x text-gray-800`}
-                      ></i>
-                      <span className="text-sm font-medium text-gray-600">
-                        {icon.name}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-medium text-gray-800 mb-4">
-                  Brand & Social Media Icons
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                  {getIconsByType("social").map((icon) => (
-                    <div
-                      key={icon.name}
-                      className="flex flex-col items-center gap-3 p-6 rounded-xl bg-white shadow-sm border border-gray-200 hover:border-purple-200 hover:shadow-md transition-all"
-                    >
-                      <i
-                        className={`ci ci-${icon.classes[0]} ci-3x text-gray-800`}
-                      ></i>
-                      <span className="text-sm font-medium text-gray-600">
-                        {icon.name}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <p className="text-gray-600 text-center mt-6">
-                These are just a few examples from our extensive collection.
-                Explore our full library to find the perfect icons for your
-                project.
-              </p>
+              <IconSection title="Development & Technology Icons" type="tech" />
+              <IconSection title="Brand & Social Media Icons" type="social" />
             </div>
           </section>
 
@@ -131,22 +63,12 @@ export default function About() {
           <section className="space-y-6">
             <h2 className="text-2xl font-semibold text-gray-900">Features</h2>
             <ul className="space-y-4 text-gray-600">
-              <li className="flex gap-3">
-                <span className="text-purple-600">•</span>
-                <span>Over 100+ professionally designed icons</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-purple-600">•</span>
-                <span>Multiple variations for popular brands and logos</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-purple-600">•</span>
-                <span>Easy implementation with simple HTML/CSS classes</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-purple-600">•</span>
-                <span>Regular updates and new icon additions</span>
-              </li>
+              {features.map((feature, index) => (
+                <li key={index} className="flex gap-3">
+                  <span className="text-purple-600">•</span>
+                  <span>{feature}</span>
+                </li>
+              ))}
             </ul>
           </section>
 
