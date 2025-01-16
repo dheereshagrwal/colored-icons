@@ -15,10 +15,10 @@ const CdnInclude: React.FC<CdnIncludeProps> = ({ text, url }) => {
   };
 
   return (
-    <div className="prose prose-gray max-w-full">
+    <>
       <p className="text-gray-600 mt-4">{text}</p>
       <div className="mt-4 relative">
-        <pre className="bg-gray-800/95 text-white p-4 pr-14 rounded-lg whitespace-pre-wrap word-break-all">
+        <pre className="bg-gray-800/95 text-white p-4 rounded-lg whitespace-pre-wrap word-break-all">
           <code>{`<link rel="stylesheet" href="${url}" />`}</code>
         </pre>
         <button
@@ -33,7 +33,7 @@ const CdnInclude: React.FC<CdnIncludeProps> = ({ text, url }) => {
           )}
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

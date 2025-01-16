@@ -3,7 +3,6 @@ import { Navbar } from "@/components/Navbar";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import { icons } from "@/constants";
-import useCopy from "@/hooks/useCopy";
 import CdnInclude from "../../components/About/CdnInclude";
 
 const CI_CSS_URL_VERSION =
@@ -42,10 +41,8 @@ const getIconsByType = (type: "tech" | "social") => {
 };
 
 export default function About() {
-  const { copied, handleCopy } = useCopy();
-
   return (
-    <div className="relative isolate scroll-smooth">
+    <>
       <section className="max-w-7xl mx-auto">
         <Navbar />
       </section>
@@ -158,7 +155,7 @@ export default function About() {
             <h2 className="text-2xl font-semibold text-gray-900">
               Quick Start
             </h2>
-         
+
             <CdnInclude
               text="Include via CDN (another version):"
               url={CI_CSS_URL_VERSION}
@@ -192,6 +189,6 @@ export default function About() {
           </section>
         </div>
       </main>
-    </div>
+    </>
   );
 }
