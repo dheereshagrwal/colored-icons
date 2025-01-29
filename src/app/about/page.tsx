@@ -23,7 +23,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto">
         <Navbar />
       </section>
-      <main className="mx-auto max-w-3xl px-6 py-12 sm:py-20 lg:py-28">
+      <main className="mx-auto max-w-3xl px-4 py-12 sm:py-20 lg:py-28">
         <div className="text-center space-y-8">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             About Colored Icons
