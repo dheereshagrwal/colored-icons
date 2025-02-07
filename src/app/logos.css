@@ -280,7 +280,7 @@
 .ci-bandcamp,
 .ci-bandcamp-dark,
 .ci-bandcamp-light {
-  content: url("../../public/logos/bandcamp/bandcamp.png");
+  content: url("../../public/logos/bandcamp/bandcamp.svg");
 }
 
 .ci-bandcamp2-horizontal-light,
@@ -1541,7 +1541,7 @@
 .ci-payoneer,
 .ci-payoneer-dark,
 .ci-payoneer-light {
-  content: url("../../public/logos/payoneer/payoneer.jpeg");
+  content: url("../../public/logos/payoneer/payoneer.png");
 }
 
 .ci-paypal-horizontal,
@@ -1812,7 +1812,7 @@
 .ci-razorpay,
 .ci-razorpay-dark,
 .ci-razorpay-light {
-  content: url("../../public/logos/razorpay/razorpay.jpeg");
+  content: url("../../public/logos/razorpay/razorpay.png");
 }
 
 .ci-react-native,
