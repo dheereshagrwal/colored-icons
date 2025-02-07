@@ -10,6 +10,30 @@ const cssPath = path.join(__dirname, "..", "src", "app", "logos.css");
 
 let cssContent = "";
 
+// Map of logo aliases
+const logoAliases = {
+  codeforces: ["cf"],
+  discord: ["dc"],
+  digitalocean: ["do"],
+  ethereum: ["eth"],
+  facebook: ["fb"],
+  go: ["golang"],
+  leetcode: ["lc"],
+  microsoft: ["msft", "ms"],
+  nodejs: ["node"],
+  expressjs: ["express"],
+  instagram: ["insta"],
+  nuxtjs: ["nuxt"],
+  nextjs: ["next"],
+  ola: ["olacabs"],
+  react: ["reactjs"],
+  ringcentral: ["rc"],
+  youtube: ["yt"],
+  cplusplus: ["cpp"],
+  louisvuitton: ["lv"],
+  framer: ["framer-motion"]
+};
+
 // Process each folder and its files
 const processFolder = (folderName) => {
   const folderPath = path.join(logosPath, folderName);
@@ -64,52 +88,122 @@ const processFolder = (folderName) => {
 }\n\n`;
       }
     } else {
-      // Normal processing for other variants
-      const className = baseName; // Use full baseName without stripping folderName
+      const className = baseName;
+
+      // Function to generate class names including aliases
+      const generateClassNames = (baseClassName) => {
+        let classes = [baseClassName];
+
+        // Check if this base class has aliases
+        const baseNameWithoutPrefix = baseClassName.replace(
+          `${folderName}-`,
+          ""
+        );
+        if (logoAliases[folderName]) {
+          logoAliases[folderName].forEach((alias) => {
+            // If it's a base class
+            if (baseClassName === folderName) {
+              classes.push(alias);
+            } else {
+              // For variants like horizontal, vertical, etc.
+              classes.push(`${alias}-${baseNameWithoutPrefix}`);
+            }
+          });
+        }
+
+        return classes.join(",\n.ci-");
+      };
 
       if (variants.dark && variants.light) {
         // For vertical/stacked variants
-        if (className.includes('vertical')) {
-          cssContent += `.ci-${className.replace('vertical', 'stacked')},
-.ci-${className.replace('vertical', 'stacked')}-dark,
-.ci-${className},
-.ci-${className}-dark {
+        if (className.includes("vertical") || className.includes("stacked")) {
+          const baseClass = className
+            .replace("vertical", "")
+            .replace("stacked", "");
+          cssContent += `.ci-${generateClassNames(baseClass + "vertical")},
+.ci-${generateClassNames(baseClass + "vertical-dark")},
+.ci-${generateClassNames(baseClass + "stacked")},
+.ci-${generateClassNames(baseClass + "stacked-dark")} {
   content: url("../../public/logos/${folderName}/${variants.dark}");
 }\n\n`;
-          cssContent += `.ci-${className.replace('vertical', 'stacked')}-light,
-.ci-${className}-light {
+          cssContent += `.ci-${generateClassNames(
+            baseClass + "vertical-light"
+          )},
+.ci-${generateClassNames(baseClass + "stacked-light")} {
   content: url("../../public/logos/${folderName}/${variants.light}");
 }\n\n`;
         }
         // For horizontal/inline variants
-        else if (className.includes('horizontal')) {
-          cssContent += `.ci-${className.replace('horizontal', 'inline')},
-.ci-${className.replace('horizontal', 'inline')}-dark,
-.ci-${className},
-.ci-${className}-dark {
+        else if (
+          className.includes("horizontal") ||
+          className.includes("inline")
+        ) {
+          const baseClass = className
+            .replace("horizontal", "")
+            .replace("inline", "");
+          cssContent += `.ci-${generateClassNames(baseClass + "horizontal")},
+.ci-${generateClassNames(baseClass + "horizontal-dark")},
+.ci-${generateClassNames(baseClass + "inline")},
+.ci-${generateClassNames(baseClass + "inline-dark")} {
   content: url("../../public/logos/${folderName}/${variants.dark}");
 }\n\n`;
-          cssContent += `.ci-${className.replace('horizontal', 'inline')}-light,
-.ci-${className}-light {
+          cssContent += `.ci-${generateClassNames(
+            baseClass + "horizontal-light"
+          )},
+.ci-${generateClassNames(baseClass + "inline-light")} {
   content: url("../../public/logos/${folderName}/${variants.light}");
 }\n\n`;
         }
         // Regular case
         else {
-          cssContent += `.ci-${className},
-.ci-${className}-dark {
+          cssContent += `.ci-${generateClassNames(className)},
+.ci-${generateClassNames(className + "-dark")} {
   content: url("../../public/logos/${folderName}/${variants.dark}");
 }\n\n`;
-          cssContent += `.ci-${className}-light {
+          cssContent += `.ci-${generateClassNames(className + "-light")} {
   content: url("../../public/logos/${folderName}/${variants.light}");
 }\n\n`;
         }
       } else if (variants.dark) {
-        cssContent += `.ci-${className},
-.ci-${className}-dark,
-.ci-${className}-light {
+        // For vertical/stacked variants
+        if (className.includes("vertical") || className.includes("stacked")) {
+          const baseClass = className
+            .replace("vertical", "")
+            .replace("stacked", "");
+          cssContent += `.ci-${generateClassNames(baseClass + "vertical")},
+.ci-${generateClassNames(baseClass + "vertical-dark")},
+.ci-${generateClassNames(baseClass + "vertical-light")},
+.ci-${generateClassNames(baseClass + "stacked")},
+.ci-${generateClassNames(baseClass + "stacked-dark")},
+.ci-${generateClassNames(baseClass + "stacked-light")} {
   content: url("../../public/logos/${folderName}/${variants.dark}");
 }\n\n`;
+        }
+        // For horizontal/inline variants
+        else if (
+          className.includes("horizontal") ||
+          className.includes("inline")
+        ) {
+          const baseClass = className
+            .replace("horizontal", "")
+            .replace("inline", "");
+          cssContent += `.ci-${generateClassNames(baseClass + "horizontal")},
+.ci-${generateClassNames(baseClass + "horizontal-dark")},
+.ci-${generateClassNames(baseClass + "horizontal-light")},
+.ci-${generateClassNames(baseClass + "inline")},
+.ci-${generateClassNames(baseClass + "inline-dark")},
+.ci-${generateClassNames(baseClass + "inline-light")} {
+  content: url("../../public/logos/${folderName}/${variants.dark}");
+}\n\n`;
+        }
+        // Regular case
+        else {
+          cssContent += `.ci-${generateClassNames(className)},
+.ci-${generateClassNames(className + "-dark")},
+.ci-${generateClassNames(className + "-light")} {
+  content: url("../../public/logos/${folderName}/${variants.dark}");
+}\n\n`;
+        }
       }
     }
   });

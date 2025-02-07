@@ -8,7 +8,6 @@ const __dirname = path.dirname(__filename);
 // Paths to CSS files
 const cssFiles = [
   path.join(__dirname, '..', 'src', 'app', 'logos.css'),
-  path.join(__dirname, '..', 'src', 'app', 'sample.css')
 ];
 
 // Updated parseCssGroups function using a regex
