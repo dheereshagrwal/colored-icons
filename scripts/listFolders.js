@@ -32,6 +32,7 @@ const logoAliases = {
   cplusplus: ["cpp"],
   louisvuitton: ["lv"],
   framer: ["framer-motion"],
+  bluesky: ["bsky"],
 };
 
 // NEW: Function to parse CSS rules into groups by URL

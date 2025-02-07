@@ -325,6 +325,15 @@
   content: url("../../public/logos/behance/behance2.svg");
 }
 
+.ci-bluesky,
+.ci-bluesky-dark,
+.ci-bluesky-light,
+.ci-bsky,
+.ci-bsky-dark,
+.ci-bsky-light {
+  content: url("../../public/logos/bluesky/bluesky.svg");
+}
+
 .ci-bmw,
 .ci-bmw-dark,
 .ci-bmw-light {
@@ -1961,6 +1970,15 @@
 .ci-scala-dark,
 .ci-scala-light {
   content: url("../../public/logos/scala/scala.svg");
+}
+
+.ci-shadcn-light {
+  content: url("../../public/logos/shadcn/shadcn-light.png");
+}
+
+.ci-shadcn,
+.ci-shadcn-dark {
+  content: url("../../public/logos/shadcn/shadcn.png");
 }
 
 .ci-snapchat,

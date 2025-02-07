@@ -1179,5 +1179,17 @@ const icons = [
     classes: ["dropbox", "dropbox-horizontal", "dropbox-horizontal-light"],
     url: "dropbox.com",
   },
+  {
+    name:"shadcn",
+    category:"technology",
+    classes:["shadcn", "shadcn-light"],
+    url:"ui.shadcn.com"
+  },
+  {
+    name:"Bluesky",
+    category:"social media",
+    classes:["bluesky"],
+    url:"bsky.app"
+  }
 ];
 export default icons;
