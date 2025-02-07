@@ -31,7 +31,27 @@ const logoAliases = {
   youtube: ["yt"],
   cplusplus: ["cpp"],
   louisvuitton: ["lv"],
-  framer: ["framer-motion"]
+  framer: ["framer-motion"],
+};
+
+// NEW: Function to parse CSS rules into groups by URL
+const parseCssGroups = (content) => {
+  const urlGroups = new Map();
+  const regex = /([^{}]+)\{[^}]*url\(["']([^"']+)["']\)[^}]*\}/g;
+  let match;
+  while ((match = regex.exec(content)) !== null) {
+    const selectorsText = match[1].trim();
+    const url = match[2].trim();
+    const selectors = selectorsText
+      .split(",")
+      .map((s) => s.trim())
+      .filter((s) => s);
+    if (!urlGroups.has(url)) {
+      urlGroups.set(url, new Set());
+    }
+    selectors.forEach((selector) => urlGroups.get(url).add(selector));
+  }
+  return urlGroups;
 };
 
 // Process each folder and its files
@@ -222,7 +242,26 @@ fs.readdir(logosPath, (err, folders) => {
     }
   });
 
-  // Write the CSS file
+  // Write the CSS file first
   fs.writeFileSync(cssPath, cssContent);
-  console.log("CSS file generated successfully!");
+
+  // NEW: Read, sort, and rewrite the CSS file
+  try {
+    const content = fs.readFileSync(cssPath, "utf8");
+    const urlGroups = parseCssGroups(content);
+    const sortedUrls = Array.from(urlGroups.keys()).sort();
+
+    let sortedContent = "";
+    sortedUrls.forEach((url) => {
+      const selectors = Array.from(urlGroups.get(url)).sort();
+      sortedContent += `${selectors.join(
+        ",\n"
+      )} {\n  content: url("${url}");\n}\n\n`;
+    });
+
+    fs.writeFileSync(cssPath, sortedContent);
+    console.log("CSS file generated and sorted successfully!");
+  } catch (error) {
+    console.error(`Error sorting CSS file: ${error}`);
+  }
 });
