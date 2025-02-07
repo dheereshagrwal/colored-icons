@@ -248,30 +248,6 @@ const icons = [
     url: "hm.com",
   },
   {
-    name: "Balenciaga",
-    category: "clothing and apparel",
-    classes: ["balenciaga", "balenciaga-wordmark"],
-    url: "balenciaga.com",
-  },
-  {
-    name: "GUCCI",
-    category: "clothing and apparel",
-    classes: ["gucci", "gucci-light", "gucci-wordmark", "gucci-wordmark-light"],
-    url: "gucci.com",
-  },
-  {
-    name: "PRADA",
-    category: "clothing and apparel",
-    classes: ["prada", "prada-light", "prada-wordmark", "prada-wordmark-light"],
-    url: "prada.com",
-  },
-  {
-    name: "FENDI",
-    category: "clothing and apparel",
-    classes: ["fendi", "fendi-light", "fendi-wordmark", "fendi-wordmark-light"],
-    url: "fendi.com",
-  },
-  {
     name: "Louis Vuitton",
     category: "clothing and apparel",
     classes: ["lv", "lv-light", "lv-wordmark", "lv-wordmark-light"],
@@ -1175,7 +1151,7 @@ const icons = [
   {
     name: "Ringcentral",
     category: "technology",
-    classes: ["ringcentral"],
+    classes: ["ringcentral", "ringcentral-wordmark"],
     url: "ringcentral.com",
   },
   {
@@ -1203,5 +1179,17 @@ const icons = [
     classes: ["dropbox", "dropbox-horizontal", "dropbox-horizontal-light"],
     url: "dropbox.com",
   },
+  {
+    name:"shadcn",
+    category:"technology",
+    classes:["shadcn", "shadcn-light"],
+    url:"ui.shadcn.com"
+  },
+  {
+    name:"Bluesky",
+    category:"social media",
+    classes:["bluesky"],
+    url:"bsky.app"
+  }
 ];
 export default icons;
