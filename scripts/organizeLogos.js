@@ -27,11 +27,12 @@ const logosDir = path.join(__dirname, "../public/logos");
           (icon) => normalize(icon.name) === normalizedFolder
         );
         if (icon) {
-          const targetDir = path.join(logosDir, icon.category);
+          const category = icon.classes[0]
+          const targetDir = path.join(logosDir, category);
           await fsPromises.mkdir(targetDir, { recursive: true });
           const oldPath = path.join(logosDir, folderName);
           const newPath = path.join(targetDir, folderName);
-          console.log(`Moving "${folderName}" to "${icon.category}" category.`);
+          console.log(`Moving "${folderName}" to "${category}" category.`);
           await fsPromises.rename(oldPath, newPath);
         } else {
           console.log(`No matching icon for folder: "${folderName}"`);
