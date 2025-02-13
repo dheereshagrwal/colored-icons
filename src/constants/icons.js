@@ -250,7 +250,12 @@ const icons = [
   {
     name: "Louis Vuitton",
     category: "clothing and apparel",
-    classes: ["lv", "lv-light", "lv-wordmark", "lv-wordmark-light"],
+    classes: [
+      "louisvuitton",
+      "louisvuitton-light",
+      "louisvuitton-wordmark",
+      "louisvuitton-wordmark-light",
+    ],
     url: "louisvuitton.com",
   },
   {
@@ -622,7 +627,7 @@ const icons = [
   {
     name: "Framer",
     category: "technology",
-    classes: ["framer-motion"],
+    classes: ["framer"],
     url: "framer.com",
   },
   {
@@ -1156,7 +1161,7 @@ const icons = [
   },
   {
     name: "Letterboxd",
-    category: "social-media",
+    category: "social media",
     classes: [
       "letterboxd",
       "letterboxd-light",
@@ -1180,16 +1185,16 @@ const icons = [
     url: "dropbox.com",
   },
   {
-    name:"shadcn",
-    category:"technology",
-    classes:["shadcn", "shadcn-light"],
-    url:"ui.shadcn.com"
+    name: "shadcn",
+    category: "technology",
+    classes: ["shadcn", "shadcn-light"],
+    url: "ui.shadcn.com",
   },
   {
-    name:"Bluesky",
-    category:"social media",
-    classes:["bluesky"],
-    url:"bsky.app"
-  }
+    name: "Bluesky",
+    category: "social media",
+    classes: ["bluesky"],
+    url: "bsky.app",
+  },
 ];
 export default icons;
