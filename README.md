@@ -28,7 +28,7 @@ Use the below one for latest
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons/src/app/ci.min.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@master/src/app/ci.min.css"
 />
 ```
 ## Usage

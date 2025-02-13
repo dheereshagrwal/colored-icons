@@ -8,7 +8,7 @@ import IconSection from '../../components/About/IconSection';
 const CI_CSS_URL_VERSION =
   "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.8.2/src/app/ci.min.css";
 const CI_CSS_URL_LATEST =
-  "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons/src/app/ci.min.css";
+  "https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@master/src/app/ci.min.css";
 
 const features = [
   "Over 100+ professionally designed icons",
