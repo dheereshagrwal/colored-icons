@@ -338,7 +338,46 @@ fs.readdir(logosPath, (err, categories) => {
               case "go":
                 iconUrl = "go.dev";
                 break;
+              case "aws":
+                displayName = "AWS";
+                break;
+              case "eth":
+                iconUrl = "ethereum.org";
+                break;
+              case "cpp":
+                displayName = "C++";
+                iconUrl = "isocpp.org";
+                break;
+              case "csharp":
+                displayName = "C#";
+                break;
+              case "do":
+                displayName = "DigitalOcean";
+                break;
+              case "css":
+                displayName = "CSS";
+                break;
+              case "louisvuitton":
+                displayName = "Louis Vuitton";
+                break;
+              case "mui":
+                displayName = "MUI";
+                break;
               case "365":
+              case "teams":
+              case "word":
+              case "visio":
+              case "sway":
+              case "sharepoint":
+              case "project":
+              case "powerpoint":
+              case "outlook":
+              case "onenote":
+              case "onedrive":
+              case "delve":
+              case "forms":
+              case "excel":
+              case "access":
                 iconUrl = "office.com";
                 break;
               case "angular":
@@ -349,9 +388,6 @@ fs.readdir(logosPath, (err, categories) => {
                 break;
               case "c":
                 iconUrl = "learn-c.org";
-                break;
-              case "cpp":
-                iconUrl = "isocpp.org";
                 break;
               default:
                 break;
@@ -374,7 +410,8 @@ fs.readdir(logosPath, (err, categories) => {
     null,
     2
   )};\nexport default icons;\n`;
-  const iconsPath = path.join(__dirname, "..", "src", "constants", "icons.js");
+  // updated file path to icons.ts
+  const iconsPath = path.join(__dirname, "..", "src", "constants", "icons.ts");
   fs.writeFileSync(iconsPath, iconsContent);
-  console.log("icons.js generated successfully!");
+  console.log("icons.ts generated successfully!");
 });

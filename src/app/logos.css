@@ -1057,88 +1057,10 @@
   content: url("../../public/logos/technology/365/365.svg");
 }
 
-.ci-365-access,
-.ci-365-access-dark,
-.ci-365-access-light {
-  content: url("../../public/logos/technology/365/access.svg");
-}
-
-.ci-365-delve,
-.ci-365-delve-dark,
-.ci-365-delve-light {
-  content: url("../../public/logos/technology/365/delve.svg");
-}
-
-.ci-365-excel,
-.ci-365-excel-dark,
-.ci-365-excel-light {
-  content: url("../../public/logos/technology/365/excel.svg");
-}
-
-.ci-365-forms,
-.ci-365-forms-dark,
-.ci-365-forms-light {
-  content: url("../../public/logos/technology/365/forms.svg");
-}
-
-.ci-365-onedrive,
-.ci-365-onedrive-dark,
-.ci-365-onedrive-light {
-  content: url("../../public/logos/technology/365/onedrive.svg");
-}
-
-.ci-365-onenote,
-.ci-365-onenote-dark,
-.ci-365-onenote-light {
-  content: url("../../public/logos/technology/365/onenote.svg");
-}
-
-.ci-365-outlook,
-.ci-365-outlook-dark,
-.ci-365-outlook-light {
-  content: url("../../public/logos/technology/365/outlook.svg");
-}
-
-.ci-365-powerpoint,
-.ci-365-powerpoint-dark,
-.ci-365-powerpoint-light {
-  content: url("../../public/logos/technology/365/powerpoint.svg");
-}
-
-.ci-365-project,
-.ci-365-project-dark,
-.ci-365-project-light {
-  content: url("../../public/logos/technology/365/project.svg");
-}
-
-.ci-365-sharepoint,
-.ci-365-sharepoint-dark,
-.ci-365-sharepoint-light {
-  content: url("../../public/logos/technology/365/sharepoint.svg");
-}
-
-.ci-365-sway,
-.ci-365-sway-dark,
-.ci-365-sway-light {
-  content: url("../../public/logos/technology/365/sway.svg");
-}
-
-.ci-365-teams,
-.ci-365-teams-dark,
-.ci-365-teams-light {
-  content: url("../../public/logos/technology/365/teams.svg");
-}
-
-.ci-365-visio,
-.ci-365-visio-dark,
-.ci-365-visio-light {
-  content: url("../../public/logos/technology/365/visio.svg");
-}
-
-.ci-365-word,
-.ci-365-word-dark,
-.ci-365-word-light {
-  content: url("../../public/logos/technology/365/word.svg");
+.ci-access,
+.ci-access-dark,
+.ci-access-light {
+  content: url("../../public/logos/technology/access/access.svg");
 }
 
 .ci-alan-horizontal,
@@ -1255,6 +1177,51 @@
   content: url("../../public/logos/technology/css/css.svg");
 }
 
+.ci-delve,
+.ci-delve-dark,
+.ci-delve-light {
+  content: url("../../public/logos/technology/delve/delve.svg");
+}
+
+.ci-digitalocean-horizontal,
+.ci-digitalocean-horizontal-dark,
+.ci-digitalocean-horizontal-light,
+.ci-digitalocean-inline,
+.ci-digitalocean-inline-dark,
+.ci-digitalocean-inline-light,
+.ci-do-horizontal,
+.ci-do-horizontal-dark,
+.ci-do-horizontal-light,
+.ci-do-inline,
+.ci-do-inline-dark,
+.ci-do-inline-light {
+  content: url("../../public/logos/technology/digitalocean/digitalocean-horizontal.svg");
+}
+
+.ci-digitalocean-stacked,
+.ci-digitalocean-stacked-dark,
+.ci-digitalocean-stacked-light,
+.ci-digitalocean-vertical,
+.ci-digitalocean-vertical-dark,
+.ci-digitalocean-vertical-light,
+.ci-do-stacked,
+.ci-do-stacked-dark,
+.ci-do-stacked-light,
+.ci-do-vertical,
+.ci-do-vertical-dark,
+.ci-do-vertical-light {
+  content: url("../../public/logos/technology/digitalocean/digitalocean-vertical.svg");
+}
+
+.ci-digitalocean,
+.ci-digitalocean-dark,
+.ci-digitalocean-light,
+.ci-do,
+.ci-do-dark,
+.ci-do-light {
+  content: url("../../public/logos/technology/digitalocean/digitalocean.svg");
+}
+
 .ci-django-wordmark,
 .ci-django-wordmark-dark,
 .ci-django-wordmark-light {
@@ -1265,30 +1232,6 @@
 .ci-django-dark,
 .ci-django-light {
   content: url("../../public/logos/technology/django/django.svg");
-}
-
-.ci-do-horizontal,
-.ci-do-horizontal-dark,
-.ci-do-horizontal-light,
-.ci-do-inline,
-.ci-do-inline-dark,
-.ci-do-inline-light {
-  content: url("../../public/logos/technology/do/do-horizontal.svg");
-}
-
-.ci-do-stacked,
-.ci-do-stacked-dark,
-.ci-do-stacked-light,
-.ci-do-vertical,
-.ci-do-vertical-dark,
-.ci-do-vertical-light {
-  content: url("../../public/logos/technology/do/do-vertical.svg");
-}
-
-.ci-do,
-.ci-do-dark,
-.ci-do-light {
-  content: url("../../public/logos/technology/do/do.svg");
 }
 
 .ci-docker-horizontal,
@@ -1339,6 +1282,12 @@
   content: url("../../public/logos/technology/eth/eth.svg");
 }
 
+.ci-excel,
+.ci-excel-dark,
+.ci-excel-light {
+  content: url("../../public/logos/technology/excel/excel.svg");
+}
+
 .ci-express-wordmark,
 .ci-express-wordmark-dark,
 .ci-express-wordmark-light,
@@ -1373,6 +1322,12 @@
 .ci-flutter-dark,
 .ci-flutter-light {
   content: url("../../public/logos/technology/flutter/flutter.svg");
+}
+
+.ci-forms,
+.ci-forms-dark,
+.ci-forms-light {
+  content: url("../../public/logos/technology/forms/forms.svg");
 }
 
 .ci-framer,
@@ -1918,6 +1873,18 @@
   content: url("../../public/logos/technology/nuxtjs/nuxtjs.svg");
 }
 
+.ci-onedrive,
+.ci-onedrive-dark,
+.ci-onedrive-light {
+  content: url("../../public/logos/technology/onedrive/onedrive.svg");
+}
+
+.ci-onenote,
+.ci-onenote-dark,
+.ci-onenote-light {
+  content: url("../../public/logos/technology/onenote/onenote.svg");
+}
+
 .ci-opensea-horizontal,
 .ci-opensea-horizontal-dark,
 .ci-opensea-horizontal-light,
@@ -1952,6 +1919,12 @@
 .ci-opensea3-dark,
 .ci-opensea3-light {
   content: url("../../public/logos/technology/opensea/opensea3.svg");
+}
+
+.ci-outlook,
+.ci-outlook-dark,
+.ci-outlook-light {
+  content: url("../../public/logos/technology/outlook/outlook.svg");
 }
 
 .ci-perl,
@@ -2021,6 +1994,18 @@
 .ci-postman-dark,
 .ci-postman-light {
   content: url("../../public/logos/technology/postman/postman.svg");
+}
+
+.ci-powerpoint,
+.ci-powerpoint-dark,
+.ci-powerpoint-light {
+  content: url("../../public/logos/technology/powerpoint/powerpoint.svg");
+}
+
+.ci-project,
+.ci-project-dark,
+.ci-project-light {
+  content: url("../../public/logos/technology/project/project.svg");
 }
 
 .ci-python-horizontal,
@@ -2212,6 +2197,12 @@
   content: url("../../public/logos/technology/shadcn/shadcn.png");
 }
 
+.ci-sharepoint,
+.ci-sharepoint-dark,
+.ci-sharepoint-light {
+  content: url("../../public/logos/technology/sharepoint/sharepoint.svg");
+}
+
 .ci-solana-horizontal-light,
 .ci-solana-inline-light {
   content: url("../../public/logos/technology/solana/solana-horizontal-light.svg");
@@ -2275,6 +2266,12 @@
   content: url("../../public/logos/technology/svelte/svelte.svg");
 }
 
+.ci-sway,
+.ci-sway-dark,
+.ci-sway-light {
+  content: url("../../public/logos/technology/sway/sway.svg");
+}
+
 .ci-swift-horizontal,
 .ci-swift-horizontal-dark,
 .ci-swift-horizontal-light,
@@ -2306,6 +2303,12 @@
 .ci-tailwind-dark,
 .ci-tailwind-light {
   content: url("../../public/logos/technology/tailwind/tailwind.svg");
+}
+
+.ci-teams,
+.ci-teams-dark,
+.ci-teams-light {
+  content: url("../../public/logos/technology/teams/teams.svg");
 }
 
 .ci-tmdb,
@@ -2371,6 +2374,12 @@
   content: url("../../public/logos/technology/vimeo/vimeo2.svg");
 }
 
+.ci-visio,
+.ci-visio-dark,
+.ci-visio-light {
+  content: url("../../public/logos/technology/visio/visio.svg");
+}
+
 .ci-vscode,
 .ci-vscode-dark,
 .ci-vscode-light {
@@ -2387,6 +2396,12 @@
 .ci-web3js-dark,
 .ci-web3js-light {
   content: url("../../public/logos/technology/web3js/web3js.png");
+}
+
+.ci-word,
+.ci-word-dark,
+.ci-word-light {
+  content: url("../../public/logos/technology/word/word.svg");
 }
 
 .ci-airbnb-circle,

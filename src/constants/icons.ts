@@ -188,7 +188,7 @@ const icons = [
     "url": "hm.com"
   },
   {
-    "name": "Louisvuitton",
+    "name": "Louis Vuitton",
     "category": "clothing and apparel",
     "classes": [
       "louisvuitton",
@@ -625,21 +625,15 @@ const icons = [
     "name": "365",
     "category": "technology",
     "classes": [
-      "365",
-      "365-access",
-      "365-delve",
-      "365-excel",
-      "365-forms",
-      "365-onedrive",
-      "365-onenote",
-      "365-outlook",
-      "365-powerpoint",
-      "365-project",
-      "365-sharepoint",
-      "365-sway",
-      "365-teams",
-      "365-visio",
-      "365-word"
+      "365"
+    ],
+    "url": "office.com"
+  },
+  {
+    "name": "Access",
+    "category": "technology",
+    "classes": [
+      "access"
     ],
     "url": "office.com"
   },
@@ -680,7 +674,7 @@ const icons = [
     "url": "apple.com"
   },
   {
-    "name": "Aws",
+    "name": "AWS",
     "category": "technology",
     "classes": [
       "aws",
@@ -722,7 +716,7 @@ const icons = [
     "url": "codeforces.com"
   },
   {
-    "name": "Cpp",
+    "name": "C++",
     "category": "technology",
     "classes": [
       "cpp"
@@ -730,7 +724,7 @@ const icons = [
     "url": "isocpp.org"
   },
   {
-    "name": "Csharp",
+    "name": "C#",
     "category": "technology",
     "classes": [
       "csharp"
@@ -738,12 +732,30 @@ const icons = [
     "url": "csharp.com"
   },
   {
-    "name": "Css",
+    "name": "CSS",
     "category": "technology",
     "classes": [
       "css"
     ],
     "url": "css.com"
+  },
+  {
+    "name": "Delve",
+    "category": "technology",
+    "classes": [
+      "delve"
+    ],
+    "url": "office.com"
+  },
+  {
+    "name": "Digitalocean",
+    "category": "technology",
+    "classes": [
+      "digitalocean",
+      "digitalocean-horizontal",
+      "digitalocean-vertical"
+    ],
+    "url": "digitalocean.com"
   },
   {
     "name": "Django",
@@ -753,16 +765,6 @@ const icons = [
       "django-wordmark"
     ],
     "url": "django.com"
-  },
-  {
-    "name": "Do",
-    "category": "technology",
-    "classes": [
-      "do",
-      "do-horizontal",
-      "do-vertical"
-    ],
-    "url": "do.com"
   },
   {
     "name": "Docker",
@@ -790,7 +792,15 @@ const icons = [
     "classes": [
       "eth"
     ],
-    "url": "eth.com"
+    "url": "ethereum.org"
+  },
+  {
+    "name": "Excel",
+    "category": "technology",
+    "classes": [
+      "excel"
+    ],
+    "url": "office.com"
   },
   {
     "name": "Expressjs",
@@ -824,6 +834,14 @@ const icons = [
       "flutter"
     ],
     "url": "flutter.com"
+  },
+  {
+    "name": "Forms",
+    "category": "technology",
+    "classes": [
+      "forms"
+    ],
+    "url": "office.com"
   },
   {
     "name": "Framer",
@@ -1047,7 +1065,7 @@ const icons = [
     "url": "mongodb.com"
   },
   {
-    "name": "Mui",
+    "name": "MUI",
     "category": "technology",
     "classes": [
       "mui"
@@ -1126,6 +1144,22 @@ const icons = [
     "url": "nuxtjs.com"
   },
   {
+    "name": "Onedrive",
+    "category": "technology",
+    "classes": [
+      "onedrive"
+    ],
+    "url": "office.com"
+  },
+  {
+    "name": "Onenote",
+    "category": "technology",
+    "classes": [
+      "onenote"
+    ],
+    "url": "office.com"
+  },
+  {
     "name": "Opensea",
     "category": "technology",
     "classes": [
@@ -1136,6 +1170,14 @@ const icons = [
       "opensea3"
     ],
     "url": "opensea.com"
+  },
+  {
+    "name": "Outlook",
+    "category": "technology",
+    "classes": [
+      "outlook"
+    ],
+    "url": "office.com"
   },
   {
     "name": "Perl",
@@ -1189,6 +1231,22 @@ const icons = [
       "postman-horizontal"
     ],
     "url": "postman.com"
+  },
+  {
+    "name": "Powerpoint",
+    "category": "technology",
+    "classes": [
+      "powerpoint"
+    ],
+    "url": "office.com"
+  },
+  {
+    "name": "Project",
+    "category": "technology",
+    "classes": [
+      "project"
+    ],
+    "url": "office.com"
   },
   {
     "name": "Python",
@@ -1326,6 +1384,14 @@ const icons = [
     "url": "shadcn.com"
   },
   {
+    "name": "Sharepoint",
+    "category": "technology",
+    "classes": [
+      "sharepoint"
+    ],
+    "url": "office.com"
+  },
+  {
     "name": "Solana",
     "category": "technology",
     "classes": [
@@ -1371,6 +1437,14 @@ const icons = [
     "url": "svelte.com"
   },
   {
+    "name": "Sway",
+    "category": "technology",
+    "classes": [
+      "sway"
+    ],
+    "url": "office.com"
+  },
+  {
     "name": "Swift",
     "category": "technology",
     "classes": [
@@ -1388,6 +1462,14 @@ const icons = [
       "tailwind-horizontal-light"
     ],
     "url": "tailwind.com"
+  },
+  {
+    "name": "Teams",
+    "category": "technology",
+    "classes": [
+      "teams"
+    ],
+    "url": "office.com"
   },
   {
     "name": "Tmdb",
@@ -1429,6 +1511,14 @@ const icons = [
     "url": "vimeo.com"
   },
   {
+    "name": "Visio",
+    "category": "technology",
+    "classes": [
+      "visio"
+    ],
+    "url": "office.com"
+  },
+  {
     "name": "Vscode",
     "category": "technology",
     "classes": [
@@ -1451,6 +1541,14 @@ const icons = [
       "web3js"
     ],
     "url": "web3js.com"
+  },
+  {
+    "name": "Word",
+    "category": "technology",
+    "classes": [
+      "word"
+    ],
+    "url": "office.com"
   },
   {
     "name": "Airbnb",
