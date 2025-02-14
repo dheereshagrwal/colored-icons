@@ -115,7 +115,7 @@ const icons = [
     "url": "audi.com"
   },
   {
-    "name": "Bmw",
+    "name": "BMW",
     "category": "automobile",
     "classes": [
       "bmw"
@@ -219,7 +219,7 @@ const icons = [
     "url": "puma.com"
   },
   {
-    "name": "Rayban",
+    "name": "Ray-Ban",
     "category": "clothing and apparel",
     "classes": [
       "rayban-wordmark"
@@ -245,7 +245,7 @@ const icons = [
     "url": "barclays.com"
   },
   {
-    "name": "Buymeacoffee",
+    "name": "Buy Me a Coffee",
     "category": "financial services",
     "classes": [
       "buymeacoffee"
@@ -311,7 +311,7 @@ const icons = [
     "url": "paytm.com"
   },
   {
-    "name": "Phonepe",
+    "name": "PhonePe",
     "category": "financial services",
     "classes": [
       "phonepe",
@@ -346,7 +346,7 @@ const icons = [
     "url": "visa.com"
   },
   {
-    "name": "Burgerking",
+    "name": "BurgerKing",
     "category": "food and beverage",
     "classes": [
       "burgerking"
@@ -1073,7 +1073,7 @@ const icons = [
     "url": "mui.com"
   },
   {
-    "name": "Mysql",
+    "name": "MySQL",
     "category": "technology",
     "classes": [
       "mysql",
@@ -1160,7 +1160,7 @@ const icons = [
     "url": "office.com"
   },
   {
-    "name": "Opensea",
+    "name": "OpenSea",
     "category": "technology",
     "classes": [
       "opensea",
@@ -1285,7 +1285,7 @@ const icons = [
       "railway-horizontal-light",
       "railway-light"
     ],
-    "url": "railway.com"
+    "url": "railway.app"
   },
   {
     "name": "React Native",

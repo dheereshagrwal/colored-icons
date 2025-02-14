@@ -378,8 +378,29 @@ fs.readdir(logosPath, (err, categories) => {
               case "react-native":
                 displayName = "React Native";
                 break;
+              case "buymeacoffee":
+                displayName = "Buy Me a Coffee";
+                break;
+              case "bmw":
+                displayName = "BMW";
+                break;
+              case "burgerking":
+                displayName = "BurgerKing";
+                break;
               case "hsbc":
                 displayName = "HSBC";
+                break;
+              case "phonepe":
+                displayName = "PhonePe";
+                break;
+              case "rayban":
+                displayName = "Ray-Ban";
+                break;
+              case "mysql":
+                displayName = "MySQL";
+                break;
+              case "opensea":
+                displayName = "OpenSea";
                 break;
               case "html":
                 displayName = "HTML";
@@ -415,6 +436,9 @@ fs.readdir(logosPath, (err, categories) => {
                 break;
               case "infura":
                 iconUrl = "infura.io";
+                break;
+              case "railway":
+                iconUrl = "railway.app";
                 break;
               case "c":
                 iconUrl = "learn-c.org";
