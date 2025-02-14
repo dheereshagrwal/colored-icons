@@ -55,9 +55,9 @@ const parseCssGroups = (content) => {
   return urlGroups;
 };
 
-// Process each folder and its files
-const processFolder = (folderName) => {
-  const folderPath = path.join(logosPath, folderName);
+// Updated: processFolder now accepts folderPath, folderName and category
+const processFolder = (folderPath, folderName, category) => {
+  // No longer reassign folderPath here since it's passed in
   const files = fs.readdirSync(folderPath);
 
   // Group files by their base name (without -light suffix)
@@ -99,13 +99,13 @@ const processFolder = (folderName) => {
 .ci-${folderName}-dark,
 .ci-${folderName}-wordmark,
 .ci-${folderName}-wordmark-dark {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
       }
       if (variants.light) {
         cssContent += `.ci-${folderName}-light,
 .ci-${folderName}-wordmark-light {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.light}");
 }\n\n`;
       }
     } else {
@@ -145,13 +145,15 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "vertical-dark")},
 .ci-${generateClassNames(baseClass + "stacked")},
 .ci-${generateClassNames(baseClass + "stacked-dark")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
           cssContent += `.ci-${generateClassNames(
             baseClass + "vertical-light"
           )},
 .ci-${generateClassNames(baseClass + "stacked-light")} {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${
+            variants.light
+          }");
 }\n\n`;
         }
         // For horizontal/inline variants
@@ -166,23 +168,27 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "horizontal-dark")},
 .ci-${generateClassNames(baseClass + "inline")},
 .ci-${generateClassNames(baseClass + "inline-dark")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
           cssContent += `.ci-${generateClassNames(
             baseClass + "horizontal-light"
           )},
 .ci-${generateClassNames(baseClass + "inline-light")} {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${
+            variants.light
+          }");
 }\n\n`;
         }
         // Regular case
         else {
           cssContent += `.ci-${generateClassNames(className)},
 .ci-${generateClassNames(className + "-dark")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
           cssContent += `.ci-${generateClassNames(className + "-light")} {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${
+            variants.light
+          }");
 }\n\n`;
         }
       } else if (variants.dark) {
@@ -197,7 +203,7 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "stacked")},
 .ci-${generateClassNames(baseClass + "stacked-dark")},
 .ci-${generateClassNames(baseClass + "stacked-light")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
         }
         // For horizontal/inline variants
@@ -214,7 +220,7 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "inline")},
 .ci-${generateClassNames(baseClass + "inline-dark")},
 .ci-${generateClassNames(baseClass + "inline-light")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
         }
         // Regular case
@@ -222,7 +228,7 @@ const processFolder = (folderName) => {
           cssContent += `.ci-${generateClassNames(className)},
 .ci-${generateClassNames(className + "-dark")},
 .ci-${generateClassNames(className + "-light")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
         }
       }
@@ -230,16 +236,23 @@ const processFolder = (folderName) => {
   });
 };
 
-// Read all folders and process
-fs.readdir(logosPath, (err, folders) => {
+// Updated: Iterate categories and then logo folders
+fs.readdir(logosPath, (err, categories) => {
   if (err) {
     console.error(`Error reading directory ${logosPath}: ${err}`);
     return;
   }
 
-  folders.forEach((folder) => {
-    if (fs.statSync(path.join(logosPath, folder)).isDirectory()) {
-      processFolder(folder);
+  categories.forEach((category) => {
+    const categoryPath = path.join(logosPath, category);
+    if (fs.statSync(categoryPath).isDirectory()) {
+      const folders = fs.readdirSync(categoryPath);
+      folders.forEach((folder) => {
+        const fullFolderPath = path.join(categoryPath, folder);
+        if (fs.statSync(fullFolderPath).isDirectory()) {
+          processFolder(fullFolderPath, folder, category);
+        }
+      });
     }
   });
 
