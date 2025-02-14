@@ -360,6 +360,33 @@ fs.readdir(logosPath, (err, categories) => {
               case "louisvuitton":
                 displayName = "Louis Vuitton";
                 break;
+              case "jnj":
+                displayName = "Johnson & Johnson";
+                break;
+              case "ts":
+                displayName = "TypeScript";
+                break;
+              case "js":
+                displayName = "JavaScript";
+                break;
+              case "php":
+                displayName = "php";
+                break;
+              case "kfc":
+                displayName = "KFC";
+                break;
+              case "react-native":
+                displayName = "React Native";
+                break;
+              case "hsbc":
+                displayName = "HSBC";
+                break;
+              case "html":
+                displayName = "HTML";
+                break;
+              case "jquery":
+                displayName = "jQuery";
+                break;
               case "mui":
                 displayName = "MUI";
                 break;
@@ -385,6 +412,9 @@ fs.readdir(logosPath, (err, categories) => {
                 break;
               case "bluesky":
                 iconUrl = "bsky.app";
+                break;
+              case "infura":
+                iconUrl = "infura.io";
                 break;
               case "c":
                 iconUrl = "learn-c.org";

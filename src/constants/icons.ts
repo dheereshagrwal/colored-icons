@@ -263,7 +263,7 @@ const icons = [
     "url": "cashfree.com"
   },
   {
-    "name": "Hsbc",
+    "name": "HSBC",
     "category": "financial services",
     "classes": [
       "hsbc",
@@ -363,7 +363,7 @@ const icons = [
     "url": "dominos.com"
   },
   {
-    "name": "Kfc",
+    "name": "KFC",
     "category": "food and beverage",
     "classes": [
       "kfc",
@@ -415,7 +415,7 @@ const icons = [
     "url": "astrazeneca.com"
   },
   {
-    "name": "Jnj",
+    "name": "Johnson & Johnson",
     "category": "pharmaceuticals",
     "classes": [
       "jnj",
@@ -935,7 +935,7 @@ const icons = [
     "url": "graphql.com"
   },
   {
-    "name": "Html",
+    "name": "HTML",
     "category": "technology",
     "classes": [
       "html"
@@ -950,7 +950,7 @@ const icons = [
       "infura-vertical",
       "infura-wordmark"
     ],
-    "url": "infura.com"
+    "url": "infura.io"
   },
   {
     "name": "Java",
@@ -962,7 +962,7 @@ const icons = [
     "url": "java.com"
   },
   {
-    "name": "Jquery",
+    "name": "jQuery",
     "category": "technology",
     "classes": [
       "jquery",
@@ -971,7 +971,7 @@ const icons = [
     "url": "jquery.com"
   },
   {
-    "name": "Js",
+    "name": "JavaScript",
     "category": "technology",
     "classes": [
       "js"
@@ -1188,7 +1188,7 @@ const icons = [
     "url": "perl.com"
   },
   {
-    "name": "Php",
+    "name": "php",
     "category": "technology",
     "classes": [
       "php",
@@ -1288,7 +1288,7 @@ const icons = [
     "url": "railway.com"
   },
   {
-    "name": "React-native",
+    "name": "React Native",
     "category": "technology",
     "classes": [
       "react-native"
@@ -1480,7 +1480,7 @@ const icons = [
     "url": "tmdb.com"
   },
   {
-    "name": "Ts",
+    "name": "TypeScript",
     "category": "technology",
     "classes": [
       "ts",
