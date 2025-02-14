@@ -20,17 +20,19 @@ To use the Colored Icons Library, simply add the following CDN link to your HTML
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.8.2/src/app/ci.min.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.8.3/src/app/ci.min.css"
 />
 ```
 
 Use the below one for latest
+
 ```
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@master/src/app/ci.min.css"
 />
 ```
+
 ## Usage
 
 ```
@@ -152,6 +154,7 @@ during the development to ensure any changes that are made to ci.css are immedia
 
 `node scripts/listFolders.js`
 to automatically generate the `logos.css` file. However, you will still have to add the new icons in `icons.ts` manually
+
 ## License
 
 The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
