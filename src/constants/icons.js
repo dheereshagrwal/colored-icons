@@ -1,440 +1,560 @@
 const icons = [
   {
-    name: "Gitea",
-    category: "technology",
-    classes: ["gitea"],
-    url: "gitea.com",
+    "name": "Artstation",
+    "category": "art and music",
+    "classes": [
+      "artstation",
+      "artstation-horizontal",
+      "artstation-horizontal-light",
+      "artstation-vertical",
+      "artstation-vertical-light"
+    ],
+    "url": "artstation.com"
   },
   {
-    name: "Solana",
-    category: "technology",
-    classes: ["solana", "solana-horizontal", "solana-horizontal-light"],
-    url: "solana.com",
+    "name": "Bandcamp",
+    "category": "art and music",
+    "classes": [
+      "bandcamp",
+      "bandcamp-horizontal",
+      "bandcamp-horizontal-light",
+      "bandcamp2-horizontal",
+      "bandcamp2-horizontal-light"
+    ],
+    "url": "bandcamp.com"
   },
   {
-    name: "Gitlab",
-    category: "technology",
-    classes: ["gitlab", "gitlab-horizontal", "gitlab-horizontal-light"],
-    url: "gitlab.com",
+    "name": "Behance",
+    "category": "art and music",
+    "classes": [
+      "behance",
+      "behance-wordmark",
+      "behance2"
+    ],
+    "url": "behance.com"
   },
   {
-    name: "Postman",
-    category: "technology",
-    classes: ["postman", "postman-horizontal"],
-    url: "postman.com",
+    "name": "Deviantart",
+    "category": "art and music",
+    "classes": [
+      "deviantart",
+      "deviantart-horizontal",
+      "deviantart2"
+    ],
+    "url": "deviantart.com"
   },
   {
-    name: "expressjs",
-    category: "technology",
-    classes: ["expressjs", "expressjs-wordmark"],
-    url: "expressjs.com",
+    "name": "Dribbble",
+    "category": "art and music",
+    "classes": [
+      "dribbble",
+      "dribbble-wordmark",
+      "dribbble-wordmark-light",
+      "dribbble2"
+    ],
+    "url": "dribbble.com"
   },
   {
-    name: "jQuery",
-    category: "technology",
-    classes: ["jquery", "jquery-horizontal"],
-    url: "jquery.com",
+    "name": "Mixcloud",
+    "category": "art and music",
+    "classes": [
+      "mixcloud",
+      "mixcloud-light",
+      "mixcloud-wordmark",
+      "mixcloud-wordmark-light",
+      "mixcloud2",
+      "mixcloud2-wordmark",
+      "mixcloud3",
+      "mixcloud3-wordmark"
+    ],
+    "url": "mixcloud.com"
   },
   {
-    name: "VS Code",
-    category: "technology",
-    classes: ["vscode"],
-    url: "code.visualstudio.com",
+    "name": "Pinterest",
+    "category": "art and music",
+    "classes": [
+      "pinterest",
+      "pinterest-horizontal"
+    ],
+    "url": "pinterest.com"
   },
   {
-    name: "X",
-    category: "social media",
-    classes: ["x", "x-light"],
-    url: "x.com",
+    "name": "Pluto",
+    "category": "art and music",
+    "classes": [
+      "pluto"
+    ],
+    "url": "pluto.com"
   },
   {
-    name: "PhonePe",
-    category: "financial services",
-    classes: ["phonepe", "phonepe-horizontal"],
-    url: "phonepe.com",
+    "name": "Soundcloud",
+    "category": "art and music",
+    "classes": [
+      "soundcloud",
+      "soundcloud-horizontal"
+    ],
+    "url": "soundcloud.com"
   },
   {
-    name: "stripe",
-    category: "financial services",
-    classes: ["stripe", "stripe-wordmark"],
-    url: "stripe.com",
+    "name": "Spotify",
+    "category": "art and music",
+    "classes": [
+      "spotify",
+      "spotify-horizontal",
+      "spotify2-horizontal"
+    ],
+    "url": "spotify.com"
   },
   {
-    name: "Razorpay",
-    category: "financial services",
-    classes: ["razorpay", "razorpay-horizontal"],
-    url: "razorpay.com",
+    "name": "Audi",
+    "category": "automobile",
+    "classes": [
+      "audi",
+      "audi-light"
+    ],
+    "url": "audi.com"
   },
   {
-    name: "Paypal",
-    category: "financial services",
-    classes: ["paypal", "paypal-horizontal"],
-    url: "paypal.com",
+    "name": "Bmw",
+    "category": "automobile",
+    "classes": [
+      "bmw"
+    ],
+    "url": "bmw.com"
   },
   {
-    name: "paytm",
-    category: "financial services",
-    classes: ["paytm", "paytm-wordmark"],
-    url: "paytm.com",
+    "name": "Lamborghini",
+    "category": "automobile",
+    "classes": [
+      "lamborghini"
+    ],
+    "url": "lamborghini.com"
   },
   {
-    name: "Payoneer",
-    category: "financial services",
-    classes: [
+    "name": "Landrover",
+    "category": "automobile",
+    "classes": [
+      "landrover"
+    ],
+    "url": "landrover.com"
+  },
+  {
+    "name": "Mercedes",
+    "category": "automobile",
+    "classes": [
+      "mercedes",
+      "mercedes-vertical",
+      "mercedes-vertical-light"
+    ],
+    "url": "mercedes.com"
+  },
+  {
+    "name": "Porsche",
+    "category": "automobile",
+    "classes": [
+      "porsche",
+      "porsche-vertical"
+    ],
+    "url": "porsche.com"
+  },
+  {
+    "name": "Tesla",
+    "category": "automobile",
+    "classes": [
+      "tesla",
+      "tesla-square",
+      "tesla-wordmark"
+    ],
+    "url": "tesla.com"
+  },
+  {
+    "name": "Adidas",
+    "category": "clothing and apparel",
+    "classes": [
+      "adidas",
+      "adidas-light",
+      "adidas-vertical",
+      "adidas-vertical-light",
+      "adidas-wordmark"
+    ],
+    "url": "adidas.com"
+  },
+  {
+    "name": "Hm",
+    "category": "clothing and apparel",
+    "classes": [
+      "hm"
+    ],
+    "url": "hm.com"
+  },
+  {
+    "name": "Louisvuitton",
+    "category": "clothing and apparel",
+    "classes": [
+      "louisvuitton",
+      "louisvuitton-light",
+      "louisvuitton-wordmark",
+      "louisvuitton-wordmark-light"
+    ],
+    "url": "louisvuitton.com"
+  },
+  {
+    "name": "Nike",
+    "category": "clothing and apparel",
+    "classes": [
+      "nike",
+      "nike-light"
+    ],
+    "url": "nike.com"
+  },
+  {
+    "name": "Puma",
+    "category": "clothing and apparel",
+    "classes": [
+      "puma",
+      "puma-horizontal",
+      "puma-horizontal-light",
+      "puma-light"
+    ],
+    "url": "puma.com"
+  },
+  {
+    "name": "Rayban",
+    "category": "clothing and apparel",
+    "classes": [
+      "rayban-wordmark"
+    ],
+    "url": "rayban.com"
+  },
+  {
+    "name": "Zara",
+    "category": "clothing and apparel",
+    "classes": [
+      "zara-wordmark",
+      "zara-wordmark-light"
+    ],
+    "url": "zara.com"
+  },
+  {
+    "name": "Barclays",
+    "category": "financial services",
+    "classes": [
+      "barclays",
+      "barclays-wordmark"
+    ],
+    "url": "barclays.com"
+  },
+  {
+    "name": "Buymeacoffee",
+    "category": "financial services",
+    "classes": [
+      "buymeacoffee"
+    ],
+    "url": "buymeacoffee.com"
+  },
+  {
+    "name": "Cashfree",
+    "category": "financial services",
+    "classes": [
+      "cashfree",
+      "cashfree-horizontal",
+      "cashfree-horizontal-light"
+    ],
+    "url": "cashfree.com"
+  },
+  {
+    "name": "Hsbc",
+    "category": "financial services",
+    "classes": [
+      "hsbc",
+      "hsbc-horizontal",
+      "hsbc-horizontal-light"
+    ],
+    "url": "hsbc.com"
+  },
+  {
+    "name": "Mastercard",
+    "category": "financial services",
+    "classes": [
+      "mastercard"
+    ],
+    "url": "mastercard.com"
+  },
+  {
+    "name": "Payoneer",
+    "category": "financial services",
+    "classes": [
       "payoneer",
       "payoneer-horizontal",
       "payoneer-horizontal-light",
       "payoneer-vertical",
-      "payoneer-vertical-light",
+      "payoneer-vertical-light"
     ],
-    url: "payoneer.com",
+    "url": "payoneer.com"
   },
   {
-    name: "Visa",
-    category: "financial services",
-    classes: ["visa", "visa-wordmark"],
-    url: "visa.com",
-  },
-  {
-    name: "Mastercard",
-    category: "financial services",
-    classes: ["mastercard"],
-    url: "mastercard.com",
-  },
-  {
-    name: "buy me a coffee",
-    category: "financial services",
-    classes: ["buymeacoffee"],
-    url: "buymeacoffee.com",
-  },
-  {
-    name: "Domino's",
-    category: "food and beverage",
-    classes: ["dominos", "dominos-horizontal"],
-    url: "dominos.com",
-  },
-  {
-    name: "KFC",
-    category: "food and beverage",
-    classes: ["kfc", "kfc-wordmark"],
-    url: "kfc.com",
-  },
-  {
-    name: "McDonald's",
-    category: "food and beverage",
-    classes: ["mcdonalds"],
-    url: "mcdonalds.com",
-  },
-  {
-    name: "Burger King",
-    category: "food and beverage",
-    classes: ["burgerking"],
-    url: "burgerking.com",
-  },
-  {
-    name: "Nestlè",
-    category: "food and beverage",
-    classes: ["nestle", "nestle-vertical"],
-    url: "nestle.com",
-  },
-  {
-    name: "Wendy's",
-    category: "food and beverage",
-    classes: ["wendys"],
-    url: "wendys.com",
-  },
-  {
-    name: "Booking.com",
-    category: "travel and tourism",
-    classes: ["booking", "booking-wordmark"],
-    url: "booking.com",
-  },
-  {
-    name: "Olacabs",
-    category: "travel and tourism",
-    classes: ["ola", "ola-wordmark"],
-    url: "olacabs.com",
-  },
-  {
-    name: "Uber",
-    category: "travel and tourism",
-    classes: ["uber", "uber-wordmark"],
-    url: "uber.com",
-  },
-  {
-    name: "Virgin",
-    category: "travel and tourism",
-    classes: ["virgin"],
-    url: "virgin.com",
-  },
-  {
-    name: "Expedia",
-    category: "travel and tourism",
-    classes: ["expedia", "expedia-horizontal"],
-    url: "expedia.com",
-  },
-  {
-    name: "Hotels.com",
-    category: "travel and tourism",
-    classes: ["hotels", "hotels-horizontal"],
-    url: "hotels.com",
-  },
-  {
-    name: "Audi",
-    category: "automobile",
-    classes: ["audi", "audi-light"],
-    url: "audi.com",
-  },
-
-  {
-    name: "Porsche",
-    category: "automobile",
-    classes: ["porsche", "porsche-vertical"],
-    url: "porsche.com",
-  },
-  {
-    name: "BMW",
-    category: "automobile",
-    classes: ["bmw"],
-    url: "bmw.com",
-  },
-  {
-    name: "Land Rover",
-    category: "automobile",
-    classes: ["landrover"],
-    url: "landrover.com",
-  },
-  {
-    name: "Lamborghini",
-    category: "automobile",
-    classes: ["lamborghini"],
-    url: "lamborghini.com",
-  },
-  {
-    name: "Mercedes Benz",
-    category: "automobile",
-    classes: ["mercedes", "mercedes-vertical", "mercedes-vertical-light"],
-    url: "mercedes.com",
-  },
-  {
-    name: "Spotify",
-    category: "art and music",
-    classes: ["spotify", "spotify-horizontal", "spotify2-horizontal"],
-    url: "spotify.com",
-  },
-  {
-    name: "Nike",
-    category: "clothing and apparel",
-    classes: ["nike", "nike-light"],
-    url: "nike.com",
-  },
-  {
-    name: "Zara",
-    category: "clothing and apparel",
-    classes: ["zara", "zara-light", "zara-wordmark", "zara-wordmark-light"],
-    url: "zara.com",
-  },
-  {
-    name: "Puma",
-    category: "clothing and apparel",
-    classes: ["puma", "puma-light", "puma-horizontal", "puma-horizontal-light"],
-    url: "puma.com",
-  },
-
-  {
-    name: "H&M",
-    category: "clothing and apparel",
-    classes: ["hm"],
-    url: "hm.com",
-  },
-  {
-    name: "Louis Vuitton",
-    category: "clothing and apparel",
-    classes: [
-      "louisvuitton",
-      "louisvuitton-light",
-      "louisvuitton-wordmark",
-      "louisvuitton-wordmark-light",
+    "name": "Paypal",
+    "category": "financial services",
+    "classes": [
+      "paypal",
+      "paypal-horizontal"
     ],
-    url: "louisvuitton.com",
+    "url": "paypal.com"
   },
   {
-    name: "Ray-Ban",
-    category: "clothing and apparel",
-    classes: ["rayban", "rayban-wordmark"],
-    url: "rayban.com",
-  },
-  {
-    name: "practo",
-    category: "pharmaceuticals",
-    classes: ["practo", "practo-wordmark"],
-    url: "practo.com",
-  },
-  {
-    name: "Instagram",
-    category: "social media",
-    classes: ["instagram"],
-    url: "instagram.com",
-  },
-  {
-    name: "Linkedin",
-    category: "social media",
-    classes: ["linkedin", "linkedin-horizontal"],
-    url: "linkedin.com",
-  },
-  {
-    name: "Gmail",
-    category: "technology",
-    classes: ["gmail", "gmail-horizontal"],
-    url: "gmail.com",
-  },
-  {
-    name: "Leetcode",
-    category: "technology",
-    classes: ["leetcode", "leetcode-light"],
-    url: "leetcode.com",
-  },
-  {
-    name: "Github",
-    category: "technology",
-    classes: [
-      "github",
-      "github-light",
-      "github-wordmark",
-      "github-wordmark-light",
+    "name": "Paytm",
+    "category": "financial services",
+    "classes": [
+      "paytm",
+      "paytm-wordmark"
     ],
-    url: "github.com",
+    "url": "paytm.com"
   },
   {
-    name: "Git",
-    category: "technology",
-    classes: ["git", "git-horizontal"],
-    url: "git.com",
-  },
-  {
-    name: "Dribbble",
-    category: "art and music",
-    classes: [
-      "dribbble",
-      "dribbble-wordmark",
-      "dribbble-wordmark-light",
-      "dribbble2",
+    "name": "Phonepe",
+    "category": "financial services",
+    "classes": [
+      "phonepe",
+      "phonepe-horizontal"
     ],
-    url: "dribbble.com",
+    "url": "phonepe.com"
   },
   {
-    name: "HSBC",
-    category: "financial services",
-    classes: ["hsbc", "hsbc-horizontal", "hsbc-horizontal-light"],
-    url: "hsbc.com",
-  },
-  {
-    name: "Barclays",
-    category: "financial services",
-    classes: ["barclays", "barclays-wordmark"],
-    url: "barclays.com",
-  },
-  {
-    name: "Adidas",
-    category: "clothing and apparel",
-    classes: [
-      "adidas",
-      "adidas-light",
-      "adidas-wordmark",
-      "adidas-vertical",
-      "adidas-vertical-light",
+    "name": "Razorpay",
+    "category": "financial services",
+    "classes": [
+      "razorpay",
+      "razorpay-horizontal"
     ],
-    url: "adidas.com",
-  },
-
-  {
-    name: "Airbnb",
-    category: "travel and tourism",
-    classes: ["airbnb", "airbnb-circle", "airbnb-horizontal"],
-    url: "airbnb.com",
+    "url": "razorpay.com"
   },
   {
-    name: "Tesla",
-    category: "automobile",
-    classes: ["tesla", "tesla-square", "tesla-wordmark"],
-    url: "tesla.com",
-  },
-  {
-    name: "Starbucks",
-    category: "food and beverage",
-    classes: ["starbucks", "starbucks-wordmark ci-6x"],
-    url: "starbucks.com",
-  },
-  {
-    name: "Whatsapp",
-    category: "social media",
-    classes: [
-      "whatsapp",
-      "whatsapp-horizontal",
-      "whatsapp-vertical",
-      "whatsapp2",
-      "whatsapp2-horizontal",
-      "whatsapp2-vertical",
+    "name": "Stripe",
+    "category": "financial services",
+    "classes": [
+      "stripe",
+      "stripe-wordmark"
     ],
-    url: "whatsapp.com",
+    "url": "stripe.com"
   },
   {
-    name: "Youtube",
-    category: "social media",
-    classes: ["youtube", "youtube-horizontal"],
-    url: "youtube.com",
+    "name": "Visa",
+    "category": "financial services",
+    "classes": [
+      "visa-wordmark"
+    ],
+    "url": "visa.com"
   },
   {
-    name: "Discord",
-    category: "social media",
-    classes: ["discord", "discord-horizontal"],
-    url: "discord.com",
+    "name": "Burgerking",
+    "category": "food and beverage",
+    "classes": [
+      "burgerking"
+    ],
+    "url": "burgerking.com"
   },
   {
-    name: "Facebook",
-    category: "social media",
-    classes: ["facebook", "facebook-wordmark"],
-    url: "facebook.com",
+    "name": "Dominos",
+    "category": "food and beverage",
+    "classes": [
+      "dominos",
+      "dominos-horizontal"
+    ],
+    "url": "dominos.com"
   },
   {
-    name: "Reddit",
-    category: "social media",
-    classes: [
+    "name": "Kfc",
+    "category": "food and beverage",
+    "classes": [
+      "kfc",
+      "kfc-wordmark"
+    ],
+    "url": "kfc.com"
+  },
+  {
+    "name": "Mcdonalds",
+    "category": "food and beverage",
+    "classes": [
+      "mcdonalds"
+    ],
+    "url": "mcdonalds.com"
+  },
+  {
+    "name": "Nestle",
+    "category": "food and beverage",
+    "classes": [
+      "nestle",
+      "nestle-vertical"
+    ],
+    "url": "nestle.com"
+  },
+  {
+    "name": "Starbucks",
+    "category": "food and beverage",
+    "classes": [
+      "starbucks",
+      "starbucks-wordmark"
+    ],
+    "url": "starbucks.com"
+  },
+  {
+    "name": "Wendys",
+    "category": "food and beverage",
+    "classes": [
+      "wendys"
+    ],
+    "url": "wendys.com"
+  },
+  {
+    "name": "Astrazeneca",
+    "category": "pharmaceuticals",
+    "classes": [
+      "astrazeneca",
+      "astrazeneca-horizontal"
+    ],
+    "url": "astrazeneca.com"
+  },
+  {
+    "name": "Jnj",
+    "category": "pharmaceuticals",
+    "classes": [
+      "jnj",
+      "jnj-wordmark"
+    ],
+    "url": "jnj.com"
+  },
+  {
+    "name": "Merck",
+    "category": "pharmaceuticals",
+    "classes": [
+      "merck",
+      "merck-horizontal"
+    ],
+    "url": "merck.com"
+  },
+  {
+    "name": "Novartis",
+    "category": "pharmaceuticals",
+    "classes": [
+      "novartis",
+      "novartis-horizontal"
+    ],
+    "url": "novartis.com"
+  },
+  {
+    "name": "Pfizer",
+    "category": "pharmaceuticals",
+    "classes": [
+      "pfizer",
+      "pfizer-wordmark"
+    ],
+    "url": "pfizer.com"
+  },
+  {
+    "name": "Roche",
+    "category": "pharmaceuticals",
+    "classes": [
+      "roche-wordmark"
+    ],
+    "url": "roche.com"
+  },
+  {
+    "name": "Sanofi",
+    "category": "pharmaceuticals",
+    "classes": [
+      "sanofi",
+      "sanofi-wordmark"
+    ],
+    "url": "sanofi.com"
+  },
+  {
+    "name": "Bluesky",
+    "category": "social media",
+    "classes": [
+      "bluesky"
+    ],
+    "url": "bsky.app"
+  },
+  {
+    "name": "Discord",
+    "category": "social media",
+    "classes": [
+      "discord",
+      "discord-horizontal"
+    ],
+    "url": "discord.com"
+  },
+  {
+    "name": "Facebook",
+    "category": "social media",
+    "classes": [
+      "facebook",
+      "facebook-wordmark"
+    ],
+    "url": "facebook.com"
+  },
+  {
+    "name": "Instagram",
+    "category": "social media",
+    "classes": [
+      "instagram"
+    ],
+    "url": "instagram.com"
+  },
+  {
+    "name": "Letterboxd",
+    "category": "social media",
+    "classes": [
+      "letterboxd",
+      "letterboxd-horizontal",
+      "letterboxd-horizontal-light",
+      "letterboxd-light",
+      "letterboxd-vertical",
+      "letterboxd-vertical-light"
+    ],
+    "url": "letterboxd.com"
+  },
+  {
+    "name": "Linkedin",
+    "category": "social media",
+    "classes": [
+      "linkedin",
+      "linkedin-horizontal"
+    ],
+    "url": "linkedin.com"
+  },
+  {
+    "name": "Reddit",
+    "category": "social media",
+    "classes": [
       "reddit",
       "reddit-horizontal",
       "reddit-horizontal-light",
-      "reddit2-horizontal-light",
+      "reddit2-horizontal-light"
     ],
-    url: "reddit.com",
+    "url": "reddit.com"
   },
   {
-    name: "Snapchat",
-    category: "social media",
-    classes: ["snapchat"],
-    url: "snapchat.com",
+    "name": "Snapchat",
+    "category": "social media",
+    "classes": [
+      "snapchat"
+    ],
+    "url": "snapchat.com"
   },
   {
-    name: "Twitch",
-    category: "social media",
-    classes: ["twitch", "twitch-wordmark"],
-    url: "twitch.com",
+    "name": "Telegram",
+    "category": "social media",
+    "classes": [
+      "telegram",
+      "telegram2"
+    ],
+    "url": "telegram.com"
   },
   {
-    name: "Alan",
-    category: "technology",
-    classes: ["alan", "alan-horizontal", "alan-vertical"],
-    url: "alan.com",
-  },
-  {
-    name: "Telegram",
-    category: "social media",
-    classes: ["telegram", "telegram2"],
-    url: "telegram.com",
-  },
-  {
-    name: "Tiktok",
-    category: "social media",
-    classes: [
+    "name": "Tiktok",
+    "category": "social media",
+    "classes": [
       "tiktok",
       "tiktok-circle",
       "tiktok-circle-light",
@@ -446,755 +566,953 @@ const icons = [
       "tiktok-square",
       "tiktok-square-light",
       "tiktok-vertical",
-      "tiktok-vertical-light",
+      "tiktok-vertical-light"
     ],
-    url: "tiktok.com",
+    "url": "tiktok.com"
   },
   {
-    name: "OpenSea",
-    category: "technology",
-    classes: [
+    "name": "Twitch",
+    "category": "social media",
+    "classes": [
+      "twitch",
+      "twitch-wordmark"
+    ],
+    "url": "twitch.com"
+  },
+  {
+    "name": "Twitter",
+    "category": "social media",
+    "classes": [
+      "twitter",
+      "twitter-circle",
+      "twitter-rounded-square",
+      "twitter-square"
+    ],
+    "url": "twitter.com"
+  },
+  {
+    "name": "Whatsapp",
+    "category": "social media",
+    "classes": [
+      "whatsapp",
+      "whatsapp-horizontal",
+      "whatsapp-vertical",
+      "whatsapp2",
+      "whatsapp2-horizontal",
+      "whatsapp2-vertical"
+    ],
+    "url": "whatsapp.com"
+  },
+  {
+    "name": "X",
+    "category": "social media",
+    "classes": [
+      "x",
+      "x-light"
+    ],
+    "url": "x.com"
+  },
+  {
+    "name": "Youtube",
+    "category": "social media",
+    "classes": [
+      "youtube",
+      "youtube-horizontal"
+    ],
+    "url": "youtube.com"
+  },
+  {
+    "name": "365",
+    "category": "technology",
+    "classes": [
+      "365",
+      "365-access",
+      "365-delve",
+      "365-excel",
+      "365-forms",
+      "365-onedrive",
+      "365-onenote",
+      "365-outlook",
+      "365-powerpoint",
+      "365-project",
+      "365-sharepoint",
+      "365-sway",
+      "365-teams",
+      "365-visio",
+      "365-word"
+    ],
+    "url": "office.com"
+  },
+  {
+    "name": "Alan AI",
+    "category": "technology",
+    "classes": [
+      "alan",
+      "alan-horizontal",
+      "alan-vertical"
+    ],
+    "url": "alan.app"
+  },
+  {
+    "name": "Amazon",
+    "category": "technology",
+    "classes": [
+      "amazon",
+      "amazon-vertical",
+      "amazon-vertical-light"
+    ],
+    "url": "amazon.com"
+  },
+  {
+    "name": "Angular",
+    "category": "technology",
+    "classes": [
+      "angular"
+    ],
+    "url": "angular.dev"
+  },
+  {
+    "name": "Apple",
+    "category": "technology",
+    "classes": [
+      "apple"
+    ],
+    "url": "apple.com"
+  },
+  {
+    "name": "Aws",
+    "category": "technology",
+    "classes": [
+      "aws",
+      "aws-light"
+    ],
+    "url": "aws.com"
+  },
+  {
+    "name": "Azure",
+    "category": "technology",
+    "classes": [
+      "azure",
+      "azure2"
+    ],
+    "url": "azure.com"
+  },
+  {
+    "name": "Bootstrap",
+    "category": "technology",
+    "classes": [
+      "bootstrap"
+    ],
+    "url": "bootstrap.com"
+  },
+  {
+    "name": "C",
+    "category": "technology",
+    "classes": [
+      "c"
+    ],
+    "url": "learn-c.org"
+  },
+  {
+    "name": "Codeforces",
+    "category": "technology",
+    "classes": [
+      "codeforces"
+    ],
+    "url": "codeforces.com"
+  },
+  {
+    "name": "Cpp",
+    "category": "technology",
+    "classes": [
+      "cpp"
+    ],
+    "url": "isocpp.org"
+  },
+  {
+    "name": "Csharp",
+    "category": "technology",
+    "classes": [
+      "csharp"
+    ],
+    "url": "csharp.com"
+  },
+  {
+    "name": "Css",
+    "category": "technology",
+    "classes": [
+      "css"
+    ],
+    "url": "css.com"
+  },
+  {
+    "name": "Django",
+    "category": "technology",
+    "classes": [
+      "django",
+      "django-wordmark"
+    ],
+    "url": "django.com"
+  },
+  {
+    "name": "Do",
+    "category": "technology",
+    "classes": [
+      "do",
+      "do-horizontal",
+      "do-vertical"
+    ],
+    "url": "do.com"
+  },
+  {
+    "name": "Docker",
+    "category": "technology",
+    "classes": [
+      "docker",
+      "docker-horizontal",
+      "docker-vertical"
+    ],
+    "url": "docker.com"
+  },
+  {
+    "name": "Dropbox",
+    "category": "technology",
+    "classes": [
+      "dropbox",
+      "dropbox-horizontal",
+      "dropbox-horizontal-light"
+    ],
+    "url": "dropbox.com"
+  },
+  {
+    "name": "Eth",
+    "category": "technology",
+    "classes": [
+      "eth"
+    ],
+    "url": "eth.com"
+  },
+  {
+    "name": "Expressjs",
+    "category": "technology",
+    "classes": [
+      "expressjs",
+      "expressjs-wordmark"
+    ],
+    "url": "expressjs.com"
+  },
+  {
+    "name": "Figma",
+    "category": "technology",
+    "classes": [
+      "figma"
+    ],
+    "url": "figma.com"
+  },
+  {
+    "name": "Firebase",
+    "category": "technology",
+    "classes": [
+      "firebase"
+    ],
+    "url": "firebase.com"
+  },
+  {
+    "name": "Flutter",
+    "category": "technology",
+    "classes": [
+      "flutter"
+    ],
+    "url": "flutter.com"
+  },
+  {
+    "name": "Framer",
+    "category": "technology",
+    "classes": [
+      "framer"
+    ],
+    "url": "framer.com"
+  },
+  {
+    "name": "Gcd",
+    "category": "technology",
+    "classes": [
+      "gcd"
+    ],
+    "url": "gcd.com"
+  },
+  {
+    "name": "Git",
+    "category": "technology",
+    "classes": [
+      "git",
+      "git-horizontal"
+    ],
+    "url": "git.com"
+  },
+  {
+    "name": "Gitea",
+    "category": "technology",
+    "classes": [
+      "gitea"
+    ],
+    "url": "gitea.com"
+  },
+  {
+    "name": "Github",
+    "category": "technology",
+    "classes": [
+      "github",
+      "github-light",
+      "github-wordmark",
+      "github-wordmark-light"
+    ],
+    "url": "github.com"
+  },
+  {
+    "name": "Gitlab",
+    "category": "technology",
+    "classes": [
+      "gitlab",
+      "gitlab-horizontal",
+      "gitlab-horizontal-light"
+    ],
+    "url": "gitlab.com"
+  },
+  {
+    "name": "Gmail",
+    "category": "technology",
+    "classes": [
+      "gmail",
+      "gmail-horizontal"
+    ],
+    "url": "gmail.com"
+  },
+  {
+    "name": "Go",
+    "category": "technology",
+    "classes": [
+      "go",
+      "go-wordmark"
+    ],
+    "url": "go.dev"
+  },
+  {
+    "name": "Google",
+    "category": "technology",
+    "classes": [
+      "google",
+      "google-wordmark"
+    ],
+    "url": "google.com"
+  },
+  {
+    "name": "Graphql",
+    "category": "technology",
+    "classes": [
+      "graphql",
+      "graphql-horizontal",
+      "graphql-vertical"
+    ],
+    "url": "graphql.com"
+  },
+  {
+    "name": "Html",
+    "category": "technology",
+    "classes": [
+      "html"
+    ],
+    "url": "html.com"
+  },
+  {
+    "name": "Infura",
+    "category": "technology",
+    "classes": [
+      "infura",
+      "infura-vertical",
+      "infura-wordmark"
+    ],
+    "url": "infura.com"
+  },
+  {
+    "name": "Java",
+    "category": "technology",
+    "classes": [
+      "java",
+      "java-vertical"
+    ],
+    "url": "java.com"
+  },
+  {
+    "name": "Jquery",
+    "category": "technology",
+    "classes": [
+      "jquery",
+      "jquery-horizontal"
+    ],
+    "url": "jquery.com"
+  },
+  {
+    "name": "Js",
+    "category": "technology",
+    "classes": [
+      "js"
+    ],
+    "url": "js.com"
+  },
+  {
+    "name": "Julia",
+    "category": "technology",
+    "classes": [
+      "julia",
+      "julia-wordmark"
+    ],
+    "url": "julia.com"
+  },
+  {
+    "name": "Kotlin",
+    "category": "technology",
+    "classes": [
+      "kotlin",
+      "kotlin-wordmark"
+    ],
+    "url": "kotlin.com"
+  },
+  {
+    "name": "Kubernetes",
+    "category": "technology",
+    "classes": [
+      "kubernetes",
+      "kubernetes-horizontal",
+      "kubernetes-vertical"
+    ],
+    "url": "kubernetes.com"
+  },
+  {
+    "name": "Laravel",
+    "category": "technology",
+    "classes": [
+      "laravel"
+    ],
+    "url": "laravel.com"
+  },
+  {
+    "name": "Leetcode",
+    "category": "technology",
+    "classes": [
+      "leetcode",
+      "leetcode-light"
+    ],
+    "url": "leetcode.com"
+  },
+  {
+    "name": "Meta",
+    "category": "technology",
+    "classes": [
+      "meta",
+      "meta-horizontal",
+      "meta-horizontal-light"
+    ],
+    "url": "meta.com"
+  },
+  {
+    "name": "Metamask",
+    "category": "technology",
+    "classes": [
+      "metamask",
+      "metamask-horizontal",
+      "metamask-vertical"
+    ],
+    "url": "metamask.com"
+  },
+  {
+    "name": "Microsoft",
+    "category": "technology",
+    "classes": [
+      "microsoft",
+      "microsoft-horizontal",
+      "microsoft-horizontal-light"
+    ],
+    "url": "microsoft.com"
+  },
+  {
+    "name": "Mongodb",
+    "category": "technology",
+    "classes": [
+      "mongodb",
+      "mongodb-horizontal",
+      "mongodb2",
+      "mongodb2-horizontal"
+    ],
+    "url": "mongodb.com"
+  },
+  {
+    "name": "Mui",
+    "category": "technology",
+    "classes": [
+      "mui"
+    ],
+    "url": "mui.com"
+  },
+  {
+    "name": "Mysql",
+    "category": "technology",
+    "classes": [
+      "mysql",
+      "mysql-vertical"
+    ],
+    "url": "mysql.com"
+  },
+  {
+    "name": "Netflix",
+    "category": "technology",
+    "classes": [
+      "netflix",
+      "netflix-wordmark"
+    ],
+    "url": "netflix.com"
+  },
+  {
+    "name": "Netlify",
+    "category": "technology",
+    "classes": [
+      "netlify",
+      "netlify-light",
+      "netlify-wordmark",
+      "netlify-wordmark-light"
+    ],
+    "url": "netlify.com"
+  },
+  {
+    "name": "Nextjs",
+    "category": "technology",
+    "classes": [
+      "nextjs",
+      "nextjs-horizontal",
+      "nextjs-horizontal-light",
+      "nextjs-light"
+    ],
+    "url": "nextjs.com"
+  },
+  {
+    "name": "Nodejs",
+    "category": "technology",
+    "classes": [
+      "nodejs",
+      "nodejs-horizontal",
+      "nodejs-horizontal-light",
+      "nodejs-vertical",
+      "nodejs-vertical-light"
+    ],
+    "url": "nodejs.com"
+  },
+  {
+    "name": "Npm",
+    "category": "technology",
+    "classes": [
+      "npm",
+      "npm-wordmark"
+    ],
+    "url": "npm.com"
+  },
+  {
+    "name": "Nuxtjs",
+    "category": "technology",
+    "classes": [
+      "nuxtjs",
+      "nuxtjs-horizontal",
+      "nuxtjs-horizontal-light"
+    ],
+    "url": "nuxtjs.com"
+  },
+  {
+    "name": "Opensea",
+    "category": "technology",
+    "classes": [
       "opensea",
       "opensea-horizontal",
       "opensea2",
       "opensea2-horizontal",
-      "opensea3",
+      "opensea3"
     ],
-    url: "opensea.com",
+    "url": "opensea.com"
   },
   {
-    name: "Johnson & Johnson",
-    category: "pharmaceuticals",
-    classes: ["jnj", "jnj-wordmark"],
-    url: "jnj.com",
-  },
-  {
-    name: "Novartis",
-    category: "pharmaceuticals",
-    classes: ["novartis", "novartis-horizontal"],
-    url: "novartis.com",
-  },
-  {
-    name: "Roche",
-    category: "pharmaceuticals",
-    classes: ["roche", "roche-wordmark"],
-    url: "roche.com",
-  },
-  {
-    name: "Sanofi",
-    category: "pharmaceuticals",
-    classes: ["sanofi", "sanofi-wordmark"],
-    url: "sanofi.com",
-  },
-  {
-    name: "Merck",
-    category: "pharmaceuticals",
-    classes: ["merck", "merck-horizontal"],
-    url: "merck.com",
-  },
-  {
-    name: "AstraZeneca",
-    category: "pharmaceuticals",
-    classes: ["astrazeneca", "astrazeneca-horizontal"],
-    url: "astrazeneca.com",
-  },
-  {
-    name: "Amazon",
-    category: "technology",
-    classes: ["amazon", "amazon-vertical", "amazon-vertical-light"],
-    url: "amazon.com",
-  },
-  {
-    name: "Angular",
-    category: "technology",
-    classes: ["angular"],
-    url: "angular.com",
-  },
-  {
-    name: "Apple",
-    category: "technology",
-    classes: ["apple"],
-    url: "apple.com",
-  },
-  {
-    name: "Artstation",
-    category: "art and music",
-    classes: [
-      "artstation",
-      "artstation-horizontal",
-      "artstation-horizontal-light",
-      "artstation-vertical",
-      "artstation-vertical-light",
+    "name": "Perl",
+    "category": "technology",
+    "classes": [
+      "perl"
     ],
-    url: "artstation.com",
+    "url": "perl.com"
   },
   {
-    name: "aws",
-    category: "technology",
-    classes: ["aws", "aws-light"],
-    url: "aws.com",
-  },
-  {
-    name: "Azure",
-    category: "technology",
-    classes: ["azure", "azure2"],
-    url: "azure.com",
-  },
-  {
-    name: "Bandcamp",
-    category: "art and music",
-    classes: [
-      "bandcamp",
-      "bandcamp-horizontal",
-      "bandcamp-horizontal-light",
-      "bandcamp2-horizontal",
-      "bandcamp2-horizontal-light",
+    "name": "Php",
+    "category": "technology",
+    "classes": [
+      "php",
+      "php-wordmark",
+      "php-wordmark-light"
     ],
-    url: "bandcamp.com",
+    "url": "php.com"
   },
   {
-    name: "Behance",
-    category: "art and music",
-    classes: ["behance", "behance-wordmark", "behance2"],
-    url: "behance.com",
-  },
-  {
-    name: "Bootstrap",
-    category: "technology",
-    classes: ["bootstrap"],
-    url: "bootstrap.com",
-  },
-  {
-    name: "Cashfree",
-    category: "financial services",
-    classes: ["cashfree", "cashfree-horizontal", "cashfree-horizontal-light"],
-    url: "cashfree.com",
-  },
-  {
-    name: "CSS",
-    category: "technology",
-    classes: ["css"],
-    url: "css.com",
-  },
-  {
-    name: "Deviantart",
-    category: "art and music",
-    classes: ["deviantart", "deviantart-horizontal", "deviantart2"],
-    url: "deviantart.com",
-  },
-  {
-    name: "Django",
-    category: "technology",
-    classes: ["django", "django-wordmark"],
-    url: "django.com",
-  },
-  {
-    name: "DigitalOcean",
-    category: "technology",
-    classes: ["do", "do-horizontal", "do-vertical"],
-    url: "digitalocean.com",
-  },
-  {
-    name: "Docker",
-    category: "technology",
-    classes: ["docker", "docker-horizontal", "docker-vertical"],
-    url: "docker.com",
-  },
-  {
-    name: "Eth",
-    category: "technology",
-    classes: ["eth"],
-    url: "eth.com",
-  },
-  {
-    name: "Figma",
-    category: "technology",
-    classes: ["figma"],
-    url: "figma.com",
-  },
-  {
-    name: "Firebase",
-    category: "technology",
-    classes: ["firebase"],
-    url: "firebase.com",
-  },
-  {
-    name: "Flutter",
-    category: "technology",
-    classes: ["flutter"],
-    url: "flutter.com",
-  },
-  {
-    name: "Framer",
-    category: "technology",
-    classes: ["framer"],
-    url: "framer.com",
-  },
-  {
-    name: "Gcd",
-    category: "technology",
-    classes: ["gcd"],
-    url: "gcd.com",
-  },
-  {
-    name: "Google",
-    category: "technology",
-    classes: ["google", "google-wordmark"],
-    url: "google.com",
-  },
-  {
-    name: "Graphql",
-    category: "technology",
-    classes: ["graphql", "graphql-horizontal", "graphql-vertical"],
-    url: "graphql.com",
-  },
-  {
-    name: "Swift",
-    category: "technology",
-    classes: ["swift", "swift-horizontal"],
-    url: "swift.org",
-  },
-  {
-    name: "Ruby",
-    category: "technology",
-    classes: ["ruby"],
-    url: "ruby-lang.org",
-  },
-  {
-    name: "Scala",
-    category: "technology",
-    classes: ["scala", "scala-horizontal"],
-    url: "scala-lang.org",
-  },
-  {
-    name: "HTML5",
-    category: "technology",
-    classes: ["html"],
-    url: "html.com",
-  },
-  {
-    name: "Infura",
-    category: "technology",
-    classes: ["infura", "infura-vertical", "infura-wordmark"],
-    url: "infura.com",
-  },
-  {
-    name: "Java",
-    category: "technology",
-    classes: ["java", "java-vertical"],
-    url: "java.com",
-  },
-  {
-    name: "C",
-    category: "technology",
-    classes: ["c"],
-    url: "learn-c.org",
-  },
-  {
-    name: "C++",
-    category: "technology",
-    classes: ["cpp"],
-    url: "isocpp.org",
-  },
-  {
-    name: "C#",
-    category: "technology",
-    classes: ["csharp"],
-    url: "csharp.com",
-  },
-  {
-    name: "Julia",
-    category: "technology",
-    classes: ["julia", "julia-wordmark"],
-    url: "julialang.org",
-  },
-  {
-    name: "Go",
-    category: "technology",
-    classes: ["go", "go-wordmark"],
-    url: "golang.org",
-  },
-  {
-    name: "PHP",
-    category: "technology",
-    classes: ["php", "php-wordmark", "php-wordmark-light"],
-    url: "php.net",
-  },
-  {
-    name: "Kotlin",
-    category: "technology",
-    classes: ["kotlin", "kotlin-wordmark"],
-    url: "kotlinlang.org",
-  },
-  {
-    name: "Rust",
-    category: "technology",
-    classes: ["rust"],
-    url: "rust-lang.org",
-  },
-  {
-    name: "R",
-    category: "technology",
-    classes: ["r"],
-    url: "r-project.org",
-  },
-  {
-    name: "Perl",
-    category: "technology",
-    classes: ["perl"],
-    url: "perl.org",
-  },
-  {
-    name: "JavaScript",
-    category: "technology",
-    classes: ["js"],
-    url: "javascript.com",
-  },
-  {
-    name: "Kubernetes",
-    category: "technology",
-    classes: ["kubernetes", "kubernetes-horizontal", "kubernetes-vertical"],
-    url: "kubernetes.com",
-  },
-  {
-    name: "Laravel",
-    category: "technology",
-    classes: ["laravel"],
-    url: "laravel.com",
-  },
-  {
-    name: "Meta",
-    category: "technology",
-    classes: ["meta", "meta-horizontal", "meta-horizontal-light"],
-    url: "meta.com",
-  },
-  {
-    name: "Metamask",
-    category: "technology",
-    classes: ["metamask", "metamask-horizontal", "metamask-vertical"],
-    url: "metamask.com",
-  },
-  {
-    name: "Microsoft",
-    category: "technology",
-    classes: [
-      "microsoft",
-      "microsoft-horizontal",
-      "microsoft-horizontal-light",
+    "name": "Pinia",
+    "category": "technology",
+    "classes": [
+      "pinia"
     ],
-    url: "microsoft.com",
+    "url": "pinia.com"
   },
   {
-    name: "365",
-    category: "technology",
-    classes: ["365"],
-    url: "office.com",
-  },
-  {
-    name: "Access",
-    category: "technology",
-    classes: ["access"],
-    url: "office.com",
-  },
-  {
-    name: "Delve",
-    category: "technology",
-    classes: ["delve"],
-    url: "office.com",
-  },
-  {
-    name: "Excel",
-    category: "technology",
-    classes: ["excel"],
-    url: "office.com",
-  },
-  {
-    name: "Forms",
-    category: "technology",
-    classes: ["forms"],
-    url: "office.com",
-  },
-  {
-    name: "OneDrive",
-    category: "technology",
-    classes: ["onedrive"],
-    url: "office.com",
-  },
-  {
-    name: "OneNote",
-    category: "technology",
-    classes: ["onenote"],
-    url: "office.com",
-  },
-  {
-    name: "PowerPoint",
-    category: "technology",
-    classes: ["powerpoint"],
-    url: "office.com",
-  },
-  {
-    name: "Project",
-    category: "technology",
-    classes: ["project"],
-    url: "office.com",
-  },
-  {
-    name: "SharePoint",
-    category: "technology",
-    classes: ["sharepoint"],
-    url: "office.com",
-  },
-  {
-    name: "Sway",
-    category: "technology",
-    classes: ["sway"],
-    url: "office.com",
-  },
-  {
-    name: "Teams",
-    category: "technology",
-    classes: ["teams"],
-    url: "office.com",
-  },
-  {
-    name: "Visio",
-    category: "technology",
-    classes: ["visio"],
-    url: "office.com",
-  },
-  {
-    name: "Word",
-    category: "technology",
-    classes: ["word"],
-    url: "office.com",
-  },
-  {
-    name: "Mixcloud",
-    category: "art and music",
-    classes: [
-      "mixcloud",
-      "mixcloud-light",
-      "mixcloud-wordmark",
-      "mixcloud-wordmark-light",
-      "mixcloud2",
-      "mixcloud2-wordmark",
-      "mixcloud3",
-      "mixcloud3-wordmark",
+    "name": "Polygon-io",
+    "category": "technology",
+    "classes": [
+      "polygon-io",
+      "polygon-io-vertical",
+      "polygon-io-wordmark"
     ],
-    url: "mixcloud.com",
+    "url": "polygon-io.com"
   },
   {
-    name: "MongoDB",
-    category: "technology",
-    classes: [
-      "mongodb",
-      "mongodb-horizontal",
-      "mongodb2",
-      "mongodb2-horizontal",
+    "name": "Postgresql",
+    "category": "technology",
+    "classes": [
+      "postgresql"
     ],
-    url: "mongodb.com",
+    "url": "postgresql.com"
   },
   {
-    name: "MUI",
-    category: "technology",
-    classes: ["mui"],
-    url: "mui.com",
-  },
-  {
-    name: "MySQL",
-    category: "technology",
-    classes: ["mysql", "mysql-vertical"],
-    url: "mysql.com",
-  },
-  {
-    name: "Pfizer",
-    category: "pharmaceuticals",
-    classes: ["pfizer", "pfizer-wordmark"],
-    url: "pfizer.com",
-  },
-  {
-    name: "Netflix",
-    category: "technology",
-    classes: ["netflix", "netflix-wordmark"],
-    url: "netflix.com",
-  },
-  {
-    name: "Netlify",
-    category: "technology",
-    classes: [
-      "netlify",
-      "netlify-light",
-      "netlify-wordmark",
-      "netlify-wordmark-light",
+    "name": "Postman",
+    "category": "technology",
+    "classes": [
+      "postman",
+      "postman-horizontal"
     ],
-    url: "netlify.com",
+    "url": "postman.com"
   },
   {
-    name: "Nextjs",
-    category: "technology",
-    classes: [
-      "nextjs",
-      "nextjs-horizontal",
-      "nextjs-horizontal-light",
-      "nextjs-light",
-    ],
-    url: "nextjs.com",
-  },
-  {
-    name: "Nodejs",
-    category: "technology",
-    classes: [
-      "nodejs",
-      "nodejs-horizontal",
-      "nodejs-horizontal-light",
-      "nodejs-vertical-dark",
-      "nodejs-vertical-light",
-    ],
-    url: "nodejs.com",
-  },
-  {
-    name: "npm",
-    category: "technology",
-    classes: ["npm", "npm-wordmark"],
-    url: "npm.com",
-  },
-  {
-    name: "Nuxtjs",
-    category: "technology",
-    classes: ["nuxtjs", "nuxtjs-horizontal", "nuxtjs-horizontal-light"],
-    url: "nuxtjs.com",
-  },
-  {
-    name: "Pinia",
-    category: "technology",
-    classes: ["pinia"],
-    url: "pinia.com",
-  },
-  {
-    name: "Pinterest",
-    category: "art and music",
-    classes: ["pinterest", "pinterest-horizontal"],
-    url: "pinterest.com",
-  },
-  {
-    name: "Pluto",
-    category: "art and music",
-    classes: ["pluto"],
-    url: "pluto.website",
-  },
-  {
-    name: "Polygon",
-    category: "technology",
-    classes: ["polygon-io", "polygon-io-vertical", "polygon-io-wordmark"],
-    url: "polygon.com",
-  },
-  {
-    name: "Postgresql",
-    category: "technology",
-    classes: ["postgresql"],
-    url: "postgresql.com",
-  },
-  {
-    name: "Python",
-    category: "technology",
-    classes: [
+    "name": "Python",
+    "category": "technology",
+    "classes": [
       "python",
       "python-horizontal",
       "python-powered",
-      "python2-powered",
+      "python2-powered"
     ],
-    url: "python.com",
+    "url": "python.com"
   },
   {
-    name: "Pytorch",
-    category: "technology",
-    classes: ["pytorch", "pytorch-horizontal"],
-    url: "pytorch.com",
+    "name": "Pytorch",
+    "category": "technology",
+    "classes": [
+      "pytorch",
+      "pytorch-horizontal"
+    ],
+    "url": "pytorch.com"
   },
   {
-    name: "Railway",
-    category: "technology",
-    classes: [
+    "name": "R",
+    "category": "technology",
+    "classes": [
+      "r"
+    ],
+    "url": "r.com"
+  },
+  {
+    "name": "Railway",
+    "category": "technology",
+    "classes": [
       "railway",
       "railway-horizontal",
       "railway-horizontal-light",
-      "railway-light",
+      "railway-light"
     ],
-    url: "railway.app",
+    "url": "railway.com"
   },
   {
-    name: "React Native",
-    category: "technology",
-    classes: ["react-native"],
-    url: "reactnative.dev",
+    "name": "React-native",
+    "category": "technology",
+    "classes": [
+      "react-native"
+    ],
+    "url": "react-native.com"
   },
   {
-    name: "Reactjs",
-    category: "technology",
-    classes: ["reactjs"],
-    url: "react.dev",
+    "name": "Reactjs",
+    "category": "technology",
+    "classes": [
+      "reactjs"
+    ],
+    "url": "reactjs.com"
   },
-
   {
-    name: "Redis",
-    category: "technology",
-    classes: [
+    "name": "Redis",
+    "category": "technology",
+    "classes": [
       "redis",
       "redis-enterprise",
       "redis-horizontal",
-      "redis-horizontal-light",
+      "redis-horizontal-light"
     ],
-    url: "redis.com",
+    "url": "redis.com"
   },
   {
-    name: "Redux",
-    category: "technology",
-    classes: ["redux"],
-    url: "redux.com",
-  },
-  {
-    name: "Sanity",
-    category: "technology",
-    classes: ["sanity", "sanity-wordmark"],
-    url: "sanity.com",
-  },
-  {
-    name: "Sass",
-    category: "technology",
-    classes: ["sass", "sass-wordmark"],
-    url: "sass.com",
-  },
-  {
-    name: "Solidity",
-    category: "technology",
-    classes: ["solidity"],
-    url: "solidity.com",
-  },
-  {
-    name: "Soundcloud",
-    category: "art and music",
-    classes: ["soundcloud", "soundcloud-horizontal"],
-    url: "soundcloud.com",
-  },
-  {
-    name: "Spring",
-    category: "technology",
-    classes: ["spring"],
-    url: "spring.com",
-  },
-  {
-    name: "Supabase",
-    category: "technology",
-    classes: ["supabase", "supabase-horizontal", "supabase-horizontal-light"],
-    url: "supabase.com",
-  },
-  {
-    name: "Svelte",
-    category: "technology",
-    classes: ["svelte", "svelte-horizontal"],
-    url: "svelte.com",
-  },
-  {
-    name: "Tailwind",
-    category: "technology",
-    classes: ["tailwind", "tailwind-horizontal", "tailwind-horizontal-light"],
-    url: "tailwind.com",
-  },
-  {
-    name: "Tmdb",
-    category: "technology",
-    classes: ["tmdb"],
-    url: "tmdb.com",
-  },
-
-  {
-    name: "Twitter",
-    category: "social media",
-    classes: [
-      "twitter",
-      "twitter-circle",
-      "twitter-rounded-square",
-      "twitter-square",
+    "name": "Redux",
+    "category": "technology",
+    "classes": [
+      "redux"
     ],
-    url: "twitter.com",
+    "url": "redux.com"
   },
   {
-    name: "TypeScript",
-    category: "technology",
-    classes: ["ts", "ts-circle", "ts-wordmark"],
-    url: "typescriptlang.org",
+    "name": "Ringcentral",
+    "category": "technology",
+    "classes": [
+      "ringcentral",
+      "ringcentral-wordmark"
+    ],
+    "url": "ringcentral.com"
   },
   {
-    name: "Vercel",
-    category: "technology",
-    classes: [
+    "name": "Ruby",
+    "category": "technology",
+    "classes": [
+      "ruby"
+    ],
+    "url": "ruby.com"
+  },
+  {
+    "name": "Rust",
+    "category": "technology",
+    "classes": [
+      "rust"
+    ],
+    "url": "rust.com"
+  },
+  {
+    "name": "Sanity",
+    "category": "technology",
+    "classes": [
+      "sanity",
+      "sanity-wordmark"
+    ],
+    "url": "sanity.com"
+  },
+  {
+    "name": "Sass",
+    "category": "technology",
+    "classes": [
+      "sass",
+      "sass-wordmark"
+    ],
+    "url": "sass.com"
+  },
+  {
+    "name": "Scala",
+    "category": "technology",
+    "classes": [
+      "scala",
+      "scala-horizontal"
+    ],
+    "url": "scala.com"
+  },
+  {
+    "name": "Shadcn",
+    "category": "technology",
+    "classes": [
+      "shadcn",
+      "shadcn-light"
+    ],
+    "url": "shadcn.com"
+  },
+  {
+    "name": "Solana",
+    "category": "technology",
+    "classes": [
+      "solana",
+      "solana-horizontal",
+      "solana-horizontal-light"
+    ],
+    "url": "solana.com"
+  },
+  {
+    "name": "Solidity",
+    "category": "technology",
+    "classes": [
+      "solidity"
+    ],
+    "url": "solidity.com"
+  },
+  {
+    "name": "Spring",
+    "category": "technology",
+    "classes": [
+      "spring"
+    ],
+    "url": "spring.com"
+  },
+  {
+    "name": "Supabase",
+    "category": "technology",
+    "classes": [
+      "supabase",
+      "supabase-horizontal",
+      "supabase-horizontal-light"
+    ],
+    "url": "supabase.com"
+  },
+  {
+    "name": "Svelte",
+    "category": "technology",
+    "classes": [
+      "svelte",
+      "svelte-horizontal"
+    ],
+    "url": "svelte.com"
+  },
+  {
+    "name": "Swift",
+    "category": "technology",
+    "classes": [
+      "swift",
+      "swift-horizontal"
+    ],
+    "url": "swift.com"
+  },
+  {
+    "name": "Tailwind",
+    "category": "technology",
+    "classes": [
+      "tailwind",
+      "tailwind-horizontal",
+      "tailwind-horizontal-light"
+    ],
+    "url": "tailwind.com"
+  },
+  {
+    "name": "Tmdb",
+    "category": "technology",
+    "classes": [
+      "tmdb"
+    ],
+    "url": "tmdb.com"
+  },
+  {
+    "name": "Ts",
+    "category": "technology",
+    "classes": [
+      "ts",
+      "ts-circle",
+      "ts-wordmark"
+    ],
+    "url": "ts.com"
+  },
+  {
+    "name": "Vercel",
+    "category": "technology",
+    "classes": [
       "vercel",
       "vercel-horizontal",
       "vercel-horizontal-light",
-      "vercel-light",
+      "vercel-light"
     ],
-    url: "vercel.com",
+    "url": "vercel.com"
   },
   {
-    name: "Vimeo",
-    category: "technology",
-    classes: ["vimeo", "vimeo-wordmark", "vimeo2"],
-    url: "vimeo.com",
-  },
-  {
-    name: "Vuejs",
-    category: "technology",
-    classes: ["vuejs"],
-    url: "vuejs.com",
-  },
-  {
-    name: "Web3Js",
-    category: "technology",
-    classes: ["web3js"],
-    url: "web3js.com",
-  },
-  {
-    name: "Ringcentral",
-    category: "technology",
-    classes: ["ringcentral", "ringcentral-wordmark"],
-    url: "ringcentral.com",
-  },
-  {
-    name: "Letterboxd",
-    category: "social media",
-    classes: [
-      "letterboxd",
-      "letterboxd-light",
-      "letterboxd-horizontal",
-      "letterboxd-vertical",
-      "letterboxd-vertical-light",
-      "letterboxd-horizontal-light",
+    "name": "Vimeo",
+    "category": "technology",
+    "classes": [
+      "vimeo",
+      "vimeo-wordmark",
+      "vimeo2"
     ],
-    url: "letterboxd.com",
+    "url": "vimeo.com"
   },
   {
-    name: "Codeforces",
-    category: "technology",
-    classes: ["codeforces"],
-    url: "codeforces.com",
+    "name": "Vscode",
+    "category": "technology",
+    "classes": [
+      "vscode"
+    ],
+    "url": "vscode.com"
   },
   {
-    name: "Dropbox",
-    category: "technology",
-    classes: ["dropbox", "dropbox-horizontal", "dropbox-horizontal-light"],
-    url: "dropbox.com",
+    "name": "Vuejs",
+    "category": "technology",
+    "classes": [
+      "vuejs"
+    ],
+    "url": "vuejs.com"
   },
   {
-    name: "shadcn",
-    category: "technology",
-    classes: ["shadcn", "shadcn-light"],
-    url: "ui.shadcn.com",
+    "name": "Web3js",
+    "category": "technology",
+    "classes": [
+      "web3js"
+    ],
+    "url": "web3js.com"
   },
   {
-    name: "Bluesky",
-    category: "social media",
-    classes: ["bluesky"],
-    url: "bsky.app",
+    "name": "Airbnb",
+    "category": "travel and tourism",
+    "classes": [
+      "airbnb",
+      "airbnb-circle",
+      "airbnb-horizontal"
+    ],
+    "url": "airbnb.com"
   },
+  {
+    "name": "Booking",
+    "category": "travel and tourism",
+    "classes": [
+      "booking",
+      "booking-wordmark"
+    ],
+    "url": "booking.com"
+  },
+  {
+    "name": "Expedia",
+    "category": "travel and tourism",
+    "classes": [
+      "expedia",
+      "expedia-horizontal"
+    ],
+    "url": "expedia.com"
+  },
+  {
+    "name": "Hotels",
+    "category": "travel and tourism",
+    "classes": [
+      "hotels",
+      "hotels-horizontal"
+    ],
+    "url": "hotels.com"
+  },
+  {
+    "name": "Ola",
+    "category": "travel and tourism",
+    "classes": [
+      "ola-wordmark"
+    ],
+    "url": "ola.com"
+  },
+  {
+    "name": "Uber",
+    "category": "travel and tourism",
+    "classes": [
+      "uber-wordmark",
+      "uber-wordmark-light"
+    ],
+    "url": "uber.com"
+  },
+  {
+    "name": "Virgin",
+    "category": "travel and tourism",
+    "classes": [
+      "virgin"
+    ],
+    "url": "virgin.com"
+  }
 ];
 export default icons;

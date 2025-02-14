@@ -111,27 +111,26 @@ const processFolder = (folderPath, folderName, category) => {
     } else {
       const className = baseName;
 
-      // Function to generate class names including aliases
+      // Function to generate class names including aliases; prepend folderName if missing
       const generateClassNames = (baseClassName) => {
-        let classes = [baseClassName];
+        const normalizedBase = baseClassName.startsWith(folderName)
+          ? baseClassName
+          : `${folderName}-${baseClassName}`;
+        let classes = [normalizedBase];
 
-        // Check if this base class has aliases
-        const baseNameWithoutPrefix = baseClassName.replace(
+        const baseNameWithoutPrefix = normalizedBase.replace(
           `${folderName}-`,
           ""
         );
         if (logoAliases[folderName]) {
           logoAliases[folderName].forEach((alias) => {
-            // If it's a base class
-            if (baseClassName === folderName) {
+            if (normalizedBase === folderName) {
               classes.push(alias);
             } else {
-              // For variants like horizontal, vertical, etc.
               classes.push(`${alias}-${baseNameWithoutPrefix}`);
             }
           });
         }
-
         return classes.join(",\n.ci-");
       };
 
@@ -278,4 +277,104 @@ fs.readdir(logosPath, (err, categories) => {
   } catch (error) {
     console.error(`Error sorting CSS file: ${error}`);
   }
+
+  // NEW: Generate icons.js based on folders; exclude folders with "stacked" or "inline"
+  // and include both dark and light classes if available
+  let iconsArr = [];
+  const categoriesIcon = fs.readdirSync(logosPath);
+  categoriesIcon.forEach((category) => {
+    const categoryPath = path.join(logosPath, category);
+    if (fs.statSync(categoryPath).isDirectory()) {
+      const folders = fs.readdirSync(categoryPath);
+      folders.forEach((folder) => {
+        if (
+          !folder.toLowerCase().includes("stacked") &&
+          !folder.toLowerCase().includes("inline")
+        ) {
+          const fullFolderPath = path.join(categoryPath, folder);
+          if (fs.statSync(fullFolderPath).isDirectory()) {
+            const files = fs.readdirSync(fullFolderPath);
+            // Group files by base name (without "-light" & extension) and track dark/light
+            const fileGroups = {};
+            files.forEach((file) => {
+              const isLight = file.includes("-light");
+              const baseName = file
+                .replace("-light", "")
+                .replace(/\.[^/.]+$/, "");
+              if (!fileGroups[baseName])
+                fileGroups[baseName] = { dark: false, light: false };
+              if (isLight) fileGroups[baseName].light = true;
+              else fileGroups[baseName].dark = true;
+            });
+            // Group files & build classes array with both dark and light variants
+            let classes = [];
+            Object.entries(fileGroups).forEach(([base, variants]) => {
+              // If base equals folder, use it as is; otherwise prepend folder name
+              const baseClass = base.startsWith(folder)
+                ? base
+                : `${folder}-${base}`;
+              if (variants.dark) classes.push(baseClass);
+              if (variants.light) classes.push(`${baseClass}-light`);
+            });
+            // Remove any invalid names; fallback to folder if empty
+            classes = classes.filter(
+              (cls) =>
+                !cls.toLowerCase().includes("stacked") &&
+                !cls.toLowerCase().includes("inline")
+            );
+            if (classes.length === 0) classes = [folder];
+            // NEW: Sort the classes array
+            classes.sort();
+
+            // NEW: Capitalize the name and update URL based on rules
+            let displayName =
+              folder.charAt(0).toUpperCase() + folder.slice(1).toLowerCase();
+            let iconUrl = `${folder}.com`;
+            switch (folder.toLowerCase()) {
+              case "alan":
+                displayName = "Alan AI";
+                iconUrl = "alan.app";
+                break;
+              case "go":
+                iconUrl = "go.dev";
+                break;
+              case "365":
+                iconUrl = "office.com";
+                break;
+              case "angular":
+                iconUrl = "angular.dev";
+                break;
+              case "bluesky":
+                iconUrl = "bsky.app";
+                break;
+              case "c":
+                iconUrl = "learn-c.org";
+                break;
+              case "cpp":
+                iconUrl = "isocpp.org";
+                break;
+              default:
+                break;
+            }
+
+            iconsArr.push({
+              name: displayName,
+              category: category,
+              classes: classes,
+              url: iconUrl,
+            });
+          }
+        }
+      });
+    }
+  });
+
+  const iconsContent = `const icons = ${JSON.stringify(
+    iconsArr,
+    null,
+    2
+  )};\nexport default icons;\n`;
+  const iconsPath = path.join(__dirname, "..", "src", "constants", "icons.js");
+  fs.writeFileSync(iconsPath, iconsContent);
+  console.log("icons.js generated successfully!");
 });
