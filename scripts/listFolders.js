@@ -55,9 +55,9 @@ const parseCssGroups = (content) => {
   return urlGroups;
 };
 
-// Process each folder and its files
-const processFolder = (folderName) => {
-  const folderPath = path.join(logosPath, folderName);
+// Updated: processFolder now accepts folderPath, folderName and category
+const processFolder = (folderPath, folderName, category) => {
+  // No longer reassign folderPath here since it's passed in
   const files = fs.readdirSync(folderPath);
 
   // Group files by their base name (without -light suffix)
@@ -99,39 +99,38 @@ const processFolder = (folderName) => {
 .ci-${folderName}-dark,
 .ci-${folderName}-wordmark,
 .ci-${folderName}-wordmark-dark {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
       }
       if (variants.light) {
         cssContent += `.ci-${folderName}-light,
 .ci-${folderName}-wordmark-light {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.light}");
 }\n\n`;
       }
     } else {
       const className = baseName;
 
-      // Function to generate class names including aliases
+      // Function to generate class names including aliases; prepend folderName if missing
       const generateClassNames = (baseClassName) => {
-        let classes = [baseClassName];
+        const normalizedBase = baseClassName.startsWith(folderName)
+          ? baseClassName
+          : `${folderName}-${baseClassName}`;
+        let classes = [normalizedBase];
 
-        // Check if this base class has aliases
-        const baseNameWithoutPrefix = baseClassName.replace(
+        const baseNameWithoutPrefix = normalizedBase.replace(
           `${folderName}-`,
           ""
         );
         if (logoAliases[folderName]) {
           logoAliases[folderName].forEach((alias) => {
-            // If it's a base class
-            if (baseClassName === folderName) {
+            if (normalizedBase === folderName) {
               classes.push(alias);
             } else {
-              // For variants like horizontal, vertical, etc.
               classes.push(`${alias}-${baseNameWithoutPrefix}`);
             }
           });
         }
-
         return classes.join(",\n.ci-");
       };
 
@@ -145,13 +144,15 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "vertical-dark")},
 .ci-${generateClassNames(baseClass + "stacked")},
 .ci-${generateClassNames(baseClass + "stacked-dark")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
           cssContent += `.ci-${generateClassNames(
             baseClass + "vertical-light"
           )},
 .ci-${generateClassNames(baseClass + "stacked-light")} {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${
+            variants.light
+          }");
 }\n\n`;
         }
         // For horizontal/inline variants
@@ -166,23 +167,27 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "horizontal-dark")},
 .ci-${generateClassNames(baseClass + "inline")},
 .ci-${generateClassNames(baseClass + "inline-dark")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
           cssContent += `.ci-${generateClassNames(
             baseClass + "horizontal-light"
           )},
 .ci-${generateClassNames(baseClass + "inline-light")} {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${
+            variants.light
+          }");
 }\n\n`;
         }
         // Regular case
         else {
           cssContent += `.ci-${generateClassNames(className)},
 .ci-${generateClassNames(className + "-dark")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
           cssContent += `.ci-${generateClassNames(className + "-light")} {
-  content: url("../../public/logos/${folderName}/${variants.light}");
+  content: url("../../public/logos/${category}/${folderName}/${
+            variants.light
+          }");
 }\n\n`;
         }
       } else if (variants.dark) {
@@ -197,7 +202,7 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "stacked")},
 .ci-${generateClassNames(baseClass + "stacked-dark")},
 .ci-${generateClassNames(baseClass + "stacked-light")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
         }
         // For horizontal/inline variants
@@ -214,7 +219,7 @@ const processFolder = (folderName) => {
 .ci-${generateClassNames(baseClass + "inline")},
 .ci-${generateClassNames(baseClass + "inline-dark")},
 .ci-${generateClassNames(baseClass + "inline-light")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
         }
         // Regular case
@@ -222,7 +227,7 @@ const processFolder = (folderName) => {
           cssContent += `.ci-${generateClassNames(className)},
 .ci-${generateClassNames(className + "-dark")},
 .ci-${generateClassNames(className + "-light")} {
-  content: url("../../public/logos/${folderName}/${variants.dark}");
+  content: url("../../public/logos/${category}/${folderName}/${variants.dark}");
 }\n\n`;
         }
       }
@@ -230,16 +235,23 @@ const processFolder = (folderName) => {
   });
 };
 
-// Read all folders and process
-fs.readdir(logosPath, (err, folders) => {
+// Updated: Iterate categories and then logo folders
+fs.readdir(logosPath, (err, categories) => {
   if (err) {
     console.error(`Error reading directory ${logosPath}: ${err}`);
     return;
   }
 
-  folders.forEach((folder) => {
-    if (fs.statSync(path.join(logosPath, folder)).isDirectory()) {
-      processFolder(folder);
+  categories.forEach((category) => {
+    const categoryPath = path.join(logosPath, category);
+    if (fs.statSync(categoryPath).isDirectory()) {
+      const folders = fs.readdirSync(categoryPath);
+      folders.forEach((folder) => {
+        const fullFolderPath = path.join(categoryPath, folder);
+        if (fs.statSync(fullFolderPath).isDirectory()) {
+          processFolder(fullFolderPath, folder, category);
+        }
+      });
     }
   });
 
@@ -265,4 +277,171 @@ fs.readdir(logosPath, (err, folders) => {
   } catch (error) {
     console.error(`Error sorting CSS file: ${error}`);
   }
+
+  // NEW: Generate icons.js based on folders; exclude folders with "stacked" or "inline"
+  // and include both dark and light classes if available
+  let iconsArr = [];
+  const categoriesIcon = fs.readdirSync(logosPath);
+  categoriesIcon.forEach((category) => {
+    const categoryPath = path.join(logosPath, category);
+    if (fs.statSync(categoryPath).isDirectory()) {
+      const folders = fs.readdirSync(categoryPath);
+      folders.forEach((folder) => {
+        if (
+          !folder.toLowerCase().includes("stacked") &&
+          !folder.toLowerCase().includes("inline")
+        ) {
+          const fullFolderPath = path.join(categoryPath, folder);
+          if (fs.statSync(fullFolderPath).isDirectory()) {
+            const files = fs.readdirSync(fullFolderPath);
+            // Group files by base name (without "-light" & extension) and track dark/light
+            const fileGroups = {};
+            files.forEach((file) => {
+              const isLight = file.includes("-light");
+              const baseName = file
+                .replace("-light", "")
+                .replace(/\.[^/.]+$/, "");
+              if (!fileGroups[baseName])
+                fileGroups[baseName] = { dark: false, light: false };
+              if (isLight) fileGroups[baseName].light = true;
+              else fileGroups[baseName].dark = true;
+            });
+            // Group files & build classes array with both dark and light variants
+            let classes = [];
+            Object.entries(fileGroups).forEach(([base, variants]) => {
+              // If base equals folder, use it as is; otherwise prepend folder name
+              const baseClass = base.startsWith(folder)
+                ? base
+                : `${folder}-${base}`;
+              if (variants.dark) classes.push(baseClass);
+              if (variants.light) classes.push(`${baseClass}-light`);
+            });
+            // Remove any invalid names; fallback to folder if empty
+            classes = classes.filter(
+              (cls) =>
+                !cls.toLowerCase().includes("stacked") &&
+                !cls.toLowerCase().includes("inline")
+            );
+            if (classes.length === 0) classes = [folder];
+            // NEW: Sort the classes array
+            classes.sort();
+
+            // NEW: Capitalize the name and update URL based on rules
+            let displayName =
+              folder.charAt(0).toUpperCase() + folder.slice(1).toLowerCase();
+            let iconUrl = `${folder}.com`;
+            switch (folder.toLowerCase()) {
+              case "alan":
+                displayName = "Alan AI";
+                iconUrl = "alan.app";
+                break;
+              case "go":
+                iconUrl = "go.dev";
+                break;
+              case "aws":
+                displayName = "AWS";
+                break;
+              case "eth":
+                iconUrl = "ethereum.org";
+                break;
+              case "cpp":
+                displayName = "C++";
+                iconUrl = "isocpp.org";
+                break;
+              case "csharp":
+                displayName = "C#";
+                break;
+              case "do":
+                displayName = "DigitalOcean";
+                break;
+              case "css":
+                displayName = "CSS";
+                break;
+              case "louisvuitton":
+                displayName = "Louis Vuitton";
+                break;
+              case "jnj":
+                displayName = "Johnson & Johnson";
+                break;
+              case "ts":
+                displayName = "TypeScript";
+                break;
+              case "js":
+                displayName = "JavaScript";
+                break;
+              case "php":
+                displayName = "php";
+                break;
+              case "kfc":
+                displayName = "KFC";
+                break;
+              case "react-native":
+                displayName = "React Native";
+                break;
+              case "hsbc":
+                displayName = "HSBC";
+                break;
+              case "html":
+                displayName = "HTML";
+                break;
+              case "jquery":
+                displayName = "jQuery";
+                break;
+              case "mui":
+                displayName = "MUI";
+                break;
+              case "365":
+              case "teams":
+              case "word":
+              case "visio":
+              case "sway":
+              case "sharepoint":
+              case "project":
+              case "powerpoint":
+              case "outlook":
+              case "onenote":
+              case "onedrive":
+              case "delve":
+              case "forms":
+              case "excel":
+              case "access":
+                iconUrl = "office.com";
+                break;
+              case "angular":
+                iconUrl = "angular.dev";
+                break;
+              case "bluesky":
+                iconUrl = "bsky.app";
+                break;
+              case "infura":
+                iconUrl = "infura.io";
+                break;
+              case "c":
+                iconUrl = "learn-c.org";
+                break;
+              default:
+                break;
+            }
+
+            iconsArr.push({
+              name: displayName,
+              category: category,
+              classes: classes,
+              url: iconUrl,
+            });
+          }
+        }
+      });
+    }
+  });
+
+  const iconsContent = `const icons = ${JSON.stringify(
+    iconsArr,
+    null,
+    2
+  )};\nexport default icons;\n`;
+  // updated file path to icons.ts
+  const iconsPath = path.join(__dirname, "..", "src", "constants", "icons.ts");
+  fs.writeFileSync(iconsPath, iconsContent);
+  console.log("icons.ts generated successfully!");
 });
