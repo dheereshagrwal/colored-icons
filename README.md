@@ -151,9 +151,6 @@ Please run
 `pnpm run minify`
 during the development to ensure any changes that are made to ci.css and logos.css are immediately reflected in ci.min.css and logos.min.css respectively
 
-`node scripts/listFolders.js`
-to automatically generate the `logos.css` and `icons.ts` file.
-
 ## License
 
 The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
