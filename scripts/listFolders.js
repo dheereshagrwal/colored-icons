@@ -242,6 +242,7 @@ fs.readdir(logosPath, (err, categories) => {
     return;
   }
 
+  // Process each category folder to generate CSS and icons
   categories.forEach((category) => {
     const categoryPath = path.join(logosPath, category);
     if (fs.statSync(categoryPath).isDirectory()) {
@@ -263,7 +264,6 @@ fs.readdir(logosPath, (err, categories) => {
     const content = fs.readFileSync(cssPath, "utf8");
     const urlGroups = parseCssGroups(content);
     const sortedUrls = Array.from(urlGroups.keys()).sort();
-
     let sortedContent = "";
     sortedUrls.forEach((url) => {
       const selectors = Array.from(urlGroups.get(url)).sort();
@@ -271,15 +271,46 @@ fs.readdir(logosPath, (err, categories) => {
         ",\n"
       )} {\n  content: url("${url}");\n}\n\n`;
     });
-
     fs.writeFileSync(cssPath, sortedContent);
     console.log("CSS file generated and sorted successfully!");
   } catch (error) {
     console.error(`Error sorting CSS file: ${error}`);
   }
 
-  // NEW: Generate icons.js based on folders; exclude folders with "stacked" or "inline"
-  // and include both dark and light classes if available
+  // Helper function to title-case a phrase except for the word "and"
+  const toTitleCase = (str) => {
+    return str
+      .split(" ")
+      .map((word) =>
+        word.toLowerCase() === "and"
+          ? "and"
+          : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+      )
+      .join(" ");
+  };
+
+  // NEW: Generate categories.ts based on folder names in public/logos, skip "All"
+  // Preserve TypeScript import and types
+  const categoriesTsContent =
+    `import { Category } from "@/interfaces";\n\n` +
+    `const categories: Category[] = [\n` +
+    `  { name: "All" },\n` +
+    categories
+      .map((cat) => `  { name: "${toTitleCase(cat)}" },`)
+      .join("\n") +
+    `\n];\n\nexport default categories;\n`;
+
+  const categoriesTsPath = path.join(
+    __dirname,
+    "..",
+    "src",
+    "constants",
+    "categories.ts"
+  );
+  fs.writeFileSync(categoriesTsPath, categoriesTsContent);
+  console.log("categories.ts generated successfully!");
+
+  // NEW: Generate icons.ts based on folders; exclude folders with "stacked" or "inline"
   let iconsArr = [];
   const categoriesIcon = fs.readdirSync(logosPath);
   categoriesIcon.forEach((category) => {
@@ -458,7 +489,6 @@ fs.readdir(logosPath, (err, categories) => {
       });
     }
   });
-
   const iconsContent = `const icons = ${JSON.stringify(
     iconsArr,
     null,

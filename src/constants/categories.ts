@@ -2,33 +2,15 @@ import { Category } from "@/interfaces";
 
 const categories: Category[] = [
   { name: "All" },
-  {
-    name: "Technology",
-  },
-  {
-    name: "Social Media",
-  },
-  {
-    name: "Financial Services",
-  },
-  {
-    name: "Art and Music",
-  },
-  {
-    name: "Food and Beverage",
-  },
-  {
-    name: "Travel and Tourism",
-  },
-  {
-    name: "Automobile",
-  },
-  {
-    name: "Clothing and Apparel",
-  },
-  {
-    name: "Pharmaceuticals",
-  },
+  { name: "Art and Music" },
+  { name: "Automobile" },
+  { name: "Clothing and Apparel" },
+  { name: "Financial Services" },
+  { name: "Food and Beverage" },
+  { name: "Pharmaceuticals" },
+  { name: "Social Media" },
+  { name: "Technology" },
+  { name: "Travel and Tourism" },
 ];
 
 export default categories;
