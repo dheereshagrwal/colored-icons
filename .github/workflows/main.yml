@@ -18,16 +18,8 @@ jobs:
         with:
           node-version: 'latest'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      - name: Setup pnpm global bin directory
-        env:
-          SHELL: /bin/bash
-        run: pnpm setup
-
       - name: Install clean-css-cli
-        run: pnpm add clean-css-cli -g
+        run: npm install -g clean-css-cli
 
       - name: Minify logos.css
         run: cleancss -o src/app/logos.min.css src/app/logos.css
