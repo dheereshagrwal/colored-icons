@@ -21,6 +21,9 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
+      - name: Setup pnpm global bin directory
+        run: pnpm setup
+
       - name: Install clean-css-cli
         run: pnpm add clean-css-cli -g
 
