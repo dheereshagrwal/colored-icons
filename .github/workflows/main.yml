@@ -1,0 +1,31 @@
+name: Minify CSS
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  minify-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install clean-css-cli
+        run: pnpm add clean-css-cli -g
+
+      - name: Minify logos.css
+        run: cleancss -o src/app/logos.min.css src/app/logos.css
+
+      - name: Minify ci.css
+        run: cleancss -o src/app/ci.min.css src/app/ci.css
