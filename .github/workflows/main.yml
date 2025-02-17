@@ -22,6 +22,8 @@ jobs:
         run: npm install -g pnpm
 
       - name: Setup pnpm global bin directory
+        env:
+          SHELL: /bin/bash
         run: pnpm setup
 
       - name: Install clean-css-cli
