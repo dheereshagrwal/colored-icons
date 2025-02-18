@@ -41,8 +41,8 @@ jobs:
       - name: Commit changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
-          git config --local user.email "da11@iitbbs.ac.in"
-          git config --local user.name "Dheeresh Agarwal"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add .
           git commit -m "Update generated files"
           git push

@@ -147,9 +147,12 @@ If you want me to add an icon that is missing or have some suggestions, just rai
 
 ## Scripts before deployment
 
-Please run
-`pnpm run minify`
-during the development to ensure any changes that are made to ci.css and logos.css are immediately reflected in ci.min.css and logos.min.css respectively
+## Development Scripts
+
+During development, run the following scripts:
+
+-   `pnpm run dev`: Generates automated files. This script is also executed during the push process by GitHub Actions.
+-   `pnpm run minify`: Minifies `ci.css` and `logos.css` into `ci.min.css` and `logos.min.css` respectively. Run this during development to immediately reflect changes in the minified CSS files.
 
 ## License
 
