@@ -468,9 +468,6 @@ fs.readdir(logosPath, (err, categories) => {
               case "infura":
                 iconUrl = "infura.io";
                 break;
-              case "railway":
-                iconUrl = "railway.app";
-                break;
               case "c":
                 iconUrl = "learn-c.org";
                 break;
