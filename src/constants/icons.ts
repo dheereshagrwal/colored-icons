@@ -1285,7 +1285,7 @@ const icons = [
       "railway-horizontal-light",
       "railway-light"
     ],
-    "url": "railway.app"
+    "url": "railway.com"
   },
   {
     "name": "React Native",
