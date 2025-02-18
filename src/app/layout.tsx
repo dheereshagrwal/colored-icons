@@ -5,8 +5,8 @@ import { Outfit } from "next/font/google";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Colored Icons',
-  description: 'Colored Icons is a collection of colored icons for web developers.',
+  title: 'Coloured Icons',
+  description: 'Coloured Icons is a collection of coloured icons for web developers.',
 }
 
 export default function RootLayout({

@@ -1,4 +1,4 @@
-# Colored Icons
+# Coloured Icons
 
 Sample icons
 
@@ -15,12 +15,12 @@ Throw in a CDN and watch the magic happen! Don't bother with all that `npm` stuf
 
 ## Installation
 
-To use the Colored Icons Library, simply add the following CDN link to your HTML file (Be careful with the release versions, they might include breaking changes):
+To use the Coloured Icons Library, simply add the following CDN link to your HTML file (Be careful with the release versions, they might include breaking changes):
 
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.8.3/src/app/ci.min.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/coloured-icons@1.8.3/src/app/ci.min.css"
 />
 ```
 
@@ -29,7 +29,7 @@ Use the below one for latest
 ```
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@master/src/app/ci.min.css"
+  href="https://cdn.jsdelivr.net/gh/dheereshagrwal/coloured-icons@master/src/app/ci.min.css"
 />
 ```
 
@@ -89,7 +89,7 @@ For more details about the sizing, you can refer to this [Font Awesome Icon Size
 ## Dark and Light icons
 
 By default, the `ci-nextjs` will refer to the dark version of the logo which means that you have to use it on a light background, you can also write `ci-nextjs-dark` for the same.
-Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied to colored icons.
+Just don't write `ci-nextjs ci-dark`, dark is not some class that can be applied to coloured icons.
 
 `ci-nextjs`
 
@@ -156,7 +156,7 @@ During development, run the following scripts:
 
 ## License
 
-The Colored Icons Library is licensed under the MIT License. Please review the license file for more details.
+The Coloured Icons Library is licensed under the MIT License. Please review the license file for more details.
 
 ## Contact 👋🏻
 

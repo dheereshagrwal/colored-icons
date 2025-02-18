@@ -1,7 +1,7 @@
 {
-  "name": "ci-new",
+  "name": "coloured-icons",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "scripts": {
     "dev": "node scripts/listFolders.js && next dev",
@@ -31,5 +31,12 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3"
-  }
+  },
+  "description": "coloured-icons in development",
+  "main": "next.config.js",
+  "keywords": [
+    "coloured"
+  ],
+  "author": "Dheeresh Agarwal",
+  "license": "ISC"
 }

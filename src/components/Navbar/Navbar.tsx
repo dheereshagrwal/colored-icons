@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
               className={`${pacifico.className} text-2xl lg:text-3xl hover:text-gray-600 transition-colors`}
               href="/"
             >
-              Colored Icons
+              Coloured Icons
             </Link>
           </div>
 
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
               href="/"
               onClick={() => setIsMenuOpen(false)}
             >
-              Colored Icons
+              Coloured Icons
             </Link>
             <button
               type="button"

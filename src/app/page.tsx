@@ -23,13 +23,13 @@ export default function Home() {
           Endless Possibilities
         </h1>
         <h2 className="mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8 max-w-md mx-auto">
-          Your one-stop destination for stunning colored icons. Find the perfect
+          Your one-stop destination for stunning coloured icons. Find the perfect
           icon to bring your designs to life.
         </h2>
 
         <div className="mt-6 flex justify-center">
           <Link
-            href="https://github.com/dheereshagrwal/colored-icons"
+            href="https://github.com/dheereshagrwal/coloured-icons"
             target="_blank"
             className="relative rounded-full px-4 py-2 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 flex items-center gap-2"
           >
@@ -45,7 +45,7 @@ export default function Home() {
             id="popular-icons"
             className={`${outfit.className} text-4xl text-gray-900`}
           >
-            Most Popular Colored Icons
+            Most Popular Coloured Icons
           </h1>
           <div id="search-section" className="lg:w-4/12">
             <Search />
