@@ -4,13 +4,13 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/listFolders.js && next dev",
-    "build": "node scripts/listFolders.js && next build",
+    "dev": "node scripts/listFolders.js && pnpm run minify && next dev",
+    "build": "node scripts/listFolders.js && pnpm run minify && next build",
     "start": "next start",
     "lint": "next lint",
-    "minify:logos:watch": "cleancss -o src/app/logos.min.css src/app/logos.css --watch",
-    "minify:watch": "cleancss -o src/app/ci.min.css src/app/ci.css --watch",
-    "minify": "pnpm run minify:logos:watch & pnpm run minify:watch"
+    "minify:logos": "cleancss -o src/app/logos.min.css src/app/logos.css",
+    "minify:ci": "cleancss -o src/app/ci.min.css src/app/ci.css",
+    "minify": "pnpm run minify:logos && pnpm run minify:ci"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
