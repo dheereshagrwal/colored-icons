@@ -79,14 +79,6 @@ const icons = [
     "url": "pinterest.com"
   },
   {
-    "name": "Pluto",
-    "category": "art and music",
-    "classes": [
-      "pluto"
-    ],
-    "url": "pluto.com"
-  },
-  {
     "name": "Soundcloud",
     "category": "art and music",
     "classes": [
