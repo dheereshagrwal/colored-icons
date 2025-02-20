@@ -228,7 +228,7 @@ const icons = [
     "url": "zara.com"
   },
   {
-    "name": "Orcid",
+    "name": "ORCID",
     "category": "education",
     "classes": [
       "orcid",

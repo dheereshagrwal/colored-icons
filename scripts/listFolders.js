@@ -433,6 +433,9 @@ fs.readdir(logosPath, (err, categories) => {
               case "opensea":
                 displayName = "OpenSea";
                 break;
+              case "orcid":
+                displayName = "ORCID";
+                break;
               case "html":
                 displayName = "HTML";
                 break;
