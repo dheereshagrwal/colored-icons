@@ -398,6 +398,24 @@
   content: url("../../public/logos/clothing and apparel/zara/zara-wordmark.svg");
 }
 
+.ci-orcid-wordmark,
+.ci-orcid-wordmark-dark,
+.ci-orcid-wordmark-light {
+  content: url("../../public/logos/education/orcid/orcid-wordmark.svg");
+}
+
+.ci-orcid,
+.ci-orcid-dark,
+.ci-orcid-light {
+  content: url("../../public/logos/education/orcid/orcid.svg");
+}
+
+.ci-scholar,
+.ci-scholar-dark,
+.ci-scholar-light {
+  content: url("../../public/logos/education/scholar/scholar.svg");
+}
+
 .ci-barclays-wordmark,
 .ci-barclays-wordmark-dark,
 .ci-barclays-wordmark-light {

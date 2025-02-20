@@ -228,6 +228,23 @@ const icons = [
     "url": "zara.com"
   },
   {
+    "name": "Orcid",
+    "category": "education",
+    "classes": [
+      "orcid",
+      "orcid-wordmark"
+    ],
+    "url": "orcid.com"
+  },
+  {
+    "name": "Scholar",
+    "category": "education",
+    "classes": [
+      "scholar"
+    ],
+    "url": "scholar.com"
+  },
+  {
     "name": "Barclays",
     "category": "financial services",
     "classes": [

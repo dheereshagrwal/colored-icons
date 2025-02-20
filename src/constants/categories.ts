@@ -5,6 +5,7 @@ const categories: Category[] = [
   { name: "Art and Music" },
   { name: "Automobile" },
   { name: "Clothing and Apparel" },
+  { name: "Education" },
   { name: "Financial Services" },
   { name: "Food and Beverage" },
   { name: "Pharmaceuticals" },

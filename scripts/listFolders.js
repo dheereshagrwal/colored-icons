@@ -289,13 +289,13 @@ fs.readdir(logosPath, (err, categories) => {
       .join(" ");
   };
 
-  // NEW: Generate categories.ts based on folder names in public/logos, skip "All"
-  // Preserve TypeScript import and types
+  // NEW: Generate categories.ts based on folder names in public/logos, skip "All" and ".ds_store"
   const categoriesTsContent =
     `import { Category } from "@/interfaces";\n\n` +
     `const categories: Category[] = [\n` +
     `  { name: "All" },\n` +
     categories
+      .filter((cat) => cat.toLowerCase() !== ".ds_store")
       .map((cat) => `  { name: "${toTitleCase(cat)}" },`)
       .join("\n") +
     `\n];\n\nexport default categories;\n`;
