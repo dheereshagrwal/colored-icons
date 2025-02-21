@@ -52,7 +52,7 @@ function SearchBox({ searchRef }: SearchProps) {
         type="text"
         name="search"
         id="Search"
-        className="w-full rounded-xl py-2.5 pe-10 shadow-sm sm:text-sm border-gray-200 ring-blue-500"
+        className="w-full rounded-xl py-2.5 ps-4 shadow-xs sm:text-sm border-gray-200 ring-blue-500"
         placeholder="Search icon name"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
